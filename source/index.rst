@@ -82,7 +82,8 @@ Example::
 
 Parameters
 ~~~~~~~~~~
-Insert table of parameters
+
+.. include:: training_parameters.rst
 
 
 Training a model of cellular organization
@@ -111,3 +112,4 @@ If you are interested in learning about training models you can start by investi
 * ``demo3D12`` - Trains a generative model of the cell framework and protein pattern using one of the four patterns in the HeLa dataset.
 * ``demo3D20`` - Trains a generative model of the cell framework using diffeomorphic modeling with a subset of the HeLa dataset.
 
+.. include:: footnotes.rst
