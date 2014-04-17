@@ -17,7 +17,11 @@ Field                          Type                  Allowed Values             
 ``model.downsampling``         1x3 double array      any double                               ``[5,5,1]``
 ``nucleus.type``               string                ``('medial axis', 'diffeomorphioc')``    ``'medial axis'``
 ``cell.type``                  string                ``('ratio','diffeomorphic')``            ``'ratio'``
+<<<<<<< HEAD
 ``protein.type``               string                ``('vesicle')`` +[#]                     ``'vesicle'``
+=======
+``protein.type``               string                ``('vesicle')``                          ``'vesicle'``
+>>>>>>> master
 ``protein.cytonuclearflag``    string                ``('cyto','nuc','all')``                 ``'cyto'``
 ``verbose``                    boolean               ``(True,False)``                         ``True``
 ``debug``                      boolean               ``(True,False)``                         ``False``

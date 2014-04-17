@@ -20,7 +20,10 @@ Indices and tables
 * :ref:`modindex`
 * :ref:`search`
 
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> master
 Getting Started
 ===============
 
@@ -85,7 +88,6 @@ Parameters
 ~~~~~~~~~~
 
 .. include:: training_parameters.rst
-
 .. include:: synthesis_parameters.rst
 
 Training a model of cellular organization
