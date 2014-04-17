@@ -20,7 +20,6 @@ Indices and tables
 * :ref:`modindex`
 * :ref:`search`
 
-<<<<<<< Updated upstream
 =======
 Getting Started
 ===============
@@ -116,4 +115,3 @@ If you are interested in learning about training models you can start by investi
 * ``demo3D20`` - Trains a generative model of the cell framework using diffeomorphic modeling with a subset of the HeLa dataset.
 
 .. include:: footnotes.rst
->>>>>>> Stashed changes
