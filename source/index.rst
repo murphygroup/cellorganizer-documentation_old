@@ -12,48 +12,29 @@ Contents:
    :maxdepth: 2
 
 
-
 Indices and tables
-==================
+##################
 
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
 
-<<<<<<< HEAD
-=======
-=======
->>>>>>> master
 Getting Started
+###############
+
+.. include:: ./chapters/about.rst
+
+.. include:: ./chapters/download.rst
+
+.. include:: ./chapters/start.rst
+
+.. include:: ./chapters/demos.rst
+
+Training Demos
 ===============
 
-About this document
--------------------
-
-This document covers the minimum materials required for learning model distributions of cellular organization and synthesizing images from those distributions. For more in-depth examples, please refer to the **demos** and the **templates** directories contained within the CellOrganizer distribution.
-
-Downloads
----------
-To download the latest or desired copy of CellOrganizer click `here <http://www.cellorganizer>`_. 
-
-Start Using CellOrganizer
--------------------------
-To start using CellOrganizer, start a Matlab session and change directory to the location of CellOrganizer and run *setup.m*. In the Matlab terminal, type::
-
-	cd( ‘/path/to/cellorganizer’ );
-	setup;
-
-If you were successful you should either see a message like::
-
-	>> setup
-	Checking for new stable version... Version is up to date.
-
-or see 
-
-.. image:: ./images/welcome.png
-
-Model Training
-==============
+Training a model
+################
 
 Required Materials
 ------------------
@@ -88,6 +69,7 @@ Parameters
 ~~~~~~~~~~
 
 .. include:: training_parameters.rst
+
 .. include:: synthesis_parameters.rst
 
 Training a model of cellular organization
