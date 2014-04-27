@@ -25,7 +25,7 @@ Field                          Type                  Allowed Values             
 ``masks``                      string                any string                               ``[]``
 ``display``                    boolean               ``(True,False)``                         ``False``
 ``train.flag``                 string                ``('all','nuclear','framework')``        ``'all'``
-``preprocessing``	boolean	``(True,False)``	``True``
+``preprocessing``			   boolean				 ``(True,False)``						  ``True``
 ============================   ==================    ======================================   =========================
 
 Optional Fields
