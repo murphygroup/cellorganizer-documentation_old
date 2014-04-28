@@ -28,6 +28,7 @@ Field                                            Type           Allowed Values  
 ``walksteps``                                    int            any int                                 1
 ``overlapsubsize``                               double         any non-neg double                      0.3
 ``overlapthresh``                                double         any non-neg double                      2
+``rendAtStd``                                	 double         any non-neg double                      2
 ===============================================  ===========    ====================================    ==================
 
 Optional Fields
