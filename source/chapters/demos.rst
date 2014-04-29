@@ -3,9 +3,9 @@
 ***********
 For convenience, a series of demos are included with each distribution of CellOrganizer. These demos show 
 
-# how synthesize images from existing models, 
-# how to train new models from raw data, as well as
-# other functionality that is related to the first two, i.e. 
+* how synthesize images from existing models, 
+* how to train new models from raw data, as well as
+* other functionality, e.g. exporting examples in multiple formats.
 
 To display information about the available demos contained in the distribution, type in Matlab terminal::
 

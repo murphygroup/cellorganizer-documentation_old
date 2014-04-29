@@ -44,8 +44,25 @@
 
 * `demo3D19`. This method shows the use of slml2report for creating comparisons between parameters of CellOrganzier models.
 
+* `demo3D20`. Trains a generative model of the framework using one diffeomorphic model.
+
+* `demo3D21`. Trains a generative model of the framework using the holefinding
+  functionality. The same demo as demo3D18 but with no scaling of the
+  images.
+
+* `demo3D22`. Synthesizes a protein pattern instance for each of the synthetic images
+  from demo3DDiffeoSynth.
+
 * `demo3DMultiresSynth`. Synthesize multiple 3D images from a lysosome model, at different resolutions
 
 * `demo3DObjectAvoidance`. Synthesizes 1 image using a lysosomal model with sampling mode set to 'disc', no convolution using the object avoidance methods Results will be three TIFF files, one each for cell boundary, nuclear boundary, and lysosomes, in folder "synthesizedImages/cell1"
 
 * `demo3DPrimitives`. Synthesizes 1 image using a lysosomal model with sampling mode set to 'disc', no convolution and output.SBML set to true Results will be three TIFF files, one each for cell boundary, nuclear boundary, and lysosomes, in folder "synthesizedImages/cell1". Additionally, in the folder "synthesizedImages/" will be a SBML-Spatial(v0.82a) formatted .xml file containing constructed solid geometry(CSG) primitives for lysosomes and parametric objects for the cell and nuclear shapes.These files can then be read into VCell using the built in importer or CellBlender using the helper function provided in this distribution.
+
+* `demo3DSBML`. This demo converts a sample SBML file to an SBML-spatial instance using
+ the "matchSBML" function. This function takes an SBML file, matches the
+ compartments in the file with available models and synthesizes the
+ appropriate instances.
+
+ * `demo3Dimg2sbml`. This demo is to demonstrate the function that reads an image and creates a
+ 3D mesh using the SBML-spatial paradigm. 
