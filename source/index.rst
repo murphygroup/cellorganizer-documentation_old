@@ -6,11 +6,6 @@
 CellOrganizer for Matlab
 ========================
 
-Contents:
-
-.. toctree:
-:   :maxdepth: 3
-
 Indices and tables
 ##################
 
