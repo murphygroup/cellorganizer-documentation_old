@@ -5,6 +5,10 @@
 
 .. include:: ./chapters/getting_started.rst
 
+.. include:: ./chapters/start.rst
+
+.. include:: ./chapters/demos.rst
+
 Indices and tables
 ##################
 

@@ -25,7 +25,3 @@ Support for CellOrganizer has been provided by grants GM075205, GM090033 and GM1
 .. include:: ./sections/about.rst
 
 .. include:: ./sections/download.rst
-
-.. include:: ./chapters/start.rst
-
-.. include:: ./chapters/demos.rst
