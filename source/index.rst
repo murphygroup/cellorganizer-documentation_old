@@ -6,12 +6,24 @@
 CellOrganizer for Matlab
 ========================
 
-Indices and tables
-##################
+The CellOrganizer project provides tools for learning 
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+* generative models of cell organization directly from images
+storing and retrieving those models in XML files
+* synthesizing cell images (or other representations) from one or more models
+
+Model learning captures variation among cells in a collection of images. Images used for model learning and instances synthesized from models can be two- or three-dimensional static images or movies.
+
+CellOrganizer can learn models of
+
+* cell shape
+* nuclear shape
+* chromatin texture
+* vesicular organelle size, shape and position
+* microtubule distribution.
+
+These models can be conditional upon each other. For example, for a given synthesized cell instance, organelle position is dependent upon the cell and nuclear shape of that instance.
+Cell types for which generative models for at least some organelles have been built include human HeLa cells, mouse NIH 3T3 cells, and Arabidopsis protoplasts. Planned projects include mouse T lymphocytes and rat PC12 cells.
 
 Getting Started
 ###############
@@ -99,3 +111,10 @@ To start using CellOrganizer, start a Matlab session and change directory to the
 	* ``demo3D20`` - Trains a generative model of the cell framework using diffeomorphic modeling with a subset of the HeLa dataset.
 
 	.. include:: footnotes.rst
+
+Indices and tables
+##################
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
