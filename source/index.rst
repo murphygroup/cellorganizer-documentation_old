@@ -25,6 +25,8 @@ CellOrganizer can learn models of
 These models can be conditional upon each other. For example, for a given synthesized cell instance, organelle position is dependent upon the cell and nuclear shape of that instance.
 Cell types for which generative models for at least some organelles have been built include human HeLa cells, mouse NIH 3T3 cells, and Arabidopsis protoplasts. Planned projects include mouse T lymphocytes and rat PC12 cells.
 
+Support for CellOrganizer has been provided by grants GM075205, GM090033 and GM103712 from the National Institute of General Medical Sciences, grants MCB1121919 and MCB1121793 from the U.S. National Science Foundation, by a Forschungspreis from the Alexander von Humboldt Foundation, and by the Freiburg Institute for Advanced Studies. 
+
 Getting Started
 ###############
 
