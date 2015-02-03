@@ -3,19 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Getting Started
-===============
-
 .. include:: ./chapters/getting_started.rst
-
-Quickstart
-----------
-To start using CellOrganizer, start a Matlab session and change directory to the location of CellOrganizer and run *setup.m*. In the Matlab terminal, type::
-
-.. include:: ./chapters/start.rst
-
-.. include:: ./chapters/demos.rst
-
 
 	..
 	Training Demos

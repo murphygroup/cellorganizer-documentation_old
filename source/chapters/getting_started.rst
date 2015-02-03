@@ -1,3 +1,6 @@
+Getting Started
+===============
+
 The CellOrganizer project provides tools for
 
 * learning generative models of cell organization directly from images
@@ -22,3 +25,7 @@ Support for CellOrganizer has been provided by grants GM075205, GM090033 and GM1
 .. include:: ./sections/about.rst
 
 .. include:: ./sections/download.rst
+
+.. include:: ./chapters/start.rst
+
+.. include:: ./chapters/demos.rst
