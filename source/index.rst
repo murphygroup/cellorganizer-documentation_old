@@ -6,10 +6,10 @@
 CellOrganizer for Matlab
 ========================
 
-The CellOrganizer project provides tools for learning 
+The CellOrganizer project provides tools for
 
-* generative models of cell organization directly from images
-storing and retrieving those models in XML files
+* learning generative models of cell organization directly from images
+* storing and retrieving those models in XML files
 * synthesizing cell images (or other representations) from one or more models
 
 Model learning captures variation among cells in a collection of images. Images used for model learning and instances synthesized from models can be two- or three-dimensional static images or movies.
