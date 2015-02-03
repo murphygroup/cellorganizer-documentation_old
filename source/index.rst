@@ -8,9 +8,8 @@ CellOrganizer for Matlab
 
 Contents:
 
-.. toctree::
-   :maxdepth: 2
-
+.. toctree:
+:   :maxdepth: 3
 
 Indices and tables
 ##################
@@ -25,6 +24,10 @@ Getting Started
 .. include:: ./chapters/about.rst
 
 .. include:: ./chapters/download.rst
+
+Quickstart
+----------
+To start using CellOrganizer, start a Matlab session and change directory to the location of CellOrganizer and run *setup.m*. In the Matlab terminal, type::
 
 .. include:: ./chapters/start.rst
 
