@@ -103,7 +103,7 @@ pygments_style = 'sphinx'
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-html_theme = 'agogo'
+html_theme = 'default'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -269,7 +269,7 @@ texinfo_documents = [
 epub_title = u'CellOrganizer'
 epub_author = u'Murphy Group'
 epub_publisher = u'Murphy Group'
-epub_copyright = u'2014, Murphy Group'
+epub_copyright = u'2008-2015, Murphy Group'
 
 # The basename for the epub file. It defaults to the project name.
 #epub_basename = u'CellOrganizer'
