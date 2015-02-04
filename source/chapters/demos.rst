@@ -19,7 +19,8 @@ The included demos are
 .. include:: chapters/other/list_of_demos.rst
 
 Image Synthesis Demos
-=====================
+*********************
+
 If you are interested in learning how to use `slml2img` to synthesize an image from
 multiple models, then you should explore `demo3D01` first.
 
@@ -116,4 +117,4 @@ to synthesize one image that looks different from the one included with the dist
 to generate multiple images with a different seed. 
 
 Training Demos
-===============
+**************
