@@ -5,6 +5,8 @@
 
 .. include:: ./chapters/getting_started.rst
 
+.. include:: ./chapters/start.rst
+
 .. include:: ./chapters/installation.rst
 
 .. include:: ./chapters/quickstart.rst
@@ -16,8 +18,6 @@
 .. include:: ./chapters/advanced.rst
 
 .. include:: ./chapters/api.rst
-
-.. include:: ./chapters/start.rst
 
 Indices and tables
 ##################
