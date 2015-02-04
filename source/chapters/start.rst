@@ -1,5 +1,5 @@
 Quickstart
-==========
+**********
 
 To start using CellOrganizer, start a Matlab session and change directory to the location of CellOrganizer and run *setup.m*. In the Matlab terminal, type::
 
