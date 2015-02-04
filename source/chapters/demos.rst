@@ -1,4 +1,7 @@
 
+Demos
+=====
+
 2D/3D Demos
 ***********
 For convenience, a series of demos are included with each distribution of CellOrganizer. These demos show 
