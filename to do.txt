@@ -1,0 +1,5 @@
+To Do list: 
+
+- incorporate MMBios tutorials
+- add basic functions to API section
+- add explanation of basic additional parameter fields
