@@ -6,6 +6,8 @@ To Do list, in order of the documentation:
      - status of mentioned "planned projects"; if still planned, leave it, else could just remove that sentence
      - grants mentioned
 
+- Overview (New section, after “About this document”): put in cellorganizer-overview-diagram with explanatory text.
+
 - Quickstart: should be removed, just a cut-off copy of "Loading CellOrganizer" right now [done]
 
 - Installation: right now, is a duplicate of "Downloads". Should be removed if no further help is needed.
