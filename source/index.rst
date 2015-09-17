@@ -7,10 +7,6 @@
 
 .. include:: ./chapters/start.rst
 
-.. include:: ./chapters/installation.rst
-
-.. include:: ./chapters/quickstart.rst
-
 .. include:: ./chapters/tutorials.rst
 
 .. include:: ./chapters/demos.rst
