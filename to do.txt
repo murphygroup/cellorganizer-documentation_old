@@ -10,9 +10,9 @@ To Do list, in order of the documentation:
 
 - Quickstart: should be removed, just a cut-off copy of "Loading CellOrganizer" right now [done]
 
-- Installation: right now, is a duplicate of "Downloads". Should be removed if no further help is needed.
+- Installation: right now, is a duplicate of "Downloads". Should be removed if no further help is needed. [done]
 
-- Tutorials: add links to MMBios tutorials in this section. Short blurbs about each would be helpful too. [Rachel will share Google Docs]
+- Tutorials: add links to MMBios tutorials in this section. Short blurbs about each would be helpful too. [Rachel will share Google Docs][done]
 
 - Demos: can be broken up into more digestible chunks. Instead of having a list with all the demos, could have 3 collapsible tables: Training, Synthesis, and Other. Under each header, would have a table with columns: "Demo Name", "Demo Description". [list demos by class]
      - Basically: Demos
@@ -27,10 +27,10 @@ To Do list, in order of the documentation:
                    |___________|___________________|
 
 Remove for this release
-     - Image Synthesis Demos: since it's just one demo, could we just rename it "Demo 2D01 Walkthrough"?
+     - Image Synthesis Demos: since it's just one demo, could we just rename it "Demo 2D01 Walkthrough"? [demo]
           - also consider making the synthesized image example smaller & putting it closer to the end of the demo walkthrough
 
-     - Training Demos: can be removed for now, since it's blank OR could add a walkthrough of a training demo (e.g. a 3D diffeomorphic demo, since it's different)
+     - Training Demos: can be removed for now, since it's blank OR could add a walkthrough of a training demo (e.g. a 3D diffeomorphic demo, since it's different) [done]
 
 - Advanced: We could add a couple of sections here, or break these off into their own:
      - Overview: a diagram with the general workflow of CellOrganizer
