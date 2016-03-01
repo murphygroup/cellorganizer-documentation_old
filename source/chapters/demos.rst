@@ -114,3 +114,10 @@ to generate multiple images with a different seed.
 
 Training Demos
 ===============
+
+Tables
+===============
+.. exec::
+	print commands.getoutput('python make_tabulate.py test_make_tabulate.txt')
+
+
