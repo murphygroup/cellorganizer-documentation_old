@@ -1,9 +1,12 @@
 
+Demos
+=====
+
 2D/3D Demos
 ***********
-For convenience, a series of demos are included with each distribution of CellOrganizer. These demos show 
+For convenience, a series of demos are included with each distribution of CellOrganizer. These demos show
 
-* how synthesize images from existing models, 
+* how synthesize images from existing models,
 * how to train new models from raw data, as well as
 * other functionality, e.g. exporting examples in multiple formats.
 
@@ -16,7 +19,11 @@ The included demos are
 .. include:: chapters/other/list_of_demos.rst
 
 Image Synthesis Demos
-=====================
+*********************
+
+demo3D01 walkthrough
+--------------------
+
 If you are interested in learning how to use `slml2img` to synthesize an image from
 multiple models, then you should explore `demo3D01` first.
 
@@ -28,24 +35,24 @@ To run this demo, type::
 
 .. figure:: images/demo3D01/cell1_ch5.jpg
    :align: center
-   
+
    This is a sum projection that includes the nucleus, the cell boundary and nucleoli. This image was generated using
    `img2projection`.
 
 
-All demos are seeded, meaning that when you run them, you should get the same results shown here and 
+All demos are seeded, meaning that when you run them, you should get the same results shown here and
 included in the distribution. This demo synthesizes one image saved to disk as multiple tiff files. Each
-tiff file correspond to one channel. Because this demo uses four models we should expect to find six tiff 
-files. One for the nuclear channel, one for the cell boundary and then four files; one for each protein pattern 
+tiff file correspond to one channel. Because this demo uses four models we should expect to find six tiff
+files. One for the nuclear channel, one for the cell boundary and then four files; one for each protein pattern
 included in each of the files::
 
 	function answer = demo3D01( param )
 	% demo3D01
 	%
-	% Synthesize one 3D image from all object models, 
+	% Synthesize one 3D image from all object models,
 	% with sampling mode set to 'disc' and no convolution.
-	% Results will be six TIFF files, one each for 
-	% cell boundary, nuclear boundary, nucleoli, mitochondria, lysosomes, 
+	% Results will be six TIFF files, one each for
+	% cell boundary, nuclear boundary, nucleoli, mitochondria, lysosomes,
 	% and endosomes, in folder "synthesizedImages/cell1"
 
 	curr_path = which('demo3D01.m');
@@ -110,7 +117,4 @@ to synthesize one image that looks different from the one included with the dist
 	param.seed = 5;
 	demo3D01();
 
-to generate multiple images with a different seed. 
-
-Training Demos
-===============
+to generate multiple images with a different seed.

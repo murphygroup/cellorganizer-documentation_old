@@ -1,5 +1,6 @@
-Start Using CellOrganizer
-*************************
+Loading CellOrganizer
+=====================
+
 To start using CellOrganizer, start a Matlab session and change directory to the location of CellOrganizer and run *setup.m*. In the Matlab terminal, type::
 
 	cd( ‘/path/to/cellorganizer’ );
@@ -10,6 +11,6 @@ If you were successful you should either see a message like::
 	>> setup
 	Checking for new stable version... Version is up to date.
 
-or see 
+or see
 
 .. image:: images/welcome.png

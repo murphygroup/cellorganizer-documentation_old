@@ -103,7 +103,7 @@ pygments_style = 'sphinx'
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-html_theme = 'agogo'
+html_theme = 'default'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -122,7 +122,7 @@ html_theme = 'agogo'
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
-#html_logo = None
+html_logo = 'images/logo.jpg'
 
 # The name of an image file (within the static path) to use as favicon of the
 # docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
@@ -269,7 +269,7 @@ texinfo_documents = [
 epub_title = u'CellOrganizer'
 epub_author = u'Murphy Group'
 epub_publisher = u'Murphy Group'
-epub_copyright = u'2014, Murphy Group'
+epub_copyright = u'2008-2015, Murphy Group'
 
 # The basename for the epub file. It defaults to the project name.
 #epub_basename = u'CellOrganizer'
