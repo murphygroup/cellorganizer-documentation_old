@@ -1,1 +1,10 @@
+.Python
+Makefile
+bin
 build
+include
+lib
+make.bat
+man
+pip-selfcheck.json
+share
