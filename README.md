@@ -38,7 +38,7 @@ make
 to see a full list of outputs or refer to the following list.
 
 ```
-Please use `make <target>' where <target> is one of
+Please use make <target> where <target> is one of
 html       to make standalone HTML files
 dirhtml    to make HTML files named index.html in directories
 singlehtml to make a single large HTML file
@@ -61,4 +61,4 @@ xml        to make Docutils-native XML files
 pseudoxml  to make pseudoxml-XML files for display purposes
 linkcheck  to check all external links for integrity
 doctest    to run all doctests embedded in the documentation (if enabled)
-  ```
+```
