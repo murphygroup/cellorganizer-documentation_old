@@ -1,4 +1,5 @@
 # README
+[![Build Status](http://developers.compbio.cs.cmu.edu:8080/job/cellorganizer-docs/badge/icon)](http://developers.compbio.cs.cmu.edu:8080/job/cellorganizer-docs/)
 
 This is the official documentation repository for [CellOrganizer](http://www.cellorganizer.org).
 
