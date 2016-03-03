@@ -1,0 +1,29 @@
+.. getting_started: 
+
+Getting Started
+===============
+
+The CellOrganizer project provides tools for
+
+* learning generative models of cell organization directly from images
+* storing and retrieving those models in XML files
+* synthesizing cell images (or other representations) from one or more models
+
+Model learning captures variation among cells in a collection of images. Images used for model learning and instances synthesized from models can be two- or three-dimensional static images or movies.
+
+CellOrganizer can learn models of
+
+* cell shape
+* nuclear shape
+* chromatin texture
+* vesicular organelle size, shape and position
+* microtubule distribution.
+
+These models can be conditional upon each other. For example, for a given synthesized cell instance, organelle position is dependent upon the cell and nuclear shape of that instance.
+Cell types for which generative models for at least some organelles have been built include human HeLa cells, mouse NIH 3T3 cells, and Arabidopsis protoplasts. Planned projects include mouse T lymphocytes and rat PC12 cells.
+
+Support for CellOrganizer has been provided by grants GM075205, GM090033 and GM103712 from the National Institute of General Medical Sciences, grants MCB1121919 and MCB1121793 from the U.S. National Science Foundation, by a Forschungspreis from the Alexander von Humboldt Foundation, and by the Freiburg Institute for Advanced Studies. 
+
+.. include:: ./sections/about.rst
+
+.. include:: ./sections/download.rst
