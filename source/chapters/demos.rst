@@ -1,4 +1,3 @@
-
 Demos
 =====
 
@@ -117,4 +116,12 @@ to synthesize one image that looks different from the one included with the dist
 	param.seed = 5;
 	demo3D01();
 
-to generate multiple images with a different seed.
+to generate multiple images with a different seed. 
+
+Training Demos
+===============
+
+Tables
+======
+.. exec::
+	print commands.getoutput('python make_tabulate.py test_make_tabulate.txt')
