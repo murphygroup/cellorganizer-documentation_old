@@ -37,6 +37,7 @@ extensions = [
     'sphinx.ext.ifconfig',
     'sphinx.ext.viewcode',
     'plugin_script'
+    'sphinxcontrib.images'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
