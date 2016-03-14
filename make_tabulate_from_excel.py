@@ -12,6 +12,7 @@ if sys.argv[1] == '--help':
 
 inpt = sys.argv[1]
 df = read_excel(inpt)
+df = df.fillna('N/A')
 body = df.values.tolist()
 header = df.columns.values.tolist()
 
