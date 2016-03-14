@@ -1,14 +1,7 @@
-#!/usr/bin/python
-
 from tabulate import tabulate
 from pandas import read_excel
 import sys
-
-
-if sys.argv[1] == '--help':
-	print 'Usage: python make_tabulate_from_excel.py [input]'
-	print 'Input should be an EXCEL file'
-	sys.exit()
+from os import getcwd
 
 inpt = sys.argv[1]
 df = read_excel(inpt)

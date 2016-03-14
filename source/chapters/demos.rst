@@ -123,7 +123,7 @@ Training Demos
 Summary Table
 --------------
 .. exec::
-	print commands.getoutput('python make_tabulate_from_excel.py demo_lists.xlsx')
+	print commands.getoutput('python make_tabulate_from_excel.py ./source/chapters/demo_lists.xlsx')
 
 demo3D00
 ----------
