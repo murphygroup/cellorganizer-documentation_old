@@ -13,10 +13,6 @@ To display information about the available demos contained in the distribution, 
 
 	>> demoinfo
 
-The included demos are
-
-.. include:: chapters/other/list_of_demos.rst
-
 Image Synthesis Demos
 *********************
 
