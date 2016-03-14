@@ -12,7 +12,7 @@ if sys.argv[1] == '--help':
 
 inpt = sys.argv[1]
 df = read_excel(inpt)
-body = df.values.T.tolist()
+body = df.values.tolist()
 header = df.columns.values.tolist()
 
 print tabulate(body, header, tablefmt="grid")
