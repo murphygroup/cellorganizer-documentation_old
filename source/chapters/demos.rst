@@ -125,8 +125,6 @@ Summary Table
 .. exec::
 	print commands.getoutput('python make_tabulate_from_excel.py demo_lists.xlsx')
 
-
-
 demo3D00
 ----------
 Synthesizes one image using a lysosomal model with sampling mode
