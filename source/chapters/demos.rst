@@ -118,15 +118,15 @@ to synthesize one image that looks different from the one included with the dist
 
 
 Training Demos
-===============
+***************
 
-Tables
-======
+Summary Table
+--------------
 .. exec::
-	print commands.getoutput('python make_tabulate.py test_make_tabulate.txt')
+	print commands.getoutput('python make_tabulate_from_excel.py demo_lists.xlsx')
 
 demo3D00
---------------------
+----------
 Synthesizes one image using a lysosomal model with sampling mode
 set to 'disc' and no convolution.
 Results will be three TIFF files, one each for cell boundary,
@@ -136,7 +136,7 @@ nuclear boundary, and lysosomes, in folder "synthesizedImages/cell1"
    :align: center
 
 demo3D02
---------------------
+-------------------- 
 Take results from demo3D00 in
 folder "../demo3D00/synthesizedImages/cell1"
 and generate surface plot
@@ -145,7 +145,7 @@ and generate surface plot
    :align: center
 
 demo3D03
---------------------
+-------------------- 
 Synthesize one 3D image from all object models,
 with sampling mode set to 'sampled' at a density of 75 and no convolution.
 Results will be six TIFF files, one each for
