@@ -1,10 +1,10 @@
 from tabulate import tabulate
-from pandas import read_excel
+import pandas
 import sys
 from os import getcwd
 
 inpt = sys.argv[1]
-df = read_excel(inpt)
+df = pandas.io.excel.read_excel(io, sheetname=inpt, **kwds)
 df = df.fillna('N/A')
 body = df.values.tolist()
 header = df.columns.values.tolist()
