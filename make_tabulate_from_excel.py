@@ -4,7 +4,7 @@ import sys
 from os import getcwd
 
 inpt = sys.argv[1]
-df = pandas.read_excel(inpt, 0)
+df = pandas.read_excel(inpt, 'Sheet1')
 df = df.fillna('N/A')
 body = df.values.tolist()
 header = df.columns.values.tolist()
