@@ -3,21 +3,26 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-.. include:: ./chapters/getting_started.rst
+Contents:
 
-.. include:: ./chapters/start.rst
+.. toctree::
+   :maxdepth: 2
 
-.. include:: ./chapters/tutorials.rst
+   ./chapters/getting_started
 
-.. include:: ./chapters/demos.rst
+   ./chapters/start
 
-.. include:: ./chapters/advanced.rst
+   ./chapters/tutorials
 
-.. include:: ./chapters/api.rst
+   ./chapters/demos
 
-Indices and tables
-##################
+   ./chapters/advanced
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   ./chapters/api
+
+.. Indices and tables
+.. ##################
+
+.. * :ref:`genindex`
+.. * :ref:`modindex`
+.. * :ref:`search`
