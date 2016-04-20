@@ -1,3 +1,5 @@
+.. demos_information:
+
 Demos
 =====
 
@@ -28,7 +30,7 @@ To run this demo, type::
 	setup;
 	demo3D01();
 
-.. figure:: images/demo3D01/cell1_ch5.jpg
+.. figure:: ../images/demo3D01/cell1_ch5.jpg
    :align: center
 
    This is a sum projection that includes the nucleus, the cell boundary and nucleoli. This image was generated using
@@ -112,14 +114,14 @@ to synthesize one image that looks different from the one included with the dist
 	param.seed = 5;
 	demo3D01();
 
+Summary Table
+***************
+.. exec::
+	print commands.getoutput('python make_tabulate_from_excel.py ./source/chapters/demo_lists.xlsx')
+
 
 Training Demos
 ***************
-
-Summary Table
---------------
-.. exec::
-	print commands.getoutput('python make_tabulate_from_excel.py ./source/chapters/demo_lists.xlsx')
 
 demo3D00
 ----------
@@ -128,7 +130,7 @@ set to 'disc' and no convolution.
 Results will be three TIFF files, one each for cell boundary,
 nuclear boundary, and lysosomes, in folder "synthesizedImages/cell1"
 
-.. figure:: images/demo3D00/cell1_ch2.jpg
+.. figure:: ../images/demo3D00/cell1_ch2.jpg
    :align: center
 
 demo3D02
@@ -137,7 +139,7 @@ Take results from demo3D00 in
 folder "../demo3D00/synthesizedImages/cell1"
 and generate surface plot
 
-.. figure:: images/demo3D02/output.png
+.. figure:: ../images/demo3D02/output.png
    :align: center
 
 demo3D03
@@ -148,7 +150,7 @@ Results will be six TIFF files, one each for
 cell boundary, nuclear boundary, nucleoli, mitochondria, lysosomes,
 and endosomes, in folder "synthesizedImages/cell1"
 
-.. figure:: images/demo3D03/cell1_ch3.jpg
+.. figure:: ../images/demo3D03/cell1_ch3.jpg
    :align: center
 
 demo3D04
@@ -158,7 +160,7 @@ Results will be three TIFF files, one each for
 cell boundary, nuclear boundary, and microtubules,
 in folder "synthesizedImages/cell1"
 
-.. figure:: images/demo3D04/cell1_ch2.jpg
+.. figure:: ../images/demo3D04/cell1_ch2.jpg
    :align: center
 
 demo3D05
@@ -169,7 +171,7 @@ Results will be seven TIFF files, one each for
 cell boundary, nuclear boundary, nucleoli, mitochondria, lysosomes,
 endosomes, and microtubules, in folder "synthesizedImages/cell1"
 
-.. figure:: images/demo3D05/cell1_ch3.jpg
+.. figure:: ../images/demo3D05/cell1_ch3.jpg
    :align: center
 
 demo3D06
@@ -180,7 +182,7 @@ Results will be seven TIFF files, one each for
 cell boundary, nuclear boundary, nucleoli, mitochondria, lysosomes,
 endosomes, and microtubules, in folder "synthesizedImages/cell1"
 
-.. figure:: images/demo3D06/cell1_ch3.jpg
+.. figure:: ../images/demo3D06/cell1_ch3.jpg
    :align: center
 
 demo3D07
@@ -192,7 +194,7 @@ Results will be seven TIFF files, one each for
 cell boundary, nuclear boundary, nucleoli, mitochondria, lysosomes,
 endosomes, and microtubules, in folder "synthesizedImages/cell1"
 
-.. figure:: images/demo3D07/cell1_ch3.jpg
+.. figure:: ../images/demo3D07/cell1_ch3.jpg
    :align: center
 
 demo3D08
@@ -213,7 +215,7 @@ in folder "synthesizedImages/cell1"
 Also produce a mean projection of the cell boundary in
 XY, XZ and YZ directions and save it in file 'projection.tif'
 
-.. figure:: images/demo3D09/cell1_ch2.jpg
+.. figure:: ../images/demo3D09/cell1_ch2.jpg
    :align: center
 
 demo3D10
@@ -225,7 +227,7 @@ cell boundary, nuclear boundary, and lamp2,
 in folder "synthesizedImages/cell1"
 It outputs OBJ files that can be imported into Blender.
 
-.. figure:: images/demo3D10/blender.png
+.. figure:: ../images/demo3D10/blender.png
    :align: center
 
 demo3D11
@@ -247,7 +249,7 @@ demo3D14
 This demo show the usage of syn2projection, a helper method that makes
 projection using a folder of synthesized images
 
-.. figure:: images/demo3D14/lysosome1.jpg
+.. figure:: ../images/demo3D14/lysosome1.jpg
    :align: center
 
 demo3D15
@@ -256,7 +258,7 @@ Synthesizes one image using a transferrin model for the protein and a diffeomorp
 Results will be three TIFF files, one each for cell boundary,
 nuclear boundary, and protein, in folder "synthesizedImages/cell1"
 
-.. figure:: images/demo3D15/cell1_ch2.jpg
+.. figure:: ../images/demo3D15/cell1_ch2.jpg
    :align: center
 
 demo3D16
@@ -271,7 +273,7 @@ this case, the resolution at which the diffeomorphic and vesicle model were
 trained on are different. This demo also shows how to handle that situation
 in CellOrganizer
 
-.. figure:: images/demo3D16/cell1_ch2.jpg
+.. figure:: ../images/demo3D16/cell1_ch2.jpg
    :align: center
 
 demo3D18
@@ -303,7 +305,7 @@ demo3DMultiresSynth
 --------------------
 Synthesize multiple 3D images from a lysosome model, at different resolutions
 
-.. figure:: images/demo3DMultiresSynth/cell1_ch2.jpg
+.. figure:: ../images/demo3DMultiresSynth/cell1_ch2.jpg
    :align: center
 
 demo3DObjectAvoidance
@@ -314,7 +316,7 @@ Results will be three TIFF files, one each for cell boundary,
 nuclear boundary, and lysosomes, in folder "synthesizedImages/cell1"
 It generates OBJ files that can be imported into Blender.
 
-.. figure:: images/demo3DObjectAvoidance/blender.png
+.. figure:: ../images/demo3DObjectAvoidance/blender.png
    :align: center
 
 demo3DPrimitives

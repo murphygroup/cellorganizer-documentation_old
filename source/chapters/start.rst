@@ -13,4 +13,4 @@ If you were successful you should either see a message like::
 
 or see
 
-.. image:: images/welcome.png
+.. image:: ../images/welcome.png
