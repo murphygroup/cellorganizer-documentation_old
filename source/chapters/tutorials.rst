@@ -1,8 +1,10 @@
 .. tutorials:
 .. include:: <isonum.txt>
 
-CellOrganizer Tutorial for MMBIOS 2016
+Tutorial: CellOrganizer in 45 Minutes
 ======================================
+
+
 
 Introduction
 ************
@@ -67,21 +69,17 @@ Other useful image features:
 Setup
 *****
 
-Step 0 
+Step 0: Download the most recent version ofCellOrganizer
+-------------------------------------------------------
+The software can be downloaded from `cellorganizer.org <http://cellorganizer.org>`_, unzip it, and copy the resulting folder into the "Documents" |rarr| "MATLAB" directory. 
+
+Step 1: Add the CellOrganizer directory to the Path
 ------
+You should see the folder appear in the "Current Folder" in MATLAB on the left side.  If it doesn’t, make sure that your file path is "Users" |rarr| your user name |rarr| "Documents" |rarr| "MATLAB".
 
-**Download the most recent version ofCellOrganizer** from `cellorganizer.org <http://cellorganizer.org>`_, unzip it, and copy the resulting folder into the "Documents" |rarr| "MATLAB" directory. 
-Alternatively, If you are at the MMBIOS 2015 Tutorial Room, you can open a terminal and type::
-
-	bash cellorganizer
-
-Step 1
+Step 2: Get your images on the same computer
 ------
-**Add the CellOrganizer directory to the Path.** You should see the folder appear in the "Current Folder" in MATLAB on the left side.  If it doesn’t, make sure that your file path is "Users" |rarr| your user name |rarr| "Documents" |rarr| "MATLAB".
-
-Step 2
-------
-If you don't have your own images, you can download some samples `here <http://goo.gl/P2ryQ2>`_. These are 3D HeLa images with a nuclear stain (channel 0), cell stain (channel 1) and protein stain (channel 2). The tagged protein is lamp2, a lysosomal protein. Unzip the .tgz file to some directory of your choice. Optionally, to decrease training time, set aside 10 to 15 images that will not be used.
+If you don't have your own images, you can download some samples `here <http://murphylab.web.cmu.edu/data/Hela/3D/multitiff/cellorganizer_images.zip>`_. These are 3D HeLa images with a nuclear stain (channel 0), cell stain (channel 1) and protein stain (channel 2). The tagged protein is lamp2, a lysosomal protein. Unzip the .tgz file to some directory of your choice. Optionally, to decrease training time, set aside 10 to 15 images that will not be used.
 
 Demos
 *****
@@ -91,11 +89,11 @@ Provided with the CellOrganizer software bundle are many demos that illustrate h
 Training
 ********
 
-``img2slml.m`` is the main function used for training. It takes 5 inputs: a flag describing the dimensionality of the data (i.e. 2D or 3D, but this tutorial describes only 3D functionality), images for the nuclear channel, images for the cell shape channel, images for the protein channel (optional) and parameters used to change various model settings. The training portion of this tutorial covers the very basic setup required to get ``img2slml`` up and running.
+``img2slml.m`` is the main function used for training. It takes 5 inputs: a flag describing the dimensionality of the data (i.e. 2D or 3D. This tutorial describes only 3D functionality), images for the nuclear channel, images for the cell shape channel, images for the protein channel (optional) and parameters used to change various model settings. The training portion of this tutorial covers the very basic setup required to get ``img2slml`` up and running.
 
 Step 0: Create a “scratch” script
 ---------------------------------
-This will keep track of what you have done so far and provide a resource for later use of CellOrganizer. Click "File" |rarr| "New" |rarr| "New Script", and save your file as ``mmbios_tutorial_train.m`` (making sure that the file is saved to the "Documents" |rarr| "MATLAB" path, but not inside the “cellorganizer” folder). Instead of inputting the following commands into the Command Window, type (or copy and paste) them into the script that you just created. 
+This will keep track of what you have done so far and provide a resource for later use of CellOrganizer. Click "File" |rarr| "New" |rarr| "New Script", and save your file as ``tutorial_train.m`` (making sure that the file is saved to the "Documents" |rarr| "MATLAB" path, but not inside the “cellorganizer” folder). Instead of inputting the following commands into the Command Window, type (or copy and paste) them into the script that you just created. 
 
 Step 1: Create variables containing your images
 -----------------------------------------------
@@ -115,7 +113,7 @@ Option 1
 	cell_img_paths = [img_dir '/cell*_ch1_t1.tif'];
 	prot_img_paths = [img_dir '/cell*_ch2_t1.tif'];
 
-Option 2
+Option 2 (advanced)
 ^^^^^^^^
 **Cell-array of string paths:** Alternatively, you can store the images as individual paths in a cell array. Since there are 50 images, we will loop through the directory and store each name in an element of a cell array. There are more "programmatically correct" ways to do this, but this is the most direct. For the sake of training time, we'll iterate over only the first 15 images.::
 
@@ -125,7 +123,7 @@ Option 2
 		prot_img_paths{i} = [img_dir '/cell' num2str(i) '_ch2_t1.tif'];
 	end
 
-Option 3
+Option 3 (even more advanced)
 ^^^^^^^^
 **Function handles:** If you're very comfortable with Matlab, you can pass a cell-array of anonymous function handles as your images into CellOrganizer. If the previous sentence doesn't make any sense to you, it's probably best that you skip this part of the tutorial. An example of using function handles would be::
 
@@ -161,16 +159,15 @@ So far we have the bare *minimum* requirements for setting up a model. We will s
 
 This downsamples our input images by 4 in the X and Y dimensions, decreasing the memory used for the tutorial.
 
-Step 2.5
---------
-**Add a model type so CellOrganizer knows what kind of model to train.** ::
+Step 2.5: Add a model type
+---------------------------
 
 	train_param.nucleus.type = 'cylindrical_surface';
 	train_param.cell.type = 'ratio';
 	train_param.protein.type = 'vesicle';
 	train_param.debug = true;
 
-Now that we have everything together, we can finally train the model::
+Now that we have everything together, we can train the model::
 	
 	img2slml('3D', nuc_img_paths, cell_img_paths, prot_img_paths, train_param);
 
@@ -195,7 +192,7 @@ Here we will go over how to synthesize a synthetic cell shape in CellOrganizer. 
 
 Step 0: Create a "scratch" script
 ---------------------------------
-Here we create a new script and call it ``mmbios_tutorial_synthesis.m``.
+Here we create a new script and call it ``tutorial_synthesis.m``.
 
 Step 1: Setup the model and parameter inputs
 --------------------------------------------
@@ -214,7 +211,7 @@ The parameter structure is set up similarly to that in **Training**. We will def
 	%save into the current directory
 	synth_param.targetDirectory = './';
 
-	synth_param.prefix = 'mmbios_synthesis_tutorial';
+	synth_param.prefix = 'synthesis_tutorial';
 
 	%generate two images
 	synth_param.numberOfSynthesizedImages = 2;
@@ -231,7 +228,7 @@ Save your file and run it. This may take a little bit, especially if you have de
 
 Step 3: Check out your images
 -----------------------------
-Now that the image generation is completed, you can check them out. In the current directory you should see a folder named "mmbios_synthesis_tutorial", and in that should be two directories, “cell1” and “cell2”, each of which contain images corresponding to the nuclear shape, cell shape and protein images drawn from the model you trained in the Training section. While these images can be opened in ImageJ, we are going to demonstrate two useful tools in CellOrganizer that we frequently use to explore our synthesized images. 
+Now that the image generation is completed, you can check them out. In the current directory you should see a folder named "synthesis_tutorial", and in that should be two directories, “cell1” and “cell2”, each of which contain images corresponding to the nuclear shape, cell shape and protein images drawn from the model you trained in the Training section. While these images can be opened in ImageJ, we are going to demonstrate two useful tools in CellOrganizer that we frequently use to explore our synthesized images. 
 
 First we're going to create an *indexed* by combining output images.::
 
@@ -268,7 +265,7 @@ Upon exposure to Bafilomycin A1, microtubule associated protein light chain 3 (L
    
    Images of eGFP-LC3 tagged RT112 cells at 40x under normal conditions (left) and in a 50uM Bafilomycin condition (right). 
 
-Let’s say we are curious as to how the number of autophagosomes changes with Bafilomycin concentration. Given a collection of images under different concentrations we can segment out the cell shapes and train a model for the cells contained in each image. It just so happens that we have already done that, and the models and associated drug concentrations, can be found `here <goo.gl/oitZaa>`_.
+Let’s say we are curious as to how the number of autophagosomes changes with Bafilomycin concentration. Given a collection of images under different concentrations we can segment out the cell shapes and train a model for the cells contained in each image. It just so happens that we have already done that, and the models and associated drug concentrations, can be found `here <https://cmu.app.box.com/s/6xybp3nnaxcovvtkifhexgcgoog51slz>`_.
 
 That .mat file has two variables saved in it. One is a list of drug micromolar concentrations, and the other is a list of models trained with images of cells at those concentrations (like the above two images). For each model, we're going to plot the number of autophagosomes versus the Bafilomycin concentration.
 
