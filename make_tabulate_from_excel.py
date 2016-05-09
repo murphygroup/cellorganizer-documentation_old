@@ -4,8 +4,20 @@ import sys
 from os import getcwd
 
 inpt = sys.argv[1]
-df = pandas.read_excel(inpt, 'Sheet1')
-df = df.fillna('N/A')
+
+#rapido y sucio
+try:
+	sheet = sys.argv[2]
+except:
+	sheet = 'Sheet1'
+
+try:
+	fill_na_string = sys.argv[3]
+except:
+	fill_na_string = 'N/A'
+
+df = pandas.read_excel(inpt, sheet)
+df = df.fillna( fill_na_string )
 body = df.values.tolist()
 header = df.columns.values.tolist()
 
