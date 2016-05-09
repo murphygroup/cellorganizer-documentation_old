@@ -29,13 +29,14 @@ Summary Table
 .. exec::
 	print commands.getoutput('python make_tabulate_from_excel.py ./source/chapters/demo_lists.xlsx')
 
-List of demos
+List of Demos
 *************
 
 demo3D00
 ----------
 Synthesizes one image using a lysosomal model with sampling mode
 set to 'disc' and no convolution.
+
 Results will be three TIFF files, one each for cell boundary,
 nuclear boundary, and lysosomes, in folder "synthesizedImages/cell1"
 
@@ -43,7 +44,7 @@ nuclear boundary, and lysosomes, in folder "synthesizedImages/cell1"
    :align: center
 
 demo3D02
---------------------
+--------
 Take results from demo3D00 in
 folder "../demo3D00/synthesizedImages/cell1"
 and generate surface plot
