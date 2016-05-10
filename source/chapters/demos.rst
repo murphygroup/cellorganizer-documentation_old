@@ -15,15 +15,6 @@ To display information about the available demos contained in the distribution, 
 
 	>> demoinfo
 
-Image Synthesis Demos
-*********************
-
-demo3D11 walkthrough
---------------------
-The line that tells the demo to train a framework is:
-
-options.train.flag = 'framework';
-
 Summary Table
 ***************
 .. exec::
