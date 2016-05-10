@@ -18,6 +18,8 @@ except:
 
 df = pandas.read_excel(inpt, sheet)
 df = df.fillna( fill_na_string )
+df = df.to_replace( 0, '' )
+df = df.to_replace( 1, u'\u2713' )
 body = df.values.tolist()
 header = df.columns.values.tolist()
 
