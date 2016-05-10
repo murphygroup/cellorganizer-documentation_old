@@ -19,7 +19,7 @@ except:
 df = pandas.read_excel(inpt, sheet)
 df = df.fillna( fill_na_string )
 df = df.replace( False, '' )
-df = df.replace( True, u'\u2713' )
+df = df.replace( True, 'True' )
 body = df.values.tolist()
 header = df.columns.values.tolist()
 
