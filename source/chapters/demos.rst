@@ -84,9 +84,6 @@ Synthesize one 3D image with nuclear, cell shape, and microtubule
 channels from microtubule model without convolution. The model was
 trained from the Murphy Lab 3D HeLa dataset.
 
-.. figure:: ../images/demo3D04/cell1_ch2.jpg
-   :align: center
-
 demo3D05
 --------
 Synthesize one 3D image with nuclear, cell shape, and protein channels
@@ -105,9 +102,6 @@ from all object models (nucleoli, lysosomes, endosomes, mitochondria, and
 microtubules) with sampling method set to render vesicular objects as
 ellipsoids and convolution with point-spread function. The model was
 trained from the Murphy Lab 3D HeLa dataset.
-
-.. figure:: ../images/demo3D06/cell1_ch3.jpg
-   :align: center
 
 demo3D07
 --------
@@ -177,9 +171,6 @@ diffeomorphic nuclear and cell shape model. The sampling method was set
 to render endosomes as ellipsoids without convolution. The model was
 trained from the Murphy Lab 3D HeLa dataset.
 
-.. figure:: ../images/demo3D15/cell1_ch2.jpg
-   :align: center
-
 demo3D16
 --------
 This method shows how to preprocess raw images to use as input for
@@ -240,9 +231,6 @@ demo3DMultiresSynth
 --------------------
 Synthesize multiple 3D images from a lysosome model, at different resolutions.
 
-.. figure:: ../images/demo3DMultiresSynth/cell1_ch2.jpg
-   :align: center
-
 demo3DObjectAvoidance
 ---------------------
 Synthesizes one image using a lysosomal model with sampling mode
@@ -250,9 +238,6 @@ set to 'disc', no convolution using the object avoidance methods
 Results will be three TIFF files, one each for cell boundary,
 nuclear boundary, and lysosomes, in folder "synthesizedImages/cell1"
 It generates OBJ files that can be imported into Blender.
-
-.. figure:: ../images/demo3DObjectAvoidance/blender.png
-   :align: center
 
 demo3DPrimitives
 ----------------
