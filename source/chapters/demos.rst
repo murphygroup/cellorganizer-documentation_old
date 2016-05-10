@@ -18,7 +18,7 @@ To display information about the available demos contained in the distribution, 
 Summary Table
 ***************
 .. exec::
-	print commands.getoutput('python make_tabulate_from_excel.py ./source/chapters/demo_lists.xlsx')
+	print commands.getoutput('python make_tabulate_from_excel.py ./demo_lists.xlsx "v2.5"')
 
 List of Demos
 *************
