@@ -7,7 +7,7 @@ Demos
 ***********
 For convenience, a series of demos are included with each distribution of CellOrganizer. These demos show
 
-* how synthesize images from existing models,
+* how to synthesize images from existing models,
 * how to train new models from raw data, as well as
 * other functionality, e.g. exporting examples in multiple formats.
 
