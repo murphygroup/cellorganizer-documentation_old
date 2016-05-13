@@ -15,13 +15,15 @@ To display information about the available demos contained in the distribution, 
 
 	>> demoinfo
 
-Summary Table
-***************
+Demos Summary Table
+*******************
+This table will let you know if the demo is meant to train a model or synthesize an image.
+
 .. exec::
 	print commands.getoutput('python make_tabulate_from_excel.py ./demo_lists.xlsx "v2.5"')
 
-List of Demos
-*************
+Brief Descriptions
+******************
 
 demo2D00
 --------
@@ -185,36 +187,24 @@ protein model
 
 demo3D17
 --------
-This demo shows how an end-user can use experimental data and synthesize
-a protein pattern within their images.
+The main idea behind this demo is to show the user they can use their own binary images from raw experimental data
+to synthesize protein patterns.
 
-demo3D18
---------
-Train 3D generative model of the cell framework (nucleus and cell shape),
-using hole-finding to infer both nucleus and cell shape from the supplied
-protein pattern. The 3D 3T3 dataset was collected in collaboration with
-Dr. Jonathan Jarvik and Dr. Peter Berget.
+The current demo assumes the resolution of the images is the same as the images that were used to train the protein model.
 
 demo3D19
 --------
-This method shows the use of slml2report for creating comparisons between parameters of CellOrganzier models.
+This demo uses slml2report to compare the parameters between
+CellOrganzier models.
 
 demo3D20
 --------
 Train 3D generative diffeomorphic nuclear and cell shape model and a
 lysosomal model from all LAMP2 images in the Murphy Lab 3D HeLa dataset.
 
-demo3D21
---------
-Train 3D generative model of the cell framework (nucleus and cell shape),
-using hole-finding to infer both nucleus and cell shape from the supplied
-protein pattern. This is identical to demo3D18 but without scaling the
-images. The 3D 3T3 dataset was collected in collaboration with Dr.
-Jonathan Jarvik and Peter Berget.
-
 demo3D22
 --------
-Synthesizes a protein pattern instance from a synthetic image from demo3DDiffeoSynth.
+Synthesizes a protein pattern instance from the synthetic image produced in demo3DDiffeoSynth.
 
 demo3D23
 --------
@@ -229,7 +219,7 @@ appropriate instances.
 
 demo3DMultiresSynth
 --------------------
-Synthesize multiple 3D images from a lysosome model, at different resolutions.
+Synthesize multiple 3D images from a lysosome model at different resolutions. This demos show the user can specify the output resolution of the synthesized images.
 
 demo3DObjectAvoidance
 ---------------------
@@ -252,3 +242,23 @@ cell and nuclear shapes.
 
 These files can then be read into VCell using the built in importer or
 CellBlender using the helper function provided in this distribution.
+
+demo3D26
+--------
+This function displays a shape space of some dimensionality. This demo uses the model trained in Johnson 2015.
+
+demo3D27
+--------
+This demo performs a regression between two sets of related shapes (i.e. predicts cell  shape from nuclear shape) and displays the residuals as in  Figure 2 of Johnson et al 2015.
+
+demo3D28
+--------
+Synthesize one 3D image with nuclear, cell shape, and nucleolar channels from nucleolar model with sampling method set to render nucleoli as ellipsoids without convolution. The model was trained from the Murphy Lab 3D HeLa dataset.
+
+demo3D29
+--------
+This demo shows how an end-user can use experimental data to synthesize a framework.
+
+demo3DDiffeoSynth_uniform
+-------------------------
+This demo illustrates how to sample uniformly at random from a diffeomorphic model.
