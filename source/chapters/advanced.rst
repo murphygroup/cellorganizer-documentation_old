@@ -1,7 +1,7 @@
 .. advanced:
 
-Advanced
-========
+Additional Information
+======================
 
 Model classes and types
 ***********************
