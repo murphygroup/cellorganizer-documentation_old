@@ -43,13 +43,13 @@ im2projection
 
 Method header::
 
-    function out_img = im2projection( img, param )
+    function out_img = im2projection( img, options )
     % IM2GPROJECTION creates a sum or mean projection of the input image
     %
     % List Of Input Arguments   Descriptions
     % -----------------------   ------------
     % img                       3D binary or realvalued image.
-    % param                     struct with a 'method' field that can be set
+    % options                     struct with a 'method' field that can be set
     %                           to 'mean' if a mean value projection is desired
     %
     % List Of Outputs     Descriptions
