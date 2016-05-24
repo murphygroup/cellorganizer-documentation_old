@@ -230,18 +230,6 @@ Method header::
     % output.blenderfile         (optional) Boolean flag specifying whether to write out (.obj) files for use in blender. Default is false;
     % output.blender.downsample  (optional) ownsampling fraction for the creation of object files (1 means no downsampling, 1/5 means 1/5 the size).
     % output.SBML                (optional) boolean flag specifying whether to write out (.xml) files with SBML-Spatial representations of geometries. Default is false;
-    %
-    % Example
-    % -------
-    % instances = { 'model01.xml', 'model02.mat', 'model03.mat' };
-    % options.targetDirectory = pwd;
-    % options.prefix = 'demo'
-    % options.numberOfSynthesizedImages = 100;
-    % options.compression = 'lzw';
-    % options.microscope = 'svi';
-    % options.verbose = true;
-    %
-    % >> slml2img( instances, options );
 
 syn2projection
 **************
