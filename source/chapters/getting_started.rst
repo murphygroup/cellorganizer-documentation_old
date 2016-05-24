@@ -6,7 +6,7 @@ Getting Started
 CellOrganizer provides tools for
 
 * learning generative models of cell organization directly from images
-* storing and retrieving those models in XML files
+* storing and retrieving those models
 * synthesizing cell images (or other representations) from one or more models
 
 Model learning captures variation among cells in a collection of images. Images used for model learning and instances synthesized from models can be two- or three-dimensional static images or movies.
