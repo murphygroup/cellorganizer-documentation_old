@@ -80,7 +80,7 @@ You should see the folder appear in the "Current Folder" in MATLAB on the left s
 
 Step 2: Get your images on the same computer
 ------
-If you don't have your own images, you can download some samples `here <http://murphylab.web.cmu.edu/data/Hela/3D/multitiff/cellorganizer_images.zip>`_. These are 3D HeLa images with a nuclear stain (channel 0), cell stain (channel 1) and protein stain (channel 2). The tagged protein is lamp2, a lysosomal protein. Unzip the .tgz file to some directory of your choice. Optionally, to decrease training time, set aside 10 to 15 images that will not be used.
+If you don't have your own images, you can download some samples `here <http://murphylab.web.cmu.edu/data/Hela/3D/multitiff/3DHela_LAM.tgz>`_, or you can type ``get_murphylab_image_collections``. (Note:: The whole collection is 2.0 GB.) These are 3D HeLa images with a nuclear stain (channel 0), cell stain (channel 1) and protein stain (channel 2). The tagged protein is lamp2, a lysosomal protein. Unzip the file to some directory of your choice. Optionally, to decrease training time, set aside 10 to 15 images that will not be used.
 
 Demos
 *****
@@ -154,7 +154,7 @@ The option ``train.filename`` defines where the .mat file containing the resulti
 
 So far we have the bare *minimum* requirements for setting up a model. We will set one more option to speed up the tutorial.::
 
-	train_options.model.downsampling = [6,6,1.5];
+	train_options.model.downsampling = [4,4,1];
 
 This downsamples our input images by 4 in the X and Y dimensions, decreasing the memory used for the tutorial.
 
@@ -217,9 +217,9 @@ The option structure is set up similarly to that in **Training**. Here we create
 
 Step 2: Controlling the random seed (optional)
 
-CellOrganizer generates synthetic images by randomly drawing parameter values from the distributions contained in the specific model.  The random numbers are provided by the Matlab ``rand`` function, and the specific sequence of random numbers the program will get when it calls ``rand`` can be controlled by specifying what is termed a random seed (which can be any number)::
+CellOrganizer generates synthetic images by randomly drawing parameter values from the distributions contained in the specific model.  The random numbers are provided by the Matlab ``rand`` function, and the specific sequence of random numbers the program will get when it calls ``rand`` can be controlled by specifying what is termed a random seed (which can be any number) using the ``rng`` function::
 
-	rand('666');
+	rng(666);
 
 If we do this, the specific images that CellOrganizer will generate will be the same each time our script is run.  If we don't, the images will be based upon the current state of the random number generator, and we may get different images each time we run the script.
 
@@ -252,7 +252,7 @@ First we're going to create an *indexed image* by combining output images.::
 	im_indexed(im_dna>0) = 2;
 	im_imdexed(im_prot>0) = 3;
 
-Now that we have an image, we can view it with the function ``img2vol``::
+Now that we have an image, we can view it with the function ``img2vol`` (after downsampling it by a factor of two in X, Y and Z::
 
 	figure, img2vol(ml_downsize(im_indexed, [2,2,2]));
 
