@@ -19,7 +19,7 @@ This tutorial was written for people who have experience with fluorescence micro
 Something of a disclaimer
 *************************
 
-CellOrganizer is research code, and as such it is under constant development. Although we do our best to ensure our code is reliable, we distribute this code under the GNU public license without any type of warranty. For this reason, we hope not but, a feature may not work as expected. Please do not hesitate to contact us at cellorganizer@compbio.cmu.edu with any questions or issues you have. 
+CellOrganizer is research code, and as such it is under constant development. Although we do our best to ensure our code is reliable, we distribute this code under the GNU public license without any type of warranty. For this reason, we hope not but, a feature may not work as expected. Please do not hesitate to contact us at cellorganizer@compbio.cmu.edu with any questions or issues you have.
 
 Resources
 *********
@@ -37,7 +37,7 @@ Software
 Other Software
 --------------
 
-`ImageJ <http://imagej.nih.gov/ij/>`_ - This is great software for viewing your images and those synthesized from CellOrganizer. This tutorial uses ImageJ in some spots. 
+`ImageJ <http://imagej.nih.gov/ij/>`_ - This is great software for viewing your images and those synthesized from CellOrganizer. This tutorial uses ImageJ in some spots.
 
 Image Databases
 ---------------
@@ -51,12 +51,12 @@ Prerequisites
 *************
 
 * An OS X, Linux or Unix operating system
-* Matlab installation (Matlab 2014a or newer) with the following toolboxes: 
+* Matlab installation (Matlab 2014a or newer) with the following toolboxes:
 >Image Processing Toolbox
 >Statistics Toolbox
 >Curve Fitting Toolbox
 >SimBiology Toolbox.
-* Some basic familiarity with writing scripts/programming (preferably in Matlab). 
+* Some basic familiarity with writing scripts/programming (preferably in Matlab).
 
 Requirements for inputs for building models
 *******************************************
@@ -70,9 +70,9 @@ Images must
 Setup
 *****
 
-Step 0: Download the most recent version ofCellOrganizer
--------------------------------------------------------
-The software can be downloaded from `cellorganizer.org <http://cellorganizer.org>`_, unzip it, and copy the resulting folder into the "Documents" |rarr| "MATLAB" directory. 
+Step 0: Download the most recent version of CellOrganizer
+---------------------------------------------------------
+The software can be downloaded from `cellorganizer.org <http://cellorganizer.org>`_, unzip it, and copy the resulting folder into the "Documents" |rarr| "MATLAB" directory.
 
 Step 1: Add the CellOrganizer directory to the Path
 ------
@@ -94,17 +94,17 @@ Training Models
 
 Step 0: Create a “scratch” script
 ---------------------------------
-This will keep track of what you have done so far and provide a resource for later use of CellOrganizer. Click "File" |rarr| "New" |rarr| "New Script", and save your file as ``tutorial_train.m`` (making sure that the file is saved to the "Documents" |rarr| "MATLAB" path, but not inside the “cellorganizer” folder). Instead of typing the following commands into the Command Window, type (or copy and paste) them into the script that you just created. 
+This will keep track of what you have done so far and provide a resource for later use of CellOrganizer. Click "File" |rarr| "New" |rarr| "New Script", and save your file as ``tutorial_train.m`` (making sure that the file is saved to the "Documents" |rarr| "MATLAB" path, but not inside the “cellorganizer” folder). Instead of typing the following commands into the Command Window, type (or copy and paste) them into the script that you just created.
 
 Step 1: Create variables containing your images
 -----------------------------------------------
-There are three ways to do this depending on how you have stored your images, each of which has its own strengths: string wildcards, a cell array of file paths, and a cell array of function handles. 
+There are three ways to do this depending on how you have stored your images, each of which has its own strengths: string wildcards, a cell array of file paths, and a cell array of function handles.
 
 To make life easier in the future, start by defining a variable that contains the path to the images’ directory. Something like this::
 
 	img_dir = '/Users/greg/Desktop/LAM';
 
-Option 1 
+Option 1
 ^^^^^^^^
 **String wild-cards:** If your files are named in some basic pattern, wildcards are the easiest way to get your file information into CellOrganizer. If you downloaded the images in Step 2 of Setup, your wildcard setup would be something like this::
 
@@ -135,7 +135,7 @@ Option 3 (even more advanced)
 		'_ch2_t1.tif']);
 	end
 
-Here we're using the CellOrganizer provided function ``ml_readimage`` to read in and return the actual image matrix, but any function that returns the actual image matrix of data will work. 
+Here we're using the CellOrganizer provided function ``ml_readimage`` to read in and return the actual image matrix, but any function that returns the actual image matrix of data will work.
 
 Step 2: Setup the option structure
 -------------------------------------
@@ -161,7 +161,7 @@ This downsamples our input images by 4 in the X and Y dimensions, decreasing the
 Step 2.5: Add a model type
 ---------------------------
 
-We also need to specify what type of model we want to train.  We do this by adding additional lines to the options structure:
+We also need to specify what type of model we want to train.  We do this by adding additional lines to the options structure::
 
 	train_options.nucleus.type = 'cylindrical_surface';
 	train_options.cell.type = 'ratio';
@@ -169,7 +169,7 @@ We also need to specify what type of model we want to train.  We do this by addi
 	train_options.debug = true;
 
 Now that we have everything together, we can train the model::
-	
+
 	img2slml('3D', nuc_img_paths, cell_img_paths, prot_img_paths, train_options);
 
 If your model building options don't require one of the image types (e.g., the protein images are not needed in this case), you can just use empty brackets::
@@ -184,12 +184,12 @@ Press the play button on the top of the Matlab window or type the name of your s
 
 Step 4: Your model
 ------------------
-Now that your run of CellOrganizer has completed without error, you should have a .mat file named model.mat in the directory in which you ran the code. Congratulations, you made it! If you load that file into your Workspace you'll see that this is another struct with fields. This is the model of your cell images. You'll notice that it's a lot smaller in file size than the collection of source images you used to train it. Take some time to explore these fields. 
+Now that your run of CellOrganizer has completed without error, you should have a .mat file named model.mat in the directory in which you ran the code. Congratulations, you made it! If you load that file into your Workspace you'll see that this is another struct with fields. This is the model of your cell images. You'll notice that it's a lot smaller in file size than the collection of source images you used to train it. Take some time to explore these fields.
 
 Synthesizing an Images from a Model
 ***********************************
 
-Here we will go over how to synthesize a cell shape in CellOrganizer. The main function here is ``slml2img.m``. This function takes two inputs: a cell array of paths to the models from which we want to synthesize an image and a list of options. 
+Here we will go over how to synthesize a cell shape in CellOrganizer. The main function here is ``slml2img.m``. This function takes two inputs: a cell array of paths to the models from which we want to synthesize an image and a list of options.
 
 Step 0: Create a "scratch" script
 ---------------------------------
@@ -231,11 +231,11 @@ As the last line of our script, we call ``slml2img.m``::
 
 	slml2img(model_path, synth_options);
 
-Save your file and run it. This may take a while, especially if you have decided to generate many images. 
+Save your file and run it. This may take a while, especially if you have decided to generate many images.
 
 Step 4: Check out your images
 -----------------------------
-Now that the image generation is completed, you can view them. In the current directory you should see a folder named "synthesis_tutorial", and in that should be two directories, “cell1” and “cell2”, each of which contain images corresponding to each channel drawn from the model you trained in the **Training** section. While these images can be opened in ImageJ, we are going to demonstrate two useful tools in CellOrganizer that we frequently use to explore our synthesized images. 
+Now that the image generation is completed, you can view them. In the current directory you should see a folder named "synthesis_tutorial", and in that should be two directories, “cell1” and “cell2”, each of which contain images corresponding to each channel drawn from the model you trained in the **Training** section. While these images can be opened in ImageJ, we are going to demonstrate two useful tools in CellOrganizer that we frequently use to explore our synthesized images.
 
 First we're going to create an *indexed image* by combining output images.::
 
@@ -265,12 +265,12 @@ Although generating synthetic cell shapes is fun (and useful for doing cell simu
 
 Background
 ----------
-Upon exposure to Bafilomycin A1, microtubule associated protein light chain 3 (LC3) localizes into autophagosomes for degradation and forms punctate structures. 
+Upon exposure to Bafilomycin A1, microtubule associated protein light chain 3 (LC3) localizes into autophagosomes for degradation and forms punctate structures.
 
 .. figure:: ../images/tutorial/bg.png
    :align: center
-   
-   Images of eGFP-LC3 tagged RT112 cells at 40x under normal conditions (left) and in a 50uM Bafilomycin condition (right). 
+
+   Images of eGFP-LC3 tagged RT112 cells at 40x under normal conditions (left) and in a 50uM Bafilomycin condition (right).
 
 Let’s say we are curious as to how the number of autophagosomes changes with Bafilomycin concentration. Given a collection of images under different concentrations we can segment out the cell shapes and train a model for the cells contained in each image. It just so happens that we have already done that, and the models and associated drug concentrations, can be found `here <https://cmu.app.box.com/s/6xybp3nnaxcovvtkifhexgcgoog51slz>`_.
 
@@ -282,17 +282,17 @@ Lets call this one ``plotObjsByModel.m``
 
 Step 1: Load the model data into the workspace
 ----------------------------------------------
-Load the .mat file you downloaded into the Workspace by double clicking on it. You should see two variables, ``conc``, and ``models``. These are the variables that contain the drug concentrations and trained CellOrganizer models of cells exposed to Bafilomycin at those concentrations. You can access the first model by typing ``models{1}``, the second model by ``models{2}`` and so on. You will see that there are a lot of components to these models, but we're just interested in the number of objects under each conditions. 
+Load the .mat file you downloaded into the Workspace by double clicking on it. You should see two variables, ``conc``, and ``models``. These are the variables that contain the drug concentrations and trained CellOrganizer models of cells exposed to Bafilomycin at those concentrations. You can access the first model by typing ``models{1}``, the second model by ``models{2}`` and so on. You will see that there are a lot of components to these models, but we're just interested in the number of objects under each conditions.
 
 Step 2: Plot the average number of autophagosomes for each model
 ----------------------------------------------------------------
 We must access the component of the model that contains the distribution for the number of objects. We can access that in the first model with::
-	
+
 	models{1}.proteinModel.objectModel.numStatModel
 
 The output should be::
 
-	ans = 
+	ans =
 
     	name: 'gamma'
     	alpha: 2.7464
@@ -310,9 +310,3 @@ Now we simply plot the number of objects versus drug concentration. Here we will
 	semilogx(conc, avgObjects, 'linestyle', 'none', 'marker', '.', 'markersize', 10)
 	ylabel('Mean Number of Objects Per Model')
 	xlabel('[Bafilomycin A1] (uM)')
-
-
-
-
-
-
