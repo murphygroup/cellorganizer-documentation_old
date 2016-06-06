@@ -22,7 +22,8 @@ Galaxy Registration
 
 In order to use CellOrganizer on Galaxy+Bridges, the user must have a registered account.
 
-.. image:: registerbutton.png
+.. figure:: ../images/registerbutton.png
+   :align: center
 
 #. Open a web browser, and go on to the `Galaxy+Bridges <http://galaxy2.bridges.psc.edu:8080>`_ site.
 #. Hover over User on the top navigation toolbar and choose Register from the dropdown menu.
@@ -37,7 +38,8 @@ Please make sure you are logged in before proceeding in this section by hovering
 
 The Galaxy interface is divided into four parts: the top navigation bar (top of the page), the Tools window (left side of the page), the History window (right side of the page), and the Main Content window (center of the page).
 
-.. image:: galaxyinterface.png
+.. figure:: ../images/galaxyinterface.png
+   :align: center
 
 The Tools window allows the user to choose which job they are interested in scheduling. For this tutorial, the options are divided into four categories: Demos, Synthesizing, Training, and Useful Tools. These four categories, and their components are further explained in the next section, Galaxy+Bridges Tools and Its Options.
 
@@ -63,12 +65,15 @@ Galaxy Tasks
 
 In Galaxy+Bridges, there are two types of jobs that can be scheduler for computation and/or compilation: a simple job and a workflow. A simple job refers to a one – component task that asks for direct results from an input. A workflow on the other hand, allows for multiple, dependent components to enter the queue as designed by the user. The how-to’s for creating a simple job versus a workflow follow:
 
-* Create a Job *
+Create a Job
+------------
 #. Choose and click on the desired task from the Tools window.
 #. In the Main Content window, choose the input parameters required for the task.
 #. Click on Execute in order to send the task to the queue.
 
-* Create a Workflow *
+Create a Workflow
+-----------------
+
 #. In the top navigation bar, click on the Workflow tab.
 #. Click on the Create New Workflow button in the top right corner.
 #. Click on the Create button after naming and annotating (describing) the workflow.
