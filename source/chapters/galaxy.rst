@@ -39,8 +39,8 @@ Please make sure you are logged in before proceeding in this section by hovering
 The Galaxy interface is divided into four parts: the top navigation bar (top of the page), the Tools window (left side of the page), the History window (right side of the page), and the Main Content window (center of the page).
 """""""""""""""""""""
 .. image:: ../images/galaxyinterface.png
-    :width: 1200px
-    :height: 746.25px
+    :width: 746.25px
+    :height: 1200px
 
 The Tools window allows the user to choose which job they are interested in scheduling. For this tutorial, the options are divided into four categories: Demos, Synthesizing, Training, and Useful Tools. These four categories, and their components are further explained in the next section, Galaxy+Bridges Tools and Its Options.
 
