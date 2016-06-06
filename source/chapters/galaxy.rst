@@ -1,6 +1,17 @@
 CellOrganizer on Galaxy+Bridges
 ===============================
 
+.. raw:: html
+
+        <object width="480" height="385"><param name="movie"
+        value="https://www.youtube.com/watch?v=Eo-KmOd3i7s"></param><param
+        name="allowFullScreen" value="true"></param><param
+        name="allowscriptaccess" value="always"></param><embed
+        src="https://www.youtube.com/watch?v=Eo-KmOd3i7s"
+        type="application/x-shockwave-flash" allowscriptaccess="always"
+        allowfullscreen="true" width="480"
+        height="385"></embed></object>
+
 Introduction
 ************
 CellOrganizer is an open source system for using cellular microscope images to learn statistical models of the structure of cell components and of how those components are organized relative to each other. These generative models may then be used to synthesize new images in order to reflect what the model has learned. The model learning component of CellOrganizer allows for the user to capture variation amongst cells in a collection of images.
