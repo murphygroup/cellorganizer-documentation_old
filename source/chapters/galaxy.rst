@@ -22,7 +22,8 @@ Galaxy Registration
 
 In order to use CellOrganizer on Galaxy+Bridges, the user must have a registered account.
 
-.. figure:: ../images/registerbutton.png
+
+.. image:: ../images/registerbutton.png
    :align: center
 
 #. Open a web browser, and go on to the `Galaxy+Bridges <http://galaxy2.bridges.psc.edu:8080>`_ site.
@@ -38,8 +39,11 @@ Please make sure you are logged in before proceeding in this section by hovering
 
 The Galaxy interface is divided into four parts: the top navigation bar (top of the page), the Tools window (left side of the page), the History window (right side of the page), and the Main Content window (center of the page).
 
-.. figure:: ../images/galaxyinterface.png
-   :align: center
+
+.. image:: ../images/galaxyinterface.png
+    :width: 533px
+    :align: center
+    :height: 332px
 
 The Tools window allows the user to choose which job they are interested in scheduling. For this tutorial, the options are divided into four categories: Demos, Synthesizing, Training, and Useful Tools. These four categories, and their components are further explained in the next section, Galaxy+Bridges Tools and Its Options.
 
