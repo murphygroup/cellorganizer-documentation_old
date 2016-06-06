@@ -3,11 +3,9 @@ CellOrganizer on Galaxy+Bridges
 
 .. raw:: html
 
-    <iframe width="560" height="315"
-    src="http://www.youtube.com/watch?v=8aefuWGmKTY&index=23&list=PLUSRfoOcUe4avCXPg6tPgdZzu--hBXUYx" 
-    frameborder="0"
-    allowfullscreen>
-    </iframe>
+    <div style="margin-top:10px;">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/ngtb4Sl1U5c" frameborder="0" allowfullscreen></iframe>
+    </div>
 
 Introduction
 ************
