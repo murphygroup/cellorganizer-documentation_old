@@ -1,5 +1,5 @@
-CellOrganizer on Galaxy+Bridges
-===============================
+Using CellOrganizer on Galaxy+Bridges
+=====================================
 
 .. raw:: html
 
@@ -9,95 +9,193 @@ CellOrganizer on Galaxy+Bridges
 
 Introduction
 ************
-CellOrganizer is an open source system for using cellular microscope images to learn statistical models of the structure of cell components and of how those components are organized relative to each other. These generative models may then be used to synthesize new images in order to reflect what the model has learned. The model learning component of CellOrganizer allows for the user to capture variation amongst cells in a collection of images.
+CellOrganizer is a software package that learns generative models of cell organization from fluorescence micrographs. These models are useful for modeling the dependency between compartments of the cell, allowing for a compact representation of cell geometries present in cell images and generation of images of geometries useful for spatially realistic biochemical simulations. This tutorial will primarily cover individual usage, along with shared usage amongst multiple Galaxy+Bridges accounts for CellOrganizer.
 
-Essentially, CellOrganizer provides the tools for
+As of mid-2016, the CellOrganizer team has introduced a new interface for CellOrganizer called Galaxy+Bridges. This new interface expands the accessibility of CellOrganizer to users who have little to no programming experience or exhaustive resources in accessing Matlab and all of the required toolboxes.
 
-* Learning generative models of cell organization directly from microscope images
+For users interested in directly accessing CellOrganizer using Matlab, the link to download CellOrganizer is 'http://cellorganizer.org/Downloads/v2.5/index.html <http://cellorganizer.org/Downloads/v2.5/index.html>'_, and the documentation for loading CellOrganizer into Matlab can be found at 'http://cellorganizer.org/docs/v2.5/chapters/start.html <http://cellorganizer.org/docs/v2.5/chapters/start.html>_'along with a simple tutorial.
 
-* Storing and retrieving those generative models in XML files
+The Ideal Tutorial User
+-----------------------
 
-* Synthesizing cell images (or other representations) from one or more models
+The ideal tutorial user would have some experience with fluorescence microscopy, limited to no experience with Matlab, and no experience with CellOrganizer. The user should be interested in learning how to use the Galaxy+Bridges interface for CellOrganizer to explore their image data.
 
-For the duration of this tutorial, the user will be working with CellOrganizer on Galaxy+Bridges for training and synthesis from two- and three- dimensional models.
+A Disclaimer
+------------
 
-Galaxy is an open, web-based platform intended for data intensive biomedical research. This instance of Galaxy will seamlessly allow the user to create and implement workflows on CellOrganizer to create and analyze parametric and non-parametric models as well as their respective samples.
+CellOrganizer is research code, and as such it is under constant development. Although we do our best to ensure our code is reliable, we distribute this code under the GNU public license without any type of warranty. For this reason, though we hope not, a feature may not work as expected. Please do not hesitate to contact us at cellorganizer@compbio.cmu.edu with any questions or issues you have.
+
+Prerequisites
+*************
+
+* Any OS X, Linux, or Unix operating system
+* Any web browser
+
+Setup
+*****
+
+#. Open a web browser and access the 'Galaxy+Bridges <http://galaxy2.bridges.psc.edu>'_ site.
+#. Register for a user account, or log onto a preexisting account.
+#. Become familiar with different components of the Galaxy Home Interface.
 
 Galaxy Registration
-*******************
-
+-------------------
 In order to use CellOrganizer on Galaxy+Bridges, the user must have a registered account.
 
-.. image:: ../images/registerbutton.png
+#. Open a web browser, and go to the Galaxy+Bridges site at 'http://galaxy2.bridges.psc.edu <http://galaxy2.bridges.psc.edu>'.
 
-#. Open a web browser, and go on to the `Galaxy+Bridges <http://galaxy2.bridges.psc.edu:8080>`_ site.
 #. Hover over User on the top navigation toolbar and choose Register from the dropdown menu.
-#. Fill out the registration form by entering an email address, password, and public name (optional), for your account and hit Submit.
+.. image:: ../images/galaxy_bridges/registerbutton.png
+
+#. Fill out the registration form by entering an email address, password, and public name (optional), for your account and hit "Submit".
 
 You should now be registered onto Galaxy, logged in, and redirected to the home interface.
 
 Galaxy Home Interface
-*********************
+---------------------
 
-Please make sure you are logged in before proceeding in this section by hovering over User on the top navigation toolbar and seeing your login name as the first item on the dropdown menu. If you are not logged in, choose Login from the User dropdown menu and login using your account information.
+The Galaxy interface (Figure 1) is divided into four parts: the top navigation bar (top of the page), the Tools window (left side of the page), the History window (right side of the page), and the Main Content window (center of the page).
 
-The Galaxy interface is divided into four parts: the top navigation bar (top of the page), the Tools window (left side of the page), the History window (right side of the page), and the Main Content window (center of the page).
+.. image:: ../images/galaxy_bridges/galaxyinterface.png
 
-.. image:: ../images/galaxyinterface.png
+The Tools window allows the user to choose which job they are interested in scheduling. For this tutorial, the options are divided into four categories: Demos, Synthesizing, Training, and Useful Tools. These four categories, and their components are further explained in the tutorial.
 
-The Tools window allows the user to choose which job they are interested in scheduling. For this tutorial, the options are divided into four categories: Demos, Synthesizing, Training, and Useful Tools. These four categories, and their components are further explained in the next section, Galaxy+Bridges Tools and Its Options.
+The History window depicts the user’s personal scheduler along with their current status through color coding. When a job is submitted to the queue, it appears at the top of the History window in the form of a small rectangle with a designated number and a descriptive name. The color of the box correlates with the current status of the job, with
 
-The History window depicts the user’s personal scheduler along with their current status through color coding. When a job is submitted to the queue (Galaxy Tasks, Create a Job), it appears at the top of the History window in the form of a small rectangle with a designated number and a descriptive name. The color of the box correlates with the current status of the job, with
+    * a grey background meaning that the job has been submitted, but has not been accepted,
+    * a yellow background meaning that the job has been accepted by the queue, and
+    * a green background meaning that the job is complete and is ready to be viewed.
 
-* a grey background meaning that the job has been submitted, but has not been accepted,
-* a yellow background meaning that the job has been accepted by the queue, and
-* a green background meaning that the job is complete and is ready to be viewed.
+The Main Content window is Galaxy+Bridges’ workspace. Once a job or workflow is chosen from the Tool Shed, any direct interaction with CellOrganizer occurs in the Main Content window.
 
-The Main Content window is Galaxy+Bridges’ workspace. Once a job or workflow is chosen from the Tool Shed, any direct interaction with CellOrganizer occurs in the Main Content window. Sample interactions can be found in the Galaxy Tasks section.
+Tutorial: Creating a Work History, Submitting a Job, Submitting a Workflow, and Visualizing Results
+*********
 
-Galaxy+Bridges Tools and Its Options
-************************************
+Creating a Work History
+-----------------------
 
-Demos are image-based widgets with an output of tiff files that can be used in conjunction with a tool. For this tutorial, the user’s demo options are a two – dimensional (2D) diffeomorphic model and a three – dimensional classic model.
+For this tutorial, we need to create a work history titled 2D Hela. In order to do this,
 
-In CellOrganizer, there are two prominent treatment of images, Training and Synthesizing.
+#. Click on the small gear next to the History header for History Options.
+.. image:: ../images/galaxy_bridges/historyGear.png
 
-Useful tools are assessments that the user can run on the trained models and/or synthesized images.
+#. Click on "Create New" from the drop-down menu.
+.. image:: ../images/galaxy_bridges/historyDropdown.png
 
-Galaxy Tasks
-************
+#. Click on the "unnamed history" title to rename the working history to “2D Hela”.
+.. image:: ../images/galaxy_bridges/renameHistory.png
 
-In Galaxy+Bridges, there are two types of jobs that can be scheduler for computation and/or compilation: a simple job and a workflow. A simple job refers to a one – component task that asks for direct results from an input. A workflow on the other hand, allows for multiple, dependent components to enter the queue as designed by the user. The how-to’s for creating a simple job versus a workflow follow:
+Accessing a Work History
+------------------------
 
-Create a Job
-------------
-#. Choose and click on the desired task from the Tools window.
-#. In the Main Content window, choose the input parameters required for the task.
-#. Click on Execute in order to send the task to the queue.
+At another time, if you would like to switch to a saved history,
 
-Create a Workflow
------------------
+#. Click on the small gear next to the History header for History Options.
+.. image:: ../images/galaxy_bridges/historyGear.png
+
+#. Click on "Saved Histories" from the drop-down menu.
+.. image:: ../images/galaxy_bridges/savedHistories.png
+
+#. Click the small arrow the working history you would like to work on and choose “Switch” from the drop-down menu in the Main Content window.
+.. image:: ../images/galaxy_bridges/switchHistories.png
+
+Submitting a Job
+----------------
+Now, we are going to submit our first job to the scheduler, which will be the Training of a 2D Diffeomorphic Model. To do this, 
+
+#. Go to the Tools window, and click on the Training category.
+
+#. Select “train_2D_diffeomorphic_model” under the Training category.
+.. image:: ../images/galaxy_bridges/train2DJob.png
+
+#. In the Main Content window, ensure the default input parameters are set to the LAMP 2 dataset, 9 images, and 5 as the downsample factor.
+.. image:: ../images/galaxy_bridges/defaultParameters.png
+
+#. Click on “Execute” in order to send the task to the queue.
+
+Successful submission of the train_2D_diffeomorphic_model results in the following two things: 1) a green banner across the Main Content window, and the 2) job added to the scheduler in the History window.
+.. image:: ../images/galaxy_bridges/successfulSubmission.png
+.. image:: ../images/galaxy_bridges/jobScheduled.png
+
+Once the job has been successfully completed (the job will turn green in the History window), you have a trained 2D diffeomorphic model in the form of a Matlab file. Accessing this file is not possible through Galaxy+Bridges, but another CellOrganizer tool can take the model as an input and output a PNG visible in Galaxy+Bridges. 
+
+Under the Useful Tools category in the Tools window, “show_shape_space” depicts a visualization of the shape space of a trained 2D diffeomorphic model. Repeat the steps above to submit “show_shape_space” as a job, with your input parameter being the trained 2D diffeomorphic model from our first job.
+
+To access the show_shape_space PNG image, you only need to click on the small eye icon next to the job title in the scheduler. The following image should appear in the Main Content window:
+.. image:: ../images/galaxy_bridges/showShapeSpace.png
+
+Now, that you have been able to create a work history and submit a couple of jobs to the queue, it is time to talk about workflows. If you would like to recycle a process, perhaps run the visualization of diffeomorphic models many times with different parameters, without having to constantly click through all of the categories, then it is much easier to create a workflow.
+
+Creating and Submitting a Workflow
+----------------------------------
+
+Let’s create our first workflow using the two tools we are familiar with: 1) train a 2D diffeomorphic model, and 2) show the shape space of that model.
 
 #. In the top navigation bar, click on the Workflow tab.
+.. image:: ../images/galaxy_bridges/workflowButton.png
+
 #. Click on the Create New Workflow button in the top right corner.
-#. Click on the Create button after naming and annotating (describing) the workflow.
-#. In the Tools window, click on Inputs → Input dataset, which pops up as small box in the workspace.
-#. Click on the useful tools you wish to link together in the workflow and make sure that all boxes appear onto the Main Content window.
+.. image:: ../images/galaxy_bridges/createNewWorkflow.png
+
+#. Click on “Create” after naming and annotating the workflow.
+
+    * In this example, let’s name the Workflow “Shape Space of Trained 2D Diffeo Model“ and annotate it as “Visualizing the shape space of a trained 2D diffeomorphic model”.
+.. image:: ../images/galaxy_bridges/nameWorkflow.png
+
+#. Click on the “train_2D_diffeomorphic_model” tool in the Tools window under the Training category and a box with this title should appear in your Workflow Canvas (Main Content window).
+
+#. Click on the “show_shape_space” tool in the Tools window under the Useful Tools category and a second box should appear in your Workflow Canvas.
+
 #. Arrange the boxes in the order/organization desired within the workspace.
-#. Connect the input dataset box, which represents all of the initial inputs of the workflow, to the next task in the workflow by clicking on the input dataset box arrow, and holding while dragging the cursor to the next box’s input arrow.
-#. Continue to connect all boxes in the workflow in a similar manner.
-#. Click on the small gear at the top of the workspace, and Save your workflow.
-#. Click on the gear again to Run the workflow.
-#. Choose the appropriate inputs for the workflow and Submit to the queue.
+.. image:: ../images/galaxy_bridges/workflowBoxes.png
 
-Sample CellOrganizer Workflows
-******************************
+#. Connect the two boxes together by clicking on the output arrow of the “train 2D diffeomorphic model” box to the input arrow of the “show shape space” box.
+.. image:: ../images/galaxy_bridges/connectedBoxes.png
 
-Below are some sample CellOrganizer workflows that can be created by the user on Galaxy+Bridges with the current demos and tools. These four samples are
+#. Click on the small gear next to the Workflow Canvas title, and choose “Save” on the drop-down menu.
+.. image:: ../images/galaxy_bridges/workflowSave.png
 
-* Train and show space shape from a 2D diffeomorphic framework model
-* Train and visualize the shape space from a 2D diffeomorphic model
-* Train and synthesize from a 3D vesicular model
-* Compare two 3D vesicular models
+#. Click on the same gear to choose “Run” on the drop-down menu.
+.. image:: ../images/galaxy_bridges/workflowRun.png
+
+#. By click on each step in the workflow, you can change the inputs.
+.. image:: ../images/galaxy_bridges/workflowInputs.png
+
+#. Click “Run workflow” to send it to the queue.
+
+Let’s reuse this workflow to visualize the shape space of two different trained diffeomorphic models. Submit the workflow again, however, this time change the input parameters for the “train 2D diffeomorphic model” box by clicking on the small pencil next to the parameter. Options include:
+    * **Datasets:** LAMP2 (default), Nucleoli, Mitochondria, or Transference protein
+    * **Number of Images:** Any number up to 50
+    * **Downsample Factor:** 1 (no downsample, higher resolution), 5 (default) or 10 (lower resolution)
+
+Extra Tasks
+***********
+
+Now, that you have been able to successfully create a new work history, submit a couple of jobs to the queue, and create and submit workflows, test your skills with the following tasks:
+
+*Note: Each tool can be found in the designated category in the parentheses immediately following the title in the Tools window.*
+
+* In the 2D Hela Work History,
+
+    * Train a 2D diffeomorphic model (Training) → Synthesize a 2D diffeomorphic instance (Synthesis)
+
+* In  a 3D Hela Work History
+
+    * Train a 3D vesicular model (Training) → Synthesize a 3D vesicular instance (Synthesis)
+
+* In a 2D Demo Work History
+    
+    * demo2D00 (Demos) → Show 2D Image Reshape (Useful Tools)
+    * demo2D00 (Demos) → Export to VCell (Useful Tools)
+
+* In a 3D Demo Work History
+
+    * demo3D00 (Demos) → Show 3D Image Reshape (Useful Tools)
+    * demo3D00 (Demos) → Export to Blender (Useful Tools)
+    * demo3D01 (Demos) → Show 3D Image Reshape (Useful Tools)
+    * demo3D00 (Demos) → Show 3D Surface Plot (Useful Tool)
+
+**End of Tutorial**
+
 
 
