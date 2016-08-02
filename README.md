@@ -2,12 +2,16 @@
 
 This is the official documentation repository for [CellOrganizer](http://www.cellorganizer.org).
 
-## Build Status
+## Build status
 
 | Branch | Status |
 | --- | --- |
 | master | [![Build Status](http://developers.compbio.cs.cmu.edu:8080/buildStatus/icon?job=cellorganizer-docs-master-glnx64)](http://developers.compbio.cs.cmu.edu:8080/job/cellorganizer-docs-master-glnx64/) |
 | dev | [![Build Status](http://developers.compbio.cs.cmu.edu:8080/buildStatus/icon?job=cellorganizer-docs-dev-glnx64)](http://developers.compbio.cs.cmu.edu:8080/job/cellorganizer-docs-dev-glnx64/) |
+
+## Build trend on development branch
+
+![Jenkins trend](http://developers.compbio.cs.cmu.edu:8080/job/cellorganizer-docs-dev-glnx64/buildTimeGraph/png)
 
 ## Pre-requisites
 The python packages used to generate this documentation are

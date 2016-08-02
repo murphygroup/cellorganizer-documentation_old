@@ -3,21 +3,30 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-.. include:: ./chapters/getting_started.rst
+***************************
+CellOrganizer Documentation
+***************************
 
-.. include:: ./chapters/start.rst
+Contents:
 
-.. include:: ./chapters/tutorials.rst
+.. toctree::
+   :maxdepth: 2
 
-.. include:: ./chapters/demos.rst
+   ./chapters/getting_started
 
-.. include:: ./chapters/advanced.rst
+   ./chapters/start
 
-.. include:: ./chapters/api.rst
+   ./chapters/tutorials
 
-Indices and tables
-##################
+   ./chapters/demos
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   ./chapters/advanced
+
+   ./chapters/api
+
+.. Indices and tables
+.. ##################
+
+.. * :ref:`genindex`
+.. * :ref:`modindex`
+.. * :ref:`search`
