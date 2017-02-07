@@ -6,12 +6,12 @@ This is the official documentation repository for [CellOrganizer](http://www.cel
 
 | Branch | Status |
 | --- | --- |
-| master | [![Build Status](http://developers.compbio.cs.cmu.edu:8080/buildStatus/icon?job=cellorganizer-docs-master-glnx64)](http://developers.compbio.cs.cmu.edu:8080/job/cellorganizer-docs-master-glnx64/) |
-| dev | [![Build Status](http://developers.compbio.cs.cmu.edu:8080/buildStatus/icon?job=cellorganizer-docs-dev-glnx64)](http://developers.compbio.cs.cmu.edu:8080/job/cellorganizer-docs-dev-glnx64/) |
+| master | [![Build Status](http://woodstock.compbio.cs.cmu.edu:8080/buildStatus/icon?job=cellorganizer-docs)](http://woodstock.compbio.cs.cmu.edu:8080/view/documentation/job/cellorganizer-docs/) |
+| dev | [![Build Status](http://woodstock.compbio.cs.cmu.edu:8080/buildStatus/icon?job=cellorganizer-docs-dev)](http://woodstock.compbio.cs.cmu.edu:8080/view/documentation/job/cellorganizer-docs-dev/)|
 
 ## Build trend on development branch
 
-![Jenkins trend](http://developers.compbio.cs.cmu.edu:8080/job/cellorganizer-docs-dev-glnx64/buildTimeGraph/png)
+![Jenkins trend](http://woodstock.compbio.cs.cmu.edu:8080/view/documentation/job/cellorganizer-docs-dev/buildTimeGraph/png)
 
 ## Pre-requisites
 The python packages used to generate this documentation are
