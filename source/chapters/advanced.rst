@@ -19,7 +19,7 @@ This table is a guide to specific demos included with CellOrganizer that generat
 .. exec::
 	print commands.getoutput('python make_tabulate_from_excel.py paper_demo.xlsx v2.5 " "')
 
-T cell model
-------------
+T cell models
+-------------
 
 .. include:: ./tcell.rst
