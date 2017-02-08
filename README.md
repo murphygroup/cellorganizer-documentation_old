@@ -1,66 +1,87 @@
-# README
+#README
 
-This is the official documentation repository for [CellOrganizer](http://www.cellorganizer.org).
+This is the official source code repository of [CellOrganizer](http://www.cellorganizer.org).
 
-## Build status
+## Daily Build Status
 
-| Branch | Status |
-| --- | --- |
-| master | [![Build Status](http://woodstock.compbio.cs.cmu.edu:8080/buildStatus/icon?job=cellorganizer-docs)](http://woodstock.compbio.cs.cmu.edu:8080/view/documentation/job/cellorganizer-docs/) |
-| dev | [![Build Status](http://woodstock.compbio.cs.cmu.edu:8080/buildStatus/icon?job=cellorganizer-docs-dev)](http://woodstock.compbio.cs.cmu.edu:8080/view/documentation/job/cellorganizer-docs-dev/)|
+![Jenkins trend](http://woodstock.compbio.cs.cmu.edu:8080/view/documentation/job/cellorganizer-daily-build-dev/buildTimeGraph/png)
 
-## Build trend on development branch
+## Jenkins' Jobs Build Status
 
-![Jenkins trend](http://woodstock.compbio.cs.cmu.edu:8080/view/documentation/job/cellorganizer-docs-dev/buildTimeGraph/png)
+Name | Build Status
+:-------------------- | :--------------------:
+cellorganizer-demo2D00 | [![Build Status](http://woodstock.compbio.cs.cmu.edu:8080/buildStatus/icon?job=cellorganizer-demo2D00)](http://woodstock.compbio.cs.cmu.edu:8080/job/cellorganizer-demo2D00/)
+cellorganizer-demo2D01| [![Build Status](http://woodstock.compbio.cs.cmu.edu:8080/buildStatus/icon?job=cellorganizer-demo2D01)](http://woodstock.compbio.cs.cmu.edu:8080/job/cellorganizer-demo2D01/)
+cellorganizer-demo2D02 | [![Build Status](http://woodstock.compbio.cs.cmu.edu:8080/buildStatus/icon?job=cellorganizer-demo2D02)](http://woodstock.compbio.cs.cmu.edu:8080/job/cellorganizer-demo2D02/)
+cellorganizer-demo2D03 | [![Build Status](http://woodstock.compbio.cs.cmu.edu:8080/buildStatus/icon?job=cellorganizer-demo2D03)](http://woodstock.compbio.cs.cmu.edu:8080/job/cellorganizer-demo2D03/)
+cellorganizer-demo2D04 | [![Build Status](http://woodstock.compbio.cs.cmu.edu:8080/buildStatus/icon?job=cellorganizer-demo2D04)](http://woodstock.compbio.cs.cmu.edu:8080/job/cellorganizer-demo2D04/)
+cellorganizer-demo3D00 | [![Build Status](http://woodstock.compbio.cs.cmu.edu:8080/buildStatus/icon?job=cellorganizer-demo3D00)](http://woodstock.compbio.cs.cmu.edu:8080/job/cellorganizer-demo3D00/)
+cellorganizer-demo3D01 | [![Build Status](http://woodstock.compbio.cs.cmu.edu:8080/buildStatus/icon?job=cellorganizer-demo3D01)](http://woodstock.compbio.cs.cmu.edu:8080/job/cellorganizer-demo3D01/)
+cellorganizer-demo3D02 | [![Build Status](http://woodstock.compbio.cs.cmu.edu:8080/buildStatus/icon?job=cellorganizer-demo3D02)](http://woodstock.compbio.cs.cmu.edu:8080/job/cellorganizer-demo3D02/)
+cellorganizer-demo3D03 | [![Build Status](http://woodstock.compbio.cs.cmu.edu:8080/buildStatus/icon?job=cellorganizer-demo3D03)](http://woodstock.compbio.cs.cmu.edu:8080/job/cellorganizer-demo3D03/)
+cellorganizer-demo3D04 | [![Build Status](http://woodstock.compbio.cs.cmu.edu:8080/buildStatus/icon?job=cellorganizer-demo3D04)](http://woodstock.compbio.cs.cmu.edu:8080/job/cellorganizer-demo3D04/)
+cellorganizer-demo3D05 | [![Build Status](http://woodstock.compbio.cs.cmu.edu:8080/buildStatus/icon?job=cellorganizer-demo3D05)](http://woodstock.compbio.cs.cmu.edu:8080/job/cellorganizer-demo3D05/)
+cellorganizer-demo3D06 | [![Build Status](http://woodstock.compbio.cs.cmu.edu:8080/buildStatus/icon?job=cellorganizer-demo3D06)](http://woodstock.compbio.cs.cmu.edu:8080/job/cellorganizer-demo3D06/)
+cellorganizer-demo3D07 | [![Build Status](http://woodstock.compbio.cs.cmu.edu:8080/buildStatus/icon?job=cellorganizer-demo3D07)](http://woodstock.compbio.cs.cmu.edu:8080/job/cellorganizer-demo3D07/)
+cellorganizer-demo3D08 | [![Build Status](http://woodstock.compbio.cs.cmu.edu:8080/buildStatus/icon?job=cellorganizer-demo3D08)](http://woodstock.compbio.cs.cmu.edu:8080/job/cellorganizer-demo3D08/)
+cellorganizer-demo3D09 | [![Build Status](http://woodstock.compbio.cs.cmu.edu:8080/buildStatus/icon?job=cellorganizer-demo3D09)](http://woodstock.compbio.cs.cmu.edu:8080/job/cellorganizer-demo3D09/)
+cellorganizer-demo3D10 | [![Build Status](http://woodstock.compbio.cs.cmu.edu:8080/buildStatus/icon?job=cellorganizer-demo3D10)](http://woodstock.compbio.cs.cmu.edu:8080/job/cellorganizer-demo3D10/)
+cellorganizer-demo3D11 | [![Build Status](http://woodstock.compbio.cs.cmu.edu:8080/buildStatus/icon?job=cellorganizer-demo3D11)](http://woodstock.compbio.cs.cmu.edu:8080/job/cellorganizer-demo3D11/)
+cellorganizer-demo3D12 | [![Build Status](http://woodstock.compbio.cs.cmu.edu:8080/buildStatus/icon?job=cellorganizer-demo3D12)](http://woodstock.compbio.cs.cmu.edu:8080/job/cellorganizer-demo3D12/)
+cellorganizer-demo3D13 | [![Build Status](http://woodstock.compbio.cs.cmu.edu:8080/buildStatus/icon?job=cellorganizer-demo3D13)](http://woodstock.compbio.cs.cmu.edu:8080/job/cellorganizer-demo3D13/)
+cellorganizer-demo3D14 | [![Build Status](http://woodstock.compbio.cs.cmu.edu:8080/buildStatus/icon?job=cellorganizer-demo3D14)](http://woodstock.compbio.cs.cmu.edu:8080/job/cellorganizer-demo3D14/)
+cellorganizer-demo3D15 | [![Build Status](http://woodstock.compbio.cs.cmu.edu:8080/buildStatus/icon?job=cellorganizer-demo3D15)](http://woodstock.compbio.cs.cmu.edu:8080/job/cellorganizer-demo3D15/)
+cellorganizer-demo3D16 | [![Build Status](http://woodstock.compbio.cs.cmu.edu:8080/buildStatus/icon?job=cellorganizer-demo3D16)](http://woodstock.compbio.cs.cmu.edu:8080/job/cellorganizer-demo3D16/)
+cellorganizer-demo3D17 | [![Build Status](http://woodstock.compbio.cs.cmu.edu:8080/buildStatus/icon?job=cellorganizer-demo3D17)](http://woodstock.compbio.cs.cmu.edu:8080/job/cellorganizer-demo3D17/)
+cellorganizer-demo3D18 | [![Build Status](http://woodstock.compbio.cs.cmu.edu:8080/buildStatus/icon?job=cellorganizer-demo3D18)](http://woodstock.compbio.cs.cmu.edu:8080/job/cellorganizer-demo3D18/)
+cellorganizer-demo3D19 | [![Build Status](http://woodstock.compbio.cs.cmu.edu:8080/buildStatus/icon?job=cellorganizer-demo3D19)](http://woodstock.compbio.cs.cmu.edu:8080/job/cellorganizer-demo3D19/)
+cellorganizer-demo3D20 | [![Build Status](http://woodstock.compbio.cs.cmu.edu:8080/buildStatus/icon?job=cellorganizer-demo3D20)](http://woodstock.compbio.cs.cmu.edu:8080/job/cellorganizer-demo3D20/)
+cellorganizer-demo3D21 | [![Build Status](http://woodstock.compbio.cs.cmu.edu:8080/buildStatus/icon?job=cellorganizer-demo3D21)](http://woodstock.compbio.cs.cmu.edu:8080/job/cellorganizer-demo3D21/)
+cellorganizer-demo3D22 | [![Build Status](http://woodstock.compbio.cs.cmu.edu:8080/buildStatus/icon?job=cellorganizer-demo3D22)](http://woodstock.compbio.cs.cmu.edu:8080/job/cellorganizer-demo3D22/)
+cellorganizer-demo3D23 | [![Build Status](http://woodstock.compbio.cs.cmu.edu:8080/buildStatus/icon?job=cellorganizer-demo3D23)](http://woodstock.compbio.cs.cmu.edu:8080/job/cellorganizer-demo3D23/)
+cellorganizer-demo3D24 | [![Build Status](http://woodstock.compbio.cs.cmu.edu:8080/buildStatus/icon?job=cellorganizer-demo3D24)](http://woodstock.compbio.cs.cmu.edu:8080/job/cellorganizer-demo3D24/)
+cellorganizer-demo3D25 | [![Build Status](http://woodstock.compbio.cs.cmu.edu:8080/buildStatus/icon?job=cellorganizer-demo3D25)](http://woodstock.compbio.cs.cmu.edu:8080/job/cellorganizer-demo3D25/)
+cellorganizer-demo3D26 | [![Build Status](http://woodstock.compbio.cs.cmu.edu:8080/buildStatus/icon?job=cellorganizer-demo3D26)](http://woodstock.compbio.cs.cmu.edu:8080/job/cellorganizer-demo3D26/)
+cellorganizer-demo3D27 | [![Build Status](http://woodstock.compbio.cs.cmu.edu:8080/buildStatus/icon?job=cellorganizer-demo3D27)](http://woodstock.compbio.cs.cmu.edu:8080/job/cellorganizer-demo3D27/)
+cellorganizer-demo3D28 | [![Build Status](http://woodstock.compbio.cs.cmu.edu:8080/buildStatus/icon?job=cellorganizer-demo3D28)](http://woodstock.compbio.cs.cmu.edu:8080/job/cellorganizer-demo3D28/)
+cellorganizer-docs-dev | [![Build Status](http://woodstock.compbio.cs.cmu.edu:8080/buildStatus/icon?job=cellorganizer-docs-dev)](http://woodstock.compbio.cs.cmu.edu:8080/job/cellorganizer-docs-dev/)
 
 ## Pre-requisites
-The python packages used to generate this documentation are
 
-* [Sphinx](http://www.sphinx-doc.org/en/stable/)
-* [tabulate](https://pypi.python.org/pypi/tabulate)
+* Matlab
+* Image Processing Toolbox
+* Statistics Toolbox
 
-You can run the script `prepare_virtual_environment.sh` to install all the pre-requisites in a [virtual environments](https://virtualenv.readthedocs.org/en/latest/).
+## Installation
 
-```shell
-icaoberg$ bash ./prepare_virtual_environment.sh
-```
+To install CellOrganizer
 
-## Generating documentation
-You can use the `make.sh` script to generate the documentation. The script will
+1. Download the latest distribution from `http://www.cellorganizer.org` or  `http://murphylab.web.cmu.edu/software/CellOrganizer`.
 
-1. activate the virtual environments
-2. generate HTML and epub versions
-3. deactivate virtualenv
+2. Unzip the distribution into a folder of your choice.
 
-The helper script `make.sh` generates two types of output. If you are interested in generating other formats
-type
+3. Start Matlab and change the default directory to the folder chosen above.
 
-```
-make
-```
+4. Run setup
 
-to see a full list of outputs or refer to the following list.
+## Using CellOrganizer from the Matlab command line
 
-    Please use make <target> where <target> is one of
-    html       to make standalone HTML files
-    dirhtml    to make HTML files named index.html in directories
-    singlehtml to make a single large HTML file
-    pickle     to make pickle files
-    json       to make JSON files
-    htmlhelp   to make HTML files and a HTML help project
-    qthelp     to make HTML files and a qthelp project
-    devhelp    to make HTML files and a Devhelp project
-    epub       to make an epub
-    latex      to make LaTeX files, you can set PAPER=a4 or PAPER=letter
-    latexpdf   to make LaTeX files and run them through pdflatex
-    latexpdfja to make LaTeX files and run them through platex/dvipdfmx
-    text       to make text files
-    man        to make manual pages
-    texinfo    to make Texinfo files
-    info       to make Texinfo files and run them through makeinfo
-    gettext    to make PO message catalogs
-    changes    to make an overview of all changed/added/deprecated items
-    xml        to make Docutils-native XML files
-    pseudoxml  to make pseudoxml-XML files for display purposes
-    linkcheck  to check all external links for integrity
-    doctest    to run all doctests embedded in the documentation (if enabled)
+Type `startup` at the Matlab command prompt to add the relevant paths.  The main CellOrganizer commands are
+
+  > img2slml
+
+which trains a model from a set of images
+
+and
+
+  > slml2img
+
+which synthesizes one or more image(s) from a trained model.
+
+## Examples
+
+There are a numbers of demo files that illustrate how to use CellOrganizer from the command line.  Type
+
+  > demoinfo
+
+to get a listing of available demos.
