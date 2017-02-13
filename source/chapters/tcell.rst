@@ -22,12 +22,12 @@ Synthesis
 
 The synthesis demo included, demo3Dtcell_synth, sythesizes from a T cell model. The demo takes in two models, one model containing the cell and nuclear shape models, and the other containing a T cell protein shape model.
 
-Annotation file
+Annotation File
 ~~~~~~~~~~~~~~~
 
 Each annotation file contains the information of chosen cell pairs for a movie (each frame is a 3D stack). An example annotation file is shown below. The annotation file should be formated as described below:
 
-* Each row represent a cell in a specific time point. And the adjacent rows without blank row separation represents a cell in different time points. Different cells are separated with blank row(s). 
+* Each row represents a cell in a specific time point. And the adjacent rows without blank row separation represents a cell in different time points. Different cells are separated with blank row(s). 
 * In column 1, the name of the image file (depending on how the images are acquired, there may be one file per time point or multiple time points in a single file).
 * In column 2, the number of the channel within that file that contains the GFP fluorescence for that time point (if each time point is in a separate file, this would typically be channel 1; if multiple time points are in the same file, this would typically be the frame number).
 * In columns 3–7, the X coordinate of the left end point, the Y coordinate of the left end point, the X coordinate of the right end point, and the Y coordinate of the right end point for the synapse in that time point.
