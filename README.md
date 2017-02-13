@@ -6,7 +6,7 @@ This is the official source code repository of [CellOrganizer](http://www.cellor
 
 ![Jenkins trend](http://woodstock.compbio.cs.cmu.edu:8080/view/documentation/job/cellorganizer-daily-build-dev/buildTimeGraph/png)
 
-## Jenkins' Jobs Build Status
+## Jenkins' Jobs Status
 
 Name | Build Status
 :-------------------- | :--------------------:
