@@ -1,7 +1,7 @@
 Overview
 ~~~~~~~~
 
-General Idea: The T Cell model is a building model for 3D cells with protein patterns, and can be used to develop 4D movies. The model is based on the T cell model in Royal et al. 2016.
+The T Cell model is a building model for 3D cells with protein patterns, and can be used to develop 4D movies. The model is based on the T cell model in Royal et al. 2016.
 We assume different cells have similar cell shape and can be mapped to a template.  This lends the model to be useful for quantitative analysis of proteins in T cells, as well as other cells. Similar to other models in CellOrganizer, there are two parts: training and synthesis. In training, a morphing model is trained from the original images. In synthesis, images of cells are synthesized from the trained model and include the protein pattern.
 
 The training part requries T cell movies and the annotation of the synapse positions of the T cells as input. It can be further broken down into the following steps: cropping, segmentation, rigid alignment, non-rigid alignment (morphing) and model-building. 
