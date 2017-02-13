@@ -11,7 +11,7 @@ In the synthesis part, a T cell model is required as input. Should there be a sp
 Training
 ~~~~~~~~
 
-The demo included, demo3Dtcell_train, trains a protein distribution model following the approach described in
+The training demo included, demo3Dtcell_train, trains a protein distribution model following the approach described in
 
 * K. T. Roybal, T. E. Buck, X. Ruan, B. H. Cho, D. J. Clark, R. Ambler, H. M. Tunbridge, J. Zhang, P. Verkade, C. Wülfing, and R. F. Murphy (2016) `Computational spatiotemporal analysis identifies WAVE2 and Cofilin as joint regulators of costimulation-mediated T cell actin dynamics <http://stke.sciencemag.org/content/9/424/rs3>`_. Science Signaling 9:rs3. doi: 10.1126/scisignal.aad4149.
 
@@ -20,7 +20,7 @@ The slowest step, which takes approximately 1 min per cell per frame, is the ali
 Synthesis
 ~~~~~~~~~
 
-The included, demo3Dtcell_synth, illustrates synthesis from a T cell model. The demo takes in two models, one model contains both cell and nuclear shape models, and the other contains a t cell protein shape model.
+The synthesis demo included, demo3Dtcell_synth, sythesizes from a T cell model. The demo takes in two models, one model containing the cell and nuclear shape models, and the other containing a T cell protein shape model.
 
 Annotation file
 ~~~~~~~~~~~~~~~
