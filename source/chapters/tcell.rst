@@ -1,20 +1,21 @@
 Overview
 ~~~~~~~~
 
-General idea: the model is used for building model for 3D cells with protein patterns, especially for 4D movies. And we assume different cells have similar cell shape and can map to a template. The model is based on the t cell model in the Royal et al. 2016. It is useful for quantitative analysis of proteins in T cells and also other cells. Like other models in CellOrganizer, it contains two parts: training and synthesis. Training part: train a morphing model from the original images; synthesis: synthesize cells with protein pattern from the model. 
+General Idea: The T Cell model is a building model for 3D cells with protein patterns, and can be used to develop 4D movies. The model is based on the T cell model in Royal et al. 2016.
+We assume different cells have similar cell shape and can be mapped to a template.  This lends the model to be useful for quantitative analysis of proteins in T cells, as well as other cells. Similar to other models in CellOrganizer, there are two parts: training and synthesis. In training, a morphing model is trained from the original images. In synthesis, images of cells are synthesized from the trained model and include the protein pattern.
 
-In the training part, it uses t cell movies and the annotation of the synapse positions of the t cells as input. It contains these steps: cropping, segmentation, rigid alignment, non-rigid alignment (morphing) and model-building. 
+The training part requries T cell movies and the annotation of the synapse positions of the T cells as input. It can be further broken down into the following steps: cropping, segmentation, rigid alignment, non-rigid alignment (morphing) and model-building. 
 
-In the synthesis part, it takes a t cell model (if need specific shape of cells, also a cell shape model) as input. It contains: voxel sampling, shape registration, and voxel mapping. 
+In the synthesis part, a T cell model is required as input. Should there be a specified shape to the cells, then a cell shape model is also required. The synthesis can be further broken down into the following steps: voxel sampling, shape registration, and voxel mapping. 
 
 Training
 ~~~~~~~~
 
-The demo included, demo3Dtcell_train, illustrates using CellOrganizer to train a protein distribution model following the approach described in
+The demo included, demo3Dtcell_train, trains a protein distribution model following the approach described in
 
 * K. T. Roybal, T. E. Buck, X. Ruan, B. H. Cho, D. J. Clark, R. Ambler, H. M. Tunbridge, J. Zhang, P. Verkade, C. Wülfing, and R. F. Murphy (2016) `Computational spatiotemporal analysis identifies WAVE2 and Cofilin as joint regulators of costimulation-mediated T cell actin dynamics <http://stke.sciencemag.org/content/9/424/rs3>`_. Science Signaling 9:rs3. doi: 10.1126/scisignal.aad4149.
 
-The slowest step, which typically takes about 1 min per cell per frame, is to align each cell at each time to the standardized template. This demo uses 46 cells so it will take about 1 hour on a single core.
+The slowest step, which takes approximately 1 min per cell per frame, is the alignment of each cell to the standardized template. This demo uses 46 cells, so it will run for about an 1 hour on a single core.
 
 Synthesis
 ~~~~~~~~~
