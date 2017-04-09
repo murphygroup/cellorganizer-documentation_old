@@ -33,6 +33,7 @@ Each annotation file contains the information of chosen cell pairs for a movie (
 * In columns 3–7, the X coordinate of the left end point, the Y coordinate of the left end point, the X coordinate of the right end point, and the Y coordinate of the right end point for the synapse in that time point.
 * In column 8, the time difference for that frame relative to time point 0.
 
-
+.. figure:: ../images/tcell_annotation_table_figure.png
+   :align: center
 
 
