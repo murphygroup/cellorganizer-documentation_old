@@ -6,7 +6,7 @@ We assume different cells have similar cell shape and can be mapped to a templat
 
 We have a protocol chapter that describes how the images are generated, annotated and analysized:
 
-* Ambler, R., Ruan, X., Murphy, R.F. and Wülfing, C., 2017. Systems Imaging of the Immune Synapse. The Immune Synapse: Methods and Protocols, pp.409-421.
+* Ambler, R., Ruan, X., Murphy, R.F. and Wülfing, C., 2017. `Systems Imaging of the Immune Synapse <https://link.springer.com/protocol/10.1007/978-1-4939-6881-7_25>`_. The Immune Synapse: Methods and Protocols, pp.409-421.
 Vancouver	
 
 The usage of the model is part of the chapter (section 3.7 & 3.8)
