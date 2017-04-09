@@ -4,12 +4,16 @@ Overview
 The T Cell model is a building model for 3D cells with protein patterns, and can be used to develop 4D movies. The model is based on the T cell model in Royal et al. 2016.
 We assume different cells have similar cell shape and can be mapped to a template.  This lends the model to be useful for quantitative analysis of proteins in T cells, as well as other cells. Similar to other models in CellOrganizer, there are two parts: training and synthesis. In training, a morphing model is trained from the original images. In synthesis, images of cells are synthesized from the trained model and include the protein pattern.
 
-The training part requries T cell movies and the annotation of the synapse positions of the T cells as input. It can be further broken down into the following steps: cropping, segmentation, rigid alignment, non-rigid alignment (morphing) and model-building. 
+We have a protocol chapter that describes how the images are generated, annotated and analysized:
 
-In the synthesis part, a T cell model is required as input. Should there be a specified shape to the cells, then a cell shape model is also required. The synthesis can be further broken down into the following steps: voxel sampling, shape registration, and voxel mapping. 
+* Ambler, R., Ruan, X., Murphy, R.F. and Wülfing, C., 2017. Systems Imaging of the Immune Synapse. The Immune Synapse: Methods and Protocols, pp.409-421.
+Vancouver	
+
+The usage of the model is part of the chapter (section 3.7 & 3.8)
 
 Training
 ~~~~~~~~
+The training part requries T cell movies and the annotation of the synapse positions of the T cells as input. It can be further broken down into the following steps: cropping, segmentation, rigid alignment, non-rigid alignment (morphing) and model-building. 
 
 The training demo included, demo3Dtcell_train, trains a protein distribution model following the approach described in
 
@@ -19,6 +23,7 @@ The slowest step, which takes approximately 1 min per cell per frame, is the ali
 
 Synthesis
 ~~~~~~~~~
+In the synthesis part, a T cell model is required as input. Should there be a specified shape to the cells, then a cell shape model is also required. The synthesis can be further broken down into the following steps: voxel sampling, shape registration, and voxel mapping. 
 
 The synthesis demo included, demo3Dtcell_synth, sythesizes from a T cell model. The demo takes in two models, one model containing the cell and nuclear shape models, and the other containing a T cell protein shape model.
 
