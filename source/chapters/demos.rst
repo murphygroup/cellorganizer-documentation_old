@@ -27,10 +27,22 @@ Brief Descriptions
 
 demo2D00
 --------
-Synthesize one 2D image with nuclear, cell shape, and vesicular channels
-from all vesicular object models (nucleoli, lysosomes, endosomes, and
-mitochondria) without convolution. The model was trained from the Murphy
-Lab 2D HeLa dataset.
+
+Demo header::
+
+   % Synthesize one 2D image with nuclear, cell shape, and vesicular channels
+   % from all vesicular object models (nucleoli, lysosomes, endosomes, and
+   % mitochondria) without convolution. The model was trained from the Murphy
+   % Lab 2D HeLa dataset.
+   %
+   % What you need
+   % -------------
+   % * a list of valid CellOrganizer model files
+   %
+   % Output
+   % ------
+   % * one TIFF file with six slices (nuclear, cell shape, nucleolar,
+   %   lysosomal, endosomal, and mitochondrial channels)
 
 demo2D01
 --------
