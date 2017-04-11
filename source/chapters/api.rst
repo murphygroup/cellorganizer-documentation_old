@@ -156,6 +156,13 @@ Method header::
   % verbose                   (optional) Displays messages to screen. Default is true.
   % debug                     (optional) Reports errors and warnings. Default is false.
 
+model2info
+**********
+
+Method header::
+
+ % MODEL2INFO List basic information about an SLML model.
+
 slml2img
 ********
 
