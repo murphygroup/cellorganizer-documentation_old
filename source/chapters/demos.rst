@@ -262,3 +262,13 @@ This demo shows how an end-user can use experimental data to synthesize a framew
 demo3DDiffeoSynth_uniform
 -------------------------
 This demo illustrates how to sample uniformly at random from a diffeomorphic model.
+
+
+demo3Dtcell_train
+-----------------
+This demo shows how to train a morphing model for t cell images
+
+demo3Dtcell_synth
+-----------------
+This demo is used for synthesis of images from a framework model from diffeomorphic model and protein model from morphing model for t cells. 
+
