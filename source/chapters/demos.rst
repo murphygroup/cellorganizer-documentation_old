@@ -20,7 +20,7 @@ Demos Summary Table
 This table will let you know if the demo is meant to train a model or synthesize an image.
 
 .. exec::
-   print commands.getoutput('python make_tabulate_from_excel.py ./demo_lists.xlsx "v2.5"')
+   print commands.getoutput('python make_tabulate_from_excel.py ./demo_lists.xlsx "v2.6"')
 
 Brief Descriptions
 ******************
@@ -484,8 +484,7 @@ Demo header::
 % Dr. Jonathan Jarvik and Dr. Peter Berget.
 %
 % Input 
-% -----
-% * a directory of raw or synthetic protein images
+% -----% * a directory of raw or synthetic protein images
 % * the resolution of the images (all images should have the same
 %   resolution)
 %
@@ -675,8 +674,8 @@ Demo header::
 % ------
 % * three TIFF files (cell shape, nuclear, and nucleolar channels)
 
-demo3DDiffeoSynth_gmm
----------------------
+demo3D29
+--------
 Demo header::
 
 % This demo illustrates different ways to sample from points in a
@@ -690,8 +689,8 @@ Demo header::
 % ------
 % * a random walk
 
-demo3DDiffeoSynth_uniform
--------------------------
+demo3D30
+--------
 
 Demo header::
 
@@ -761,8 +760,106 @@ Demo header::
 % * SBML instance
 % * single channel TIF files
 
-demo3Dtcell_train
------------------
+demo3D35
+--------
+Demo header::
+
+% Learns a random walk from time series images as in Figure 6 and 7 of
+% Johnson 2015
+%
+% What you need
+% -------------
+% * a valid CellOrganizer diffeomorphic model
+%
+% Output
+% ------
+% * a viz of the shape space
+
+demo3D36
+--------
+Demo header::
+
+% Synthesize multiple 3D images from a lysosome model at different resolutions.
+%
+% Input
+% -----
+% * valid lysosomal model
+%
+% Output
+% ------
+% * multiple 3D images at different resolutions
+
+demo3D37
+--------
+Demo header::
+
+% This demo exists to illustrate how padding size and window size effect the
+% performance of diffeomorphic metric.
+
+demo3D38
+--------
+Demo header::
+
+% Synthesizes 1 image using a lysosomal model with sampling mode
+% set to 'disc', no convolution using the object avoidance methods
+% Results will be three TIFF files, one each for cell boundary,
+% nuclear boundary, and lysosomes, in folder "synthesizedImages/cell1".
+
+demo3D39
+--------
+Demo header::
+
+% This demo illustrates how to sample uniformly at random from a
+% diffeomorphic model.
+%
+% Input
+% -----
+% * a valid CellOrganizer model file
+%
+% Output
+% ------
+% * a random walk
+
+demo3D40
+--------
+Demo header::
+
+% Train 3D generative model of the cell framework (nucleus and cell shape)
+% from the entire Murphy Lab 3D HeLa dataset.
+%
+% Input 
+% -----
+% * a directory of raw or synthetic nucleus images
+% * a directory of raw or synthetic cell shape images
+% * the resolution of the images (all images should have the same
+%   resolution)
+%
+% Output
+% ------
+% * a valid model
+
+demo3D41
+--------
+Demo header::
+
+% Train 3D generative model of the nucleus, cell shape, and lysosome from
+% all LAMP2 images in the Murphy Lab 3D HeLa dataset that are either in the
+% current directory or in the demo3D11 directory.
+%
+% Input
+% -----
+% * a directory of raw or synthetic nucleus images
+% * a directory of raw or synthetic cell shape images
+% * a directory of raw or synthetic lysosome images
+% * the resolution of the images (all images should have the same
+%   resolution)
+%
+% Output
+% ------
+% * a valid SLML model file
+
+demo3D42
+--------
 Demo header::
 
 % this demo illustrates using CellOrganizer to train a protein distribution
@@ -791,8 +888,8 @@ Demo header::
 % cell shape (in demos/LAT_reltime_1.mat)
 % * various intermediate results files (in /param and /tmp)
 
-demo3Dtcell_synth
------------------
+demo3D43
+--------
 Demo header::
 
 % This is the synthesis demo for T cell model. 
