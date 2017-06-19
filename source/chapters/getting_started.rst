@@ -7,7 +7,7 @@ CellOrganizer is an open source system for using microscope images to learn stat
 
 Since these models can be used to synthesize new images reflecting what the model learned, they are referred to as *generative* models.
 
-For example, CellOrganizer can take fluorescence microscope images of many cells expressing a GFP-tagged lysosomal protein and construct a model of how the cell and nuclear shapes vary among those cells, of how many lysosomes are typically found per cell, how they vary in size, and where they are typically located relative to the cell and nuclear boundaries.
+For example, CellOrganizer can take fluorescence microscope images of many cells expressing a GFP-tagged lysosomal protein and construct a model of how the cell and nuclear shapes vary among those cells, how many lysosomes are typically found per cell, how they vary in size, and where they are typically located relative to the cell and nuclear boundaries.
 
 Publications describing the development and use of various software components of CellOrganizer are located `here <http://cellorganizer.org/Publications>`_.
 A recent overview of the principles behind CellOrganizer can be found `here <http://www.sciencedirect.com/science/article/pii/S1046202315301298>`_.
