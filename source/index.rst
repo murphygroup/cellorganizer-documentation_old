@@ -16,6 +16,8 @@ Contents:
 
    ./chapters/start
 
+   ./chapters/installation
+
    ./chapters/tutorials
 
    ./chapters/demos
