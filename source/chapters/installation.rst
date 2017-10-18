@@ -3,7 +3,6 @@
 Installation
 ============
 
-
 Installing CellOrganizer locally
 ********************************
 
@@ -20,10 +19,10 @@ The commands above will download and extract to disk the contents of CellOrganiz
 
 To start using CellOrganizer, start a Matlab session and change directory to the location of CellOrganizer and run setup.m. In the Matlab terminal, type
 
-.. code-block:: bash
+.. code-block:: matlab
 
 	cd( ‘/path/to/cellorganizer’ );
-	setup;
+	setup();
 
 If you were successful you should see a message like
 

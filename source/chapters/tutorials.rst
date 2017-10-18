@@ -4,8 +4,6 @@
 Tutorial: CellOrganizer in 45 Minutes
 ======================================
 
-
-
 Introduction
 ************
 
@@ -63,12 +61,34 @@ Prerequisites
 Requirements for inputs for building models
 *******************************************
 
-Images must:
+The main function that builds a generative model is called `img2slml`. This function has four input arguments
 
-* be in a `BioFormats <http://loci.wisc.edu/software/bio-formats>`_ compatible format.
+* `dna_membrane_images`
+* `cell_membrane_images`
+* `protein_channel_images`
+* `options_structure`
+
+The first three input parameters are 
+
+* a string containing wildcards, e.g. `/path/to/images/*.tiff`
+* a cell array of strings that point to each file, e.g. `{'/path/to/images/1.tiff', '/path/to/images/2.tiff'};`
+* a cell array of function handles where each function returns a 3D array that corresponding to each image in the list
+
+The fourth argument `options_structure` is a Matlab structure that contain the fields necessary for you to train the model in question.
+
+In general, the images should
+
+* be compatible with `BioFormats <http://loci.wisc.edu/software/bio-formats>`_.
 * contain only a single cell OR have a single cell region defined by an additional mask images
-* contain channel(s) for fluorescent marker(s) appropriate for the desired type of model
-> typically, a channel for nuclear shape (e.g., DAPI, Hoechst, tagged histone) channels, cell shape (e.g., a soluble cytoplasmic protein, a plasma membrane protein, or autofluorescence), and a specific organelle
+* contain channel(s) for fluorescent marker(s) appropriate for the desired type of model (typically, a channel for nuclear shape (e.g., DAPI, Hoechst, tagged histone) channels, cell shape (e.g., a soluble cytoplasmic protein, a plasma membrane protein, or autofluorescence), and a specific organelle)
+
+If your images are valid OME.TIFF files with regions of interest (ROI), then you can use the helper function `get_list_of_function_handles_from_ometiff` to retrieve a list of function handles. Each function handle should be able to return a 3D matrix when called using `feval`. For example
+
+.. gist:: https://gist.github.com/icaoberg/ee061a2d1bbe12ea5d05871f31364ef2
+
+Hence we can use this helper function to generate input arguments for the function `img2slml`. For example
+
+.. gist:: https://gist.github.com/icaoberg/f327f6cd28ee448a2175460280ee4b44
 
 Setup
 *****
