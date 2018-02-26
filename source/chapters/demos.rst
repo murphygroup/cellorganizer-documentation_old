@@ -20,7 +20,7 @@ Demos Summary Table
 This table will let you know if the demo is meant to train a model or synthesize an image.
 
 .. exec::
-   print commands.getoutput('python make_tabulate_from_excel.py ./demo_lists.xlsx "v2.5"')
+   print commands.getoutput('python make_tabulate_from_excel.py ./demo_lists.xlsx "v2.7"')
 
 Brief Descriptions
 ******************
