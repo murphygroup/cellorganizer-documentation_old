@@ -1,6 +1,7 @@
 #!/bin/bash
 
 virtualenv --system-site-packages .
+
 source ./bin/activate
 
 pip install numpy scipy matplotlib sphinx
@@ -11,10 +12,6 @@ pip install pandas
 pip install sphinxcontrib-images
 pip install tabulate
 pip install sphinxcontrib-matlabdomain
-
-cd sphinx_rtd_theme
-git submodule init
-git submodule update
-cd ..
+pip install sphinx_rtd_theme
 
 deactivate
