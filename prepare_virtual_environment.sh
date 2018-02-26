@@ -12,7 +12,9 @@ pip install sphinxcontrib-images
 pip install tabulate
 pip install sphinxcontrib-matlabdomain
 
+cd sphinx_rtd_theme
 git submodule init
 git submodule update
+cd ..
 
 deactivate
