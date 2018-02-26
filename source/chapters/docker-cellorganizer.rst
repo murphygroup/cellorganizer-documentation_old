@@ -11,21 +11,18 @@ Whom is this tutorial for?
 *************************
 This tutorial was written for people who do not have and do not intend to obtain MATLAB, but still want access to CellOrganizer's various capabilities. We expect that the typical user will have had experience with fluorescence microscopy, and perhaps some knowledge of either generative models, cell modeling, or the original MATLAB distribution of CellOrganizer.  
 
-
 Disclaimer
 **********
 CellOrganizer is research code, and as such it is under constant development. Although we do our best to ensure our code is reliable, we distribute this code under the GNU public license without any type of warranty. Despite our best efforts, a feature may sometimes fail to work as expected. If you experience any such issues or have any questions regarding CellOrganizer, please do not hesitate to contact us at cellorganizer@compbio.cmu.edu. 
 
-
 Setup
 *****
-Step 0: Install an appropriate Docker distribution 
---------------------------------------------------
+Step 0: Install Docker
+----------------------
 More information about the various Docker distributions available can be found `here <https://www.docker.com/get-docker>`_. We recommend that you get started by downloading the version of `Docker CE <https://www.docker.com/community-edition>`_ that is compatible with your Operating System. 
 
-
-Step 1: Download the most recent version of CellOrganizer-Docker
-----------------------------------------------------------------
+Step 1: Download the most recent images
+---------------------------------------
 Make sure Docker is running on your computer. Open Terminal and enter the command:
 
 
