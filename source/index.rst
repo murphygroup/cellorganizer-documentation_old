@@ -18,6 +18,8 @@ Contents:
 
    ./chapters/installation
 
+   ./chapters/docker-cellorganizer
+
    ./chapters/tutorials
 
    ./chapters/demos
