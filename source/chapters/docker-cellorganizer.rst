@@ -4,7 +4,12 @@ CellOrganizer on Docker
 
 Introduction
 ************
-CellOrganizer is a software package that learns generative models of cellorganization from fluorescence micrographs. These models are useful for modeling the dependency between compartments of the cell, allowing for a compact representation of cell geometries that is useful for spatially realistic biochemical simulations. There are two main functions which this tutorial will cover: **img2slml**, the top-level function to train a generative model of cell morphology, and **slml2img**, the top-level function to generate simulated instances from a trained model. 
+CellOrganizer is a software package that learns generative models of cell organization from fluorescence micrographs. These models are useful for modeling the dependency between compartments of the cell, allowing for a compact representation of cell geometries that is useful for spatially realistic biochemical simulations. 
+
+There are two main functions which this document will cover
+
+- **img2slml**, the top-level function to train generative models of cell morphology, and 
+- **slml2img**, the top-level function to generate simulated instances from a trained generative model. 
 
 Whom is this tutorial for?
 *************************
@@ -19,24 +24,33 @@ Setup
 
 Install Docker
 --------------
-More information about the various Docker distributions available can be found `here <https://www.docker.com/get-docker>`_. We recommend that you get started by downloading the version of `Docker CE <https://www.docker.com/community-edition>`_ that is compatible with your Operating System. 
+Installing Docker is beyond the scope of this document. To learn about Docker Community Edition (CE), click `here <https://www.docker.com/community-edition>`_.
 
-Download the most recent image
-------------------------------
-Open Terminal and enter the command:
+* To install Docker-for-Mac, click `here <https://docs.docker.com/docker-for-mac/install/>`_.
+* To install Docker-for-Windows, click `here <https://docs.docker.com/docker-for-windows/install/>`_.
 
+Installing Kitematic
+--------------------
+
+The easiest way to download an image and run a container is to use `Kitematic <https://kitematic.com/>`_.
+
+* To install Kitematic, click `here <ttps://kitematic.com/docs/>`_.
+
+Download the most recent image using Docker command line
+--------------------------------------------------------
+
+Open terminal and enter the command
 
 	``docker pull murphylab/cellorganizer:latest``
 
+Running this command will initiate download and pull the most recent image of cellorganizer-docker from Docker Hub down to your computer.
 
-This should pull the most recent image of cellorganizer-docker from Docker Hub down to your computer.
+.. figure:: ../images/docker/pull.png
+   :align: center
 
-
-Once the download is complete, enter the command:
-
+Once the download is complete, you can confirm the image was downloaded by entering the command:
 
 	``docker images``
-
 
 You should see a record of a docker image identified by its repository **murphylabs/cellorganizer** and the tag **latest**. 
 
