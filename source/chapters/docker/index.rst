@@ -16,11 +16,6 @@ Whom is this tutorial for?
 
 This tutorial was written for people who do not have and/or do not intend to obtain MATLAB, but still want access to CellOrganizer's various capabilities. It is expected that the typical user will have had experience with fluorescence microscopy, and perhaps some knowledge of either generative models, cell modeling, or the original MATLAB distribution of CellOrganizer.  
 
-Disclaimer
-==========
-
-CellOrganizer is research code, and as such it is under constant development. Although we do our best to ensure our code is reliable, we distribute this code under the GNU public license without any type of warranty. Despite our best efforts, a feature may sometimes fail to work as expected. If you experience any such issues or have any questions regarding CellOrganizer, please do not hesitate to contact us at cellorganizer@compbio.cmu.edu. 
-
 Setup
 =====
 
