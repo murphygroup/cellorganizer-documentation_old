@@ -13,7 +13,7 @@ There are two main functions which this document will cover
 
 Whom is this tutorial for?
 *************************
-This tutorial was written for people who do not have and do not intend to obtain MATLAB, but still want access to CellOrganizer's various capabilities. We expect that the typical user will have had experience with fluorescence microscopy, and perhaps some knowledge of either generative models, cell modeling, or the original MATLAB distribution of CellOrganizer.  
+This tutorial was written for people who do not have and/or do not intend to obtain MATLAB, but still want access to CellOrganizer's various capabilities. It is expected that the typical user will have had experience with fluorescence microscopy, and perhaps some knowledge of either generative models, cell modeling, or the original MATLAB distribution of CellOrganizer.  
 
 Disclaimer
 **********
@@ -22,22 +22,23 @@ CellOrganizer is research code, and as such it is under constant development. Al
 Setup
 *****
 
-Install Docker
---------------
+The following instructions will teach you
+
+* How to install Docker, the virtualization engine that will run the container
+* How to download the latest cellorganizer-docker image from Docker Hub, i.e. the docker images repository
+* How to start a container from the Docker image
+* How to connect to the container
+* How to run some of the demos included in the container
+
+Installing Docker
+-----------------
 Installing Docker is beyond the scope of this document. To learn about Docker Community Edition (CE), click `here <https://www.docker.com/community-edition>`_.
 
 * To install Docker-for-Mac, click `here <https://docs.docker.com/docker-for-mac/install/>`_.
 * To install Docker-for-Windows, click `here <https://docs.docker.com/docker-for-windows/install/>`_.
 
-Installing Kitematic
---------------------
-
-The easiest way to download an image and run a container is to use `Kitematic <https://kitematic.com/>`_.
-
-* To install Kitematic, click `here <ttps://kitematic.com/docs/>`_.
-
 Download the most recent image using Docker command line
---------------------------------------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Open terminal and enter the command
 
@@ -45,14 +46,32 @@ Open terminal and enter the command
 
 Running this command will initiate download and pull the most recent image of cellorganizer-docker from Docker Hub down to your computer.
 
-.. figure:: ../images/docker/pull.png
+.. figure:: ../../images/docker/docker-pull.png
    :align: center
 
 Once the download is complete, you can confirm the image was downloaded by entering the command:
 
 	``docker images``
 
-You should see a record of a docker image identified by its repository **murphylabs/cellorganizer** and the tag **latest**. 
+You should see a record of a docker image identified by its repository **murphylabs/cellorganizer** and the tag **latest**.
+
+Installing Kitematic
+--------------------
+
+The easiest way to download an image and run a container is to use `Kitematic <https://kitematic.com/>`_. Kitematic is a tool for downloading images and running containers.
+
+* To install Kitematic, click `here <ttps://kitematic.com/docs/>`_.
+
+.. ATTENTION::
+   Kitematic is not necessary but it is reccomended to streamline installation and deployment
+ 
+Download the most recent image using Kitematic
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Start Kitematic. It should open a window similar to the screenshot below
+
+.. figure:: ../images/docker/kitematic.png
+   :align: center
 
 demos
 *****
