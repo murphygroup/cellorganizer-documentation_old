@@ -3,7 +3,8 @@
 virtualenv --system-site-packages .
 source ./bin/activate
 
-pip install numpy scipy matplotlib sphinx
+pip install numpy scipy matplotlib
+pip install -U sphinx
 pip install -U ipython
 pip install --upgrade pip
 pip install xlrd
