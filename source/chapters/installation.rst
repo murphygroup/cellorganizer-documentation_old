@@ -70,3 +70,5 @@ After you finished the steps above, you can either request an interactive sessio
 Then open Matlab, change directory to the location where the contents of CellOrganizer were extracted and run:
 
 	setup();
+
+.. include:: docker.rst
