@@ -113,7 +113,7 @@ For example, to run demo3D00, you could create a file called script.sh whose con
 	cd /path/to/cellorganizer/folder
 	matlab -nodesktop -nosplash -r "setup(); demo3D00(), exit;"
 
-The use the command
+Then use the command
 
 .. code-block:: bash
 

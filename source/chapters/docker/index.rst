@@ -58,7 +58,7 @@ Open terminal and enter the command
 
 Running this command will initiate download and pull the most recent image of cellorganizer-docker from Docker Hub down to your computer.
 
-.. figure:: ../../images/docker/docker-pull.png
+.. figure:: ../images/docker/docker-pull.png
    :align: center
 
 Once the download is complete, you can confirm the image was downloaded by entering the command:
@@ -89,15 +89,15 @@ demos
 -----
 There are several demos included within the CellOrganizer software bundle. These demos are intended to illustrate CellOrganizer's functionality, and should be used to familiarize the user with the input/output format of various top-level functions such as **img2slml** and **slml2img**. 
 
+.. exec::
+   print commands.getoutput('python make_tabulate_from_excel.py source/chapters/docker/demos.xlsx "v2.7"')
 
 Access cellorganizer-docker container interactively
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Make sure Docker is running on your computer. Open Terminal and enter the command:
 
-
 	``docker run -it murphylab/cellorganizer:latest``
- 
 
 The **docker run** command creates a container instance from our cellorganizer-docker image (**murphylab/cellorganizer:latest**). 
 
@@ -108,18 +108,13 @@ Run a demo that invokes img2slml
 
 An example of a demo that trains a generative model from a series of .tif image files is **demo2D01**. To run this demo, change your current directory to **/home/cellorganizer/demos/2D/demo2D01** by entering:
 
-
 	 ``cd /home/cellorganizer/demos/2D/demo2D01``
-
 
 You should find the shell script **demo2D01.sh**. To run the demo, Enter the command:
 
-
 	``./demo2D01.sh``
 
-
 This demo will save a folder **param** containing .mat files as well as a .mat file **lamp2.mat** to the same directory (**/home/cellorganizer/demos/2D/demo2D01**). These .mat files contain information characterizing the trained generative model.
-
 
 Step 2: Run a demo that invokes slml2img
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
