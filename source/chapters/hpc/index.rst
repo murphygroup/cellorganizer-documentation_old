@@ -1,5 +1,5 @@
-Installing CellOrganizer for Matlab on an HPC
-*********************************************
+Installing CellOrganizer for Matlab on a HPC
+********************************************
 
 Requirements
 ------------
@@ -52,12 +52,20 @@ Starting CellOrganizer for Matlab
 The next instructions assume the HPC cluster you have access to uses `SLURM <https://slurm.schedmd.com/>`_ as its default scheduler. 
 
 .. IMPORTANT::
-	Using CellOrganizer for Matlab on all possible schedulers is beyong the scope of this document, however feel free to contact us through the mailing list and we will do our best to help you.
+	Using CellOrganizer for Matlab on all possible popular schedulers is beyond the scope of this document, however feel free to contact us through the mailing list and we will do our best to help you.
 
 Using CellOrganizer for Matlab interactively
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To start using CellOrganizer, start a Matlab session and change directory to the location of CellOrganizer and run setup.m. 
+Use `srun <https://slurm.schedmd.com/srun.html>`_ or `salloc <https://slurm.schedmd.com/salloc.html>`_ to allocate resources to start Matlab. 
+
+For example 
+
+.. code-block:: bash
+
+	srun -p pool --mem=8Gb --pty /bin/bash
+
+Start a Matlab session and change directory to the location of CellOrganizer and run setup.m. 
 
 In the Matlab, type
 
@@ -112,44 +120,3 @@ The use the command
 	sbatch script.sh
 
 to add the job to the scheduler.
-
-
-Bridges
-~~~~~~~
-
-
-In terminal run
-
-.. code-block:: bash
-
-	wget -nc http://cellorganizer.org/Downloads/v2.6/cellorganizer_v2.6.0_and_image_collection.tgz
-	tar -xvf cellorganizer_v2.6.0_and_image_collection.tgz
-
-Next make sure the Matlab binary is available in `PATH`. In terminal run
-
-.. code-block:: bash
-
-	>> module avail matlab
-
-	------------------- /opt/modulefiles ------------------- 
-	matlab/MCR_R2013a      matlab/R2016a      matlab/R2017a
-
-	>> module load matlab/R2017a
-	>> which matlab
-
-	/opt/packages/matlab/R2017a/bin/matlab
-
-If you see a result similar to the above, then you should be ready to compute.
-
-.. HINT::
-   You can add the command `module load matlab/R2017a` to `.bashrc` file or at the top of the submission SLURM scripts.
-
-After you finished the steps above, you can either request an interactive session or submit a job to the scheduler. 
-
-Then open Matlab, change directory to the location where the contents of CellOrganizer were extracted and run:
-
-	setup();
-
-
-
-This section assumes you have a license to run Matlab on Bridges. For more information about Matlab licenses on Bridges, please send an email to `remarks AT psc AT edu`.
