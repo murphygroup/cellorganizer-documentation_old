@@ -1,4 +1,4 @@
-Installi g CellOrganizer for Docker 
+Installing CellOrganizer for Docker 
 ***********************************
 
 Introduction
@@ -80,6 +80,9 @@ There are several demos included within the CellOrganizer software bundle. These
 
 .. exec::
    print commands.getoutput('python make_tabulate_from_excel.py source/chapters/docker/demos.xlsx "v2.7"')
+
+Running CellOrganizer for Docker 
+********************************
 
 Access cellorganizer-docker container interactively
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
