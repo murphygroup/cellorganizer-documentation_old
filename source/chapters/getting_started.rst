@@ -38,6 +38,12 @@ Cell types for which generative models for at least some organelles have been bu
 
 Support for CellOrganizer has been provided by grants GM075205, GM090033 and GM103712 from the National Institute of General Medical Sciences, grants MCB1121919 and MCB1121793 from the U.S. National Science Foundation, by a Forschungspreis from the Alexander von Humboldt Foundation, and by the Freiburg Institute for Advanced Studies.
 
+Disclaimer
+**********
+
+CellOrganizer is research code, and as such it is under constant development. Although we do our best to ensure our code is reliable, we distribute this code under the GNU public license without any type of warranty. Despite our best efforts, a feature may sometimes fail to work as expected. If you experience any such issues or have any questions regarding CellOrganizer, please do not hesitate to contact us at cellorganizer@compbio.cmu.edu. 
+
+
 .. include:: ./sections/about.rst
 
 .. include:: ./sections/download.rst
