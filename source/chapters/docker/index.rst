@@ -22,7 +22,7 @@ The following instructions describe
 * How to run some of the demos included in the container
 
 Source Code
------------
+===========
 
 The Dockerfile used to construct this Docker image is open source and can be found in `GitHub <https://github.com/icaoberg/docker-cellorganizer>`_.
 
@@ -31,7 +31,7 @@ For convenience, the Docker image can be found in `Docker Hub <https://hub.docke
 The instructions below will show how to download and use this image.
 
 Installing Docker
------------------
+=================
 
 Before downloading the image and spinning a cotainer, you need to install Docker. Installing Docker is beyond the scope of this document. To learn about Docker Community Edition (CE), click `here <https://www.docker.com/community-edition>`_.
 
@@ -39,7 +39,7 @@ Before downloading the image and spinning a cotainer, you need to install Docker
 * To install Docker-for-Windows, click `here <https://docs.docker.com/docker-for-windows/install/>`_.
 
 Download the most recent image using Docker command line
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+--------------------------------------------------------
 
 Open terminal and enter the command
 
@@ -57,7 +57,7 @@ Once the download is complete, you can confirm the image was downloaded by enter
 You should see a record of a docker image identified by its repository **murphylabs/cellorganizer** and the tag **latest**.
 
 Installing Kitematic
---------------------
+====================
 
 The easiest way to download an image and run a container is to use `Kitematic <https://kitematic.com/>`_. Kitematic is a tool for downloading images and running containers.
 
@@ -67,7 +67,7 @@ The easiest way to download an image and run a container is to use `Kitematic <h
    Kitematic is not necessary but it is reccomended to streamline installation and deployment
  
 Download the most recent image using Kitematic
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+----------------------------------------------
 
 Start Kitematic. It should open a window similar to the screenshot below
 
@@ -75,7 +75,8 @@ Start Kitematic. It should open a window similar to the screenshot below
    :align: center
 
 Demos included in the distribution
-----------------------------------
+==================================
+
 There are several demos included within the CellOrganizer software bundle. These demos are intended to illustrate CellOrganizer's functionality, and should be used to familiarize the user with the input/output format of various top-level functions such as **img2slml** and **slml2img**. 
 
 .. exec::
@@ -85,7 +86,7 @@ Running CellOrganizer for Docker
 ********************************
 
 Access cellorganizer-docker container interactively
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+===================================================
 
 Make sure Docker is running on your computer. Open Terminal and enter the command:
 
@@ -96,7 +97,7 @@ The **docker run** command creates a container instance from our cellorganizer-d
 The **-it** option enables us to interactively access the container. The Terminal window now reflects the view within the cellorganizer directory inside our container instance. We have access to all files and directories in the container through Terminal. 
 
 Run a demo that invokes img2slml
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+--------------------------------
 
 An example of a demo that trains a generative model from a series of .tif image files is **demo2D01**. To run this demo, change your current directory to **/home/cellorganizer/demos/2D/demo2D01** by entering:
 
@@ -108,8 +109,9 @@ You should find the shell script **demo2D01.sh**. To run the demo, Enter the com
 
 This demo will save a folder **param** containing .mat files as well as a .mat file **lamp2.mat** to the same directory (**/home/cellorganizer/demos/2D/demo2D01**). These .mat files contain information characterizing the trained generative model.
 
-Step 2: Run a demo that invokes slml2img
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Run a demo that invokes slml2img
+----------------------------------------
+
 An example of a demo that produces simulated images from a trained generative model is **demo2D02**. To run this demo, change your current directory to **/home/cellorganizer/demos/2D/demo2D02** by entering: 
 
 
@@ -125,13 +127,11 @@ You should find the shell script **demo2D02.sh**. To run the demo, Enter the com
 This demo will save a folder **img** containing these simulated images to the same directory.
 
 
-Step 3: Exit the container
-^^^^^^^^^^^^^^^^^^^^^^^^^^
+Exit the container
+------------------
 To leave the container, enter:
 
-
 	 ``exit``
-
 
 You will return to the local directory in which you previously ran: 
 
@@ -140,7 +140,7 @@ You will return to the local directory in which you previously ran:
 
 
 Export generated data out of the container
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+------------------------------------------
 
 To export generated data out of the container, we need to know:
 	* the container ID
