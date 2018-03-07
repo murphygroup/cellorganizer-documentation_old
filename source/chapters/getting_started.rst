@@ -1,7 +1,7 @@
 .. getting_started:
 
-Getting Started
-===============
+Introduction
+============
 
 CellOrganizer is an open source system for using microscope images to learn statistical models of the structure of cell components and of how those components are organized relative to each other.
 

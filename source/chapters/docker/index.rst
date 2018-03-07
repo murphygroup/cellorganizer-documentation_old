@@ -1,32 +1,21 @@
-Using the CellOrganizer image on Docker 
-***************************************
+Installi g CellOrganizer for Docker 
+***********************************
 
 Introduction
 ============
 
-CellOrganizer is a software package that learns generative models of cell organization from fluorescence micrographs. These models are useful for modeling the dependency between compartments of the cell, allowing for a compact representation of cell geometries that is useful for spatially realistic biochemical simulations. 
+The first release of CellOrganizer for Docker contains binaries for the two main functions which this document will cover
 
-The first release of CellOrganizer contains binaries for the two main functions which this document will cover
-
-- **img2slml**, the top-level function to train generative models of cell morphology, and 
+- **img2slml**, the top-level function to train generative models of cell, and 
 - **slml2img**, the top-level function to generate simulated instances from a trained generative model. 
-
-Whom is this container for?
-===========================
-
-This container was built for people who do not have and/or do not intend to obtain MATLAB, but still want access to CellOrganizer's various capabilities. It is expected that the typical user will have had experience with fluorescence microscopy, and perhaps some knowledge of either generative models, cell modeling, or the original MATLAB distribution of CellOrganizer.  
-
-Disclaimer
-==========
-
-CellOrganizer is research code, and as such it is under constant development. Although we do our best to ensure our code is reliable, we distribute this code under the GNU public license without any type of warranty. Despite our best efforts, a feature may sometimes fail to work as expected. If you experience any such issues or have any questions regarding CellOrganizer, please do not hesitate to contact us at cellorganizer@compbio.cmu.edu. 
 
 Setup
 =====
 
-The following instructions will teach you
+The following instructions describe
 
 * How to install Docker, the virtualization engine that will run the container
+* How to install Kitematic, a UI for Docker
 * How to download the latest cellorganizer-docker image from Docker Hub, i.e. the docker images repository
 * How to start a container from the Docker image
 * How to connect to the container
@@ -47,7 +36,7 @@ Installing Docker
 Before downloading the image and spinning a cotainer, you need to install Docker. Installing Docker is beyond the scope of this document. To learn about Docker Community Edition (CE), click `here <https://www.docker.com/community-edition>`_.
 
 * To install Docker-for-Mac, click `here <https://docs.docker.com/docker-for-mac/install/>`_.
-* To install Docker-for-Windows, click `here <https://docs.docker.com/docker-for-windows/install/>`_.s
+* To install Docker-for-Windows, click `here <https://docs.docker.com/docker-for-windows/install/>`_.
 
 Download the most recent image using Docker command line
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -85,8 +74,8 @@ Start Kitematic. It should open a window similar to the screenshot below
 .. figure:: ../images/docker/kitematic.png
    :align: center
 
-demos
------
+Demos included in the distribution
+----------------------------------
 There are several demos included within the CellOrganizer software bundle. These demos are intended to illustrate CellOrganizer's functionality, and should be used to familiarize the user with the input/output format of various top-level functions such as **img2slml** and **slml2img**. 
 
 .. exec::

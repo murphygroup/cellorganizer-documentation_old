@@ -25,12 +25,12 @@ Resources
 Publications
 ------------
 
-`cellorganizer.org/Publications/ <http://cellorganizer.org/Publications/>`_
+* `CellOrganizer Publications <http://www.cellorganizer.org/publications/>`_
 
 Software
 --------
 
-`cellorganizer.org <http://cellorganizer.org>`_ - Current CellOrganizer distribution
+`CellOrganizer <http://cellorganizer.org>`_
 
 Other Software
 --------------
@@ -40,22 +40,32 @@ Other Software
 Image Databases
 ---------------
 
-* `www.openmicroscopy.org/ <http://www.openmicroscopy.org/>`_
-* `www.cellimagelibrary.org <http://www.cellimagelibrary.org>`_
-* `www.proteinatlas.org/subcellular <http://www.proteinatlas.org/subcellular>`_
-* `murphylab.web.cmu.edu/data/ <http://murphylab.web.cmu.edu/data/>`_
+* `Cell Image Library <http://www.cellimagelibrary.org>`_
+* `Human Protein Atlas <http://www.proteinatlas.org/subcellular>`_
+* `Murphy Lab Public Datasets <http://murphylab.web.cmu.edu/data/>`_
 
 Prerequisites
 *************
 
+.. ATTENTION::
+   CellOrganizer is only support on Windows through CellOrganizer for Docker
+
 * An OS X, Linux or Unix operating system
 * MATLAB installation (MATLAB 2014a or newer) with the following toolboxes:
-
->Image Processing Toolbox
->Statistics Toolbox
->Curve Fitting Toolbox
->SimBiology Toolbox.
-
+        * Bioinformatics Toolbox
+        * Computer Vision System Toolbox
+        * Control System Toolbox
+        * Curve Fitting Toolbox
+        * Image Processing Toolbox
+        * Mapping Toolbox
+        * Optimization Toolbox
+        * Robust Control Toolbox
+        * Signal Processing Toolbox
+        * Simulink
+        * Simulink Design Optimization
+        * Statistics and Machine Learning Toolbox
+        * System Identification Toolbox
+        * Wavelet Toolbox 
 * Some basic familiarity with writing scripts/programming (preferably in MATLAB).
 
 Requirements for inputs for building models

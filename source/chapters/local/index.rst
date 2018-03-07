@@ -22,8 +22,6 @@ Requirements
 Downloading CellOrganizer for Matlab
 ------------------------------------
 
-CellOrganizer is a software package that learns generative models of cell organization from fluorescence micrographs. These models are useful for modeling the dependency between compartments of the cell, allowing for a compact representation of cell geometries that is useful for spatially realistic biochemical simulations. 
-
 CellOrganizer for Matlab is the most flexible and powerful of the CellOrganizer deliverable, since it interfaces with `Matlab <https://www.mathworks.com/products/matlab.html>`_ which facilitates data analysis.
 
 To download the latest CellOrganizer for Matlab distribution go to the `download page <http://cellorganizer.org/downloads/>`_ and download the latest release. Aftwards, extract the contents of the release into a local directory of your preference. 
