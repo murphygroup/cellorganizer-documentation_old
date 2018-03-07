@@ -22,7 +22,7 @@ The following instructions describe
 * How to run some of the demos included in the container
 
 Source Code
-^^^^^^^^^^^
+-----------
 
 The Dockerfile used to construct this Docker image is open source and can be found in `GitHub <https://github.com/icaoberg/docker-cellorganizer>`_.
 
