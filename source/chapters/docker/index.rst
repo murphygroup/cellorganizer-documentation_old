@@ -1,8 +1,8 @@
 Installing CellOrganizer for Docker 
-###################################
+***********************************
 
 Introduction
-************
+------------
 
 The first release of CellOrganizer for Docker contains binaries for the two main functions which this document will cover
 
@@ -10,7 +10,7 @@ The first release of CellOrganizer for Docker contains binaries for the two main
 - **slml2img**, the top-level function to generate simulated instances from a trained generative model. 
 
 Setup
-*****
+-----
 
 The following instructions describe
 
@@ -22,7 +22,7 @@ The following instructions describe
 * How to run some of the demos included in the container
 
 Source Code
-***********
+-----------
 
 The Dockerfile used to construct this Docker image is open source and can be found in `GitHub <https://github.com/icaoberg/docker-cellorganizer>`_.
 
@@ -31,15 +31,15 @@ For convenience, the Docker image can be found in `Docker Hub <https://hub.docke
 The instructions below will show how to download and use this image.
 
 Installing Docker
-*****************
+-----------------
 
 Before downloading the image and spinning a cotainer, you need to install Docker. Installing Docker is beyond the scope of this document. To learn about Docker Community Edition (CE), click `here <https://www.docker.com/community-edition>`_.
 
 * To install Docker-for-Mac, click `here <https://docs.docker.com/docker-for-mac/install/>`_.
 * To install Docker-for-Windows, click `here <https://docs.docker.com/docker-for-windows/install/>`_.
 
-Download the most recent image using Docker command line
---------------------------------------------------------
+
+**Download the most recent image using Docker command line**
 
 Open terminal and enter the command
 
@@ -57,7 +57,7 @@ Once the download is complete, you can confirm the image was downloaded by enter
 You should see a record of a docker image identified by its repository **murphylabs/cellorganizer** and the tag **latest**.
 
 Installing Kitematic
-********************
+--------------------
 
 The easiest way to download an image and run a container is to use `Kitematic <https://kitematic.com/>`_. Kitematic is a tool for downloading images and running containers.
 
@@ -66,8 +66,8 @@ The easiest way to download an image and run a container is to use `Kitematic <h
 .. ATTENTION::
    Kitematic is not necessary but it is reccomended to streamline installation and deployment
  
-Download the most recent image using Kitematic
-----------------------------------------------
+
+**Download the most recent image using Kitematic**
 
 Start Kitematic. It should open a window similar to the screenshot below
 
@@ -75,7 +75,7 @@ Start Kitematic. It should open a window similar to the screenshot below
    :align: center
 
 Demos included in the distribution
-**********************************
+----------------------------------
 
 There are several demos included within the CellOrganizer software bundle. These demos are intended to illustrate CellOrganizer's functionality, and should be used to familiarize the user with the input/output format of various top-level functions such as **img2slml** and **slml2img**. 
 
