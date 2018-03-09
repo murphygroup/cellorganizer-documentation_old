@@ -1,7 +1,7 @@
 .. getting_started:
 
-Getting Started
-===============
+Introduction
+============
 
 CellOrganizer is an open source system for using microscope images to learn statistical models of the structure of cell components and of how those components are organized relative to each other.
 
@@ -10,9 +10,9 @@ Since these models can be used to synthesize new images reflecting what the mode
 For example, CellOrganizer can take fluorescence microscope images of many cells expressing a GFP-tagged lysosomal protein and construct a model of how the cell and nuclear shapes vary among those cells, how many lysosomes are typically found per cell, how they vary in size, and where they are typically located relative to the cell and nuclear boundaries.
 
 Publications describing the development and use of various software components of CellOrganizer are located `here <http://cellorganizer.org/Publications>`_.
-A recent overview of the principles behind CellOrganizer can be found `here <http://www.sciencedirect.com/science/article/pii/S1046202315301298>`_.  And to download the most recent version of CellOrganizer, please visit our `download page<http://cellorganizer.org/Downloads/>`_.
+A recent overview of the principles behind CellOrganizer can be found `here <http://www.sciencedirect.com/science/article/pii/S1046202315301298>`_.  And to download the most recent version of CellOrganizer, please visit our download `page <http://cellorganizer.org/Downloads/>`_.
 
-CellOrganizer provides tools for
+CellOrganizer provides tools for 
 
 * learning generative models of cell organization directly from images;
 * storing and retrieving those models;
@@ -38,6 +38,12 @@ Cell types for which generative models for at least some organelles have been bu
 
 Support for CellOrganizer has been provided by grants GM075205, GM090033 and GM103712 from the National Institute of General Medical Sciences, grants MCB1121919 and MCB1121793 from the U.S. National Science Foundation, by a Forschungspreis from the Alexander von Humboldt Foundation, and by the Freiburg Institute for Advanced Studies.
 
-.. include:: ./sections/about.rst
+Disclaimer
+==========
 
-.. include:: ./sections/download.rst
+CellOrganizer is research code, and as such it is under constant development. Although we do our best to ensure our code is reliable, we distribute this code under the GNU public license without any type of warranty. Despite our best efforts, a feature may sometimes fail to work as expected. If you experience any such issues or have any questions regarding CellOrganizer, please do not hesitate to contact us at cellorganizer@compbio.cmu.edu. 
+
+
+.. include:: ../sections/about.rst
+
+.. include:: ../sections/download.rst

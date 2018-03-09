@@ -10,14 +10,9 @@ Introduction
 CellOrganizer is a software package that learns generative models of cell organization from fluorescence micrographs. These models are useful for modeling the dependency between compartments of the cell, allowing for a compact representation of cell geometries present in cell images and generating image of geometries useful for spatially realistic biochemical simulations. There are two main functions which this tutorial will cover: ``img2slml``, the top-level function to train a generative model of cell morphology, and ``slml2img``, the top-level function to generate an instance from a trained model.
 
 Whom is this tutorial for?
-*************************
+**************************
 
 This tutorial was written for people who have experience with fluorescence microscopy, no experience with CellOrganizer and possibly some experience with MATLAB, generative models, or cell modeling. Users should be interested in learning how to use the automated modeling tools provided by CellOrganizer to explore their image data.
-
-Something of a disclaimer
-*************************
-
-CellOrganizer is research code, and as such it is under constant development. Although we do our best to ensure our code is reliable, we distribute this code under the GNU public license without any type of warranty. For this reason, we hope not but, a feature may not work as expected. Please do not hesitate to contact us at cellorganizer@compbio.cmu.edu with any questions or issues you have.
 
 Resources
 *********
@@ -25,12 +20,12 @@ Resources
 Publications
 ------------
 
-`cellorganizer.org/Publications/ <http://cellorganizer.org/Publications/>`_
+* `CellOrganizer Publications <http://www.cellorganizer.org/publications/>`_
 
 Software
 --------
 
-`cellorganizer.org <http://cellorganizer.org>`_ - Current CellOrganizer distribution
+`CellOrganizer <http://cellorganizer.org>`_
 
 Other Software
 --------------
@@ -40,22 +35,32 @@ Other Software
 Image Databases
 ---------------
 
-* `www.openmicroscopy.org/ <http://www.openmicroscopy.org/>`_
-* `www.cellimagelibrary.org <http://www.cellimagelibrary.org>`_
-* `www.proteinatlas.org/subcellular <http://www.proteinatlas.org/subcellular>`_
-* `murphylab.web.cmu.edu/data/ <http://murphylab.web.cmu.edu/data/>`_
+* `Cell Image Library <http://www.cellimagelibrary.org>`_
+* `Human Protein Atlas <http://www.proteinatlas.org/subcellular>`_
+* `Murphy Lab Public Datasets <http://murphylab.web.cmu.edu/data/>`_
 
 Prerequisites
 *************
 
+.. ATTENTION::
+   CellOrganizer is only support on Windows through CellOrganizer for Docker
+
 * An OS X, Linux or Unix operating system
 * MATLAB installation (MATLAB 2014a or newer) with the following toolboxes:
-
->Image Processing Toolbox
->Statistics Toolbox
->Curve Fitting Toolbox
->SimBiology Toolbox.
-
+        * Bioinformatics Toolbox
+        * Computer Vision System Toolbox
+        * Control System Toolbox
+        * Curve Fitting Toolbox
+        * Image Processing Toolbox
+        * Mapping Toolbox
+        * Optimization Toolbox
+        * Robust Control Toolbox
+        * Signal Processing Toolbox
+        * Simulink
+        * Simulink Design Optimization
+        * Statistics and Machine Learning Toolbox
+        * System Identification Toolbox
+        * Wavelet Toolbox 
 * Some basic familiarity with writing scripts/programming (preferably in MATLAB).
 
 Requirements for inputs for building models
@@ -98,13 +103,13 @@ Step 0: Download the most recent version of CellOrganizer
 The software can be downloaded from the `CellOrganizer homepage <http://cellorganizer.org>`_. Make sure to download the version including images, since we will use these images soon.  After downloading the CellOrganizer source code, unzip the folder, and copy the resulting folder into the "Documents" |rarr| "MATLAB" directory.
 
 Step 1: Add the CellOrganizer directory to the Path
-------
+---------------------------------------------------
 You should see the folder appear in the "Current Folder" in MATLAB on the left side.  If it doesn’t, make sure that your file path is "Users" |rarr| your user name |rarr| "Documents" |rarr| "MATLAB".
 
 To ensure that MATLAB can access the images and files contained within the CellOrganizer folder, right click on "cellorganizer_2.5.2" on the left side of the MATLAB window and select "Add to Path" |rarr| "Selected Folders and Subfolders".
 
 Step 2: Adding images
-------
+---------------------
 Images downloaded as part of the CellOrganizer download can be found in "Documents" |rarr| "MATLAB" |rarr| "cellorganizer_2.5.2" |rarr| "images".
 
 If you don't have your own images and did not download the full version of CellOrganizer in Step 0, then you can download some samples `here <http://murphylab.web.cmu.edu/data/Hela/3D/multitiff/3DHela_LAM.tgz>`. (Note: The whole collection is 2.0 GB.) These are 3D HeLa images with a nuclear stain (channel 0), cell stain (channel 1) and protein stain (channel 2). The tagged protein is `LAMP2<https://en.wikipedia.org/wiki/LAMP2>`_, a lysosomal protein.
@@ -130,7 +135,7 @@ We would like to select just the "LAM" image files found within this folder in o
 
 
 Option 1 (easiest)
-^^^^^^^^
+^^^^^^^^^^^^^^^^^^
 **String wild-cards:** If your files are named in some basic pattern (as the LAM files are), then wildcards are the easiest way to get your file information into CellOrganizer. All of the LAM files have the format "LAM_cellX_chY_t1.tif", where "X" is the number of the image (1-50) and "Y" is the number of the channel (0, 1, or 2 based on nuclear, cell, and protein channels).  Therefore, we will split the images based on their channel and can create an array of image names for each channel using a wildcard as follows, where "*" indicates "any number":
 
 	nuc_img_paths = [img_dir '/LAM_cell*_ch0_t1.tif'];
@@ -138,7 +143,7 @@ Option 1 (easiest)
 	prot_img_paths = [img_dir '/LAM_cell*_ch2_t1.tif'];
 
 Option 2 (advanced)
-^^^^^^^^
+^^^^^^^^^^^^^^^^^^^
 **Cell-array of string paths:** Alternatively, you can store the images as individual paths in a cell array. Since there are 50 images, we will loop through the directory and store each name in an element of a cell array. There are more "programmatically correct" ways to do this, but this is the most direct. For the sake of training time, we'll iterate over only the first 15 images.
 
 	for i = 1:15
@@ -148,7 +153,7 @@ Option 2 (advanced)
 	end
 
 Option 3 (even more advanced)
-^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 **Function handles:** If you're very comfortable with MATLAB, you can pass a cell-array of anonymous function handles as your images into CellOrganizer. If the previous sentence doesn't make any sense to you, it's probably best that you skip this part of the tutorial. An example of using function handles would be::
 
 	for i = 1:15
@@ -163,7 +168,7 @@ Option 3 (even more advanced)
 Here we're using the CellOrganizer provided function ``ml_readimage`` to read in and return the actual image matrix, but any function that returns the actual image matrix of data will work.
 
 Step 2: Set up the option structure
--------------------------------------
+-----------------------------------
 The option structure tells CellOrganizer how you want to build a model, and allows for option input. Most of the options have default values, so we don't have to set them manually for this tutorial. However, we do need to know the pixel resolution of the images and a filename to save the resulting model in. To define the appropriate options, we create a struct variable called ``train_options`` and set its fields accordingly::
 
 	% this is the pixel resolution in um of the images
@@ -184,7 +189,7 @@ So far we have the bare *minimum* requirements for setting up a model. We will s
 This downsamples our input images by 4 in the x- and y-dimensions, decreasing the memory used for the tutorial.
 
 Step 3: Add a model type
----------------------------
+------------------------
 
 We also need to specify what type of model we would like to train.  We do this by adding additional lines to the options structure:
 
@@ -212,7 +217,7 @@ Step 5: Your model
 Now that your run of CellOrganizer has completed without error, you should have a .mat file named model.mat in the directory in which you ran the code. Congratulations, you made it! If you load that file into your workspace, then you'll see that this is another struct with fields. This is the model of your cell images. You'll notice that it's a lot smaller in file size than the collection of source images you used to train it. Take some time to explore these fields.
 
 Synthesizing an Image from a Model
-***********************************
+**********************************
 
 We will next describe how to synthesize a cell shape in CellOrganizer. The main function here is ``slml2img.m``. This function takes two inputs: a cell array of paths to the models from which we want to synthesize an image and a list of options.
 
@@ -221,7 +226,7 @@ Step 0: Create a "scratch" script
 Here we create a new script and call it ``tutorial_synthesis.m``.
 
 Step 1: Set up the model and option inputs
---------------------------------------------
+------------------------------------------
 Start by defining two variables: a cell-array containing the path to the model you created in the **Training** section, and a new option structure (different from the one used for learning). If you followed the instructions in the **Training** section, then you should be able to create a variable using the same path as in **Step 2** of **Training**.::
 
 	model_path = {'model.mat'};
@@ -241,7 +246,7 @@ The option structure is set up similarly to that in **Training**. Here we create
 	synth_options.numberOfSynthesizedImages = 2;
 
 Step 2: Controlling the random seed (optional)
---------------------------------------------
+----------------------------------------------
 
 CellOrganizer generates synthetic images by randomly drawing parameter values from the distributions contained in the specific model.  The random numbers are provided by the MATLAB ``rand`` function, and the specific sequence of random numbers the program will get when it calls ``rand`` can be controlled by specifying what is termed a random seed (which can be any number) using the ``rng`` function::
 
@@ -324,7 +329,7 @@ The output should be::
     	alpha: 2.7464
     	beta: 19.291
 
-This means that the distribution over the number of objects contained in the cells that were used to train this model is modeled as a `gamma distribution<https://en.wikipedia.org/wiki/Gamma_distribution>`_ with two parameters, alpha, and beta. It just so happens that the mean of a gamma distribution is the product of these two parameters. Let’s write a loop to get the average number of autophagosomes from each model:
+This means that the distribution over the number of objects contained in the cells that were used to train this model is modeled as a `gamma distribution <https://en.wikipedia.org/wiki/Gamma_distribution>`_ with two parameters, alpha, and beta. It just so happens that the mean of a gamma distribution is the product of these two parameters. Let’s write a loop to get the average number of autophagosomes from each model:
 
 	for i = 1:length(models)
 		numObjsModel = models{i}.proteinModel.objectModel.numStatModel;

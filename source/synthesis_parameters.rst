@@ -9,7 +9,7 @@ Default Fields
 ==============================================   ===========    ====================================    ==================
 Field                                            Type           Allowed Values                          Default Value
 ==============================================   ===========    ====================================    ==================
-``targetDirectory`                               string         any string                              ``'./'``
+``targetDirectory``                               string         any string                              ``'./'``
 ``prefix``                                       string         any string                              ``'demo'``
 ``numberOfSynthesizedImages``                    int            any int >= 1                            1
 ``compression``                                  string         ``('none','lzw','packbits')``           ``'none'``
@@ -28,8 +28,8 @@ Field                                            Type           Allowed Values  
 ``walksteps``                                    int            any int                                 1
 ``overlapsubsize``                               double         any non-neg double                      0.3
 ``overlapthresh``                                double         any non-neg double                      2
-``rendAtStd``                                	 double         any non-neg double                      2
-===============================================  ===========    ====================================    ==================
+``rendAtStd``                                    double         any non-neg double                      2
+==============================================   ===========    ====================================    ==================
 
 Optional Fields
 +++++++++++++++

@@ -14,8 +14,6 @@ Contents:
 
    ./chapters/getting_started
 
-   ./chapters/start
-
    ./chapters/installation
 
    ./chapters/tutorials
