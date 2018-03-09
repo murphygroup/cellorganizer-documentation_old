@@ -14,11 +14,6 @@ Whom is this tutorial for?
 
 This tutorial was written for people who have experience with fluorescence microscopy, no experience with CellOrganizer and possibly some experience with MATLAB, generative models, or cell modeling. Users should be interested in learning how to use the automated modeling tools provided by CellOrganizer to explore their image data.
 
-Something of a disclaimer
-*************************
-
-CellOrganizer is research code, and as such it is under constant development. Although we do our best to ensure our code is reliable, we distribute this code under the GNU public license without any type of warranty. For this reason, we hope not but, a feature may not work as expected. Please do not hesitate to contact us at cellorganizer@compbio.cmu.edu with any questions or issues you have.
-
 Resources
 *********
 
