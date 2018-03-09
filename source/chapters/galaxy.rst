@@ -74,7 +74,7 @@ The History window depicts the user’s personal scheduler along with their curr
 The Main Content window is Galaxy+Bridges’ workspace. Once a job or workflow is chosen from the Tool Shed, any direct interaction with CellOrganizer occurs in the Main Content window.
 
 Tutorial: Creating a Work History, Submitting a Job, Submitting a Workflow, and Visualizing Results
-*********
+***************************************************************************************************
 
 Creating a Work History
 -----------------------
