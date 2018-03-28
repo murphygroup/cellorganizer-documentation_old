@@ -1,7 +1,7 @@
 OME-TIFF
 --------
 
-The software supports saving synthetic images as valid OME.TIFF. Currently, the software can only save images with one protein pattern as OME.TIFFs. To do this, use the output flag
+The software supports saving synthetic images as valid `OME.TIFF <https://docs.openmicroscopy.org/ome-model/5.6.3/#ome-tiff>`_. Currently, the software can only save images with one protein pattern as OME.TIFFs. To do this, use the output flag
 
 .. code:: matlab
 
