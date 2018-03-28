@@ -1,5 +1,5 @@
-Installing CellOrganizer for Matlab
-***********************************
+Installing CellOrganizer
+************************
 
 Requirements
 ------------
@@ -19,28 +19,28 @@ Requirements
 * System Identification Toolbox
 * Wavelet Toolbox 
 
-Downloading CellOrganizer for Matlab
-------------------------------------
+Downloading CellOrganizer
+-------------------------
 
 CellOrganizer for Matlab is the most flexible and powerful of the CellOrganizer deliverable, since it interfaces with `Matlab <https://www.mathworks.com/products/matlab.html>`_ which facilitates data analysis.
 
-To download the latest CellOrganizer for Matlab distribution go to the `download page <http://cellorganizer.org/downloads/>`_ and download the latest release. Aftwards, extract the contents of the release into a local directory of your preference. 
+To download the latest CellOrganizer for Matlab distribution go to the `download page <ttp://www.cellorganizer.org/cellorganizer-2-7-1/>`_. Aftwards, extract the contents of the release into a local directory of your preference. 
 
 For example,
 
 .. code-block:: bash
 
 	cd ~/
-	wget -nc http://cellorganizer.org/downloads/v2.7/cellorganizer_v2.7.0_and_image_collection.tgz
-	tar -xvf cellorganizer_v2.7.0_and_image_collection.tgz
-	rm -fv cellorganizer_v2.7.0_and_image_collection.tgz
+	wget -nc http://cellorganizer.org/downloads/v2.7/cellorganizer_v2.7.1_and_image_collection.tgz
+	tar -xvf cellorganizer_v2.7.1_and_image_collection.tgz
+	rm -fv cellorganizer_v2.7.1_and_image_collection.tgz
 
-The commands above will download and extract to disk the contents of CellOrganizer v2.7.0.
+The commands above will download and extract to disk the contents of CellOrganizer v2.7.1.
 
-Starting CellOrganizer for Matlab
----------------------------------
+Starting CellOrganizer
+----------------------
 
-To start using CellOrganizer, start a Matlab session and change directory to the location of CellOrganizer and run setup.m. 
+To start using CellOrganizer, `start a Matlab session <https://www.mathworks.com/help/matlab/matlab_env/start-matlab-on-linux-platforms.html>`_ and `change the directory <https://www.mathworks.com/help/matlab/ref/cd.html>`_ to the location of CellOrganizer folder and run `setup.m`. 
 
 In the Matlab, type
 

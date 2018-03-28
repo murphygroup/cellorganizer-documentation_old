@@ -1,11 +1,11 @@
-Installing CellOrganizer for Matlab on a HPC
-********************************************
+Installing CellOrganizer on a HPC
+*********************************
 
 Requirements
 ------------
 
 .. IMPORTANT::
-   Remember to contact your local HPC cluster managers to know if you have access to a Matlab license that would allow you to run Matlab <https://www.mathworks.com/products/matlab.html>`_  in your cluster.
+   Remember to contact your HPC cluster managers to know if you have access to a Matlab license that would allow you to run `Matlab <https://www.mathworks.com/products/matlab.html>`_  in your cluster.
 
 * Matlab 2016b or newer
 * Bioinformatics Toolbox
@@ -23,11 +23,11 @@ Requirements
 * System Identification Toolbox
 * Wavelet Toolbox 
 
-Downloading CellOrganizer for Matlab
-------------------------------------
+Downloading CellOrganizer
+-------------------------
 
 .. IMPORTANT::
-   Sometimes, compute nodes do not access the web. Make sure to download the tarball from the front end or contact your HPC manager for further instructions.
+   Sometimes, compute nodes do not access the web. Make sure to download the tarball from the front end or contact your HPC managers for further instructions.
 
 CellOrganizer for Matlab is the most flexible and powerful of the CellOrganizer deliverable, since it interfaces with `Matlab <https://www.mathworks.com/products/matlab.html>`_ which facilitates data analysis.
 

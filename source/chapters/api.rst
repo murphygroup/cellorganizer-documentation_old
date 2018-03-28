@@ -1,77 +1,13 @@
 .. api:
 
-API
-===
+Main Functions
+==============
 
 
 .. note::
 
    This section only includes the headers of the most important functions
    in CellOrganizer.
-
-This is the documentation included with the main methods
-
-im2blender
-**********
-
-Method header::
-
-    function [shiftvector, answer] = im2blender( img, savefile, downsample, patchsample, shiftvector_flag)
-    % IMG2BLENDER Exports a generated instance from CellOrganizer to a .obj mesh format
-    % that can be read by Blender.
-    %
-    %
-    % List Of Input Arguments     Descriptions
-    % -----------------------     ------------
-    % img                         a 3D image you wish to obtain the mesh for
-    % downsample                  factor by which you wish to downsample
-    % savefile                    the path and file name you wish to save the generated file as
-    % patchsample                 the percentage of the verticies calculated that the user
-    %                             wants kept. Keeping more will result in a larger .obj file but have
-    %                             better resolution. Default value is 0.05
-    % shiftvector                 a 1x3 vector of the amount to shift the resulting mesh.
-    %
-    % This is used to place the mesh at the origin when called with syn2blender.
-    %
-    % List Of Outputs             Descriptions
-    % ---------------             ------------
-    % shiftvector                 a 1x3 vector of the amount to shift the resulting mesh.
-    % answer                      boolean flag that indicates if the test was successful
-
-im2projection
-*************
-
-Method header::
-
-    function out_img = im2projection( img, options )
-    % IM2GPROJECTION creates a sum or mean projection of the input image
-    %
-    % List Of Input Arguments   Descriptions
-    % -----------------------   ------------
-    % img                       3D binary or realvalued image.
-    % options                     struct with a 'method' field that can be set
-    %                           to 'mean' if a mean value projection is desired
-    %
-    % List Of Outputs     Descriptions
-    % ---------------     ------------
-    % out_img             a 2D image that contains a projection
-    %                     in each dimension of the original image
-
-im2reshape
-**********
-
-Method header::
-
-    function img = im2reshape( img )
-    % IM2RESHAPE Reshapes a 3D images into a 2D representation
-    %
-    % List Of Input Arguments     Descriptions
-    % -----------------------     ------------
-    % img                         a 3D binary or realvalued image
-    %
-    % List Of Outputs     Descriptions
-    % ---------------     ------------
-    % img                 a 2D representation of the image
 
 img2slml
 ********
@@ -156,12 +92,21 @@ Method header::
   % verbose                   (optional) Displays messages to screen. Default is true.
   % debug                     (optional) Reports errors and warnings. Default is false.
 
-model2info
-**********
+slml2info
+*********
 
 Method header::
 
- % MODEL2INFO List basic information about an SLML model.
+  % SLML2INFO Generate a report from information extracted from a genearative model file
+  %
+  % List Of Input Arguments  Descriptions
+  % -----------------------  ------------
+  % filename                 Model filename
+  % options                  Options structure
+  %
+  % Example
+  % > filename = '/path/to/model/file/model.mat';
+  % > answer = slml2info( filename );
 
 slml2img
 ********
@@ -236,46 +181,19 @@ Method header::
   % output.blender.downsample  (optional) ownsampling fraction for the creation of object files (1 means no downsampling, 1/5 means 1/5 the size).
   % output.SBML                (optional) boolean flag specifying whether to write out (.xml) files with SBML-Spatial representations of geometries. Default is false;
 
-syn2projection
-**************
+slml2report
+***********
 
 Method header::
 
-  % SYN2PROJECTION Makes projections from a set of images synthesized by
-  % CellOrganizer
+  % SLML2REPORT Generate a report comparing two SLML generative models
   %
+  % List Of Input Arguments  Descriptions
+  % -----------------------  ------------
+  % model1                   A generative model filename 
+  % model2                   A generative model filename
   %
-  % List Of Input Arguments     Descriptions
-  % -----------------------     ------------
-  % imgfolder                   a folder of synthesized images by CellOrganizer
-  % outputfolder                the path where you wish to save the generated files
-  %
-  % Options structure description
-  %
-  % List Of Options           Descriptions
-  % ---------------           ------------
-  % method                    (optional) either a sum or mean. default is sum
-  % verbose                   (optional) verbose flag that displays progress
-  % debug                     (optional) flag that displays debugging messages. default is false
-  %
-  % List Of Outputs     Descriptions
-  % ---------------     ------------
-  % answer              true if it saves all projections to disk
-
-syn2surfaceplot
-***************
-
-Method header::
-
-  function syn2surfaceplot( directory, colors, viewangles, alphaval)
-  % SYN2SURFACEPLOT Helper method that displays images generated by CellOrganizer
-  %
-  % List Of Input Arguments   Descriptions
-  % -----------------------   ------------
-  % directory                 a directory containing images from CellOrganizer
-  % colors                    a cell array containing a list of valid colors as defined by Matlab
-  %                           http://www.mathworks.com/help/techdoc/ref/colorspec.html
-  % viewangles                a vector defining the viewing angle as defined by Matlab
-  %                           http://www.mathworks.com/help/techdoc/ref/view.html
-  % alphaval                  a value that determines the transparency of an object
-  %                           http://www.mathworks.com/help/techdoc/ref/alpha.html
+  % Example
+  % > filename1 = '/path/to/model/model1.mat';
+  % > filename2 = '/path/to/model/model2.mat';
+  % answer = slml2report( filename1, filename2 );
