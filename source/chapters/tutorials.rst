@@ -2,12 +2,12 @@
 .. include:: <isonum.txt>
 
 Tutorial: CellOrganizer in 45 Minutes
-======================================
+=====================================
 
 Introduction
 ************
 
-CellOrganizer is a software package that learns generative models of cell organization from fluorescence micrographs. These models are useful for modeling the dependency between compartments of the cell, allowing for a compact representation of cell geometries present in cell images and generating image of geometries useful for spatially realistic biochemical simulations. There are two main functions which this tutorial will cover: ``img2slml``, the top-level function to train a generative model of cell morphology, and ``slml2img``, the top-level function to generate an instance from a trained model.
+CellOrganizer is a software package that learns generative models of cell organization from fluorescence images. These models are useful for modeling the dependency between compartments of the cell, allowing for a compact representation of cell geometries present in cell images and generating image of geometries useful for spatially realistic biochemical simulations. There are two main functions which this tutorial will cover: ``img2slml``, the top-level function to train a generative model of cell morphology, and ``slml2img``, the top-level function to generate an instance from a trained model.
 
 Whom is this tutorial for?
 **************************
@@ -17,15 +17,9 @@ This tutorial was written for people who have experience with fluorescence micro
 Resources
 *********
 
-Publications
-------------
+* `CellOrganizer <http://cellorganizer.org>`_
 
 * `CellOrganizer Publications <http://www.cellorganizer.org/publications/>`_
-
-Software
---------
-
-`CellOrganizer <http://cellorganizer.org>`_
 
 Other Software
 --------------
@@ -41,9 +35,6 @@ Image Databases
 
 Prerequisites
 *************
-
-.. ATTENTION::
-   CellOrganizer is only support on Windows through CellOrganizer for Docker
 
 * An OS X, Linux or Unix operating system
 * MATLAB installation (MATLAB 2014a or newer) with the following toolboxes:
@@ -77,13 +68,13 @@ The first three input parameters are
 
 * a string containing wildcards, e.g. `/path/to/images/*.tiff`
 * a cell array of strings that point to each file, e.g. `{'/path/to/images/1.tiff', '/path/to/images/2.tiff'};`
-* a cell array of function handles where each function returns a 3D array that corresponding to each image in the list
+* a cell array of function handles where each function returns a 2D/3D array that corresponding to each image in the list
 
 The fourth argument `options_structure` is a Matlab structure that contain the fields necessary for you to train the model in question.
 
 In general, the images should
 
-* be compatible with `BioFormats <http://loci.wisc.edu/software/bio-formats>`_.
+* be able to be read with `BioFormats for Matlab <http://loci.wisc.edu/software/bio-formats>`_.
 * contain only a single cell OR have a single cell region defined by an additional mask images
 * contain channel(s) for fluorescent marker(s) appropriate for the desired type of model (typically, a channel for nuclear shape (e.g., DAPI, Hoechst, tagged histone) channels, cell shape (e.g., a soluble cytoplasmic protein, a plasma membrane protein, or autofluorescence), and a specific organelle)
 
