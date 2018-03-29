@@ -21,7 +21,6 @@ Requirements
 
 Downloading CellOrganizer
 -------------------------
-
 CellOrganizer for Matlab is the most flexible and powerful of the CellOrganizer deliverable, since it interfaces with `Matlab <https://www.mathworks.com/products/matlab.html>`_ which facilitates data analysis.
 
 To download the latest CellOrganizer for Matlab distribution go to the `download page <ttp://www.cellorganizer.org/cellorganizer-2-7-1/>`_. Aftwards, extract the contents of the release into a local directory of your preference. 
@@ -39,15 +38,14 @@ The commands above will download and extract to disk the contents of CellOrganiz
 
 Starting CellOrganizer
 ----------------------
-
 To start using CellOrganizer, `start a Matlab session <https://www.mathworks.com/help/matlab/matlab_env/start-matlab-on-linux-platforms.html>`_ and `change the directory <https://www.mathworks.com/help/matlab/ref/cd.html>`_ to the location of CellOrganizer folder and run `setup.m`. 
 
 In the Matlab, type
 
 .. code-block:: matlab
 
-	cd( ‘/path/to/folder/cellorganizer’ );
-	setup();
+	>> cd( ‘/path/to/folder/cellorganizer’ );
+	>> setup();
 
 If you were successful you should see a message like
 
@@ -57,4 +55,3 @@ If you were successful you should see a message like
 	Checking for new stable version... Version is up to date.
 
 You are now ready to use CellOrganizer for Matlab.
-
