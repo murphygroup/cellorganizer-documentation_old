@@ -1039,6 +1039,12 @@ Demo header::
    % ------
    % * a 3D stacked TIFF file
 
+Demo output
+
+.. figure:: ../images/demo3D44/image.png
+   :targe: ../images/demo3D44/image.png
+   :align: center
+
 demo3D45
 --------
 Demo header::
@@ -1077,6 +1083,12 @@ Demo header::
    % * one or more set(s) of synthesized images with cell shape and protein
    % pattern. 
 
+Demo output
+
+.. figure:: ../images/demo3D46/image.png
+   :target: ../images/demo3D46/image.png
+   :align: center
+
 demo3D47
 --------
 Demo header::
@@ -1091,5 +1103,8 @@ Demo header::
    % ------
    % * a report
 
+Demo output
 
-
+.. figure:: ../images/demo3D47/report.png
+   :target: ../images/demo3D47/report.png
+   :align: center
