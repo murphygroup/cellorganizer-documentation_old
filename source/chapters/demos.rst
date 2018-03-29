@@ -148,6 +148,12 @@ Demo header::
    % * one TIFF file with three slices (nuclear, cell shape, and lysosomal
    %   channels)
 
+Demo output
+
+.. figure:: ../images/demo2D06/image.png
+   :target: ../_images/demo2D06/image.png
+   :align: center
+
 demo2D07
 --------
 Demo header::
@@ -1042,7 +1048,7 @@ Demo header::
 Demo output
 
 .. figure:: ../images/demo3D44/image.png
-   :targe: ../images/demo3D44/image.png
+   :target: ../_images/demo3D44/image.png
    :align: center
 
 demo3D45
@@ -1086,7 +1092,7 @@ Demo header::
 Demo output
 
 .. figure:: ../images/demo3D46/image.png
-   :target: ../images/demo3D46/image.png
+   :target: ../_images/demo3D46/image.png
    :align: center
 
 demo3D47
@@ -1106,5 +1112,5 @@ Demo header::
 Demo output
 
 .. figure:: ../images/demo3D47/report.png
-   :target: ../images/demo3D47/report.png
+   :target: ../_images/demo3D47/report.png
    :align: center
