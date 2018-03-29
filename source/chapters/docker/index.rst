@@ -8,6 +8,8 @@ The first release of CellOrganizer for Docker contains binaries for the two main
 
 - **img2slml**, the top-level function to train generative models of cell, and 
 - **slml2img**, the top-level function to generate simulated instances from a trained generative model. 
+- **slml2info**, the top-level function to generate a report from information extracted from a single generative model. 
+- **slml2report**, the top-level function to generate a report from comparing generative models. 
 
 Setup
 -----
@@ -26,9 +28,9 @@ Source Code
 
 The Dockerfile used to construct this Docker image is open source and can be found in `GitHub <https://github.com/icaoberg/docker-cellorganizer>`_.
 
-For convenience, the Docker image can be found in `Docker Hub <https://hub.docker.com/u/murphylab/dashboard/>`_. 
+For convenience, the Docker image can be found in `Docker Hub <https://hub.docker.com/r/murphylab/docker-cellorganizer/>`_. 
 
-The instructions below will show how to download and use this image.
+The instructions below will show youu how to download and use this image.
 
 Installing Docker
 -----------------
