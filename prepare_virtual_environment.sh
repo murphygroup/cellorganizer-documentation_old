@@ -13,5 +13,6 @@ pip install xlrd
 pip install pandas
 pip install tabulate
 pip install sphinx_rtd_theme
+pip install sphinxcontrib.gist
 
 deactivate
