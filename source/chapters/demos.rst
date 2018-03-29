@@ -43,6 +43,12 @@ Demo header::
    % * one TIFF file with six slices (nuclear, cell shape, nucleolar,
    %   lysosomal, endosomal, and mitochondrial channels)
 
+Demo output:
+
+.. figure:: ../images/demo2D00/image.png
+   :target: ../_images/demo2D00/image.png
+   :align: center
+
 demo2D01
 --------
 Demo header::
@@ -77,6 +83,12 @@ Demo header::
    % ------
    % * one TIFF file with three slices (nuclear, cell shape, and lysosomal
    %   channels)
+
+Demo output:
+
+.. figure:: ../images/demo2D02/image.png
+   :target: ../_images/demo2D02/image.png
+   :align: center
 
 demo2D03
 --------
@@ -148,7 +160,7 @@ Demo header::
    % * one TIFF file with three slices (nuclear, cell shape, and lysosomal
    %   channels)
 
-Demo output
+Demo output:
 
 .. figure:: ../images/demo2D06/image.png
    :target: ../_images/demo2D06/image.png
@@ -168,6 +180,12 @@ Demo header::
    % ------
    % * one TIFF file with three slices (nuclear, cell shape, and lysosomal
    %   channels)
+
+Demo output:
+
+.. figure:: ../images/demo2D07/image.png
+   :target: ../_images/demo2D07/image.png
+   :align: center
 
 demo2D08
 --------
@@ -222,9 +240,10 @@ Demo header::
    %
    % Output
    % ------
-% * three TIFF files (nuclear, cell shape, and nucleolar channels)
+   % * three TIFF files (nuclear, cell shape, and nucleolar channels)
 
 .. figure:: ../images/demo3D00/cell1_ch2.jpg
+   :target: ../_images/demo3D00/cell1_ch2.jpg
    :align: center
 
 demo3D01
@@ -1045,7 +1064,7 @@ Demo header::
    % ------
    % * a 3D stacked TIFF file
 
-Demo output
+Demo output:
 
 .. figure:: ../images/demo3D44/image.png
    :target: ../_images/demo3D44/image.png
@@ -1089,7 +1108,7 @@ Demo header::
    % * one or more set(s) of synthesized images with cell shape and protein
    % pattern. 
 
-Demo output
+Demo output:
 
 .. figure:: ../images/demo3D46/image.png
    :target: ../_images/demo3D46/image.png
@@ -1109,7 +1128,7 @@ Demo header::
    % ------
    % * a report
 
-Demo output
+Demo output:
 
 .. figure:: ../images/demo3D47/report.png
    :target: ../_images/demo3D47/report.png
