@@ -4,6 +4,5 @@ source ./bin/activate
 
 make clean
 make html
-make epub
-
+rsync -ruv source/images/ build/html/_images/ 
 deactivate
