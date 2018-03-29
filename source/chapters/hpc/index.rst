@@ -38,14 +38,14 @@ For example,
 .. code-block:: bash
 
 	cd ~/
-	wget -nc http://cellorganizer.org/downloads/v2.7/cellorganizer_v2.7.0_and_image_collection.tgz
-	tar -xvf cellorganizer_v2.7.0_and_image_collection.tgz
-	rm -fv cellorganizer_v2.7.0_and_image_collection.tgz
+	wget -nc http://cellorganizer.org/downloads/v2.7/cellorganizer_v2.7.1_and_image_collection.tgz
+	tar -xvf cellorganizer_v2.7.1_and_image_collection.tgz
+	rm -fv cellorganizer_v2.7.1_and_image_collection.tgz
 
-The commands above will download and extract to disk the contents of CellOrganizer v2.7.0.
+The commands above will download and extract to disk the contents of CellOrganizer v2.7.1.
 
-Starting CellOrganizer for Matlab
----------------------------------
+Starting CellOrganizer
+----------------------
 
 The next instructions assume the HPC cluster you have access to uses `SLURM <https://slurm.schedmd.com/>`_ as its default scheduler. 
 
@@ -63,7 +63,7 @@ For example
 
 	srun -p pool --mem=8Gb --pty /bin/bash
 
-Start a Matlab session and change directory to the location of CellOrganizer and run setup.m. 
+To start using CellOrganizer, `start a Matlab session <https://www.mathworks.com/help/matlab/matlab_env/start-matlab-on-linux-platforms.html>`_ and `change the directory <https://www.mathworks.com/help/matlab/ref/cd.html>`_ to the location of CellOrganizer folder and run `setup.m`. 
 
 In the Matlab, type
 
@@ -79,14 +79,14 @@ If you were successful you should see a message like
 	>> setup
 	Checking for new stable version... Version is up to date.
 
-You are now ready to use CellOrganizer for Matlab.
+You are now ready to use CellOrganizer for Matlab within that allocation or interactive session.
 
-Submitting a job for CellOrganizer for Matlab
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Submitting a job for CellOrganizer
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Some tasks in CellOrganizer, with special attention on training, require considerable resources. At times, it will be more efficient to submit a job to a scheduler rather than doing it interactively.
 
-For example, to run demo3D00, you could create a file called script.sh whose contents are
+For example, to run `demo3D00`, you could create a file called `script.sh` whose contents are
 
 .. code-block:: matlab
 
@@ -111,7 +111,7 @@ For example, to run demo3D00, you could create a file called script.sh whose con
 	cd /path/to/cellorganizer/folder
 	matlab -nodesktop -nosplash -r "setup(); demo3D00(), exit;"
 
-Then use the command
+Then use the command `sbatch <https://slurm.schedmd.com/sbatch.html>`_ to submit it to the scheduler
 
 .. code-block:: bash
 
