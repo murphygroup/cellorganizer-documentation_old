@@ -1,5 +1,5 @@
 Running CellOrganizer for Docker 
-********************************
+################################
 
 Access cellorganizer-docker container interactively
 ---------------------------------------------------
