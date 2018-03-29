@@ -3,8 +3,7 @@ Installing CellOrganizer for Docker
 
 Introduction
 ------------
-
-The first release of CellOrganizer for Docker contains binaries for the two main functions which this document will cover
+CellOrganizer for Docker contains binaries for the two main functions which this document will cover
 
 - **img2slml**, the top-level function to train generative models of cell, and 
 - **slml2img**, the top-level function to generate simulated instances from a trained generative model. 
@@ -13,7 +12,6 @@ The first release of CellOrganizer for Docker contains binaries for the two main
 
 Setup
 -----
-
 The following instructions describe
 
 * How to install Docker, the virtualization engine that will run the container
@@ -25,16 +23,12 @@ The following instructions describe
 
 Source Code
 -----------
+For convenience, the Docker image can be found in `Docker Hub <https://hub.docker.com/r/murphylab/docker-cellorganizer/>`_ along with links to the Dockerfile. 
 
-The Dockerfile used to construct this Docker image is open source and can be found in `GitHub <https://github.com/icaoberg/docker-cellorganizer>`_.
-
-For convenience, the Docker image can be found in `Docker Hub <https://hub.docker.com/r/murphylab/docker-cellorganizer/>`_. 
-
-The instructions below will show youu how to download and use this image.
+The instructions below will show you how to download and use this image.
 
 Installing Docker
 -----------------
-
 Before downloading the image and spinning a cotainer, you need to install Docker. Installing Docker is beyond the scope of this document. To learn about Docker Community Edition (CE), click `here <https://www.docker.com/community-edition>`_.
 
 * To install Docker-for-Mac, click `here <https://docs.docker.com/docker-for-mac/install/>`_.
