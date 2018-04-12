@@ -67,14 +67,14 @@ The main function that builds a generative model is called `img2slml`. This func
 The first three input parameters are 
 
 * a string containing wildcards, e.g. `/path/to/images/*.tiff`
-* a cell array of strings that point to each file, e.g. `{'/path/to/images/1.tiff', '/path/to/images/2.tiff'};`
+* a cell array of strings that point to each file, e.g. `{'/path/to/images/1.tiff', '/path/to/images/2.tiff'}`
 * a cell array of function handles where each function returns a 2D/3D array that corresponds to each image in the list
 
 The fourth argument `options_structure` is a Matlab structure that contain the fields necessary for you to train the model in question.
 
 In general, the images should
 
-* be able to be read with `BioFormats for Matlab <http://loci.wisc.edu/software/bio-formats>`_.
+* be able to be read with `BioFormats for Matlab <https://docs.openmicroscopy.org/bio-formats/5.7.2/developers/matlab-dev.html>`_.
 * contain only a single cell OR have a single cell region defined by additional mask image(s)
 * contain channel(s) for fluorescent marker(s) appropriate for the desired type of model. Typically, one might include
 	* a channel for nuclear shape (e.g. DAPI, Hoechst, tagged histone), 
@@ -94,7 +94,7 @@ Setup
 
 Download the most recent version of CellOrganizer
 -------------------------------------------------
-The software can be downloaded from the `CellOrganizer homepage <http://cellorganizer.org>`_. Make sure to download the `version including the images <http://www.cellorganizer.org/Downloads/v2.7/cellorganizer-v2.7.0-images-collection.tgz>`_, since we will use these images soon.  After downloading the CellOrganizer source code, unzip the folder, and copy the resulting folder into the "Documents" |rarr| "MATLAB" directory.
+The most recent version of the CellOrganizer software (v2.7.1) can be found under the `Downloads menu <http://www.cellorganizer.org/cellorganizer-2-7-1/>`_ of the CellOrganizer homepage. Make sure to download the `distribution that includes the image collection <http://www.cellorganizer.org/Downloads/v2.7/cellorganizer-v2.7.1-images-collection.tgz>`_, since we will use these images soon.  After downloading the CellOrganizer source code, unzip the folder, and copy the resulting folder into the "Documents" |rarr| "MATLAB" directory.
 
 Add the CellOrganizer directory to path
 ---------------------------------------
