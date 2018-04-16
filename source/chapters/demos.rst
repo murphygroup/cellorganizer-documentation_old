@@ -885,16 +885,21 @@ demo3D35
 --------
 Demo header::
 
-   % Learns a random walk from time series images as in Figure 6 and 7 of
-   % Johnson 2015
+   % This demo uses slml2model to display information from a valid model file
    %
-   % What you need
-   % -------------
-   % * a valid CellOrganizer diffeomorphic model
+   % Input
+   % -----
+   % * a valid CellOrganizer model
    %
    % Output
    % ------
-   % * a visualization of the shape space
+   % * a report
+
+Demo output:
+
+.. figure:: ../images/demo3D35/report.png
+   :target: ../_images/demo3D35/report.png
+   :align: center
 
 demo3D36
 --------
@@ -1112,24 +1117,4 @@ Demo output:
 
 .. figure:: ../images/demo3D46/image.png
    :target: ../_images/demo3D46/image.png
-   :align: center
-
-demo3D47
---------
-Demo header::
-
-   % This demo uses slml2model to display information from a valid model file
-   %
-   % Input 
-   % -----
-   % * a CellOrganizer model
-   %
-   % Output
-   % ------
-   % * a report
-
-Demo output:
-
-.. figure:: ../images/demo3D47/report.png
-   :target: ../_images/demo3D47/report.png
    :align: center
