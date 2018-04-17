@@ -8,3 +8,4 @@ make.bat
 man
 pip-selfcheck.json
 share
+source/*.pyc
