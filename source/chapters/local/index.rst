@@ -1,5 +1,5 @@
-Installing CellOrganizer
-************************
+Installing CellOrganizer locally
+********************************
 
 Requirements
 ------------
