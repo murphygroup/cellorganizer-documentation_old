@@ -1,7 +1,7 @@
 .. 45_minutes_tutorial:
 
 CellOrganizer in 45 Minutes
-===========================
+***************************
 
 Introduction
 ------------
