@@ -145,23 +145,23 @@ Option 2 (advanced)
 ^^^^^^^^^^^^^^^^^^^
 **Cell-array of string paths:** Alternatively, you can store the images as individual paths in a cell array. Since there are 50 images, we will loop through the directory and store each name in an element of a cell array. There are more "programmatically correct" ways to do this, but this is the most direct way. For the sake of training time, we'll only iterate over the first 15 images::
         
-        nuc_img_paths = cell(15, 1);
-        cell_img_paths = cell(15, 1);
-        prot_img_paths = cell(15, 1);
-        for i = 1:15
-                nuc_img_paths{i} = [img_dir '/LAM_cell' num2str(i) '_ch0_t1.tif'];
-		cell_img_paths{i} = [img_dir '/LAM_cell' num2str(i) '_ch1_t1.tif'];
-		prot_img_paths{i} = [img_dir '/LAM_cell' num2str(i) '_ch2_t1.tif'];
-	end
+        nuc_img_paths = cell(50, 1);
+        cell_img_paths = cell(50, 1);
+        prot_img_paths = cell(50, 1);
+        for i = 1:50
+            nuc_img_paths{i} = [img_dir '/LAM_cell' num2str(i) '_ch0_t1.tif'];
+			cell_img_paths{i} = [img_dir '/LAM_cell' num2str(i) '_ch1_t1.tif'];
+			prot_img_paths{i} = [img_dir '/LAM_cell' num2str(i) '_ch2_t1.tif'];
+		end
 
 Option 3 (even more advanced)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 **Function handles:** If you're very comfortable with MATLAB, you can pass a cell-array of anonymous function handles as your images into CellOrganizer. If the previous sentence doesn't make any sense to you, it's probably best that you skip this part of the tutorial. An example of using function handles would be::
 
-	nuc_img_paths = cell(15, 1);
-        cell_img_paths = cell(15, 1);
-        prot_img_paths = cell(15, 1);
-        for i = 1:15
+	nuc_img_paths = cell(50, 1);
+    cell_img_paths = cell(50, 1);
+    prot_img_paths = cell(50, 1);
+    for i = 1:50
 		nuc_img_paths{i} = @() ml_readimage([img_dir '/LAM_cell' num2str(i) '_ch0_t1.tif']);
 		cell_img_paths{i} = @() ml_readimage([img_dir '/LAM_cell' num2str(i) '_ch1_t1.tif']);
 		prot_img_paths{i} = @() ml_readimage([img_dir '/LAM_cell' num2str(i) '_ch2_t1.tif']);
