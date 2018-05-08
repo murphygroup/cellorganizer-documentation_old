@@ -113,6 +113,7 @@ If you don't have your own images and did not download the full version of CellO
 
 Training Models
 ---------------
+
 ``img2slml.m``, contained in the main folder, is the primary function used in training a model from cellular images. It takes 5 inputs:
 
 * a flag describing the dimensionality of the data (i.e. 2D or 3D; this tutorial describes only 3D functionality), 
@@ -123,45 +124,49 @@ Training Models
 
 The training portion of this tutorial covers the very basic setup required to get ``img2slml`` up and running.
 
-Step 1: Start a new "scratch" script
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Start a new "scratch" script
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 Click "New" |rarr| "New Script", and save your file as ``tutorial_train.m`` (make sure that the file is saved to the "Documents" |rarr| "MATLAB" path, but not inside the “cellorganizer_2.7.1” folder). Instead of typing the commands in the following sections into the Command Window, type (or copy and paste) them into ``tutorial_train.m``.  This will keep track of what you have done so far and provide a resource for later use.
 
-Step 2: Create variables containing your images
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Create variables containing your images
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 We next need to tell CellOrganizer which cellular images we would like to use. To make life easier in the future, let's start by defining a variable that contains the path to the directory where our images for the project are going to be stored.  You can find processed (there are cell masks provided that indicate the position of the cell in each image) 3D images for HeLa cells in the path below, which we will rename as ``img__dir``::
 
 	img_dir = './cellorganizer_v2.7.1/images/HeLa/3D/processed';
 
 We would like to select just the "LAM" image files found within this folder in order to train our model.  There are three ways to do this depending on how you have stored your images, each of which has its own strengths: a string of wildcards, a cell array of file paths, and a cell array of function handles.
 
-**String wild-cards:** If your files are named in some basic pattern (as the LAM files are), then wildcards are the easiest way to get your file information into CellOrganizer. All of the LAM files have the format "LAM_cellX_chY_t1.tif", where "X" is the image number of the image number (ranging from 1-50) and "Y" is the channel number (0, 1, or 2 based on nuclear, cell, and protein channels). We can split the images by channel number and to create an array of image names for each channel using the wildcard "*" as follows (where "*" indicates "any character")::
+**String wild-cards**. If your files are named in some basic pattern (as the LAM files are), then wildcards are the easiest way to get your file information into CellOrganizer. All of the LAM files have the format "LAM_cellX_chY_t1.tif", where "X" is the image number of the image number (ranging from 1-50) and "Y" is the channel number (0, 1, or 2 based on nuclear, cell, and protein channels). We can split the images by channel number and to create an array of image names for each channel using the wildcard "*" as follows (where "*" indicates "any character")::
 
 	nuc_img_paths = [img_dir '/LAM_cell*_ch0_t1.tif'];
 	cell_img_paths = [img_dir '/LAM_cell*_ch1_t1.tif'];
 	prot_img_paths = [img_dir '/LAM_cell*_ch2_t1.tif'];
 
-Option 2 (advanced)
+Option 2 (Advanced)
 ^^^^^^^^^^^^^^^^^^^
-**Cell-array of string paths:** Alternatively, you can store the images as individual paths in a cell array. Since there are 50 images, we will loop through the directory and store each name in an element of a cell array. There are more "programmatically correct" ways to do this, but this is the most direct way. For the sake of training time, we'll only iterate over the first 15 images::
+
+**Cell-array of string paths**. Alternatively, you can store the images as individual paths in a cell array. Since there are 50 images, we will loop through the directory and store each name in an element of a cell array. There are more "programmatically correct" ways to do this, but this is the most direct way. For the sake of training time, we'll only iterate over the first 15 images::
         
         nuc_img_paths = cell(50, 1);
         cell_img_paths = cell(50, 1);
         prot_img_paths = cell(50, 1);
         for i = 1:50
-            nuc_img_paths{i} = [img_dir '/LAM_cell' num2str(i) '_ch0_t1.tif'];
-			cell_img_paths{i} = [img_dir '/LAM_cell' num2str(i) '_ch1_t1.tif'];
-			prot_img_paths{i} = [img_dir '/LAM_cell' num2str(i) '_ch2_t1.tif'];
-		end
+        nuc_img_paths{i} = [img_dir '/LAM_cell' num2str(i) '_ch0_t1.tif'];
+		cell_img_paths{i} = [img_dir '/LAM_cell' num2str(i) '_ch1_t1.tif'];
+		prot_img_paths{i} = [img_dir '/LAM_cell' num2str(i) '_ch2_t1.tif'];
+	end
 
-Option 3 (even more advanced)
+Option 3 (Even more advanced)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-**Function handles:** If you're very comfortable with MATLAB, you can pass a cell-array of anonymous function handles as your images into CellOrganizer. If the previous sentence doesn't make any sense to you, it's probably best that you skip this part of the tutorial. An example of using function handles would be::
+
+**Function handles**. If you're very comfortable with MATLAB, you can pass a cell-array of anonymous function handles as your images into CellOrganizer. If the previous sentence doesn't make any sense to you, it's probably best that you skip this part of the tutorial. An example of using function handles would be::
 
 	nuc_img_paths = cell(50, 1);
-    cell_img_paths = cell(50, 1);
-    prot_img_paths = cell(50, 1);
-    for i = 1:50
+	cell_img_paths = cell(50, 1);
+	prot_img_paths = cell(50, 1);
+	for i = 1:50
 		nuc_img_paths{i} = @() ml_readimage([img_dir '/LAM_cell' num2str(i) '_ch0_t1.tif']);
 		cell_img_paths{i} = @() ml_readimage([img_dir '/LAM_cell' num2str(i) '_ch1_t1.tif']);
 		prot_img_paths{i} = @() ml_readimage([img_dir '/LAM_cell' num2str(i) '_ch2_t1.tif']);
