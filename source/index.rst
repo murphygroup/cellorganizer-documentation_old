@@ -14,9 +14,9 @@ Contents:
 
    ./chapters/getting_started
 
-   ./chapters/CellOrganizer
+   ./chapters/cellorganizer
 
-   ./chapters/CellOrganizer_Docker
+   ./chapters/cellOrganizer_for_docker
 
    ./chapters/demos
 
