@@ -153,7 +153,7 @@ We would like to select just the "LAM" image files found within this folder in o
 Option 2 (Advanced)
 ^^^^^^^^^^^^^^^^^^^
 
-**Cell-array of string paths**. Alternatively, you can store the images as individual paths in a cell array. Since there are 50 images, we will loop through the directory and store each name in an element of a cell array. There are more "programmatically correct" ways to do this, but this is the most direct way. For the sake of training time, we'll only iterate over the first 15 images::
+**Cell-array of string paths**. Alternatively, you can store the images as individual paths in a cell array. Since there are 50 images, we will loop through the directory and store each name in an element of a cell array. There are more "programmatically correct" ways to do this, but this is the most direct way. To iterate over the 50 images::
         
         nuc_img_paths = cell(50, 1);
         cell_img_paths = cell(50, 1);
