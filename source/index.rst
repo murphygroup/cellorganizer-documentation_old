@@ -16,7 +16,7 @@ Contents:
 
    ./chapters/cellorganizer
 
-   ./chapters/cellOrganizer_for_docker
+   ./chapters/cellorganizer_for_docker
 
    ./chapters/demos
 
