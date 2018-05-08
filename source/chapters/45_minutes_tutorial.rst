@@ -198,9 +198,9 @@ The option ``train_options.model.filename`` defines where the .mat file containi
 
 So far we have the bare *minimum* requirements for setting up a model. We will set one more option to speed up the tutorial::
 
-	train_options.model.downsampling = [4,4,1];
+	train_options.model.downsampling = [5,5,1];
 
-This downsamples our input images by 4 in the x- and y-dimensions, decreasing the memory used for the tutorial.
+This downsamples our input images by 5 in the x- and y-dimensions, decreasing the memory used for the tutorial.
 
 Add model types and classes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
