@@ -1,19 +1,15 @@
-Installing CellOrganizer for Docker 
-***********************************
-
 About CellOrganizer for Docker
 ******************************
 
-CellOrganizer for Docker is an image with compiled binaries from CellOrganizer functions.
-
-Introduction
-------------
-CellOrganizer for Docker contains binaries for the two main functions which this document will cover
+CellOrganizer for Docker is an image with compiled binaries from CellOrganizer functions
 
 - **img2slml**, the top-level function to train generative models of cell, and 
 - **slml2img**, the top-level function to generate simulated instances from a trained generative model. 
 - **slml2info**, the top-level function to generate a report from information extracted from a single generative model. 
 - **slml2report**, the top-level function to generate a report from comparing generative models. 
+
+Installing CellOrganizer for Docker 
+***********************************
 
 Setup
 -----
