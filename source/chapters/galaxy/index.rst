@@ -20,8 +20,30 @@ Requirements
 * Simulink Design Optimization
 * Statistics and Machine Learning Toolbox
 * System Identification Toolbox
-* Wavelet Toolbox 
+* Wavelet Toolbox
 
+Installing Galaxy in a production server instance
+*************************************************
+
+Installing Galaxy is beyond the scope of this document. For instructions on installing Galaxy please click `here <https://docs.galaxyproject.org/en/latest/admin/production.html>`_.
+
+Installing Matlab
+*****************
+
+.. IMPORTANT::
+   It is important that the ``matlab`` binary is available in ``$PATH``.
+
+Installing `Matlab <https://www.mathworks.com/products/matlab.html>`_ is beyond the scope of this document. To install Matlab, please follow the `instructions < <https://www.mathworks.com/support/install-matlab.html>`_ on the Mathworks site.
+
+Installing Bioformats Tools
+***************************
+
+Installing `Bioformats tools <https://docs.openmicroscopy.org/bio-formats/5.8.2/users/comlinetools/>`_ beyond the scope of this document. To install BFTools, please follow the `instructions <https://docs.openmicroscopy.org/bio-formats/5.8.2/users/comlinetools/>`_ on the OpenMicroscopy site.
+
+Installing Pandoc
+*****************
+
+Installing `Pandoc <https://pandoc.org/>`_ is beyod the scope of this document. To install Pandoc, please follow the `instructions <https://pandoc.org/installing.html>`_ on their site.
 
 Using CellOrganizer on Galaxy+Bridges
 =====================================
