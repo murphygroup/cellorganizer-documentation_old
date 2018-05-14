@@ -4,20 +4,20 @@ Installing CellOrganizer locally
 Requirements
 ------------
 * Matlab 2016b or newer
-* Bioinformatics Toolbox
-* Computer Vision System Toolbox
-* Control System Toolbox
-* Curve Fitting Toolbox
-* Image Processing Toolbox
-* Mapping Toolbox
-* Optimization Toolbox
-* Robust Control Toolbox
-* Signal Processing Toolbox
-* Simulink
-* Simulink Design Optimization
-* Statistics and Machine Learning Toolbox
-* System Identification Toolbox
-* Wavelet Toolbox 
+	* Bioinformatics Toolbox
+	* Computer Vision System Toolbox
+	* Control System Toolbox
+	* Curve Fitting Toolbox
+	* Image Processing Toolbox
+	* Mapping Toolbox
+	* Optimization Toolbox
+	* Robust Control Toolbox
+	* Signal Processing Toolbox
+	* Simulink
+	* Simulink Design Optimization
+	* Statistics and Machine Learning Toolbox
+	* System Identification Toolbox
+	* Wavelet Toolbox 
 
 Downloading CellOrganizer
 -------------------------

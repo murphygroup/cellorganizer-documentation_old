@@ -1,6 +1,11 @@
 Installing CellOrganizer for Docker 
 ***********************************
 
+About CellOrganizer for Docker
+******************************
+
+CellOrganizer for Docker is an image with compiled binaries from CellOrganizer functions.
+
 Introduction
 ------------
 CellOrganizer for Docker contains binaries for the two main functions which this document will cover

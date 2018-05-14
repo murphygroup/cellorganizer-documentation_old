@@ -96,19 +96,16 @@ Setup
 
 Download the most recent version of CellOrganizer
 -------------------------------------------------
-
 The most recent version of the CellOrganizer software (v2.7.1) can be found under the `Downloads menu <http://www.cellorganizer.org/cellorganizer-2-7-1/>`_ of the CellOrganizer homepage. Make sure to download the `distribution that includes the image collection <http://www.cellorganizer.org/Downloads/v2.7/cellorganizer-v2.7.1-images-collection.tgz>`_, since we will use these images soon.  After downloading the CellOrganizer source code, unzip the folder, and copy the resulting folder into the "Documents" |rarr| "MATLAB" directory.
 
 Add the CellOrganizer directory to path
 ---------------------------------------
-
 You should see the folder appear in the "Current Folder" in MATLAB on the left side.  If it doesn’t, make sure that your file path is set to "Users" |rarr| your user name |rarr| "Documents" |rarr| "MATLAB".
 
 To ensure that MATLAB can access the images and files contained within the CellOrganizer folder, right click on "cellorganizer_2.7.1" on the left side of the MATLAB window and select "Add to Path" |rarr| "Selected Folders and Subfolders".
 
 Adding Images
 -------------
-
 Images included in the CellOrganizer download can be found in "Documents" |rarr| "MATLAB" |rarr| "cellorganizer_2.7.1" |rarr| "images".
 
 If you don't have your own images and did not download the full version of CellOrganizer in Step 0, then you can download some samples `here <http://murphylab.web.cmu.edu/data/Hela/3D/multitiff/3DHela_LAM.tgz>`_. (Note: The whole collection is 2.0 GB.) These are 3D HeLa images with a nuclear stain (channel 0), cell stain (channel 1) and protein stain (channel 2). The tagged protein is `LAMP2 <https://en.wikipedia.org/wiki/LAMP2>`_, a lysosomal protein.
@@ -117,7 +114,6 @@ If you don't have your own images and did not download the full version of CellO
 
 Training Models
 ---------------
-
 ``img2slml.m``, contained in the main folder, is the primary function used in training a model from cellular images. It takes 5 inputs:
 
 * a flag describing the dimensionality of the data (i.e. 2D or 3D; this tutorial describes only 3D functionality), 
@@ -128,16 +124,11 @@ Training Models
 
 The training portion of this tutorial covers the very basic setup required to get ``img2slml`` up and running.
 
-Start a new "scratch" script
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-Click "New" |rarr| "New Script", and save your file as ``tutorial_train.m`` (make sure that the file is saved to the "Documents" |rarr| "MATLAB" path, but not inside the “cellorganizer_2.7.1” folder). Instead of typing the commands in the following sections into the Command Window, type (or copy and paste) them into ``tutorial_train.m``.  This will keep track of what you have done so far and provide a resource for later use.
+**Start a new "scratch" script**
+Click "New" |rarr| "New Script", and save your file as ``tutorial_train.m`` (make sure that the file is saved to the "Documents" |rarr| "MATLAB" path, but not inside the “cellorganizer_2.7.1” folder). Instead of typing the commands in the following sections into the Command Window, type (or copy and paste) them into ``tutorial_train.m``. This will keep track of what you have done so far and provide a resource for later use.
 
 
-
-Create variables containing your images
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
+**Create variables containing your images**
 We next need to tell CellOrganizer which cellular images we would like to use. To make life easier in the future, let's start by defining a variable that contains the path to the directory where our images for the project are going to be stored.  You can find processed (there are cell masks provided that indicate the position of the cell in each image) 3D images for HeLa cells in the path below, which we will rename as ``img__dir``::
 
 	img_dir = './cellorganizer_v2.7.1/images/HeLa/3D/processed';
@@ -150,10 +141,8 @@ We would like to select just the "LAM" image files found within this folder in o
 	cell_img_paths = [img_dir '/LAM_cell*_ch1_t1.tif'];
 	prot_img_paths = [img_dir '/LAM_cell*_ch2_t1.tif'];
 
-Option 2 (Advanced)
-^^^^^^^^^^^^^^^^^^^
-
-**Cell-array of string paths**. Alternatively, you can store the images as individual paths in a cell array. Since there are 50 images, we will loop through the directory and store each name in an element of a cell array. There are more "programmatically correct" ways to do this, but this is the most direct way. To iterate over the 50 images::
+**Option 2 (Advanced)**
+*Cell-array of string paths*. Alternatively, you can store the images as individual paths in a cell array. Since there are 50 images, we will loop through the directory and store each name in an element of a cell array. There are more "programmatically correct" ways to do this, but this is the most direct way. To iterate over the 50 images::
         
         nuc_img_paths = cell(50, 1);
         cell_img_paths = cell(50, 1);
@@ -164,10 +153,8 @@ Option 2 (Advanced)
 		prot_img_paths{i} = [img_dir '/LAM_cell' num2str(i) '_ch2_t1.tif'];
 	end
 
-Option 3 (Even more advanced)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-**Function handles**. If you're very comfortable with MATLAB, you can pass a cell-array of anonymous function handles as your images into CellOrganizer. If the previous sentence doesn't make any sense to you, it's probably best that you skip this part of the tutorial. An example of using function handles would be::
+**Option 3 (Even more advanced)**
+*Function handles*. If you're very comfortable with MATLAB, you can pass a cell-array of anonymous function handles as your images into CellOrganizer. If the previous sentence doesn't make any sense to you, it's probably best that you skip this part of the tutorial. An example of using function handles would be::
 
 	nuc_img_paths = cell(50, 1);
 	cell_img_paths = cell(50, 1);
@@ -180,9 +167,7 @@ Option 3 (Even more advanced)
 
 Here we're using the CellOrganizer provided function ``ml_readimage`` to read in and return the actual image matrix, but any function that returns the actual image matrix of data will work.
 
-Set up the option structure
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
+**Set up the option structure**
 The option structure tells CellOrganizer how you want to build a model, and allows for option input. Most of the options have default values, so we don't have to set them manually for this tutorial. However, we do need to provide a pixel resolution fpr creating the images and a filename for saving the resulting model. To define the appropriate options, we create a struct variable called ``train_options`` and set its fields accordingly::
 
 	% this is the pixel resolution in um of the images
@@ -202,9 +187,7 @@ So far we have the bare *minimum* requirements for setting up a model. We will s
 
 This downsamples our input images by 5 in the x- and y-dimensions, decreasing the memory used for the tutorial.
 
-Add model types and classes
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
+**Add model types and classes**
 In addition to specifying which models (e.g. nuclear shape, cell shape, protein distribution) we want to train, we also need to specify the type and class for each model.  We do this by adding additional lines to the options structure::
 
 	train_options.nucleus.type = 'cylindrical_surface';
@@ -228,14 +211,10 @@ If your model building options don't require one or more of the image types (e.g
 
 (Note: make sure that your inputs to ``img2slml`` correspond to your setting of ``train.flag``)
 
-Run your Training script
-^^^^^^^^^^^^^^^^^^^^^^^^
-
+**Run your training script**
 Press the run button on the top of the MATLAB window or type the name of your script into the Command Window. If you used a lot of images or did not aggressively downsample your images it may take some time to run.
 
-Analyzing your trained model
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
+**Analyzing your trained model**
 After your script has finished running in CellOrganizer without error, you should have a .mat file named model.mat in the directory in which you ran the code. Congratulations, you made it! If you load that file into your workspace, you'll see that this is another struct with fields. This is the model of your cell images. You'll notice that it's a lot smaller in file size than the collection of source images you used to train it. Take some time to explore these fields.
 
 Synthesizing an Image from a Model
@@ -248,12 +227,10 @@ We will next describe how to synthesize a cell shape in CellOrganizer. The main 
 
 Start a new "scratch" script
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 First, we create a new script and call it ``tutorial_synthesis.m``.
 
 Set up the model and option inputs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
 Start by defining two variables: a cell-array containing the path to the model you created in the **Training** section, and a new options structure (different from the one used for training). If you followed the instructions in the **Training** section, then you can generate images from the model you trained earlier::
 
 	model_path = {'model.mat'};

@@ -1,8 +1,8 @@
 Installing CellOrganizer for Galaxy
 ===================================
 
-About CellOrganizer
-*******************
+About CellOrganizer for Galaxy
+******************************
 
 CellOrganizer for Galaxy is a set of custom tools for training generative models, synthesizing instances and analyzing models using CellOrganizer.
 
