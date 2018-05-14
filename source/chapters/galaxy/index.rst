@@ -4,10 +4,12 @@ Installing CellOrganizer for Galaxy
 About CellOrganizer
 *******************
 
-CellOrganizer for Galaxy is a set of customs tools for training generative models, synthesizing instances and analyzing models using CellOrganizer.
+CellOrganizer for Galaxy is a set of custom tools for training generative models, synthesizing instances and analyzing models using CellOrganizer.
 
 Requirements
 ************
+
+To install CellOrganizer for Galaxy in a production server, you need
 
 * `Galaxy instance <https://galaxyproject.org/>`_
 * `Bioformats Tools <https://docs.openmicroscopy.org/bio-formats/5.8.2/users/comlinetools/>`_
@@ -36,9 +38,9 @@ Installing Matlab
 *****************
 
 .. IMPORTANT::
-   It is important that the ``matlab`` binary is available in ``$PATH``.
+   The ``matlab`` binary should be available in ``$PATH``.
 
-Installing `Matlab <https://www.mathworks.com/products/matlab.html>`_ is beyond the scope of this document. To install Matlab, please follow the instructions on the Mathworks `site <https://docs.galaxyproject.org/en/latest/admin/production.html>`_.
+Installing `Matlab <https://www.mathworks.com/products/matlab.html>`_ is beyond the scope of this document. To install Matlab, please follow the instructions on the Mathworks `site <https://docs.galaxyproject.org/en/latest/admin/production.html>`_. Make sure to install the toolboxes listed in the requirements section above.
 
 Installing Bioformats Tools
 ***************************
@@ -53,7 +55,7 @@ Installing `Pandoc <https://pandoc.org/>`_ is beyod the scope of this document. 
 Using CellOrganizer for Galaxy
 ==============================
 
-The CellOrganizer for Galaxy public server
+The CellOrganizer for Galaxy public server address is
 
 * `galaxy.compbio.cs.cmu.edu <http://galaxy.compbio.cs.cmu.edu:9000/>`_
 
@@ -65,7 +67,7 @@ Prerequisites
 Setup
 *****
 
-#. Open a web browser and access the site `here <http://galaxy2.bridges.psc.edu>`_.
+#. Open a web browser and access the `site <galaxy.compbio.cs.cmu.edu>`_.
 #. Register for a user account, or log onto a preexisting account.
 #. Become familiar with different components of the Galaxy Home Interface.
 
