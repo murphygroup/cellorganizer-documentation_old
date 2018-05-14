@@ -1,3 +1,7 @@
+About CellOrganizer
+*******************
+CellOrganizer for Matlab is the most flexible and powerful of the CellOrganizer deliverable, since it interfaces with `Matlab <https://www.mathworks.com/products/matlab.html>`_ which facilitates data analysis.
+
 Installing CellOrganizer locally
 ********************************
 
@@ -21,8 +25,6 @@ Requirements
 
 Downloading CellOrganizer
 -------------------------
-CellOrganizer for Matlab is the most flexible and powerful of the CellOrganizer deliverable, since it interfaces with `Matlab <https://www.mathworks.com/products/matlab.html>`_ which facilitates data analysis.
-
 To download the latest CellOrganizer for Matlab distribution go to the `download page <ttp://www.cellorganizer.org/cellorganizer-2-7-2/>`_. Aftwards, extract the contents of the release into a local directory of your preference. 
 
 For example,
