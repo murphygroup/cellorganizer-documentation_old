@@ -1,3 +1,28 @@
+Installing CellOrganizer on Galaxy
+==================================
+
+Requirements
+************
+
+* `A Galaxy instance <https://galaxyproject.org/>`_
+* `Bioformats Tools <https://docs.openmicroscopy.org/bio-formats/5.8.2/users/comlinetools/>`_
+* `Matlab 2016b or newer <https://www.mathworks.com/products/matlab.html>`_
+* Bioinformatics Toolbox
+* Computer Vision System Toolbox
+* Control System Toolbox
+* Curve Fitting Toolbox
+* Image Processing Toolbox
+* Mapping Toolbox
+* Optimization Toolbox
+* Robust Control Toolbox
+* Signal Processing Toolbox
+* Simulink
+* Simulink Design Optimization
+* Statistics and Machine Learning Toolbox
+* System Identification Toolbox
+* Wavelet Toolbox 
+
+
 Using CellOrganizer on Galaxy+Bridges
 =====================================
 
