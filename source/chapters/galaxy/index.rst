@@ -1,26 +1,31 @@
-Installing CellOrganizer on Galaxy
-==================================
+Installing CellOrganizer for Galaxy
+===================================
+
+About CellOrganizer
+*******************
+
+CellOrganizer for Galaxy is a set of customs tools for training generative models, synthesizing instances and analyzing models using CellOrganizer.
 
 Requirements
 ************
 
-* `A Galaxy instance <https://galaxyproject.org/>`_
+* `Galaxy instance <https://galaxyproject.org/>`_
 * `Bioformats Tools <https://docs.openmicroscopy.org/bio-formats/5.8.2/users/comlinetools/>`_
 * `Matlab 2016b or newer <https://www.mathworks.com/products/matlab.html>`_
-* Bioinformatics Toolbox
-* Computer Vision System Toolbox
-* Control System Toolbox
-* Curve Fitting Toolbox
-* Image Processing Toolbox
-* Mapping Toolbox
-* Optimization Toolbox
-* Robust Control Toolbox
-* Signal Processing Toolbox
-* Simulink
-* Simulink Design Optimization
-* Statistics and Machine Learning Toolbox
-* System Identification Toolbox
-* Wavelet Toolbox
+    * Bioinformatics Toolbox
+    * Computer Vision System Toolbox
+    * Control System Toolbox
+    * Curve Fitting Toolbox
+    * Image Processing Toolbox
+    * Mapping Toolbox
+    * Optimization Toolbox
+    * Robust Control Toolbox
+    * Signal Processing Toolbox
+    * Simulink
+    * Simulink Design Optimization
+    * Statistics and Machine Learning Toolbox
+    * System Identification Toolbox
+    * Wavelet Toolbox
 
 Installing Galaxy in a production server instance
 *************************************************
@@ -33,12 +38,12 @@ Installing Matlab
 .. IMPORTANT::
    It is important that the ``matlab`` binary is available in ``$PATH``.
 
-Installing `Matlab <https://www.mathworks.com/products/matlab.html>`_ is beyond the scope of this document. To install Matlab, please follow the `instructions < <https://www.mathworks.com/support/install-matlab.html>`_ on the Mathworks site.
+Installing `Matlab <https://www.mathworks.com/products/matlab.html>`_ is beyond the scope of this document. To install Matlab, please follow the instructions on the Mathworks `site <https://docs.galaxyproject.org/en/latest/admin/production.html>`_.
 
 Installing Bioformats Tools
 ***************************
 
-Installing `Bioformats tools <https://docs.openmicroscopy.org/bio-formats/5.8.2/users/comlinetools/>`_ beyond the scope of this document. To install BFTools, please follow the `instructions <https://docs.openmicroscopy.org/bio-formats/5.8.2/users/comlinetools/>`_ on the OpenMicroscopy site.
+Installing `Bioformats tools <https://docs.openmicroscopy.org/bio-formats/5.8.2/users/comlinetools/>`_ beyond the scope of this document. To install BFTools, please follow the instructions on the OpenMicroscopy `site <https://docs.openmicroscopy.org/bio-formats/5.8.2/users/comlinetools>`_.
 
 Installing Pandoc
 *****************
