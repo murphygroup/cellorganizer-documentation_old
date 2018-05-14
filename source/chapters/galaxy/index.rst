@@ -45,38 +45,17 @@ Installing Pandoc
 
 Installing `Pandoc <https://pandoc.org/>`_ is beyod the scope of this document. To install Pandoc, please follow the `instructions <https://pandoc.org/installing.html>`_ on their site.
 
-Using CellOrganizer on Galaxy+Bridges
-=====================================
+Using CellOrganizer for Galaxy
+==============================
 
-.. raw:: html
+The CellOrganizer for Galaxy public server
 
-    <div style="margin-top:10px;">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/ngtb4Sl1U5c" frameborder="0" allowfullscreen></iframe>
-    </div>
-
-Introduction
-************
-CellOrganizer is a software package that learns generative models of cell organization from fluorescence micrographs. These models are useful for modeling the dependency between compartments of the cell, allowing for a compact representation of cell geometries present in cell images and generation of images of geometries useful for spatially realistic biochemical simulations. This tutorial will primarily cover individual usage, along with shared usage amongst multiple Galaxy+Bridges accounts for CellOrganizer.
-
-As of mid-2016, the CellOrganizer team has introduced a new interface for CellOrganizer called Galaxy+Bridges. This new interface expands the accessibility of CellOrganizer to users who have little to no programming experience or exhaustive resources in accessing Matlab and all of the required toolboxes.
-
-For users interested in directly accessing CellOrganizer using Matlab, the link to download CellOrganizer is `here <http://cellorganizer.org/Downloads/v2.5/index.html>`_, and the documentation for loading CellOrganizer into Matlab can be found at `here <http://cellorganizer.org/docs/v2.5/chapters/start.html>`_ along with a simple tutorial.
-
-The Ideal Tutorial User
------------------------
-
-The ideal tutorial user would have some experience with fluorescence microscopy, limited to no experience with Matlab, and no experience with CellOrganizer. The user should be interested in learning how to use the Galaxy+Bridges interface for CellOrganizer to explore their image data.
-
-A Disclaimer
-------------
-
-CellOrganizer is research code, and as such it is under constant development. Although we do our best to ensure our code is reliable, we distribute this code under the GNU public license without any type of warranty. For this reason, though we hope not, a feature may not work as expected. Please do not hesitate to contact us at cellorganizer@compbio.cmu.edu with any questions or issues you have.
+* `galaxy.compbio.cs.cmu.edu <http://galaxy.compbio.cs.cmu.edu:9000/>`_
 
 Prerequisites
 *************
 
-* Any OS X, Linux, or Unix operating system
-* Any web browser
+* A modern web browser
 
 Setup
 *****
