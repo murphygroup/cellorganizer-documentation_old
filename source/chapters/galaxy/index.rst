@@ -73,18 +73,18 @@ Setup
 
 Galaxy Registration
 -------------------
-In order to use CellOrganizer on Galaxy+Bridges, the user must have a registered account.
+In order to use CellOrganizer for Galaxy, you must have a registered account.
 
-#. Open a web browser, and go to the Galaxy+Bridges site `here <http://galaxy2.bridges.psc.edu>`_.
+#. Open a web browser, and go to the Galaxy site `here <galaxy.compbio.cs.cmu.edu>`_.
 
-#. Hover over User on the top navigation toolbar and choose Register from the dropdown menu.
+#. Hover over ``User`` on the top navigation toolbar and choose ``Register`` from the dropdown menu.
 
     .. image:: ../images/galaxy_bridges/registerbutton.png
         :align: center
         :width: 240px
         :height: 240px
 
-#. Fill out the registration form by entering an email address, password, and public name (optional) for your account and hit "Submit".
+#. Fill out the registration form by entering an (1) email address, (2) password, and (3) public name (optional) for your account and hit ``Submit``.
 
 You should now be registered onto Galaxy, logged in, and redirected to the home interface.
 
