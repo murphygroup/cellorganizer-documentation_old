@@ -57,7 +57,7 @@ Installing Kitematic
 
 The easiest way to download an image and run a container is to use `Kitematic <https://kitematic.com/>`_. Kitematic is a tool for downloading images and running containers.
 
-* To install Kitematic, click `here <ttps://kitematic.com/docs/>`_.
+* To install Kitematic, click `here <https://kitematic.com/docs/>`_.
 
 .. ATTENTION::
    Kitematic is not necessary but it is reccomended to streamline installation and deployment
