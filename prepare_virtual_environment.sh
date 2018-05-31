@@ -10,4 +10,5 @@ pip3 install pandas
 pip3 install tabulate
 pip3 install sphinx_rtd_theme
 pip3 install sphinxcontrib.gist
+pip3 install sphinxcontrib-programoutput
 deactivate
