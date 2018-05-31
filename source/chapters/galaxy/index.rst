@@ -150,7 +150,6 @@ At another time, if you would like to switch to a saved history,
         :width: 240px
         :height: 240px
 
-
 #. Click on "Saved Histories" from the drop-down menu.
 
     .. image:: ../images/galaxy_bridges/savedHistories.png
@@ -295,8 +294,3 @@ Now, that you have been able to successfully create a new work history, submit a
     * demo3D00 (Demos) → Show 3D Image Reshape (Useful Tools)
     * demo3D00 (Demos) → Export to Blender (Useful Tools)
     * demo3D00 (Demos) → Show 3D Surface Plot (Useful Tool)
-
-**End of Tutorial**
-
-
-
