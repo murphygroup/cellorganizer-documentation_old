@@ -30,9 +30,9 @@ For example,
 .. code-block:: bash
 
 	cd ~/
-	wget -nc http://www.cellorganizer.org/Downloads/v2.7/cellorganizer-v2.7.1-image_collection.tgz
-	tar -xvf cellorganizer_v2.7.1_and_image_collection.tgz
-	rm -fv cellorganizer_v2.7.1_and_image_collection.tgz
+	wget -nc http://www.cellorganizer.org/Downloads/v2.7/cellorganizer-v2.7.1-images-collection.tgz
+	tar -xvf cellorganizer-v2.7.1-images-collection.tgz
+	rm -fv cellorganizer-v2.7.1-images-collection.tgz
 
 The commands above will download and extract to disk the contents of CellOrganizer v2.7.1.
 
