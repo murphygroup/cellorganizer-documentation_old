@@ -30,7 +30,7 @@ For example,
 .. code-block:: bash
 
 	cd ~/
-	wget -nc http://cellorganizer.org/downloads/v2.7/cellorganizer_v2.7.1_and_image_collection.tgz
+	wget -nc http://www.cellorganizer.org/Downloads/v2.7/cellorganizer-v2.7.1-image_collection.tgz
 	tar -xvf cellorganizer_v2.7.1_and_image_collection.tgz
 	rm -fv cellorganizer_v2.7.1_and_image_collection.tgz
 
