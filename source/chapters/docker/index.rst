@@ -40,7 +40,7 @@ Before downloading the image and spinning a cotainer, you need to install Docker
 
 Open terminal and enter the command
 
-	``docker pull murphylab/cellorganizer:latest``
+	``docker pull murphylab/docker-cellorganizer:latest``
 
 Running this command will initiate download and pull the most recent image of cellorganizer-docker from Docker Hub down to your computer.
 
@@ -61,7 +61,7 @@ The easiest way to download an image and run a container is to use `Kitematic <h
 * To install Kitematic, click `here <https://kitematic.com/docs/>`_.
 
 .. ATTENTION::
-   Kitematic is not necessary but it is reccomended to streamline installation and deployment
+   Kitematic is not necessary but it is recommended to streamline installation and deployment.
  
 
 **Download the most recent image using Kitematic**
@@ -71,7 +71,7 @@ Start Kitematic. It should open a window similar to the screenshot below
 .. figure:: kitematic.png
    :align: center
 
-Demos included in the distribution
+Demos Included In the Distribution
 ----------------------------------
 
 There are several demos included within the CellOrganizer software bundle. These demos are intended to illustrate CellOrganizer's functionality, and should be used to familiarize the user with the input/output format of various top-level functions such as **img2slml** and **slml2img**. 
