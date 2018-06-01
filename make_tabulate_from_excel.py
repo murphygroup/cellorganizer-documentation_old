@@ -23,4 +23,4 @@ df = df.replace( True, 'True' )
 body = df.values.tolist()
 header = df.columns.values.tolist()
 
-print tabulate(body, header, tablefmt="grid")
+print(tabulate(body, header, tablefmt="grid"))
