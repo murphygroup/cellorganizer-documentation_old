@@ -20,21 +20,11 @@ print(fileDir)
 parentDir = os.path.dirname(fileDir)                   # Directory of the Module directory
 print(parentDir)
 
-newPath = os.path.join(parentDir, 'src/sphinxcontrib-pyexec/pyexec/pyexec')   # Get the directory for StringFunctions
+newPath = os.path.join(parentDir, 'src/sphinxcontrib-pyexec/pyexec')   # Get the directory for StringFunctions
 sys.path.append(newPath) 
 
 from pyexec import *
 
-#pyexec = SourceFileLoader("pyexec", "../src/sphinxcontrib-pyexec/pyexec/pyexec.py").load_module()
-
-# import importlib.util
-# spec = importlib.util.spec_from_file_location("pyexec", "../src/sphinxcontrib-pyexec/pyexec/pyexec.py")
-# foo = importlib.util.module_from_spec(spec)
-# spec.loader.exec_module(foo)
-#foo.MyClass()
-#sys.path.append('../src/sphinxcontrib-pyexec/')
-#import pyexec
-#import ExecDirective
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
