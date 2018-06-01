@@ -5,17 +5,17 @@ CellOrganizer in 45 Minutes
 ***************************
 
 Introduction
-============
+------------
 
 CellOrganizer is a software package that learns generative models of cell organization from fluorescence images. These models are useful for modeling the dependency between compartments of the cell, allowing for a compact representation of cell geometries present in cell images and generating image of geometries useful for spatially realistic biochemical simulations. There are two main functions which this tutorial will cover: ``img2slml``, the top-level function to train a generative model of cell morphology, and ``slml2img``, the top-level function to generate an instance from a trained model.
 
 Whom is this tutorial for?
-==========================
+--------------------------
 
 This tutorial was written for people who have experience with fluorescence microscopy, no experience with CellOrganizer and possibly some experience with MATLAB, generative models, or cell modeling. Users should be interested in learning how to use the automated modeling tools provided by CellOrganizer to explore their image data.
 
 Resources
-=========
+---------
 
 * `CellOrganizer <http://cellorganizer.org>`_
 
@@ -34,7 +34,7 @@ Image Databases
 * `Murphy Lab Public Datasets <http://murphylab.web.cmu.edu/data/>`_
 
 Prerequisites
-=============
+-------------
 
 * An OS X, Linux or Unix operating system
 * MATLAB installation (MATLAB 2014a or newer) with the following toolboxes:
@@ -55,7 +55,7 @@ Prerequisites
 * Some basic familiarity with writing scripts/programming (preferably in MATLAB).
 
 Input requirements for building models
-======================================
+--------------------------------------
 
 The main function that builds a generative model is called ``img2slml``. This function has five input arguments
 
@@ -93,7 +93,7 @@ Hence we can use this helper function to generate input arguments for the functi
 .. gist:: https://gist.github.com/icaoberg/f327f6cd28ee448a2175460280ee4b44
 
 Setup
-=====
+-----
 
 Download the most recent version of CellOrganizer
 -------------------------------------------------
