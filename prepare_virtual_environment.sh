@@ -4,7 +4,6 @@ virtualenv -p python3 .
 
 source ./bin/activate
 pip3 install numpy scipy matplotlib
-pip3 install pyexec
 pip3 install -I sphinx
 pip3 install xlrd
 pip3 install pandas
