@@ -39,7 +39,7 @@ extensions = [
     'sphinx.ext.ifconfig',
     'sphinx.ext.viewcode',
     'sphinxcontrib.gist',
-    'PyExec'
+    'pyexec'
   ]
 
 # Add any paths that contain templates here, relative to this directory.
