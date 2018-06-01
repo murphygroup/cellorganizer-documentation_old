@@ -1,57 +1,90 @@
-Using CellOrganizer on Galaxy+Bridges
-=====================================
+About CellOrganizer for Galaxy
+==============================
 
-.. raw:: html
+CellOrganizer for Galaxy is a set of custom tools for training generative models, synthesizing instances and analyzing models using CellOrganizer.
 
-    <div style="margin-top:10px;">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/ngtb4Sl1U5c" frameborder="0" allowfullscreen></iframe>
-    </div>
+Installing CellOrganizer for Galaxy
+===================================
 
-Introduction
+Requirements
 ************
-CellOrganizer is a software package that learns generative models of cell organization from fluorescence micrographs. These models are useful for modeling the dependency between compartments of the cell, allowing for a compact representation of cell geometries present in cell images and generation of images of geometries useful for spatially realistic biochemical simulations. This tutorial will primarily cover individual usage, along with shared usage amongst multiple Galaxy+Bridges accounts for CellOrganizer.
 
-As of mid-2016, the CellOrganizer team has introduced a new interface for CellOrganizer called Galaxy+Bridges. This new interface expands the accessibility of CellOrganizer to users who have little to no programming experience or exhaustive resources in accessing Matlab and all of the required toolboxes.
+To install CellOrganizer for Galaxy in a production server, you need
 
-For users interested in directly accessing CellOrganizer using Matlab, the link to download CellOrganizer is `here <http://cellorganizer.org/Downloads/v2.5/index.html>`_, and the documentation for loading CellOrganizer into Matlab can be found at `here <http://cellorganizer.org/docs/v2.5/chapters/start.html>`_ along with a simple tutorial.
+* `Galaxy instance <https://galaxyproject.org/>`_
+* `Bioformats Tools <https://docs.openmicroscopy.org/bio-formats/5.8.2/users/comlinetools/>`_
+* `Matlab 2016b or newer <https://www.mathworks.com/products/matlab.html>`_
+    * Bioinformatics Toolbox
+    * Computer Vision System Toolbox
+    * Control System Toolbox
+    * Curve Fitting Toolbox
+    * Image Processing Toolbox
+    * Mapping Toolbox
+    * Optimization Toolbox
+    * Robust Control Toolbox
+    * Signal Processing Toolbox
+    * Simulink
+    * Simulink Design Optimization
+    * Statistics and Machine Learning Toolbox
+    * System Identification Toolbox
+    * Wavelet Toolbox
 
-The Ideal Tutorial User
------------------------
+Installing Galaxy in a production server instance
+*************************************************
 
-The ideal tutorial user would have some experience with fluorescence microscopy, limited to no experience with Matlab, and no experience with CellOrganizer. The user should be interested in learning how to use the Galaxy+Bridges interface for CellOrganizer to explore their image data.
+Installing Galaxy is beyond the scope of this document. For instructions on installing Galaxy please click `here <https://docs.galaxyproject.org/en/latest/admin/production.html>`_.
 
-A Disclaimer
-------------
+Installing Matlab
+*****************
 
-CellOrganizer is research code, and as such it is under constant development. Although we do our best to ensure our code is reliable, we distribute this code under the GNU public license without any type of warranty. For this reason, though we hope not, a feature may not work as expected. Please do not hesitate to contact us at cellorganizer@compbio.cmu.edu with any questions or issues you have.
+.. IMPORTANT::
+   The ``matlab`` binary should be available in ``$PATH``.
+
+Installing `Matlab <https://www.mathworks.com/products/matlab.html>`_ is beyond the scope of this document. To install Matlab, please follow the instructions on the Mathworks `site <https://docs.galaxyproject.org/en/latest/admin/production.html>`_. Make sure to install the toolboxes listed in the requirements section above.
+
+Installing Bioformats Tools
+***************************
+
+Installing `Bioformats tools <https://docs.openmicroscopy.org/bio-formats/5.8.2/users/comlinetools/>`_ beyond the scope of this document. To install BFTools, please follow the instructions on the OpenMicroscopy `site <https://docs.openmicroscopy.org/bio-formats/5.8.2/users/comlinetools>`_.
+
+Installing Pandoc
+*****************
+
+Installing `Pandoc <https://pandoc.org/>`_ is beyod the scope of this document. To install Pandoc, please follow the `instructions <https://pandoc.org/installing.html>`_ on their site.
+
+Using CellOrganizer for Galaxy
+==============================
+
+The CellOrganizer for Galaxy public server address is
+
+* `galaxy.compbio.cs.cmu.edu <http://galaxy.compbio.cs.cmu.edu:9000/>`_
 
 Prerequisites
 *************
 
-* Any OS X, Linux, or Unix operating system
-* Any web browser
+* A modern web browser
 
 Setup
 *****
 
-#. Open a web browser and access the site `here <http://galaxy2.bridges.psc.edu>`_.
+#. Open a web browser and access the `site <galaxy.compbio.cs.cmu.edu>`_.
 #. Register for a user account, or log onto a preexisting account.
 #. Become familiar with different components of the Galaxy Home Interface.
 
 Galaxy Registration
 -------------------
-In order to use CellOrganizer on Galaxy+Bridges, the user must have a registered account.
+In order to use CellOrganizer for Galaxy, you must have a registered account.
 
-#. Open a web browser, and go to the Galaxy+Bridges site `here <http://galaxy2.bridges.psc.edu>`_.
+#. Open a web browser, and go to the Galaxy site `here <galaxy.compbio.cs.cmu.edu>`_.
 
-#. Hover over User on the top navigation toolbar and choose Register from the dropdown menu.
+#. Hover over ``User`` on the top navigation toolbar and choose ``Register`` from the dropdown menu.
 
     .. image:: ../images/galaxy_bridges/registerbutton.png
         :align: center
         :width: 240px
         :height: 240px
 
-#. Fill out the registration form by entering an email address, password, and public name (optional) for your account and hit "Submit".
+#. Fill out the registration form by entering an (1) email address, (2) password, and (3) public name (optional) for your account and hit ``Submit``.
 
 You should now be registered onto Galaxy, logged in, and redirected to the home interface.
 

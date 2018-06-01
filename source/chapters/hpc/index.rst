@@ -8,20 +8,20 @@ Requirements
    Remember to contact your HPC cluster managers to know if you have access to a Matlab license that would allow you to run `Matlab <https://www.mathworks.com/products/matlab.html>`_  in your cluster.
 
 * Matlab 2016b or newer
-* Bioinformatics Toolbox
-* Computer Vision System Toolbox
-* Control System Toolbox
-* Curve Fitting Toolbox
-* Image Processing Toolbox
-* Mapping Toolbox
-* Optimization Toolbox
-* Robust Control Toolbox
-* Signal Processing Toolbox
-* Simulink
-* Simulink Design Optimization
-* Statistics and Machine Learning Toolbox
-* System Identification Toolbox
-* Wavelet Toolbox 
+	* Bioinformatics Toolbox
+	* Computer Vision System Toolbox
+	* Control System Toolbox
+	* Curve Fitting Toolbox
+	* Image Processing Toolbox
+	* Mapping Toolbox
+	* Optimization Toolbox
+	* Robust Control Toolbox
+	* Signal Processing Toolbox
+	* Simulink
+	* Simulink Design Optimization
+	* Statistics and Machine Learning Toolbox
+	* System Identification Toolbox
+	* Wavelet Toolbox 
 
 Downloading CellOrganizer
 -------------------------
@@ -38,11 +38,11 @@ For example,
 .. code-block:: bash
 
 	cd ~/
-	wget -nc http://www.cellorganizer.org/Downloads/v2.7/cellorganizer-v2.7.1-images-collection.tgz	
-	tar -xvf cellorganizer-v2.7.1-images-collection.tgz
-	rm -fv cellorganizer-v2.7.1-images-collection.tgz
+	wget -nc http://cellorganizer.org/downloads/v2.7/cellorganizer_v2.7.2_and_image_collection.tgz
+	tar -xvf cellorganizer_v2.7.2_and_image_collection.tgz
+	rm -fv cellorganizer_v2.7.2_and_image_collection.tgz
 
-The commands above will download and extract to disk the contents of CellOrganizer v2.7.1.
+The commands above will download and extract to disk the contents of CellOrganizer v2.7.2.
 
 Starting CellOrganizer
 ----------------------
