@@ -20,7 +20,7 @@ print(fileDir)
 parentDir = os.path.dirname(fileDir)                   # Directory of the Module directory
 print(parentDir)
 
-newPath = os.path.join(parentDir, 'src/sphinxcontrib_pyexec/pyexec')   # Get the directory for StringFunctions
+newPath = os.path.join(parentDir, 'src/sphinxcontrib-pyexec/pyexec/pyexec')   # Get the directory for StringFunctions
 sys.path.append(newPath) 
 
 from pyexec import *
