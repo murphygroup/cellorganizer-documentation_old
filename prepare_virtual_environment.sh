@@ -6,7 +6,7 @@ source ./bin/activate
 pip3 install numpy scipy matplotlib
 pip3 install -I sphinx
 pip3 install xlrd
-pip3 install pandas=0.22.0
+pip3 install pandas==0.22.0
 pip3 install tabulate
 pip3 install sphinx_rtd_theme
 pip3 install sphinxcontrib.gist
