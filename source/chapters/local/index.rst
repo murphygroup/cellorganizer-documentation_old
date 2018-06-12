@@ -25,7 +25,7 @@ Requirements
 
 Downloading CellOrganizer
 -------------------------
-To download the latest CellOrganizer for Matlab distribution go to the `download page <ttp://www.cellorganizer.org/cellorganizer-2-7-2/>`_. Aftwards, extract the contents of the release into a local directory of your preference. 
+To download the latest CellOrganizer for Matlab distribution go to the `download page <http://www.cellorganizer.org/cellorganizer-2-7-2/>`_. Aftwards, extract the contents of the release into a local directory of your preference. 
 
 For example,
 
