@@ -76,6 +76,46 @@ Demos Included In the Distribution
 
 There are several demos included within the CellOrganizer software bundle. These demos are intended to illustrate CellOrganizer's functionality, and should be used to familiarize the user with the input/output format of various top-level functions such as **img2slml** and **slml2img**. 
 
-.. exec::
-   
-	print commands.getoutput('python make_tabulate_from_excel.py source/chapters/docker/demos.xlsx "v2.7"')
++----------+------------+-------------+
+| Demo     | Training   | Synthesis   |
++==========+============+=============+
+| demo2D00 |            | True        |
++----------+------------+-------------+
+| demo2D01 | True       |             |
++----------+------------+-------------+
+| demo2D02 |            | True        |
++----------+------------+-------------+
+| demo2D03 | True       |             |
++----------+------------+-------------+
+| demo2D04 | True       |             |
++----------+------------+-------------+
+| demo2D05 | True       |             |
++----------+------------+-------------+
+| demo3D00 |            | True        |
++----------+------------+-------------+
+| demo3D01 |            | True        |
++----------+------------+-------------+
+| demo3D02 |            | True        |
++----------+------------+-------------+
+| demo3D03 |            | True        |
++----------+------------+-------------+
+| demo3D04 |            | True        |
++----------+------------+-------------+
+| demo3D06 |            | True        |
++----------+------------+-------------+
+| demo3D07 |            | True        |
++----------+------------+-------------+
+| demo3D08 |            | True        |
++----------+------------+-------------+
+| demo3D09 |            | True        |
++----------+------------+-------------+
+| demo3D10 |            | True        |
++----------+------------+-------------+
+| demo3D11 | True       |             |
++----------+------------+-------------+
+| demo3D12 | True       |             |
++----------+------------+-------------+
+| demo3D20 | True       |             |
++----------+------------+-------------+
+| demo3D21 | True       |             |
++----------+------------+-------------+
