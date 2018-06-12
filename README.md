@@ -12,3 +12,9 @@ Additionally, the python "commands" library is deprecated for Python3, which was
 solved by using the "subprocess" library instead. A compatibility issue came up
 for pandas after switching to subprocess, so in prepare_virtual_environment.sh,
 the version of pandas was downgraded to 0.22.0 instead of 0.23.0, the latest version.
+
+Remember the commands
+
+```
+python3 make_tabulate_from_excel.py model_class_and_types.xlsx v2.7.1 | pbcopy
+```
