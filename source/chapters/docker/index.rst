@@ -71,7 +71,7 @@ Start Kitematic. It should open a window similar to the screenshot below
 .. figure:: kitematic.png
    :align: center
 
-Demos Included In the Distribution
+Demos included in the Distribution
 ----------------------------------
 
 There are several demos included within the CellOrganizer software bundle. These demos are intended to illustrate CellOrganizer's functionality, and should be used to familiarize the user with the input/output format of various top-level functions such as **img2slml** and **slml2img**. 
