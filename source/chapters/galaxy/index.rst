@@ -57,7 +57,7 @@ Using CellOrganizer for Galaxy
 
 The CellOrganizer for Galaxy public server address is
 
-* `galaxy.compbio.cs.cmu.edu <http://galaxy.compbio.cs.cmu.edu:9000/>`_
+* `galaxy.compbio.cs.cmu.edu <http://galaxy.compbio.cs.cmu.edu:8080/>`_
 
 Prerequisites
 *************
