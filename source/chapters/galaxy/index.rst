@@ -79,7 +79,7 @@ In order to use CellOrganizer for Galaxy, you must have a registered account.
 
 #. Hover over ``User`` on the top navigation toolbar and choose ``Register`` from the dropdown menu.
 
-    .. image:: ../images/galaxy_bridges/registerbutton.png
+    .. image:: ../../images/galaxy_bridges/registerbutton.png
         :align: center
         :width: 240px
         :height: 240px
@@ -93,7 +93,7 @@ Galaxy Home Interface
 
 The Galaxy interface (Figure 1) is divided into four parts: the top navigation bar (top of the page), the Tools window (left side of the page), the History window (right side of the page), and the Main Content window (center of the page).
 
-.. image:: ../images/galaxy_bridges/galaxyinterface.png
+    .. image:: ../../images/galaxy_bridges/galaxyinterface.png
 
 The Tools window allows the user to choose which job they are interested in scheduling. For this tutorial, the options are divided into four categories: Demos, Synthesis, Training, and Useful Tools. These four categories, and their components are further explained in the tutorial.
 
@@ -116,7 +116,7 @@ For this tutorial, we need to create a work history titled 2D Hela. In order to 
 
 #. Click on the small gear next to the History header for History Options.
 
-    .. image:: ../images/galaxy_bridges/historyGear.png
+    .. image:: ../../images/galaxy_bridges/historyGear.png
         :align: center
         :width: 240px
         :height: 240px
@@ -124,7 +124,7 @@ For this tutorial, we need to create a work history titled 2D Hela. In order to 
 
 #. Click on "Create New" from the drop-down menu.
 
-    .. image:: ../images/galaxy_bridges/historyDropdown.png
+    .. image:: ../../images/galaxy_bridges/historyDropdown.png
         :align: center
         :width: 240px
         :height: 240px
@@ -132,7 +132,7 @@ For this tutorial, we need to create a work history titled 2D Hela. In order to 
 
 #. Click on the "Unnamed history" title to rename the working history to “2D Hela” and then press return/enter.
 
-    .. image:: ../images/galaxy_bridges/renameHistory.png
+    .. image:: ../../images/galaxy_bridges/renameHistory.png
         :align: center
         :width: 240px
         :height: 240px
@@ -145,14 +145,14 @@ At another time, if you would like to switch to a saved history,
 
 #. Click on the small gear next to the History header for History Options.
 
-    .. image:: ../images/galaxy_bridges/historyGear.png
+    .. image:: ../../images/galaxy_bridges/historyGear.png
         :align: center
         :width: 240px
         :height: 240px
 
 #. Click on "Saved Histories" from the drop-down menu.
 
-    .. image:: ../images/galaxy_bridges/savedHistories.png
+    .. image:: ../../images/galaxy_bridges/savedHistories.png
         :align: center
         :width: 240px
         :height: 240px
@@ -160,7 +160,7 @@ At another time, if you would like to switch to a saved history,
 
 #. Click the small arrow for the working history you would like to work on and choose “Switch” from the drop-down menu in the Main Content window.
 
-    .. image:: ../images/galaxy_bridges/switchHistories.png
+    .. image:: ../../images/galaxy_bridges/switchHistories.png
         :align: center
 
 Submitting a Job
@@ -171,7 +171,7 @@ Now, we are going to submit our first job to the scheduler, which will be the Tr
 
 #. Select “train_2D_diffeomorphic_model” under the Training category.
 
-    .. image:: ../images/galaxy_bridges/train2DJob.png
+    .. image:: ../../images/galaxy_bridges/train2DJob.png
         :align: center
         :width: 240px
         :height: 240px
@@ -179,17 +179,17 @@ Now, we are going to submit our first job to the scheduler, which will be the Tr
 
 #. In the Main Content window, ensure the default input parameters are set to the LAMP2 dataset, 9 images, and 5 as the downsample factor.
 
-    .. image:: ../images/galaxy_bridges/defaultParameters.png
+    .. image:: ../../images/galaxy_bridges/defaultParameters.png
         :align: center
 
 #. Click on “Execute” in order to send the task to the queue.
 
 Successful submission of the train_2D_diffeomorphic_model results in the following two things: 1) a green banner displayed in the Main Content window, and 2) the job is added to the scheduler in the History window.
 
-    .. image:: ../images/galaxy_bridges/successfulSubmission.png
+    .. image:: ../../images/galaxy_bridges/successfulSubmission.png
         :align: center
 
-    .. image:: ../images/galaxy_bridges/jobScheduled.png
+    .. image:: ../../images/galaxy_bridges/jobScheduled.png
         :align: center
         :width: 240px
         :height: 240px
@@ -201,7 +201,7 @@ Under the Useful Tools category in the Tools window, “show_shape_space” depi
 
 To access the show_shape_space PNG image, you only need to click on the small eye icon next to the job title in the scheduler. The following image should appear in the Main Content window:
 
-    .. image:: ../images/galaxy_bridges/showShapeSpace.png
+    .. image:: ../../images/galaxy_bridges/showShapeSpace.png
         :align: center
 
 Now, that you have been able to create a work history and submit a couple of jobs to the queue, it is time to talk about workflows. If you would like to recycle a process, perhaps run the visualization of diffeomorphic models many times with different parameters, without having to constantly click through all of the categories, then it is much easier to create a workflow.
@@ -213,12 +213,12 @@ Let’s create our first workflow using the two tools we are familiar with: 1) t
 
 #. In the top navigation bar, click on the Workflow tab.
 
-    .. image:: ../images/galaxy_bridges/workflowButton.png
+    .. image:: ../../images/galaxy_bridges/workflowButton.png
         :align: center
 
 #. Click on the Create New Workflow button in the top right corner.
 
-    .. image:: ../images/galaxy_bridges/createNewWorkflow.png
+    .. image:: ../../images/galaxy_bridges/createNewWorkflow.png
         :align: center
         :width: 240px
         :height: 240px
@@ -227,7 +227,7 @@ Let’s create our first workflow using the two tools we are familiar with: 1) t
 #. Click on “Create” after naming and annotating the workflow.
     * In this example, let’s name the Workflow “Shape Space of Trained 2D Diffeo Model“ and annotate it as “Visualizing the shape space of a trained 2D diffeomorphic model”.
 
-    .. image:: ../images/galaxy_bridges/nameWorkflow.png
+    .. image:: ../../images/galaxy_bridges/nameWorkflow.png
         :align: center
 
 #. Click on the “train_2D_diffeomorphic_model” tool in the Tools window under the Training category and a box with this title should appear in your Workflow Canvas (Main Content window).
@@ -236,17 +236,17 @@ Let’s create our first workflow using the two tools we are familiar with: 1) t
 
 #. Arrange the boxes in the order/organization desired within the workspace.
 
-    .. image:: ../images/galaxy_bridges/workflowBoxes.png
+    .. image:: ../../images/galaxy_bridges/workflowBoxes.png
         :align: center
 
 #. Connect the two boxes together by clicking on the output arrow of the “train 2D diffeomorphic model” box and dragging your cursor to the input arrow of the “show shape space” box.
 
-    .. image:: ../images/galaxy_bridges/connectedBoxes.png
+    .. image:: ../../images/galaxy_bridges/connectedBoxes.png
         :align: center
 
 #. Click on the small gear next to the Workflow Canvas title, and choose “Save” on the drop-down menu.
 
-    .. image:: ../images/galaxy_bridges/workflowSave.png
+    .. image:: ../../images/galaxy_bridges/workflowSave.png
         :align: center
         :width: 240px
         :height: 240px
@@ -254,7 +254,7 @@ Let’s create our first workflow using the two tools we are familiar with: 1) t
 
 #. Click on the same gear to choose “Run” on the drop-down menu.
 
-    .. image:: ../images/galaxy_bridges/workflowRun.png
+    .. image:: ../../images/galaxy_bridges/workflowRun.png
         :align: center
         :width: 240px
         :height: 240px
@@ -262,7 +262,7 @@ Let’s create our first workflow using the two tools we are familiar with: 1) t
 
 #. By click on each step in the workflow, you can change the inputs.
 
-    .. image:: ../images/galaxy_bridges/workflowInputs.png
+    .. image:: ../../images/galaxy_bridges/workflowInputs.png
         :align: center
 
 #. Click “Run workflow” to send it to the queue.
