@@ -1,110 +1,77 @@
-About CellOrganizer for Galaxy
+About CellOrganizer-for-Galaxy
 ==============================
 
-CellOrganizer for Galaxy is a set of custom tools for training generative models, synthesizing instances and analyzing models using CellOrganizer.
+CellOrganizer-for-Galaxy is a set of tools that enables users to train generative models of the cell from microscopy images, analyze trained models, and synthesize model instances by accessing CellOrganizer through the Galaxy GUI.
 
-Installing CellOrganizer for Galaxy
-===================================
-
-Requirements
-************
-
-To install CellOrganizer for Galaxy in a production server, you need
-
-* `Galaxy instance <https://galaxyproject.org/>`_
-* `Bioformats Tools <https://docs.openmicroscopy.org/bio-formats/5.8.2/users/comlinetools/>`_
-* `Matlab 2016b or newer <https://www.mathworks.com/products/matlab.html>`_
-    * Bioinformatics Toolbox
-    * Computer Vision System Toolbox
-    * Control System Toolbox
-    * Curve Fitting Toolbox
-    * Image Processing Toolbox
-    * Mapping Toolbox
-    * Optimization Toolbox
-    * Robust Control Toolbox
-    * Signal Processing Toolbox
-    * Simulink
-    * Simulink Design Optimization
-    * Statistics and Machine Learning Toolbox
-    * System Identification Toolbox
-    * Wavelet Toolbox
-
-Installing Galaxy in a production server instance
-*************************************************
-
-Installing Galaxy is beyond the scope of this document. For instructions on installing Galaxy please click `here <https://docs.galaxyproject.org/en/latest/admin/production.html>`_.
-
-Installing Matlab
-*****************
-
-.. IMPORTANT::
-   The ``matlab`` binary should be available in ``$PATH``.
-
-Installing `Matlab <https://www.mathworks.com/products/matlab.html>`_ is beyond the scope of this document. To install Matlab, please follow the instructions on the Mathworks `site <https://docs.galaxyproject.org/en/latest/admin/production.html>`_. Make sure to install the toolboxes listed in the requirements section above.
-
-Installing Bioformats Tools
-***************************
-
-Installing `Bioformats tools <https://docs.openmicroscopy.org/bio-formats/5.8.2/users/comlinetools/>`_ beyond the scope of this document. To install BFTools, please follow the instructions on the OpenMicroscopy `site <https://docs.openmicroscopy.org/bio-formats/5.8.2/users/comlinetools>`_.
-
-Installing Pandoc
-*****************
-
-Installing `Pandoc <https://pandoc.org/>`_ is beyod the scope of this document. To install Pandoc, please follow the `instructions <https://pandoc.org/installing.html>`_ on their site.
-
-Using CellOrganizer for Galaxy
+Using CellOrganizer-for-Galaxy
 ==============================
 
-The CellOrganizer for Galaxy public server address is
+You can get started with CellOrganizer-for-Galaxy by one of the following ways
 
-* `galaxy.compbio.cs.cmu.edu <http://galaxy.compbio.cs.cmu.edu:8080/>`_
+* Access CellOrganizer-for-Galaxy through the public server that we host
 
-Prerequisites
-*************
 
-* A modern web browser
+Accessing the CellOrganizer-for-Galaxy public server
+====================================================
+
+The CellOrganizer-for-Galaxy public server can be accessed at `galaxy.compbio.cs.cmu.edu <http://galaxy.compbio.cs.cmu.edu:8080/>`_.
 
 Setup
 *****
+The following instructions describe
 
-#. Open a web browser and access the `site <galaxy.compbio.cs.cmu.edu>`_.
-#. Register for a user account, or log onto a preexisting account.
-#. Become familiar with different components of the Galaxy Home Interface.
+* How to register for user account on the Cellorganizer-for-Galaxy public server
+* How to use various basic features of the Galaxy GUI
 
 Galaxy Registration
 -------------------
-In order to use CellOrganizer for Galaxy, you must have a registered account.
+In order to use CellOrganizer-for-Galaxy, you must register for a user account.
 
-#. Open a web browser, and go to the Galaxy site `here <galaxy.compbio.cs.cmu.edu>`_.
+#. Open a web browser, and go to `galaxy.compbio.cs.cmu.edu <http://galaxy.compbio.cs.cmu.edu:8080/>`_.
 
-#. Hover over ``User`` on the top navigation toolbar and choose ``Register`` from the dropdown menu.
+#. Go to the "Login or Register" link at the top of the Galaxy interface and select "Register". If you already have an account, then select "Login". 
 
-    .. image:: ../../images/galaxy_bridges/registerbutton.png
+    .. image:: ../images/galaxy_bridges/registerbutton.png
         :align: center
         :width: 240px
         :height: 240px
 
-#. Fill out the registration form by entering an (1) email address, (2) password, and (3) public name (optional) for your account and hit ``Submit``.
+#. You will need to provide an email address, a password, and a public name (optional) for registration. After you have entered your information, click "Submit".
 
-You should now be registered onto Galaxy, logged in, and redirected to the home interface.
+You will be redirected to the home page of the Galaxy interface for your account.
 
-Galaxy Home Interface
----------------------
+Galaxy interface
+----------------
 
-The Galaxy interface (Figure 1) is divided into four parts: the top navigation bar (top of the page), the Tools window (left side of the page), the History window (right side of the page), and the Main Content window (center of the page).
+The home page is divided into four parts
 
-    .. image:: ../../images/galaxy_bridges/galaxyinterface.png
+* Navigation bar (top of the page)
+* Tools window (left side of the page)
+* History window (right side of the page)
+* Main Content window ( center of the page)
 
-The Tools window allows the user to choose which job they are interested in scheduling. For this tutorial, the options are divided into four categories: Demos, Synthesis, Training, and Useful Tools. These four categories, and their components are further explained in the tutorial.
+    .. image:: ../images/galaxy_bridges/galaxyinterface.png
 
-The History window depicts the user’s personal scheduler along with their current status through color coding. When a job is submitted to the queue, it appears at the top of the History window in the form of a small rectangle with a designated number and a descriptive name. The color of the box correlates with the current status of the job, with
+The Tools window lists all the tools that are available to the user. For user convenience, we have grouped the tools into six categories
 
-    * a grey background meaning that the job has been submitted, but has not been accepted,
-    * a red background meaning that the job failed to run,
-    * a yellow background meaning that the job has been accepted by the queue, and
-    * a green background meaning that the job is complete and is ready to be viewed.
+* Get Data (E.g under the Get Data section we have the following three tools)
+    * Upload File from your computer
+    * Imports image or model from a URL
+    * Imports model from the curated model repository
+* Training 
+* Synthesis
+* Useful tools for images
+* Useful tools for models
+* File Validators
 
-The Main Content window is Galaxy+Bridges’ workspace. Once a job or workflow is chosen from the Tool Shed, any direct interaction with CellOrganizer occurs in the Main Content window.
+The History window lists all the jobs that the user has submitted and indicates their respective statuses via color coding. Whenever the user executes a tool, he/she submits a new job that will appear at the top of the History window as a rectangular box with a designed number and a descriptive name. The color of box indicates the status of the corresponding job.
+
+* Gray means that the job has been submitted but not yet added to the job queue
+* Yellow means that the job has been submitted to the job queue
+* Red means that the job either exited before completion, or did not produce the expected output
+* Green means that the job ran successfully to completion and is ready to be viewed
+
+The Main Content window is the CellOrganizer-for-Galaxy workspace. Once a tool or workflow (this term will be explained later) has been selected from the Tool Window, the user can specify the input parameters via the Main Content window.  
 
 Tutorial: Creating a Work History, Submitting a Job, Submitting a Workflow, and Visualizing Results
 ***************************************************************************************************
@@ -112,55 +79,49 @@ Tutorial: Creating a Work History, Submitting a Job, Submitting a Workflow, and 
 Creating a Work History
 -----------------------
 
-For this tutorial, we need to create a work history titled 2D Hela. In order to do this,
+We will create a work history titled "2D Hela".
 
 #. Click on the small gear next to the History header for History Options.
 
-    .. image:: ../../images/galaxy_bridges/historyGear.png
+    .. image:: ../images/galaxy_bridges/historyGear.png
         :align: center
-        :width: 240px
-        :height: 240px
+        :width: 300px
 
 
 #. Click on "Create New" from the drop-down menu.
 
-    .. image:: ../../images/galaxy_bridges/historyDropdown.png
+    .. image:: ../images/galaxy_bridges/historyDropdown.png
         :align: center
-        :width: 240px
-        :height: 240px
+        :width: 300px
 
 
 #. Click on the "Unnamed history" title to rename the working history to “2D Hela” and then press return/enter.
 
-    .. image:: ../../images/galaxy_bridges/renameHistory.png
+    .. image:: ../images/galaxy_bridges/renameHistory.png
         :align: center
-        :width: 240px
-        :height: 240px
+        :width: 300px
 
 
 Accessing a Work History
 ------------------------
 
-At another time, if you would like to switch to a saved history,
+At another time, if you would like to switch to a saved history
 
 #. Click on the small gear next to the History header for History Options.
 
-    .. image:: ../../images/galaxy_bridges/historyGear.png
+    .. image:: ../images/galaxy_bridges/historyGear.png
         :align: center
-        :width: 240px
-        :height: 240px
+        :width: 300px
 
 #. Click on "Saved Histories" from the drop-down menu.
 
-    .. image:: ../../images/galaxy_bridges/savedHistories.png
+    .. image:: ../images/galaxy_bridges/savedHistories.png
         :align: center
-        :width: 240px
-        :height: 240px
+        :width: 300px
 
+#. Click on the small downward facing arrow on the saved history you would like to switch to and select “Switch” from the drop-down menu in the Main Content window.
 
-#. Click the small arrow for the working history you would like to work on and choose “Switch” from the drop-down menu in the Main Content window.
-
-    .. image:: ../../images/galaxy_bridges/switchHistories.png
+    .. image:: ../images/galaxy_bridges/switchHistories.png
         :align: center
 
 Submitting a Job
@@ -171,7 +132,7 @@ Now, we are going to submit our first job to the scheduler, which will be the Tr
 
 #. Select “train_2D_diffeomorphic_model” under the Training category.
 
-    .. image:: ../../images/galaxy_bridges/train2DJob.png
+    .. image:: ../images/galaxy_bridges/train2DJob.png
         :align: center
         :width: 240px
         :height: 240px
@@ -179,17 +140,17 @@ Now, we are going to submit our first job to the scheduler, which will be the Tr
 
 #. In the Main Content window, ensure the default input parameters are set to the LAMP2 dataset, 9 images, and 5 as the downsample factor.
 
-    .. image:: ../../images/galaxy_bridges/defaultParameters.png
+    .. image:: ../images/galaxy_bridges/defaultParameters.png
         :align: center
 
 #. Click on “Execute” in order to send the task to the queue.
 
 Successful submission of the train_2D_diffeomorphic_model results in the following two things: 1) a green banner displayed in the Main Content window, and 2) the job is added to the scheduler in the History window.
 
-    .. image:: ../../images/galaxy_bridges/successfulSubmission.png
+    .. image:: ../images/galaxy_bridges/successfulSubmission.png
         :align: center
 
-    .. image:: ../../images/galaxy_bridges/jobScheduled.png
+    .. image:: ../images/galaxy_bridges/jobScheduled.png
         :align: center
         :width: 240px
         :height: 240px
@@ -201,7 +162,7 @@ Under the Useful Tools category in the Tools window, “show_shape_space” depi
 
 To access the show_shape_space PNG image, you only need to click on the small eye icon next to the job title in the scheduler. The following image should appear in the Main Content window:
 
-    .. image:: ../../images/galaxy_bridges/showShapeSpace.png
+    .. image:: ../images/galaxy_bridges/showShapeSpace.png
         :align: center
 
 Now, that you have been able to create a work history and submit a couple of jobs to the queue, it is time to talk about workflows. If you would like to recycle a process, perhaps run the visualization of diffeomorphic models many times with different parameters, without having to constantly click through all of the categories, then it is much easier to create a workflow.
@@ -213,12 +174,12 @@ Let’s create our first workflow using the two tools we are familiar with: 1) t
 
 #. In the top navigation bar, click on the Workflow tab.
 
-    .. image:: ../../images/galaxy_bridges/workflowButton.png
+    .. image:: ../images/galaxy_bridges/workflowButton.png
         :align: center
 
 #. Click on the Create New Workflow button in the top right corner.
 
-    .. image:: ../../images/galaxy_bridges/createNewWorkflow.png
+    .. image:: ../images/galaxy_bridges/createNewWorkflow.png
         :align: center
         :width: 240px
         :height: 240px
@@ -227,7 +188,7 @@ Let’s create our first workflow using the two tools we are familiar with: 1) t
 #. Click on “Create” after naming and annotating the workflow.
     * In this example, let’s name the Workflow “Shape Space of Trained 2D Diffeo Model“ and annotate it as “Visualizing the shape space of a trained 2D diffeomorphic model”.
 
-    .. image:: ../../images/galaxy_bridges/nameWorkflow.png
+    .. image:: ../images/galaxy_bridges/nameWorkflow.png
         :align: center
 
 #. Click on the “train_2D_diffeomorphic_model” tool in the Tools window under the Training category and a box with this title should appear in your Workflow Canvas (Main Content window).
@@ -236,17 +197,17 @@ Let’s create our first workflow using the two tools we are familiar with: 1) t
 
 #. Arrange the boxes in the order/organization desired within the workspace.
 
-    .. image:: ../../images/galaxy_bridges/workflowBoxes.png
+    .. image:: ../images/galaxy_bridges/workflowBoxes.png
         :align: center
 
 #. Connect the two boxes together by clicking on the output arrow of the “train 2D diffeomorphic model” box and dragging your cursor to the input arrow of the “show shape space” box.
 
-    .. image:: ../../images/galaxy_bridges/connectedBoxes.png
+    .. image:: ../images/galaxy_bridges/connectedBoxes.png
         :align: center
 
 #. Click on the small gear next to the Workflow Canvas title, and choose “Save” on the drop-down menu.
 
-    .. image:: ../../images/galaxy_bridges/workflowSave.png
+    .. image:: ../images/galaxy_bridges/workflowSave.png
         :align: center
         :width: 240px
         :height: 240px
@@ -254,7 +215,7 @@ Let’s create our first workflow using the two tools we are familiar with: 1) t
 
 #. Click on the same gear to choose “Run” on the drop-down menu.
 
-    .. image:: ../../images/galaxy_bridges/workflowRun.png
+    .. image:: ../images/galaxy_bridges/workflowRun.png
         :align: center
         :width: 240px
         :height: 240px
@@ -262,7 +223,7 @@ Let’s create our first workflow using the two tools we are familiar with: 1) t
 
 #. By click on each step in the workflow, you can change the inputs.
 
-    .. image:: ../../images/galaxy_bridges/workflowInputs.png
+    .. image:: ../images/galaxy_bridges/workflowInputs.png
         :align: center
 
 #. Click “Run workflow” to send it to the queue.
