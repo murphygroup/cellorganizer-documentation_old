@@ -16,8 +16,9 @@ Accessing the CellOrganizer-for-Galaxy public server
 
 The CellOrganizer-for-Galaxy public server can be accessed at `galaxy.compbio.cs.cmu.edu <http://galaxy.compbio.cs.cmu.edu:8080/>`_.
 
-Setup
-*****
+Getting started
+===============
+
 The following instructions describe
 
 * How to register for user account on the Cellorganizer-for-Galaxy public server
@@ -40,8 +41,11 @@ In order to use CellOrganizer-for-Galaxy, you must register for a user account.
 
 You will be redirected to the home page of the Galaxy interface for your account.
 
-Galaxy interface
-----------------
+Basic features of Galaxy
+------------------------
+
+Home Page
+*********
 
 The home page is divided into four parts
 
@@ -73,8 +77,30 @@ The History window lists all the jobs that the user has submitted and indicates 
 
 The Main Content window is the CellOrganizer-for-Galaxy workspace. Once a tool or workflow (this term will be explained later) has been selected from the Tool Window, the user can specify the input parameters via the Main Content window.  
 
-Tutorial: Creating a Work History, Submitting a Job, Submitting a Workflow, and Visualizing Results
-***************************************************************************************************
+Making a Work History
+*********************
+
+Work Histories are Galaxy's way of enabling users to create multiple isolated workspaces. You can think of your current Work History as your current workspace. At any point in time, your History window displays all the data you have either downloaded or produced in your current workspace.
+
+Let's say you download some data into your current Work History. That data is now accessible to tools in your Tools Window. You can apply any tool on that data, provided that it considers the data as valid input. The output of this operation will get saved to your current Work History, and now you can even apply tools to this newly accessible data as well.
+
+If you now want to work on unrelated data, you can simply create a new Work History, switch your workspace to that newly created Work History, and work on that data without having to see the clutter of the previous workspace. Of course you can always switch between Work Histories whenever you like. 
+
+Work Histories can be shared between Galaxy users, allowing them to see each others outputs/errors.
+
+Submitting a Job
+****************
+
+Whenever you manage to execute a tool, you are essentially submitting a job to the server. And to execute a tool, you need to both provide the minimal set of inputs and to provide valid inputs. Whenever you click on one of the tools in the Tools Window, you should also see accompanying documentation in the Main Content window specifying what sort of inputs you need to provide to the tool. 
+
+Creating a Workflow
+*******************
+
+Workflows are Galaxy's way of enabling users to automate particular pipelines (which can even be shared among users). You can also think of them as a means to construct more complex tools by piecing together simpler ones.
+
+Let's say you keep on repeating a certain procedure. You download data, run a tool on it to produce some output, then visualize the output. Each time you repeat the procedure, you first have to click on the tool to download data and fill up the necessary input values, then you have to wait for the data to be downloaded, then you have to click on the tool you wanted to run on the data and fill up the necessary input values, then .... and so on. This is unecessarily tedious. 
+
+Instead, we can link streamline the procedure by linking the intermediate stages together via a Workflow (which essentially resembles a longer tool). We get to fill up all the necessary parameter settings that the intermediate stages require at the same time. Then we can simply click run and wait for the final output.   
 
 Creating a Work History
 -----------------------
