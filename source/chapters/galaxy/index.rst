@@ -106,6 +106,20 @@ Let's say you keep on repeating a certain procedure. You download data, run a to
 
 Instead, we can streamline the procedure by linking the intermediate stages together via a Workflow (which essentially resembles a longer tool). We get to fill up the necessary parameter settings that the intermediate stages require all at once. Then we can simply click run and wait for the final output.   
 
++--------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+
+| Workflow Name                                                      |    Link                                                                                                 |
++====================================================================+=========================================================================================================+
+| Train 2D PCA framework generative model                            |  `Click Here <http://galaxy.compbio.cs.cmu.edu:8080/u/cellorganizer/w/train-2d-pca-framework>`_         |
++--------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+
+| Train 2D classic generative model                                  |  `Click Here <http://galaxy.compbio.cs.cmu.edu:8080/u/cellorganizer/w/train-2d-classic-model>`_         |
++--------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+
+| Train 2D classic framework generative model                        |  `Click Here <http://galaxy.compbio.cs.cmu.edu:8080/u/cellorganizer/w/train-2d-classic-framework>`_     |
++--------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+
+| Train 2D diffeomorphic framework generative model                  |  `Click Here <http://galaxy.compbio.cs.cmu.edu:8080/u/cellorganizer/w/train-2d-diffeo-framework>`_      |
++--------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+
+| Train 2D diffeormorphic framework and vesicular pattern model      |  `Click Here <http://galaxy.compbio.cs.cmu.edu:8080/u/cellorganizer/w/train-2d-diffeo-vesicle-model>`_  |
++--------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+
+
 For more information click `here <https://galaxyproject.org/learn/advanced-workflow/>`_.
 
 Additional Resources
