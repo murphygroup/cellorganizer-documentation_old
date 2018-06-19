@@ -102,25 +102,33 @@ Workflows
 
 Workflows are Galaxy's way of enabling users to automate particular pipelines (which can even be shared among users). You can also think of them as a means to construct more complex tools by piecing together simpler ones.
 
-Let's say you keep on repeating a certain procedure. You download data, run a tool on it to produce some output, then visualize the output. Each time you repeat the procedure, you first have to click on the tool to download data and fill up the necessary input values, then you have to wait for the data to be downloaded, then you have to click on the tool you wanted to run on the data and fill up the necessary input values, then .... and so on. This is unecessarily tedious. 
+Let's say you keep on repeating a certain procedure. You download data, run a tool on it to produce some output, then visualize the output. Each time you repeat the procedure, you first have to click on the tool to download data and fill up the necessary input values, then you have to wait for the data to be downloaded, then you have to click on the tool you wanted to run on the data and fill up the necessary input values, then ... and so on. This is unecessarily tedious. 
 
 Instead, we can streamline the procedure by linking the intermediate stages together via a Workflow (which essentially resembles a longer tool). We get to fill up the necessary parameter settings that the intermediate stages require all at once. Then we can simply click run and wait for the final output.   
 
-+--------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+
-| Workflow Name                                                      |    Link                                                                                                 |
-+====================================================================+=========================================================================================================+
-| Train 2D PCA framework generative model                            |  `Click Here <http://galaxy.compbio.cs.cmu.edu:8080/u/cellorganizer/w/train-2d-pca-framework>`_         |
-+--------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+
-| Train 2D classic generative model                                  |  `Click Here <http://galaxy.compbio.cs.cmu.edu:8080/u/cellorganizer/w/train-2d-classic-model>`_         |
-+--------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+
-| Train 2D classic framework generative model                        |  `Click Here <http://galaxy.compbio.cs.cmu.edu:8080/u/cellorganizer/w/train-2d-classic-framework>`_     |
-+--------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+
-| Train 2D diffeomorphic framework generative model                  |  `Click Here <http://galaxy.compbio.cs.cmu.edu:8080/u/cellorganizer/w/train-2d-diffeo-framework>`_      |
-+--------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+
-| Train 2D diffeormorphic framework and vesicular pattern model      |  `Click Here <http://galaxy.compbio.cs.cmu.edu:8080/u/cellorganizer/w/train-2d-diffeo-vesicle-model>`_  |
-+--------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+
-
 For more information click `here <https://galaxyproject.org/learn/advanced-workflow/>`_.
+
+In the table below, we have provided links to sample workflows constructed using CellOrganizer-for-Galaxy tools.
+
++--------------------------------------------------------------------+
+| Workflow Name                                                      |
++====================================================================+
+| Train-2D-PCA-framework-generative-model_                           |
++--------------------------------------------------------------------+
+| Train-2D-classic-generative-model_                                 |
++--------------------------------------------------------------------+
+| Train-2D-classic-framework-generative-model_                       |
++--------------------------------------------------------------------+
+| Train-2D-diffeomorphic-framework-generative-model_                 |
++--------------------------------------------------------------------+
+| Train-2D-diffeomorphic-framework-and-vesicular-pattern-model_      |
++--------------------------------------------------------------------+
+
+.. _Train-2D-PCA-framework-generative-model: http://galaxy.compbio.cs.cmu.edu:8080/u/cellorganizer/w/train-2d-pca-framework
+.. _Train-2D-classic-generative-model: http://galaxy.compbio.cs.cmu.edu:8080/u/cellorganizer/w/train-2d-classic-model
+.. _Train-2D-classic-framework-generative-model: http://galaxy.compbio.cs.cmu.edu:8080/u/cellorganizer/w/train-2d-classic-framework
+.. _Train-2D-diffeomorphic-framework-generative-model: http://galaxy.compbio.cs.cmu.edu:8080/u/cellorganizer/w/train-2d-diffeo-framework
+.. _Train-2D-diffeomorphic-framework-and-vesicular-pattern-model: http://galaxy.compbio.cs.cmu.edu:8080/u/cellorganizer/w/train-2d-diffeo-vesicle-model
 
 Additional Resources
 ====================
