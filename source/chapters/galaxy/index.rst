@@ -54,7 +54,7 @@ The homepage is divided into four parts
 * History window (right side of the page)
 * Main Content window ( center of the page)
 
-    .. image:: ../images/galaxy_bridges/galaxyinterface.png
+    .. image:: ../images/galaxyinterface.png
 
 The Tools window lists all the tools that are available to the user. For user convenience, we have grouped the tools into six categories
 
