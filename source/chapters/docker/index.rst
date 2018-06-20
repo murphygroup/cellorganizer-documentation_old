@@ -30,7 +30,7 @@ The instructions below will show you how to download and use this image.
 
 Installing Docker
 -----------------
-Before downloading the image and spinning a cotainer, you need to install Docker. Installing Docker is beyond the scope of this document. To learn about Docker Community Edition (CE), click `here <https://www.docker.com/community-edition>`_.
+Before downloading the image and spinning a container, you need to install Docker. Installing Docker is beyond the scope of this document. To learn about Docker Community Edition (CE), click `here <https://www.docker.com/community-edition>`_.
 
 * To install Docker-for-Mac, click `here <https://docs.docker.com/docker-for-mac/install/>`_.
 * To install Docker-for-Windows, click `here <https://docs.docker.com/docker-for-windows/install/>`_.
@@ -42,7 +42,7 @@ Open terminal and enter the command
 
 	``docker pull murphylab/docker-cellorganizer:latest``
 
-Running this command will initiate download and pull the most recent image of cellorganizer-docker from Docker Hub down to your computer.
+Running this command will initiate the download and pull the most recent image of cellorganizer-docker from Docker Hub down to your computer.
 
 .. figure:: docker-pull.png
    :align: center
@@ -61,7 +61,7 @@ The easiest way to download an image and run a container is to use `Kitematic <h
 * To install Kitematic, click `here <https://kitematic.com/docs/>`_.
 
 .. ATTENTION::
-   Kitematic is not necessary but it is recommended to streamline installation and deployment.
+   Kitematic is not necessary, but it is recommended to streamline installation and deployment.
  
 
 **Download the most recent image using Kitematic**

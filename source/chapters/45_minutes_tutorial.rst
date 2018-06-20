@@ -9,10 +9,10 @@ Introduction
 
 CellOrganizer is a software package that learns generative models of cell organization from fluorescence images. These models are useful for modeling the dependency between compartments of the cell, allowing for a compact representation of cell geometries present in cell images and generating image of geometries useful for spatially realistic biochemical simulations. There are two main functions which this tutorial will cover: ``img2slml``, the top-level function to train a generative model of cell morphology, and ``slml2img``, the top-level function to generate an instance from a trained model.
 
-Whom is this tutorial for?
+Who is this tutorial for?
 --------------------------
 
-This tutorial was written for people who have experience with fluorescence microscopy, no experience with CellOrganizer and possibly some experience with MATLAB, generative models, or cell modeling. Users should be interested in learning how to use the automated modeling tools provided by CellOrganizer to explore their image data.
+This tutorial is for people who have experience with fluorescence microscopy, no experience with CellOrganizer and possibly some experience with MATLAB, generative models, or cell modeling. Users should be interested in learning how to use the automated modeling tools provided by CellOrganizer to explore their image data.
 
 Resources
 ---------
@@ -65,7 +65,7 @@ The main function that builds a generative model is called ``img2slml``. This fu
 * protein_channel_images
 * options_structure
 
-The first input argument ``dimensionality`` is a string, e.g. '2D', '3D', that specifies whether we building a generative model by training on 2D or 3D images.  
+The first input argument ``dimensionality`` is a string, e.g. '2D', '3D', that specifies whether we are building a generative model by training on 2D or 3D images.  
 
 Each of the second to fourth input arguments can be provided in one of the following three formats 
 
@@ -73,7 +73,7 @@ Each of the second to fourth input arguments can be provided in one of the follo
 * a cell array of strings that point to each file, e.g. {'/path/to/images/1.tiff', '/path/to/images/2.tiff'}
 * a cell array of function handles where each function returns a 2D/3D array that corresponds to a particular image in the list
 
-The last input argument ``options_structure`` is a Matlab structure that contain the fields necessary for you to train the model in question.
+The last input argument ``options_structure`` is a Matlab structure that contains the fields necessary for you to train the model in question.
 
 In general, the images should
 
@@ -81,7 +81,7 @@ In general, the images should
 * contain only a single cell OR have a single cell region defined by additional mask image(s)
 * contain channel(s) for fluorescent marker(s) appropriate for the desired type of model. Typically, one might include
 	* a channel for nuclear shape (e.g. DAPI, Hoechst, tagged histone), 
-	* a channel for cell shape (e.g., a soluble cytoplasmic protein, a plasma membrane protein, or autofluorescence), and 
+	* a channel for cell shape (e.g. a soluble cytoplasmic protein, a plasma membrane protein, or autofluorescence), and 
 	* a channel for a specific organelle (e.g. mitochondria, lysosome)
 
 If your images are valid OME.TIFF files with regions of interest (ROI), then you can use the helper function ``get_list_of_function_handles_from_ometiff`` to retrieve a list of function handles. Each function handle should be able to return a 3D matrix when called using ``feval``. For example
@@ -111,7 +111,7 @@ Images included in the CellOrganizer download can be found in "Documents" → "M
 
 If you don't have your own images and did not download the full version of CellOrganizer in Step 0, then you can download some samples `here <http://murphylab.web.cmu.edu/data/Hela/3D/multitiff/3DHela_LAM.tgz>`_. (Note: The whole collection is 2.0 GB.) These are 3D HeLa images with a nuclear stain (channel 0), cell stain (channel 1) and protein stain (channel 2). The tagged protein is `LAMP2 <https://en.wikipedia.org/wiki/LAMP2>`_, a lysosomal protein.
 
-(optional) Training time can be decreased by reducing the amount of images to be reviewed. This can be done by either removing images from the collection or changing the directory address to a specific range of images within the collection.
+(optional) Training time can be decreased by reducing the number of images to be reviewed. This can be done by either removing images from the collection or changing the directory address to a specific range of images within the collection.
 
 Training Models
 ---------------
@@ -133,7 +133,7 @@ We next need to tell CellOrganizer which cellular images we would like to use. T
 
 	img_dir = './cellorganizer_v2.7.2/images/HeLa/3D/processed';
 
-We would like to select just the "LAM" image files found within this folder in order to train our model.  There are three ways to do this depending on how you have stored your images, each of which has its own strengths: a string of wildcards, a cell array of file paths, and a cell array of function handles.
+We would like to select just the "LAM" image files found within this folder in order to train our model.  There are three ways to do this depending on how you have stored your images, each of which has its strengths: a string of wildcards, a cell array of file paths, and a cell array of function handles.
 
 **String wild-cards**. If your files are named in some basic pattern (as the LAM files are), then wildcards are the easiest way to get your file information into CellOrganizer. All of the LAM files have the format "LAM_cellX_chY_t1.tif", where "X" is the image number of the image number (ranging from 1-50) and "Y" is the channel number (0, 1, or 2 based on nuclear, cell, and protein channels). We can split the images by channel number and to create an array of image names for each channel using the wildcard "*" as follows (where "*" indicates "any character")::
 
@@ -169,8 +169,8 @@ We would like to select just the "LAM" image files found within this folder in o
 
 Here we're using the CellOrganizer provided function ``ml_readimage`` to read in and return the actual image matrix, but any function that returns the actual image matrix of data will work.
 
-**Set up the option structure**
-The option structure tells CellOrganizer how you want to build a model, and allows for option input. Most of the options have default values, so we don't have to set them manually for this tutorial. However, we do need to provide a pixel resolution fpr creating the images and a filename for saving the resulting model. To define the appropriate options, we create a struct variable called ``train_options`` and set its fields accordingly::
+**Set up the options structure**
+The options structure tells CellOrganizer how you want to build a model, and allows for option input. Most of the options have default values, so we don't have to set them manually for this tutorial. However, we do need to provide a pixel resolution fpr creating the images and a filename for saving the resulting model. To define the appropriate options, we create a struct variable called ``train_options`` and set its fields accordingly::
 
 	% this is the pixel resolution in um of the images
 	train_options.model.resolution = [0.049, 0.049, 0.2000];
@@ -235,7 +235,7 @@ Start by defining two variables: a cell-array containing the path to the model y
 
 	model_path = {'model.mat'};
 
-Alternatively you can generate images from one of the models provided in the CellOrganizer distribution, such as the model of the lysosomal protein LAMP2 in HeLa cells::
+Alternatively, you can generate images from one of the models provided in the CellOrganizer distribution, such as the model of the lysosomal protein LAMP2 in HeLa cells::
 
 	model_path = {'./cellorganizer_2.7.2/models/3D/lamp2.mat'};
 
@@ -259,7 +259,7 @@ If we do this, the sequence of images that CellOrganizer synthesizes will be the
 Now that we have everything set up, we can generate an image or two!
 
 **Run your synthesis script**
-As in the last line of our script, we call ``slml2img.m`` with the option structure we defined::
+As in the last line of our script, we call ``slml2img.m`` with the options structure we defined::
 
 	slml2img(model_path, synth_options);
 
@@ -290,7 +290,7 @@ Now that we have an *indexed image*, we can view it with the function ``img2vol`
 .. figure:: ../images/tutorial/synth_img_training_example_cell1.png
         :align: center
 
-        Visualization of cell1 synthesized from model trained in the **Training** section
+        Visualization of cell1 synthesized from the model trained in the **Training** section
 
 .. figure:: ../images/tutorial/synth_img_3D_lamp2_cell1.png
         :align: center
@@ -301,10 +301,10 @@ Congratulations! You have created a synthetic cell!
 
 Visualizing Model Results
 -------------------------
-Although generating synthetic cell shapes is fun (and useful for doing cell simulations), the real power of CellOrganizer lies in it's ability to describe distributions of cell geometries and the organization of components within them. Here we will demonstrate how to use CellOrganizer to generate some interesting analysis results.
+Although generating synthetic cell shapes is fun (and useful for doing cell simulations), the real power of CellOrganizer lies in its ability to describe distributions of cell geometries and the organization of components within them. Here we will demonstrate how to use CellOrganizer to generate some interesting analysis results.
 
 **Background**
-Upon exposure to Bafilomycin A1, microtubule associated protein light chain 3 (LC3) localizes into autophagosomes for degradation and forms punctate structures.
+Upon exposure to Bafilomycin A1, microtubule-associated protein light chain 3 (LC3) localizes into autophagosomes for degradation and forms punctate structures.
 
 .. figure:: ../images/tutorial/bg.png
    :align: center

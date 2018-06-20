@@ -6,7 +6,7 @@ CellOrganizer-for-Galaxy is a set of tools that enables users to train generativ
 Using CellOrganizer-for-Galaxy
 ==============================
 
-You can get started with CellOrganizer-for-Galaxy by one of the following ways
+Currently, you can get started with CellOrganizer-for-Galaxy by the following ways (more to come)
 
 * Access CellOrganizer-for-Galaxy through the public server that we host
 
@@ -60,7 +60,8 @@ The Tools window lists all the tools that are available to the user. For user co
 
 * Get Data (E.g under the Get Data section we have the following three tools)
     * Upload File from your computer
-    * Imports image or model from a URL
+    * Imports image from a URL
+    * Imports generative model from a URL
     * Imports model from the curated model repository
 * Training 
 * Synthesis
@@ -84,7 +85,7 @@ Work Histories are Galaxy's way of enabling users to create multiple isolated wo
 
 Let's say you download some data into your current Work History. That data is now accessible to tools in your Tools Window. You can apply any tool on that data, provided that it considers the data as valid input. The output of this operation will get saved to your current Work History, and now you can even apply tools to this newly accessible data as well.
 
-If you now want to work on unrelated data, you can simply create a new Work History, switch your workspace to that newly created Work History, and work on that data without having to see the clutter of the previous workspace. Of course you can always switch between Work Histories whenever you like. 
+If you now want to work on unrelated data, you can simply create a new Work History, switch your workspace to that newly created Work History, and work on that data without having to see the clutter of the previous workspace. Of course, you can always switch between Work Histories whenever you like. 
 
 Work Histories can be shared between Galaxy users, allowing them to see each other's outputs/errors.
 
@@ -102,7 +103,7 @@ Workflows
 
 Workflows are Galaxy's way of enabling users to automate particular pipelines (which can even be shared among users). You can also think of them as a means to construct more complex tools by piecing together simpler ones.
 
-Let's say you keep on repeating a certain procedure. You download data, run a tool on it to produce some output, then visualize the output. Each time you repeat the procedure, you first have to click on the tool to download data and fill up the necessary input values, then you have to wait for the data to be downloaded, then you have to click on the tool you wanted to run on the data and fill up the necessary input values, then ... and so on. This is unecessarily tedious. 
+Let's say you keep on repeating a certain procedure. You download data, run a tool on it to produce some output, then visualize the output. Each time you repeat the procedure, you first have to click on the tool to download data and fill up the necessary input values, then you have to wait for the data to be downloaded, then you have to click on the tool you wanted to run on the data and fill up the necessary input values, then ... and so on. This is unnecessarily tedious. 
 
 Instead, we can streamline the procedure by linking the intermediate stages together via a Workflow (which essentially resembles a longer tool). We get to fill up the necessary parameter settings that the intermediate stages require all at once. Then we can simply click run and wait for the final output.   
 
@@ -224,12 +225,35 @@ Exercise 7. Synthesize an image from an existing model
 3. Under the "Synthesis" section of the Tools window, select "Generates a synthetic image ..."
 4. Select the "3D HeLa vesicle model of mitochondria" as the input model, and select the "Synthesis option" as "Synthesize from all models". 
 5. Click "Execute". 
-6. Repeat steps 3-5, but this time select the "2D HeLa vesicle model of nucleoli" as the input model, and select the "Synthesis option" as "Synthesize nuclear and cell membrane (framework". 
+6. Repeat steps 3-5, but this time select the "2D HeLa vesicle model of nucleoli" as the input model, and select the "Synthesis option" as "Synthesize nuclear and cell membrane (framework)". 
+
+Model Combination Exercises
+---------------------------
+
+Exercise 8. Combine the Nuclear shape component of one model with the Cell shape component of another model into a single model 
+
+1. Select or create a history that contains at least two models. For this exercise, we will use the models "2D HeLa - medial axis and ratio models of the cell and nucleus - vesicle model of endosomes" and "2D HeLa - medial axis and ratio models of the cell and nucleus - vesicle model of lysosomes" from the curated model repository (See Exercise 2). 
+2. Under "Useful tools for models" select "Combine multiple generative model files into a single file". 
+3. Click on "Insert Models" twice to open two model selection sections.
+4. In the first model selection section, select the model whose Nuclear shape component we want to use.
+5. In the second model selection section, select the model whose Cell shape component we want to use.
+6. (Optional) If you want to add additional documentation to the combined model, click "Insert Documentation". Under the "Name" section, fill in (without quotes) the word 'documentation'. Under the "Values" section, fill in any additional information you want to store within the model and enclose that information in quotes (E.g. 'This model was created by combining model A's Nuclear shape component with model B's Cell shape component').     
+7. Click "Execute". The tool will now produce a new model with the Nuclear shape component of the first model, and the Cell shape component of the second model.
+
+Exercise 9. Combine the Nuclear shape and Cell shape components of one model with the Protein distribution component of another model into a single model
+
+1. Select or create a history that contains at least two models. For this exercise, we will use the models "2D HeLa - medial axis and ratio models of the cell and nucleus - vesicle model of endosomes" and "2D HeLa - medial axis and ratio models of the cell and nucleus - vesicle model of lysosomes" from the curated model repository (See Exercise 2).
+2. Under "Useful tools for models" select "Combine multiple generative model files into a single file". 
+3. Click on "Insert Models" thrice to open three model selection sections.
+4. In both the first and second model selection sections, select the model whose Nuclear shape and Cell shape components we want to use.
+5. In the third model selection section, select the model whose Protein distribution component we want to use.
+6. (Optional) If you want to add additional documentation to the combined model, click "Insert Documentation". Under the "Name" section, fill in (without quotes) the word 'documentation'. Under the "Values" section, fill in any additional information you want to store within the model and enclose that information in quotes (E.g. 'This model was created by combining model A's Nuclear shape and Cell shape components with model B's Protein distribution component'). 
+7. Click "Execute". The tool will now produce a new model with the Nuclear shape and Cell shape components of the first model, and the Protein distribution component of the third model.
 
 Visualization Exercises
 -----------------------
 
-Exercise 8. Retrieve and display information about a model
+Exercise 10. Retrieve and display information about a model
 
 1. Select or create a history that contains a diffeomorphic model.
 2. Under the "Useful tools for models" section of the Tools window, select "Print information about a generative model file". 
