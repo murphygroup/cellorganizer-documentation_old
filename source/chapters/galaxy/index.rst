@@ -146,7 +146,7 @@ Data Importing Exercises
 Exercise 1. Importing image files that are already in CellOrganizer-for-Galaxy
 
 1. Go to the navigation bar at the top of the homepage, click on "Shared Data", and then choose "Data Libraries".
-2. Go to Images -> HeLa.
+2. Go to Images -> HeLa -> 2D -> 2D HeLa LAMP2
 3. Tick the box next to "2D HeLa LAMP2".
 4. Click on "To History", select the history you would like to send the image dataset to, and then click "Import". 
 
@@ -169,9 +169,10 @@ Model Training Exercises
 Exercise 4. Train a shape space model for 2D cell and nuclear shape using the PCA approach
 
 1. Create a new history if desired.
-2. Import the "2D HeLa LAMP2" dataset collection from "Shared Data" (See Exercise 1).
-3. Under the "Training" section of the Tools window, select "Trains a generative model". 
-4. Select the "2D HeLa LAMP2" dataset as the input dataset. And select the following settings
+2. Import the "2D HeLa LAMP2" image dataset from "Shared Data" (See Exercise 1), and create a dataset collection called "2D HeLa LAMP2" from these image files (See section **Creating a collection from datasets in your history** in `link <https://galaxyproject.org/tutorials/collections/>`_).
+3. Under the "Training" section of the Tools window, select "Trains a generative model".
+4. Directly under "Choose a data set for training a generative model", there should be two icons. If you hover your cursor over them, one says "Multiple datasets" and the other says "Dataset collections". Click on the icon for "Dataset collections" and select the "2D HeLa LAMP2" dataset collection as the input dataset collection. 
+5. Select the following settings
 
 * Select the cellular components desired for modeling: Nuclear and cell shape (framework)
 * Dimensionality: 2D
@@ -180,9 +181,9 @@ Exercise 4. Train a shape space model for 2D cell and nuclear shape using the PC
 * Cell shape model class: Framework
 * Cell shape model type: PCA
 
-5. Under the "Advanced options" section, click "Insert Options", and then fill in latent_dim for "Name" and 15 for "Values". 
-6. Fill in 2D-HeLa-LAMP2-PCA under "Provide a name for the model".
-7. Do not change any other default settings, and click "Execute". 
+6. Under the "Advanced options" section, click "Insert Options", and then fill in latent_dim for "Name" and 15 for "Values". 
+7. Fill in 2D-HeLa-LAMP2-PCA under "Provide a name for the model".
+8. Do not change any other default settings, and click "Execute". 
 
 Exercise 5. Train a model for punctate organelles (e.g. vesicles) from a subset of the 3D HeLa LAMP2 collection
 
