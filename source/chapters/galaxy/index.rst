@@ -1,296 +1,261 @@
-About CellOrganizer for Galaxy
+About CellOrganizer-for-Galaxy
 ==============================
 
-CellOrganizer for Galaxy is a set of custom tools for training generative models, synthesizing instances and analyzing models using CellOrganizer.
+CellOrganizer-for-Galaxy is a set of tools that enables users to train generative models of the cell from microscopy images, analyze trained models, and synthesize model instances by accessing CellOrganizer through the Galaxy GUI.
 
-Installing CellOrganizer for Galaxy
-===================================
-
-Requirements
-************
-
-To install CellOrganizer for Galaxy in a production server, you need
-
-* `Galaxy instance <https://galaxyproject.org/>`_
-* `Bioformats Tools <https://docs.openmicroscopy.org/bio-formats/5.8.2/users/comlinetools/>`_
-* `Matlab 2016b or newer <https://www.mathworks.com/products/matlab.html>`_
-    * Bioinformatics Toolbox
-    * Computer Vision System Toolbox
-    * Control System Toolbox
-    * Curve Fitting Toolbox
-    * Image Processing Toolbox
-    * Mapping Toolbox
-    * Optimization Toolbox
-    * Robust Control Toolbox
-    * Signal Processing Toolbox
-    * Simulink
-    * Simulink Design Optimization
-    * Statistics and Machine Learning Toolbox
-    * System Identification Toolbox
-    * Wavelet Toolbox
-
-Installing Galaxy in a production server instance
-*************************************************
-
-Installing Galaxy is beyond the scope of this document. For instructions on installing Galaxy please click `here <https://docs.galaxyproject.org/en/latest/admin/production.html>`_.
-
-Installing Matlab
-*****************
-
-.. IMPORTANT::
-   The ``matlab`` binary should be available in ``$PATH``.
-
-Installing `Matlab <https://www.mathworks.com/products/matlab.html>`_ is beyond the scope of this document. To install Matlab, please follow the instructions on the Mathworks `site <https://docs.galaxyproject.org/en/latest/admin/production.html>`_. Make sure to install the toolboxes listed in the requirements section above.
-
-Installing Bioformats Tools
-***************************
-
-Installing `Bioformats tools <https://docs.openmicroscopy.org/bio-formats/5.8.2/users/comlinetools/>`_ beyond the scope of this document. To install BFTools, please follow the instructions on the OpenMicroscopy `site <https://docs.openmicroscopy.org/bio-formats/5.8.2/users/comlinetools>`_.
-
-Installing Pandoc
-*****************
-
-Installing `Pandoc <https://pandoc.org/>`_ is beyod the scope of this document. To install Pandoc, please follow the `instructions <https://pandoc.org/installing.html>`_ on their site.
-
-Using CellOrganizer for Galaxy
+Using CellOrganizer-for-Galaxy
 ==============================
 
-The CellOrganizer for Galaxy public server address is
+Currently, you can get started with CellOrganizer-for-Galaxy by the following ways (more to come)
 
-* `galaxy.compbio.cs.cmu.edu <http://galaxy.compbio.cs.cmu.edu:9000/>`_
+* Access CellOrganizer-for-Galaxy through the public server that we host
 
-Prerequisites
-*************
 
-* A modern web browser
+Accessing the CellOrganizer-for-Galaxy public server
+====================================================
 
-Setup
-*****
+The CellOrganizer-for-Galaxy public server can be accessed at `galaxy.compbio.cs.cmu.edu <http://galaxy.compbio.cs.cmu.edu:8080/>`_.
 
-#. Open a web browser and access the `site <galaxy.compbio.cs.cmu.edu>`_.
-#. Register for a user account, or log onto a preexisting account.
-#. Become familiar with different components of the Galaxy Home Interface.
+Getting started
+===============
+
+The following subsections describe
+
+* How to register for a user account on the Cellorganizer-for-Galaxy public server
+* The essential features of the Galaxy GUI
 
 Galaxy Registration
 -------------------
-In order to use CellOrganizer for Galaxy, you must have a registered account.
+In order to use CellOrganizer-for-Galaxy, you must register for a user account.
 
-#. Open a web browser, and go to the Galaxy site `here <galaxy.compbio.cs.cmu.edu>`_.
+#. Open a web browser, and go to `galaxy.compbio.cs.cmu.edu <http://galaxy.compbio.cs.cmu.edu:8080/>`_.
 
-#. Hover over ``User`` on the top navigation toolbar and choose ``Register`` from the dropdown menu.
+#. Go to the "Login or Register" link at the top of the Galaxy interface and select "Register". If you already have an account, then select "Login". 
 
     .. image:: ../images/galaxy_bridges/registerbutton.png
         :align: center
         :width: 240px
         :height: 240px
 
-#. Fill out the registration form by entering an (1) email address, (2) password, and (3) public name (optional) for your account and hit ``Submit``.
+#. You will need to provide an email address, a password, and a public name (optional) for registration. After you have entered your information, click "Submit".
 
-You should now be registered onto Galaxy, logged in, and redirected to the home interface.
+You will be redirected to the home page of the Galaxy interface for your account.
 
-Galaxy Home Interface
----------------------
+Essential features of Galaxy
+----------------------------
 
-The Galaxy interface (Figure 1) is divided into four parts: the top navigation bar (top of the page), the Tools window (left side of the page), the History window (right side of the page), and the Main Content window (center of the page).
+Homepage
+*********
 
-.. image:: ../images/galaxy_bridges/galaxyinterface.png
+The homepage is divided into four parts
 
-The Tools window allows the user to choose which job they are interested in scheduling. For this tutorial, the options are divided into four categories: Demos, Synthesis, Training, and Useful Tools. These four categories, and their components are further explained in the tutorial.
+* Navigation bar (top of the page)
+* Tools window (left side of the page)
+* History window (right side of the page)
+* Main Content window ( center of the page)
 
-The History window depicts the user’s personal scheduler along with their current status through color coding. When a job is submitted to the queue, it appears at the top of the History window in the form of a small rectangle with a designated number and a descriptive name. The color of the box correlates with the current status of the job, with
+    .. image:: ../images/galaxyinterface.png
 
-    * a grey background meaning that the job has been submitted, but has not been accepted,
-    * a red background meaning that the job failed to run,
-    * a yellow background meaning that the job has been accepted by the queue, and
-    * a green background meaning that the job is complete and is ready to be viewed.
+The Tools window lists all the tools that are available to the user. For user convenience, we have grouped the tools into six categories
 
-The Main Content window is Galaxy+Bridges’ workspace. Once a job or workflow is chosen from the Tool Shed, any direct interaction with CellOrganizer occurs in the Main Content window.
+* Get Data (E.g under the Get Data section we have the following three tools)
+    * Upload File from your computer
+    * Imports image from a URL
+    * Imports generative model from a URL
+    * Imports model from the curated model repository
+* Training 
+* Synthesis
+* Useful tools for images
+* Useful tools for models
+* File Validators
 
-Tutorial: Creating a Work History, Submitting a Job, Submitting a Workflow, and Visualizing Results
-***************************************************************************************************
+The History window lists all the jobs that the user has submitted and indicates their respective statuses via color coding. Whenever the user executes a tool, he/she submits a new job that will appear at the top of the History window as a rectangular box with a designed number and a descriptive name. The color of the box indicates the status of the corresponding job.
 
-Creating a Work History
------------------------
+* Gray means that the job has been submitted but not yet added to the job queue
+* Yellow means that the job has been submitted to the job queue
+* Red means that the job either exited before completion, or did not produce the expected output
+* Green means that the job ran successfully to completion and is ready to be viewed
 
-For this tutorial, we need to create a work history titled 2D Hela. In order to do this,
+The Main Content window is the CellOrganizer-for-Galaxy workspace. Once a tool or workflow (this term will be explained later) has been selected from the Tool Window, the user can specify the input parameters via the Main Content window.  
 
-#. Click on the small gear next to the History header for History Options.
+Work Histories
+**************
 
-    .. image:: ../images/galaxy_bridges/historyGear.png
-        :align: center
-        :width: 240px
-        :height: 240px
+Work Histories are Galaxy's way of enabling users to create multiple isolated workspaces. You can think of your current Work History as your current workspace. At any point in time, your History window displays all the data you have either downloaded or produced in your current workspace.
 
+Let's say you download some data into your current Work History. That data is now accessible to tools in your Tools Window. You can apply any tool on that data, provided that it considers the data as valid input. The output of this operation will get saved to your current Work History, and now you can even apply tools to this newly accessible data as well.
 
-#. Click on "Create New" from the drop-down menu.
+If you now want to work on unrelated data, you can simply create a new Work History, switch your workspace to that newly created Work History, and work on that data without having to see the clutter of the previous workspace. Of course, you can always switch between Work Histories whenever you like. 
 
-    .. image:: ../images/galaxy_bridges/historyDropdown.png
-        :align: center
-        :width: 240px
-        :height: 240px
+Work Histories can be shared between Galaxy users, allowing them to see each other's outputs/errors.
 
+For more information click `here <https://galaxyproject.org/tutorials/histories/>`_. 
 
-#. Click on the "Unnamed history" title to rename the working history to “2D Hela” and then press return/enter.
+Jobs
+****
 
-    .. image:: ../images/galaxy_bridges/renameHistory.png
-        :align: center
-        :width: 240px
-        :height: 240px
+Whenever you manage to execute a tool, you are essentially submitting a job to the server. And to execute a tool, you need to both provide the minimal set of inputs and to provide valid inputs. Whenever you click on one of the tools in the Tools Window, you should also see accompanying documentation in the Main Content window specifying what sort of inputs you need to provide to the tool. 
 
+For more information click `here <https://galaxyproject.org/support/how-jobs-execute/>`_.
 
-Accessing a Work History
+Workflows
+*********
+
+Workflows are Galaxy's way of enabling users to automate particular pipelines (which can even be shared among users). You can also think of them as a means to construct more complex tools by piecing together simpler ones.
+
+Let's say you keep on repeating a certain procedure. You download data, run a tool on it to produce some output, then visualize the output. Each time you repeat the procedure, you first have to click on the tool to download data and fill up the necessary input values, then you have to wait for the data to be downloaded, then you have to click on the tool you wanted to run on the data and fill up the necessary input values, then ... and so on. This is unnecessarily tedious. 
+
+Instead, we can streamline the procedure by linking the intermediate stages together via a Workflow (which essentially resembles a longer tool). We get to fill up the necessary parameter settings that the intermediate stages require all at once. Then we can simply click run and wait for the final output.   
+
+For more information click `here <https://galaxyproject.org/learn/advanced-workflow/>`_.
+
+In the table below, we have provided links to sample workflows constructed using CellOrganizer-for-Galaxy tools.
+
++--------------------------------------------------------------------+
+| Workflow Name                                                      |
++====================================================================+
+| Train-2D-PCA-framework-generative-model_                           |
++--------------------------------------------------------------------+
+| Train-2D-classic-generative-model_                                 |
++--------------------------------------------------------------------+
+| Train-2D-classic-framework-generative-model_                       |
++--------------------------------------------------------------------+
+| Train-2D-diffeomorphic-framework-generative-model_                 |
++--------------------------------------------------------------------+
+| Train-2D-diffeomorphic-framework-and-vesicular-pattern-model_      |
++--------------------------------------------------------------------+
+
+.. _Train-2D-PCA-framework-generative-model: http://galaxy.compbio.cs.cmu.edu:8080/u/cellorganizer/w/train-2d-pca-framework
+.. _Train-2D-classic-generative-model: http://galaxy.compbio.cs.cmu.edu:8080/u/cellorganizer/w/train-2d-classic-model
+.. _Train-2D-classic-framework-generative-model: http://galaxy.compbio.cs.cmu.edu:8080/u/cellorganizer/w/train-2d-classic-framework
+.. _Train-2D-diffeomorphic-framework-generative-model: http://galaxy.compbio.cs.cmu.edu:8080/u/cellorganizer/w/train-2d-diffeo-framework
+.. _Train-2D-diffeomorphic-framework-and-vesicular-pattern-model: http://galaxy.compbio.cs.cmu.edu:8080/u/cellorganizer/w/train-2d-diffeo-vesicle-model
+
+Additional Resources
+====================
+`Galaxy Community Hub <https://galaxyproject.org/learn/>`_ provides a list of instructive tutorials on how to use the various features of `Galaxy-Main <https://usegalaxy.org/>`_. Although Galaxy-Main differs from Galaxy-for-CellOrganizer in some aspects (e.g. the set of tools available), the essential features are the same and so these tutorials will likely be helpful to read anyway.
+
+Further Exercises 
+=================
+
+We have prepared a series of exercises to demonstrate how you might go about using CellOrganizer-for-Galaxy.
+
+Data Importing Exercises
 ------------------------
 
-At another time, if you would like to switch to a saved history,
+Exercise 1. Importing image files that are already in CellOrganizer-for-Galaxy
 
-#. Click on the small gear next to the History header for History Options.
+1. Go to the navigation bar at the top of the homepage, click on "Shared Data", and then choose "Data Libraries".
+2. Go to Images -> HeLa -> 2D -> 2D HeLa LAMP2
+3. Tick the box next to "2D HeLa LAMP2".
+4. Click on "To History", select the history you would like to send the image dataset to, and then click "Import". 
 
-    .. image:: ../images/galaxy_bridges/historyGear.png
-        :align: center
-        :width: 240px
-        :height: 240px
+Exercise 2. Importing a model that is already in CellOrganizer-for-Galaxy
 
-#. Click on "Saved Histories" from the drop-down menu.
+1. Under the "Get Data" section of the Tools window, select "Downloads model from the curated model repository".
+2. Select the model you would like to import to the current history, and click "Execute". 
 
-    .. image:: ../images/galaxy_bridges/savedHistories.png
-        :align: center
-        :width: 240px
-        :height: 240px
+Exercise 3. Uploading image files / generative models from your computer
 
-
-#. Click the small arrow for the working history you would like to work on and choose “Switch” from the drop-down menu in the Main Content window.
-
-    .. image:: ../images/galaxy_bridges/switchHistories.png
-        :align: center
-
-Submitting a Job
-----------------
-Now, we are going to submit our first job to the scheduler, which will be the Training of a 2D Diffeomorphic Model. To do this, 
-
-#. Go to the Tools window, and click on the Training category.
-
-#. Select “train_2D_diffeomorphic_model” under the Training category.
-
-    .. image:: ../images/galaxy_bridges/train2DJob.png
-        :align: center
-        :width: 240px
-        :height: 240px
+1. Under the "Get Data" section of the Tools window, select "Upload File from your computer". 
+2. Click on "Choose local file" and then select image/model files that you wish to upload. 
+3. For every OMETIFF image that you upload, you should change the Type from "Auto-detect" to "tiff". Similarly, for every model MAT-file that you upload, you should change the Type to "mat". If all files that you are uploading have the same type, then you can simply use the "Type (set all)" option instead of having to make changes one at a time.
+4. Click on "Start". 
 
 
-#. In the Main Content window, ensure the default input parameters are set to the LAMP2 dataset, 9 images, and 5 as the downsample factor.
+Model Training Exercises
+------------------------
 
-    .. image:: ../images/galaxy_bridges/defaultParameters.png
-        :align: center
+Exercise 4. Train a shape space model for 2D cell and nuclear shape using the PCA approach
 
-#. Click on “Execute” in order to send the task to the queue.
+1. Create a new history if desired.
+2. Import the "2D HeLa LAMP2" image dataset from "Shared Data" (See Exercise 1), and create a dataset collection called "2D HeLa LAMP2" from these image files (See section **Creating a collection from datasets in your history** in `link <https://galaxyproject.org/tutorials/collections/>`_).
+3. Under the "Training" section of the Tools window, select "Trains a generative model".
+4. Directly under "Choose a data set for training a generative model", there should be two icons. If you hover your cursor over them, one says "Multiple datasets" and the other says "Dataset collections". Click on the icon for "Dataset collections" and select the "2D HeLa LAMP2" dataset collection as the input dataset collection. 
+5. Select the following settings
 
-Successful submission of the train_2D_diffeomorphic_model results in the following two things: 1) a green banner displayed in the Main Content window, and 2) the job is added to the scheduler in the History window.
+* Select the cellular components desired for modeling: Nuclear and cell shape (framework)
+* Dimensionality: 2D
+* Nuclear shape model class: Framework
+* Nuclear shape model type: PCA
+* Cell shape model class: Framework
+* Cell shape model type: PCA
 
-    .. image:: ../images/galaxy_bridges/successfulSubmission.png
-        :align: center
+6. Under the "Advanced options" section, click "Insert Options", and then fill in latent_dim for "Name" and 15 for "Values". 
+7. Fill in 2D-HeLa-LAMP2-PCA under "Provide a name for the model".
+8. Do not change any other default settings, and click "Execute". 
 
-    .. image:: ../images/galaxy_bridges/jobScheduled.png
-        :align: center
-        :width: 240px
-        :height: 240px
+Exercise 5. Train a model for punctate organelles (e.g. vesicles) from a subset of the 3D HeLa LAMP2 collection
 
+1. Create a new history if desired.
+2. Import the "3D HeLa LAMP2" dataset collection from "Shared Data" (See Exercise 1).
+3. Under the "Training" section of the Tools window, select "Trains a generative model".
+4. Select the "3D HeLa LAMP2" dataset as the input dataset. And select the following settings
 
-Once the job has been successfully completed (the job will turn green in the History window), you have a trained 2D diffeomorphic model in the form of a Matlab file. Accessing this file is not possible through Galaxy+Bridges, but another CellOrganizer tool can take the model as an input and output a PNG visible in Galaxy+Bridges. 
+* Select the cellular components desired for modeling: Nuclear shape, cell shape and protein pattern
+* Dimensionality: 3D
+* Protein model protein location: Nucleus and cytoplasm
 
-Under the Useful Tools category in the Tools window, “show_shape_space” depicts a visualization of the shape space of a trained 2D diffeomorphic model. Repeat steps 1 - 4 above to submit “show_shape_space” as a job, with your input parameter being the trained 2D diffeomorphic model from our first job.
+5. Fill in 3D-HeLa-LAMP2-classic under "Provide a name for the model". 
+6. Do not change any other default settings, and click "Execute". 
 
-To access the show_shape_space PNG image, you only need to click on the small eye icon next to the job title in the scheduler. The following image should appear in the Main Content window:
+Exercise 6. Train a diffeomorphic shape space model for cell and nuclear shape from a subset of the 3D HeLa LAMP2 collection
 
-    .. image:: ../images/galaxy_bridges/showShapeSpace.png
-        :align: center
+1. Create a new history if desired.
+2. Import the "3D HeLa LAMP2" dataset collection from "Shared Data" (See Exercise 1).
+3. Under the "Training" section of the Tools window, select "Trains a generative model".
+4. Select the "3D HeLa LAMP2" dataset as the input dataset. And select the following settings
 
-Now, that you have been able to create a work history and submit a couple of jobs to the queue, it is time to talk about workflows. If you would like to recycle a process, perhaps run the visualization of diffeomorphic models many times with different parameters, without having to constantly click through all of the categories, then it is much easier to create a workflow.
+* Select the cellular components desired for modeling: Nuclear and cell shape (framework)
+* Dimensionality: 3D
+* Nuclear shape model class: Framework
+* Nuclear shape model type: Diffeomorphic
+* Cell shape model class: Framework
+* Cell shape model type: Diffeomorphic
 
-Creating and Submitting a Workflow
-----------------------------------
+5. Fill in 3D-HeLa-LAMP2-diffeo under "Provide a name for the model".
+6. Do not change any other default settings, and click "Execute".
 
-Let’s create our first workflow using the two tools we are familiar with: 1) train a 2D diffeomorphic model, and 2) show the shape space of that model.
+Model Synthesis Exercises
+-------------------------
 
-#. In the top navigation bar, click on the Workflow tab.
+Exercise 7. Synthesize an image from an existing model
 
-    .. image:: ../images/galaxy_bridges/workflowButton.png
-        :align: center
+1. Create a new history if desired.
+2. Import the "3D HeLa vesicle model of mitochondria" and the "2D HeLa vesicle model of nucleoli" from the curated model repository (See Exercise 2).
+3. Under the "Synthesis" section of the Tools window, select "Generates a synthetic image ..."
+4. Select the "3D HeLa vesicle model of mitochondria" as the input model, and select the "Synthesis option" as "Synthesize from all models". 
+5. Click "Execute". 
+6. Repeat steps 3-5, but this time select the "2D HeLa vesicle model of nucleoli" as the input model, and select the "Synthesis option" as "Synthesize nuclear and cell membrane (framework)". 
 
-#. Click on the Create New Workflow button in the top right corner.
+Model Combination Exercises
+---------------------------
 
-    .. image:: ../images/galaxy_bridges/createNewWorkflow.png
-        :align: center
-        :width: 240px
-        :height: 240px
+Exercise 8. Combine the Nuclear shape component of one model with the Cell shape component of another model into a single model 
 
+1. Select or create a history that contains at least two models. For this exercise, we will use the models "2D HeLa - medial axis and ratio models of the cell and nucleus - vesicle model of endosomes" and "2D HeLa - medial axis and ratio models of the cell and nucleus - vesicle model of lysosomes" from the curated model repository (See Exercise 2). 
+2. Under "Useful tools for models" select "Combine multiple generative model files into a single file". 
+3. Click on "Insert Models" twice to open two model selection sections.
+4. In the first model selection section, select the model whose Nuclear shape component we want to use.
+5. In the second model selection section, select the model whose Cell shape component we want to use.
+6. (Optional) If you want to add additional documentation to the combined model, click "Insert Documentation". Under the "Name" section, fill in (without quotes) the word 'documentation'. Under the "Values" section, fill in any additional information you want to store within the model and enclose that information in quotes (E.g. 'This model was created by combining model A's Nuclear shape component with model B's Cell shape component').     
+7. Click "Execute". The tool will now produce a new model with the Nuclear shape component of the first model, and the Cell shape component of the second model.
 
-#. Click on “Create” after naming and annotating the workflow.
-    * In this example, let’s name the Workflow “Shape Space of Trained 2D Diffeo Model“ and annotate it as “Visualizing the shape space of a trained 2D diffeomorphic model”.
+Exercise 9. Combine the Nuclear shape and Cell shape components of one model with the Protein distribution component of another model into a single model
 
-    .. image:: ../images/galaxy_bridges/nameWorkflow.png
-        :align: center
+1. Select or create a history that contains at least two models. For this exercise, we will use the models "2D HeLa - medial axis and ratio models of the cell and nucleus - vesicle model of endosomes" and "2D HeLa - medial axis and ratio models of the cell and nucleus - vesicle model of lysosomes" from the curated model repository (See Exercise 2).
+2. Under "Useful tools for models" select "Combine multiple generative model files into a single file". 
+3. Click on "Insert Models" thrice to open three model selection sections.
+4. In both the first and second model selection sections, select the model whose Nuclear shape and Cell shape components we want to use.
+5. In the third model selection section, select the model whose Protein distribution component we want to use.
+6. (Optional) If you want to add additional documentation to the combined model, click "Insert Documentation". Under the "Name" section, fill in (without quotes) the word 'documentation'. Under the "Values" section, fill in any additional information you want to store within the model and enclose that information in quotes (E.g. 'This model was created by combining model A's Nuclear shape and Cell shape components with model B's Protein distribution component'). 
+7. Click "Execute". The tool will now produce a new model with the Nuclear shape and Cell shape components of the first model, and the Protein distribution component of the third model.
 
-#. Click on the “train_2D_diffeomorphic_model” tool in the Tools window under the Training category and a box with this title should appear in your Workflow Canvas (Main Content window).
+Visualization Exercises
+-----------------------
 
-#. Click on the “show_shape_space” tool in the Tools window under the Useful Tools category and a second box should appear in your Workflow Canvas.
+Exercise 10. Retrieve and display information about a model
 
-#. Arrange the boxes in the order/organization desired within the workspace.
-
-    .. image:: ../images/galaxy_bridges/workflowBoxes.png
-        :align: center
-
-#. Connect the two boxes together by clicking on the output arrow of the “train 2D diffeomorphic model” box and dragging your cursor to the input arrow of the “show shape space” box.
-
-    .. image:: ../images/galaxy_bridges/connectedBoxes.png
-        :align: center
-
-#. Click on the small gear next to the Workflow Canvas title, and choose “Save” on the drop-down menu.
-
-    .. image:: ../images/galaxy_bridges/workflowSave.png
-        :align: center
-        :width: 240px
-        :height: 240px
-
-
-#. Click on the same gear to choose “Run” on the drop-down menu.
-
-    .. image:: ../images/galaxy_bridges/workflowRun.png
-        :align: center
-        :width: 240px
-        :height: 240px
-
-
-#. By click on each step in the workflow, you can change the inputs.
-
-    .. image:: ../images/galaxy_bridges/workflowInputs.png
-        :align: center
-
-#. Click “Run workflow” to send it to the queue.
-
-Let’s reuse this workflow to visualize the shape space of a different trained diffeomorphic model. Submit the workflow again; however, this time change the input parameters for the “train 2D diffeomorphic model” box by clicking on the small pencil next to each parameter. Options include:
-
-    * **Datasets:** LAMP2 (default), Nucleoli, Mitochondria, or Transference protein (Tfr)
-    * **Number of Images:** Any number up to 50
-    * **Downsample Factor:** 1 (no downsample, higher resolution), 5 (default), or 10 (lower resolution)
-
-Extra Tasks
-***********
-
-Now, that you have been able to successfully create a new work history, submit a couple of jobs to the queue, and create and submit workflows, test your skills with the following tasks:
-
-*Note: Each tool can be found under the designated category (indicated within the parentheses immediately following the title).*
-
-* In the 2D Hela Work History,
-    * Train a 2D diffeomorphic model (Training) → Synthesize a 2D diffeomorphic instance (Synthesis)
-
-* In  a 3D Hela Work History
-    * Train a 3D vesicular model (Training) → Synthesize a 3D vesicular instance (Synthesis)
-
-* In a 2D Demo Work History
-    * demo2D00 (Demos) → Show 2D Image Reshape (Useful Tools)
-    * demo2D00 (Demos) → Export to VCell (Useful Tools)
-
-* In a 3D Demo Work History
-    * demo3D00 (Demos) → Show 3D Image Reshape (Useful Tools)
-    * demo3D00 (Demos) → Export to Blender (Useful Tools)
-    * demo3D00 (Demos) → Show 3D Surface Plot (Useful Tool)
+1. Select or create a history that contains a diffeomorphic model.
+2. Under the "Useful tools for models" section of the Tools window, select "Print information about a generative model file". 
+3. Click "Execute".
