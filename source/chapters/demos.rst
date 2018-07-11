@@ -18,42 +18,41 @@ To display information about the available demos contained in the distribution, 
 Demos Summary Table
 *******************
 This table will let you know if the demo is meant to train a model or synthesize an image.
-Click on the demo name to open it in CellOrganizer-for-Galaxy tools.
 
 +-----------+---------+------------+-------------+
 | Name      | 2D/3D   | Training   | Synthesis   |
 +===========+=========+============+=============+
-| demo2D00_ | 2D      |            | True        |
+| demo2D00  | 2D      |            | True        |
 +-----------+---------+------------+-------------+
-| demo2D01_ | 2D      | True       |             |
+| demo2D01  | 2D      | True       |             |
 +-----------+---------+------------+-------------+
 | demo2D02  | 2D      |            | True        |
 +-----------+---------+------------+-------------+
 | demo2D03  | 2D      | True       |             |
 +-----------+---------+------------+-------------+
-| demo2D04_ | 2D      | True       |             |
+| demo2D04  | 2D      | True       |             |
 +-----------+---------+------------+-------------+
-| demo2D05_ | 2D      | True       |             |
+| demo2D05  | 2D      | True       |             |
 +-----------+---------+------------+-------------+
-| demo2D06_ | 2D      |            | True        |
+| demo2D06  | 2D      |            | True        |
 +-----------+---------+------------+-------------+
-| demo2D07_ | 2D      |            | True        |
+| demo2D07  | 2D      |            | True        |
 +-----------+---------+------------+-------------+
 | demo2D08  | 2D      | True       |             |
 +-----------+---------+------------+-------------+
 | demo2D09  | 2D      | True       |             |
 +-----------+---------+------------+-------------+
-| demo3D00_ | 3D      |            | True        |
+| demo3D00  | 3D      |            | True        |
 +-----------+---------+------------+-------------+
-| demo3D01_ | 3D      |            | True        |
+| demo3D01  | 3D      |            | True        |
 +-----------+---------+------------+-------------+
 | demo3D02  | 3D      |            |             |
 +-----------+---------+------------+-------------+
 | demo3D03  | 3D      |            | True        |
 +-----------+---------+------------+-------------+
-| demo3D04_ | 3D      |            | True        |
+| demo3D04  | 3D      |            | True        |
 +-----------+---------+------------+-------------+
-| demo3D05_ | 3D      |            | True        |
+| demo3D05  | 3D      |            | True        |
 +-----------+---------+------------+-------------+
 | demo3D06  | 3D      |            | True        |
 +-----------+---------+------------+-------------+
@@ -65,9 +64,9 @@ Click on the demo name to open it in CellOrganizer-for-Galaxy tools.
 +-----------+---------+------------+-------------+
 | demo3D10  | 3D      |            | True        |
 +-----------+---------+------------+-------------+
-| demo3D11_ | 3D      | True       |             |
+| demo3D11  | 3D      | True       |             |
 +-----------+---------+------------+-------------+
-| demo3D12_ | 3D      | True       |             |
+| demo3D12  | 3D      | True       |             |
 +-----------+---------+------------+-------------+
 | demo3D13  | 3D      |            |             |
 +-----------+---------+------------+-------------+
@@ -135,21 +134,6 @@ Click on the demo name to open it in CellOrganizer-for-Galaxy tools.
 +-----------+---------+------------+-------------+
 | demo3D46  | 3D      |            | True        |
 +-----------+---------+------------+-------------+
-
-.. _demo2D00: http://galaxy.compbio.cs.cmu.edu:8080/u/cellorganizer/h/demo2d00
-.. _demo2D01: http://galaxy.compbio.cs.cmu.edu:8080/u/cellorganizer/h/demo2d01
-.. _demo2D04: http://galaxy.compbio.cs.cmu.edu:8080/u/cellorganizer/h/demo2d04
-.. _demo2D05: http://galaxy.compbio.cs.cmu.edu:8080/u/cellorganizer/h/demo2d05
-.. _demo2D06: http://galaxy.compbio.cs.cmu.edu:8080/u/cellorganizer/h/demo2d06
-.. _demo2D07: http://galaxy.compbio.cs.cmu.edu:8080/u/cellorganizer/h/demo2d07
-.. _demo3D00: http://galaxy.compbio.cs.cmu.edu:8080/u/cellorganizer/h/demo3d00
-.. _demo3D01: http://galaxy.compbio.cs.cmu.edu:8080/u/cellorganizer/h/demo3d01
-.. _demo3D04: http://galaxy.compbio.cs.cmu.edu:8080/u/cellorganizer/h/demo3d04
-.. _demo3D05: http://galaxy.compbio.cs.cmu.edu:8080/u/cellorganizer/h/demo3d05
-.. _demo3D11: http://galaxy.compbio.cs.cmu.edu:8080/u/cellorganizer/h/demo3d11
-.. _demo3D12: http://galaxy.compbio.cs.cmu.edu:8080/u/cellorganizer/h/demo3d12
-
-
 
 Brief Descriptions
 ******************

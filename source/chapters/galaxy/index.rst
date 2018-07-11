@@ -131,6 +131,55 @@ In the table below, we have provided links to sample workflows constructed using
 .. _Train-2D-diffeomorphic-framework-generative-model: http://galaxy.compbio.cs.cmu.edu:8080/u/cellorganizer/w/train-2d-diffeo-framework
 .. _Train-2D-diffeomorphic-framework-and-vesicular-pattern-model: http://galaxy.compbio.cs.cmu.edu:8080/u/cellorganizer/w/train-2d-diffeo-vesicle-model
 
+Links to Demo Histories
+***********************
+
+Demos Summary Table
+*******************
+This table contains information about CellOrganizer demos.
+Click on the demo name to open the demo history in CellOrganizer-for-Galaxy tools.
+
++-----------+---------+------------+-------------+
+| Name      | 2D/3D   | Training   | Synthesis   |
++===========+=========+============+=============+
+| demo2D00_ | 2D      |            | True        |
++-----------+---------+------------+-------------+
+| demo2D01_ | 2D      | True       |             |
++-----------+---------+------------+-------------+
+| demo2D04_ | 2D      | True       |             |
++-----------+---------+------------+-------------+
+| demo2D05_ | 2D      | True       |             |
++-----------+---------+------------+-------------+
+| demo2D06_ | 2D      |            | True        |
++-----------+---------+------------+-------------+
+| demo2D07_ | 2D      |            | True        |
++-----------+---------+------------+-------------+
+| demo3D00_ | 3D      |            | True        |
++-----------+---------+------------+-------------+
+| demo3D01_ | 3D      |            | True        |
++-----------+---------+------------+-------------+
+| demo3D04_ | 3D      |            | True        |
++-----------+---------+------------+-------------+
+| demo3D05_ | 3D      |            | True        |
++-----------+---------+------------+-------------+
+| demo3D11_ | 3D      | True       |             |
++-----------+---------+------------+-------------+
+| demo3D12_ | 3D      | True       |             |
++-----------+---------+------------+-------------+
+
+.. _demo2D00: http://galaxy.compbio.cs.cmu.edu:8080/u/cellorganizer/h/demo2d00
+.. _demo2D01: http://galaxy.compbio.cs.cmu.edu:8080/u/cellorganizer/h/demo2d01
+.. _demo2D04: http://galaxy.compbio.cs.cmu.edu:8080/u/cellorganizer/h/demo2d04
+.. _demo2D05: http://galaxy.compbio.cs.cmu.edu:8080/u/cellorganizer/h/demo2d05
+.. _demo2D06: http://galaxy.compbio.cs.cmu.edu:8080/u/cellorganizer/h/demo2d06
+.. _demo2D07: http://galaxy.compbio.cs.cmu.edu:8080/u/cellorganizer/h/demo2d07
+.. _demo3D00: http://galaxy.compbio.cs.cmu.edu:8080/u/cellorganizer/h/demo3d00
+.. _demo3D01: http://galaxy.compbio.cs.cmu.edu:8080/u/cellorganizer/h/demo3d01
+.. _demo3D04: http://galaxy.compbio.cs.cmu.edu:8080/u/cellorganizer/h/demo3d04
+.. _demo3D05: http://galaxy.compbio.cs.cmu.edu:8080/u/cellorganizer/h/demo3d05
+.. _demo3D11: http://galaxy.compbio.cs.cmu.edu:8080/u/cellorganizer/h/demo3d11
+.. _demo3D12: http://galaxy.compbio.cs.cmu.edu:8080/u/cellorganizer/h/demo3d12
+
 Additional Resources
 ====================
 `Galaxy Community Hub <https://galaxyproject.org/learn/>`_ provides a list of instructive tutorials on how to use the various features of `Galaxy-Main <https://usegalaxy.org/>`_. Although Galaxy-Main differs from Galaxy-for-CellOrganizer in some aspects (e.g. the set of tools available), the essential features are the same and so these tutorials will likely be helpful to read anyway.
