@@ -133,9 +133,6 @@ In the table below, we have provided links to sample workflows constructed using
 
 Links to Demo Histories
 ***********************
-
-Demos Summary Table
-*******************
 This table contains information about CellOrganizer demos.
 Click on the demo name to open the demo history in CellOrganizer-for-Galaxy tools.
 
