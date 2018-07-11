@@ -30,7 +30,7 @@ The instructions below will show you how to download and use this image.
 
 Installing Docker
 -----------------
-Before downloading the image and spinning a cotainer, you need to install Docker. Installing Docker is beyond the scope of this document. To learn about Docker Community Edition (CE), click `here <https://www.docker.com/community-edition>`_.
+Before downloading the image and spinning a container, you need to install Docker. Installing Docker is beyond the scope of this document. To learn about Docker Community Edition (CE), click `here <https://www.docker.com/community-edition>`_.
 
 * To install Docker-for-Mac, click `here <https://docs.docker.com/docker-for-mac/install/>`_.
 * To install Docker-for-Windows, click `here <https://docs.docker.com/docker-for-windows/install/>`_.
@@ -42,7 +42,7 @@ Open terminal and enter the command
 
 	``docker pull murphylab/docker-cellorganizer:latest``
 
-Running this command will initiate download and pull the most recent image of cellorganizer-docker from Docker Hub down to your computer.
+Running this command will initiate the download and pull the most recent image of cellorganizer-docker from Docker Hub down to your computer.
 
 .. figure:: docker-pull.png
    :align: center
@@ -61,7 +61,7 @@ The easiest way to download an image and run a container is to use `Kitematic <h
 * To install Kitematic, click `here <https://kitematic.com/docs/>`_.
 
 .. ATTENTION::
-   Kitematic is not necessary but it is recommended to streamline installation and deployment.
+   Kitematic is not necessary, but it is recommended to streamline installation and deployment.
  
 
 **Download the most recent image using Kitematic**
@@ -71,11 +71,51 @@ Start Kitematic. It should open a window similar to the screenshot below
 .. figure:: kitematic.png
    :align: center
 
-Demos Included In the Distribution
+Demos included in the Distribution
 ----------------------------------
 
 There are several demos included within the CellOrganizer software bundle. These demos are intended to illustrate CellOrganizer's functionality, and should be used to familiarize the user with the input/output format of various top-level functions such as **img2slml** and **slml2img**. 
 
-.. exec::
-   
-	print commands.getoutput('python make_tabulate_from_excel.py source/chapters/docker/demos.xlsx "v2.7"')
++----------+------------+-------------+
+| Demo     | Training   | Synthesis   |
++==========+============+=============+
+| demo2D00 |            | True        |
++----------+------------+-------------+
+| demo2D01 | True       |             |
++----------+------------+-------------+
+| demo2D02 |            | True        |
++----------+------------+-------------+
+| demo2D03 | True       |             |
++----------+------------+-------------+
+| demo2D04 | True       |             |
++----------+------------+-------------+
+| demo2D05 | True       |             |
++----------+------------+-------------+
+| demo3D00 |            | True        |
++----------+------------+-------------+
+| demo3D01 |            | True        |
++----------+------------+-------------+
+| demo3D02 |            | True        |
++----------+------------+-------------+
+| demo3D03 |            | True        |
++----------+------------+-------------+
+| demo3D04 |            | True        |
++----------+------------+-------------+
+| demo3D06 |            | True        |
++----------+------------+-------------+
+| demo3D07 |            | True        |
++----------+------------+-------------+
+| demo3D08 |            | True        |
++----------+------------+-------------+
+| demo3D09 |            | True        |
++----------+------------+-------------+
+| demo3D10 |            | True        |
++----------+------------+-------------+
+| demo3D11 | True       |             |
++----------+------------+-------------+
+| demo3D12 | True       |             |
++----------+------------+-------------+
+| demo3D20 | True       |             |
++----------+------------+-------------+
+| demo3D21 | True       |             |
++----------+------------+-------------+
