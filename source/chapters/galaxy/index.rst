@@ -52,6 +52,15 @@ Installing Pandoc
 
 Installing `Pandoc <https://pandoc.org/>`_ is beyod the scope of this document. To install Pandoc, please follow the `instructions <https://pandoc.org/installing.html>`_ on their site.
 
+Cloning repository and setting environment variables
+****************************************************
+
+Clone the repository::
+
+    git clone git@repositories.compbio.cs.cmu.edu:cellorganizer/galaxy-tools.git
+
+and copy the contents of the folder 
+
 Using CellOrganizer for Galaxy
 ==============================
 
