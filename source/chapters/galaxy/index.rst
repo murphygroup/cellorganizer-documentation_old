@@ -1,21 +1,7 @@
 About CellOrganizer-for-Galaxy
 ==============================
 
-CellOrganizer-for-Galaxy is a set of tools that enables users to train generative models of the cell from microscopy images, analyze trained models, and synthesize model instances by accessing CellOrganizer through the Galaxy GUI.
-
-Using CellOrganizer-for-Galaxy
-==============================
-
-Currently, you can get started with CellOrganizer-for-Galaxy by the following ways (more to come)
-
-Cloning repository and setting environment variables
-****************************************************
-
-Clone the repository::
-
-    git clone git@repositories.compbio.cs.cmu.edu:cellorganizer/galaxy-tools.git
-
-and copy the contents of the folder 
+CellOrganizer-for-Galaxy is a set of tools that enables users to train generative models of the cell from microscopy images, analyze trained models, and synthesize model instances using CellOrganizer.
 
 Accessing the CellOrganizer-for-Galaxy public server
 ====================================================
@@ -32,20 +18,9 @@ The following subsections describe
 
 Galaxy Registration
 -------------------
-In order to use CellOrganizer-for-Galaxy, you must register for a user account.
+In order to use CellOrganizer-for-Galaxy, you must request access to the public server. To request access, click `here <http://www.cellorganizer.org/public-server-access-request/`_
 
-#. Open a web browser, and go to `galaxy.compbio.cs.cmu.edu <http://galaxy.compbio.cs.cmu.edu:8080/>`_.
-
-#. Go to the "Login or Register" link at the top of the Galaxy interface and select "Register". If you already have an account, then select "Login". 
-
-    .. image:: ../images/galaxy_bridges/registerbutton.png
-        :align: center
-        :width: 240px
-        :height: 240px
-
-#. You will need to provide an email address, a password, and a public name (optional) for registration. After you have entered your information, click "Submit".
-
-You will be redirected to the home page of the Galaxy interface for your account.
+Shortly after, you will receive an email with your credentials.
 
 Essential features of Galaxy
 ----------------------------
