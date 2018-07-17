@@ -6,19 +6,14 @@ CellOrganizer-for-Galaxy is a set of tools that enables users to train generativ
 Accessing the CellOrganizer-for-Galaxy public server
 ====================================================
 
-The CellOrganizer-for-Galaxy public server can be accessed at `galaxy.compbio.cs.cmu.edu <http://galaxy.compbio.cs.cmu.edu:8080/>`_.
+The CellOrganizer-for-Galaxy public server can be accessed at `galaxy.compbio.cs.cmu.edu <http://galaxy.compbio.cs.cmu.edu:8080/root/login?redirect=%2F/>`_.
 
 Getting started
 ===============
 
-The following subsections describe
-
-* How to register for a user account on the Cellorganizer-for-Galaxy public server
-* The essential features of the Galaxy GUI
-
 Galaxy Registration
 -------------------
-In order to use CellOrganizer-for-Galaxy, you must request access to the public server. To request access, click `here <http://www.cellorganizer.org/public-server-access-request/`_
+Before you start using CellOrganizer-for-Galaxy, you must request access to the public server. To request access, click `here <http://www.cellorganizer.org/public-server-access-request/>`_
 
 Shortly after, you will receive an email with your credentials.
 
@@ -30,12 +25,12 @@ Homepage
 
 The homepage is divided into four parts
 
-* Navigation bar (top of the page)
-* Tools window (left side of the page)
-* History window (right side of the page)
-* Main Content window ( center of the page)
-
     .. image:: ../images/galaxyinterface.png
+
+* Navigation bar (top of the page)
+* Tools (left side of the page)
+* History (right side of the page)
+* Main Content window (center of the page)
 
 The Tools window lists all the tools that are available to the user. For user convenience, we have grouped the tools into six categories
 
