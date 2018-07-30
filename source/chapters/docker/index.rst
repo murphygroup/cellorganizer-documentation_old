@@ -46,11 +46,11 @@ Open terminal and enter the commands
 	docker build -t murphylab/cellorganizer .
 	```
 
-For example, in Ubuntu
+Running the commands above will build the image locally and will not pull the existing image from the repository. For example, in Ubuntu
 
 .. raw:: html
 
-	<a href="https://asciinema.org/a/193939" target="_blank"><img width="50%" src="https://asciinema.org/a/193939.png" /></a>
+	<script src="https://asciinema.org/a/193939.js" id="asciicast-193939" async></script>
 
 **Download the most recent image using Docker command line**
 
