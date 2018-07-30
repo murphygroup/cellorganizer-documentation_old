@@ -33,8 +33,8 @@ Image Databases
 * `Human Protein Atlas <http://www.proteinatlas.org/subcellular>`_
 * `Murphy Lab Public Datasets <http://murphylab.web.cmu.edu/data/>`_
 
-Prerequisites
--------------
+Requirements
+------------
 
 * An OS X, Linux or Unix operating system
 * MATLAB installation (MATLAB 2014a or newer) with the following toolboxes:
