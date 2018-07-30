@@ -148,7 +148,8 @@ This table will let you know if the demo is meant to train a model or synthesize
 Brief Descriptions
 ******************
 
-.._demo2D00:
+.. _demo2D00:
+
 demo2D00
 --------------------------------
 Demo header::
