@@ -201,7 +201,7 @@ Method header::
 slml2slml
 *********
 
-Method header::
+Method header
 
   function model = slml2slml( varargin )
   % SLML2SLML Combines multiple SLML files into a single model file.
