@@ -30,119 +30,119 @@ This table will let you know if the demo is meant to train a model or synthesize
 +========================+=========+============+=============+
 | demo2D00_              | 2D      |            | True        |
 +------------------------+---------+------------+-------------+
-| [demo2D01](#demo2D01)  | 2D      | True       |             |
+| demo2D01_              | 2D      | True       |             |
 +------------------------+---------+------------+-------------+
-| [demo2D02](#demo2D02)  | 2D      |            | True        |
+| demo2D02_              | 2D      |            | True        |
 +------------------------+---------+------------+-------------+
-| [demo2D03](#demo2D03)  | 2D      | True       |             |
+| demo2D03_              | 2D      | True       |             |
 +------------------------+---------+------------+-------------+
-| [demo2D04](#demo2D04)  | 2D      | True       |             |
+| demo2D04_              | 2D      | True       |             |
 +------------------------+---------+------------+-------------+
-| [demo2D05](#demo2D05)  | 2D      | True       |             |
+| demo2D05_              | 2D      | True       |             |
 +------------------------+---------+------------+-------------+
-| [demo2D06](#demo2D06)  | 2D      |            | True        |
+| demo2D06_              | 2D      |            | True        |
 +------------------------+---------+------------+-------------+
-| [demo2D07](#demo2D07)  | 2D      |            | True        |
+| demo2D07_              | 2D      |            | True        |
 +------------------------+---------+------------+-------------+
-| [demo2D08](#demo2D08)  | 2D      | True       |             |
+| demo2D08_              | 2D      | True       |             |
 +------------------------+---------+------------+-------------+
-| [demo2D09](#demo2D09)  | 2D      | True       |             |
+| demo2D09_              | 2D      | True       |             |
 +------------------------+---------+------------+-------------+
-| [demo3D00](#demo3D00)  | 3D      |            | True        |
+| demo3D00_              | 3D      |            | True        |
 +------------------------+---------+------------+-------------+
-| [demo3D01](#demo3D01)  | 3D      |            | True        |
+| demo3D01_              | 3D      |            | True        |
 +------------------------+---------+------------+-------------+
-| [demo3D02](#demo3D02)  | 3D      |            |             |
+| demo3D02_              | 3D      |            |             |
 +------------------------+---------+------------+-------------+
-| [demo3D03](#demo3D03)  | 3D      |            | True        |
+| demo3D03_              | 3D      |            | True        |
 +------------------------+---------+------------+-------------+
-| [demo3D04](#demo3D04)  | 3D      |            | True        |
+| demo3D04_              | 3D      |            | True        |
 +------------------------+---------+------------+-------------+
-| [demo3D05](#demo3D05)  | 3D      |            | True        |
+| demo3D05_              | 3D      |            | True        |
 +------------------------+---------+------------+-------------+
-| [demo3D06](#demo3D06)  | 3D      |            | True        |
+| demo3D06_              | 3D      |            | True        |
 +------------------------+---------+------------+-------------+
-| [demo3D07](#demo3D07)  | 3D      |            | True        |
+| demo3D07_              | 3D      |            | True        |
 +------------------------+---------+------------+-------------+
-| [demo3D08](#demo3D08)  | 3D      |            | True        |
+| demo3D08_              | 3D      |            | True        |
 +------------------------+---------+------------+-------------+
-| [demo3D09](#demo3D09)  | 3D      |            | True        |
+| demo3D09_              | 3D      |            | True        |
 +------------------------+---------+------------+-------------+
-| [demo3D10](#demo3D10)  | 3D      |            | True        |
+| demo3D10_              | 3D      |            | True        |
 +------------------------+---------+------------+-------------+
-| [demo3D11](#demo3D11)  | 3D      | True       |             |
+| demo3D11_              | 3D      | True       |             |
 +------------------------+---------+------------+-------------+
-| [demo3D12](#demo3D12)  | 3D      | True       |             |
+| demo3D12_              | 3D      | True       |             |
 +------------------------+---------+------------+-------------+
-| [demo3D13](#demo3D13)  | 3D      |            |             |
+| demo3D13_              | 3D      |            |             |
 +------------------------+---------+------------+-------------+
-| [demo3D14](#demo3D14)  | 3D      |            |             |
+| demo3D14_              | 3D      |            |             |
 +------------------------+---------+------------+-------------+
-| [demo3D15](#demo3D15)  | 3D      |            | True        |
+| demo3D15_              | 3D      |            | True        |
 +------------------------+---------+------------+-------------+
-| [demo3D16](#demo3D16)  | 3D      |            |             |
+| demo3D16_              | 3D      |            |             |
 +------------------------+---------+------------+-------------+
-| [demo3D17](#demo3D17)  | 3D      |            | True        |
+| demo3D17_              | 3D      |            | True        |
 +------------------------+---------+------------+-------------+
-| [demo3D18](#demo3D18)  | 3D      | True       |             |
+| demo3D18_              | 3D      | True       |             |
 +------------------------+---------+------------+-------------+
-| [demo3D19](#demo3D19)  | 3D      |            |             |
+| demo3D19_              | 3D      |            |             |
 +------------------------+---------+------------+-------------+
-| [demo3D20](#demo3D20)  | 3D      | True       |             |
+| demo3D20_              | 3D      | True       |             |
 +------------------------+---------+------------+-------------+
-| [demo3D21](#demo3D21)  | 3D      | True       |             |
+| demo3D21_              | 3D      | True       |             |
 +------------------------+---------+------------+-------------+
-| [demo3D22](#demo3D22)  | 3D      |            | True        |
+| demo3D22_              | 3D      |            | True        |
 +------------------------+---------+------------+-------------+
-| [demo3D23](#demo3D23)  | 3D      |            | True        |
+| demo3D23_              | 3D      |            | True        |
 +------------------------+---------+------------+-------------+
-| [demo3D24](#demo3D24)  | 3D      |            | True        |
+| demo3D24_              | 3D      |            | True        |
 +------------------------+---------+------------+-------------+
-| [demo3D25](#demo3D25)  | 3D      |            | True        |
+| demo3D25_              | 3D      |            | True        |
 +------------------------+---------+------------+-------------+
-| [demo3D26](#demo3D26)  | 3D      |            | True        |
+| demo3D26_              | 3D      |            | True        |
 +------------------------+---------+------------+-------------+
-| [demo3D27](#demo3D27)  | 3D      |            |             |
+| demo3D27_              | 3D      |            |             |
 +------------------------+---------+------------+-------------+
-| [demo3D28](#demo3D28)  | 3D      |            |             |
+| demo3D28_              | 3D      |            |             |
 +------------------------+---------+------------+-------------+
-| [demo3D29](#demo3D29)  | 3D      | True       |             |
+| demo3D29_              | 3D      | True       |             |
 +------------------------+---------+------------+-------------+
-| [demo3D30](#demo3D30)  | 3D      |            | True        |
+| demo3D30_              | 3D      |            | True        |
 +------------------------+---------+------------+-------------+
-| [demo3D31](#demo3D31)  | 3D      |            | True        |
+| demo3D31_              | 3D      |            | True        |
 +------------------------+---------+------------+-------------+
-| [demo3D32](#demo3D32)  | 3D      |            | True        |
+| demo3D32_              | 3D      |            | True        |
 +------------------------+---------+------------+-------------+
-| [demo3D33](#demo3D33)  | 3D      |            | True        |
+| demo3D33_              | 3D      |            | True        |
 +------------------------+---------+------------+-------------+
-| [demo3D34](#demo3D34)  | 3D      |            | True        |
+| demo3D34_              | 3D      |            | True        |
 +------------------------+---------+------------+-------------+
-| [demo3D35](#demo3D35)  | 3D      |            |             |
+| demo3D35_              | 3D      |            |             |
 +------------------------+---------+------------+-------------+
-| [demo3D36](#demo3D36)  | 3D      |            | True        |
+| demo3D36_              | 3D      |            | True        |
 +------------------------+---------+------------+-------------+
-| [demo3D37](#demo3D37)  | 3D      |            | True        |
+| demo3D37_              | 3D      |            | True        |
 +------------------------+---------+------------+-------------+
-| [demo3D38](#demo3D38)  | 3D      |            | True        |
+| demo3D38_              | 3D      |            | True        |
 +------------------------+---------+------------+-------------+
-| [demo3D39](#demo3D39)  | 3D      |            | True        |
+| demo3D39_              | 3D      |            | True        |
 +------------------------+---------+------------+-------------+
-| [demo3D40](#demo3D40)  | 3D      | True       |             |
+| demo3D40_              | 3D      | True       |             |
 +------------------------+---------+------------+-------------+
-| [demo3D41](#demo3D41)  | 3D      |            | True        |
+| demo3D41_              | 3D      |            | True        |
 +------------------------+---------+------------+-------------+
-| [demo3D42](#demo3D42)  | 3D      | True       |             |
+| demo3D42_              | 3D      | True       |             |
 +------------------------+---------+------------+-------------+
-| [demo3D43](#demo3D43)  | 3D      |            | True        |
+| demo3D43_              | 3D      |            | True        |
 +------------------------+---------+------------+-------------+
-| [demo3D44](#demo3D44)  | 3D      |            | True        |
+| demo3D44_              | 3D      |            | True        |
 +------------------------+---------+------------+-------------+
-| [demo3D45](#demo3D45)  | 3D      | True       |             |
+| demo3D45_              | 3D      | True       |             |
 +------------------------+---------+------------+-------------+
-| [demo3D46](#demo3D46)  | 3D      |            | True        |
+| demo3D46_              | 3D      |            | True        |
 +------------------------+---------+------------+-------------+
-| [demo3D47](#demo3D47)  | 3D      |            |             |
+| demo3D47_              | 3D      |            |             |
 +------------------------+---------+------------+-------------+
 
 Brief Descriptions
@@ -174,6 +174,8 @@ Demo output:
    :target: ../_images/demo2D00/image.png
    :align: center
 
+.. _demo2D01:
+
 demo2D01
 --------
 Demo header::
@@ -192,6 +194,8 @@ Demo header::
    % Output
    % ------
    % * a valid SLML model file
+
+.. _demo2D02:
 
 demo2D02
 --------
@@ -215,6 +219,8 @@ Demo output:
    :target: ../_images/demo2D02/image.png
    :align: center
 
+.. _demo2D03:
+
 demo2D03
 --------
 Demo header::
@@ -233,6 +239,8 @@ Demo header::
    % Output
    % ------
    % * a valid SLML model file
+
+.. _demo2D04:
 
 demo2D04
 --------
@@ -253,6 +261,8 @@ Demo header::
    % ------
    % * a valid SLML model file
 
+.. _demo2D05:
+
 demo2D05
 --------
 Demo header::
@@ -269,6 +279,8 @@ Demo header::
    % Output
    % ------
    % * a valid SLML model file
+
+.. _demo2D06:
 
 demo2D06
 --------
@@ -291,6 +303,8 @@ Demo output:
    :target: ../_images/demo2D06/image.png
    :align: center
 
+.. _demo2D07:
+
 demo2D07
 --------
 Demo header::
@@ -312,6 +326,8 @@ Demo output:
    :target: ../_images/demo2D07/image.png
    :align: center
 
+.. _demo2D08:
+
 demo2D08
 --------
 Demo header::
@@ -330,6 +346,8 @@ Demo header::
    % ------
    % * a valid SLML model file
    % * a shape space plot
+
+.. _demo2D09:
 
 demo2D09
 --------
@@ -350,6 +368,8 @@ Demo header::
    % * a valid SLML model file
    % * a report
 
+.. _demo3D00:
+
 demo3D00
 --------
 Demo header::
@@ -366,6 +386,8 @@ Demo header::
    % Output
    % ------
    % * three TIFF files (nuclear, cell shape, and nucleolar channels)
+
+.. _demo3D01:
 
 demo3D01
 --------
@@ -386,6 +408,8 @@ Demo header::
    % * six TIFF files (nuclear, cell shape, lysosomal, mitochondrial,
    %   nucleolar, and endosomal channels)
 
+.. _demo3D02:
+
 demo3D02
 --------
 Demo header::
@@ -400,6 +424,8 @@ Demo header::
    % Output
    % ------
    % * a surface plot of the synthetic image
+
+.. _demo3D03:
 
 demo3D03
 --------
@@ -423,6 +449,8 @@ Demo header::
 .. figure:: ../images/demo3D03/cell1_ch3.jpg
    :align: center
 
+.. _demo3D04:
+
 demo3D04
 --------
 Demo header::
@@ -441,6 +469,8 @@ Demo header::
    % ------
    % * six TIFF files (nuclear, cell shape, nucleolar, lysosomal, endosomal,
    %   and mitochondrial channels)
+
+.. _demo3D05:
 
 demo3D05
 --------
@@ -461,6 +491,8 @@ Demo header::
    % * six TIFF files (nuclear, cell shape, nucleolar, lysosomal, endosomal,
    %   and mitochondrial channels)
 
+.. _demo3D06:
+
 demo3D06
 --------
 Demo header::
@@ -479,6 +511,8 @@ Demo header::
    % ------
    % * seven TIFF files (nuclear, cell shape, nucleolar, lysosomal, endosomal,
    %   mitochondrial, and microtubule channels)
+
+.. _demo3D07:
 
 demo3D07
 --------
@@ -499,6 +533,8 @@ Demo header::
    % * seven TIFF files (nuclear, cell shape, nucleolar, lysosomal, endosomal,
    %   mitochondrial, and microtubule channels)
 
+.. _demo3D08:
+
 demo3D08
 --------
 Demo header::
@@ -517,6 +553,8 @@ Demo header::
    % ------
    % * single indexed TIFF file which indexes the six TIFF files (nuclear,
    %   cell shape, nucleolar, lysosomal, endosomal, and mitochondrial channels)
+
+.. _demo3D09:
 
 demo3D09
 --------
@@ -537,6 +575,8 @@ Demo header::
    % * three TIFF files (nuclear, cell shape, and lysosomal channels)
    % * one projection TIFF file
    % * one projection PNG file
+
+.. _demo3D10:
 
 demo3D10
 ---------
@@ -559,6 +599,8 @@ Demo header::
 .. figure:: ../images/demo3D10/blender.png
    :align: center
 
+.. _demo3D11:
+
 demo3D11
 --------
 Demo header::
@@ -576,6 +618,8 @@ Demo header::
    % Output
    % ------
    % * a valid model
+
+.. _demo3D12:
 
 demo3D12
 --------
@@ -596,6 +640,8 @@ Demo header::
    % ------
    % * a valid SLML model file
 
+.. _demo3D13:
+
 demo3D13
 --------
 Demo header::
@@ -611,6 +657,8 @@ Demo header::
    % ------
    % * Wavefront OBJ files
 
+.. _demo3D14:
+
 demo3D14
 --------
 Demo header::
@@ -625,6 +673,8 @@ Demo header::
    % Output
    % ------
    % * projections of synthetic images as TIFF files
+
+.. _demo3D15:
 
 demo3D15
 --------
@@ -642,6 +692,8 @@ Demo header::
    % Output
    % ------
    % * three TIFF files (nuclear, cell shape, and endosomal channels)
+
+.. _demo3D16:
 
 demo3D16
 --------
@@ -663,6 +715,8 @@ Demo header::
    % Output
    % ------
    % * three TIFF files (cell shape, nuclear, and lysosomal channels)
+
+.. _demo3D17:
 
 demo3D17
 --------
@@ -687,6 +741,8 @@ Demo header::
    % ------
    % * three TIFF files (cell shape, nuclear, and lysosomal channels)
 
+.. _demo3D18:
+
 demo3D18
 --------
 Demo header::
@@ -706,6 +762,8 @@ Demo header::
    % ------
    % * a valid SLML model
 
+.. _demo3D19:
+
 demo3D19
 --------
 Demo header::
@@ -720,6 +778,8 @@ Demo header::
    % Output
    % ------
    % * a report
+
+.. _demo3D20:
 
 demo3D20
 --------
@@ -741,6 +801,8 @@ Demo header::
    % * a valid SLML model file
    % * a visualization of the shape space
 
+.. _demo3D21:
+
 demo3D21
 --------
 Demo header::
@@ -761,6 +823,8 @@ Demo header::
    % ------
    % * a valid SLML model
 
+.. _demo3D22:
+
 demo3D22
 --------
 Demo header::
@@ -775,6 +839,8 @@ Demo header::
    % Output
    % ------
    % * a synthetic image
+
+.. _demo3D23:
 
 demo3D23
 --------
@@ -795,6 +861,8 @@ Demo header::
    % ------
    % * a valid SLML model file
 
+.. _demo3D24:
+
 demo3D24
 ----------
 Demo header::
@@ -811,6 +879,8 @@ Demo header::
    % Output
    % ------
    % * valid SBML model 
+
+.. _demo3D25:
 
 demo3D25
 ----------
@@ -837,6 +907,8 @@ Demo header::
    % * three TIFF files
    % * XML file with primitives for lysosomes and parametric objects
 
+.. _demo3D26:
+
 demo3D26
 --------
 Demo header::
@@ -851,6 +923,8 @@ Demo header::
    % Output
    % ------
    % * a display of the shape space
+
+.. _demo3D27:
 
 demo3D27
 --------
@@ -867,6 +941,8 @@ Demo header::
    % Output
    % ------
    % * shape space figure
+
+.. _demo3D28:
 
 demo3D28
 --------
@@ -888,6 +964,8 @@ Demo header::
    % ------
    % * three TIFF files (cell shape, nuclear, and nucleolar channels)
 
+.. _demo3D29:
+
 demo3D29
 --------
 Demo header::
@@ -901,6 +979,8 @@ Demo header::
    % Output
    % ------
    % * details about the models
+
+.. _demo3D30:
 
 demo3D30
 --------
@@ -916,6 +996,8 @@ Demo header::
    % Output
    % ------
    % * a random walk
+
+.. _demo3D31:
 
 demo3D31
 --------
@@ -934,6 +1016,8 @@ Demo header::
    % ------
    % * a valid model
 
+.. _demo3D32:
+
 demo3D32
 --------
 Demo header::
@@ -951,6 +1035,8 @@ Demo header::
    % ------
    % * three TIFF files
 
+.. _demo3D33:
+
 demo3D33
 --------
 Demo header::
@@ -964,6 +1050,8 @@ Demo header::
    % Output
    % -------
    % * multiple instances of the same cell at different resolutions
+
+.. _demo3D34:
 
 demo3D34
 --------
@@ -982,6 +1070,8 @@ Demo header::
    % * OME.TIFF
    % * SBML instance
    % * single channel TIF files
+
+.. _demo3D35:
 
 demo3D35
 --------
@@ -1003,6 +1093,8 @@ Demo output:
    :target: ../_images/demo3D35/report.png
    :align: center
 
+.. _demo3D36:
+
 demo3D36
 --------
 Demo header::
@@ -1016,6 +1108,8 @@ Demo header::
    % Output
    % ------
    % * multiple 3D images at different resolutions
+
+.. _demo3D37:
 
 demo3D37
 --------
@@ -1036,6 +1130,8 @@ Demo header::
    % -------
    % * a valid SLML model file
 
+.. _demo3D38:
+
 demo3D38
 --------
 Demo header::
@@ -1053,6 +1149,8 @@ Demo header::
    % ------
    % * three TIFF files (nuclear, cell shape, and nucleolar channels)
 
+.. _demo3D39:
+
 demo3D39
 --------
 Demo header::
@@ -1067,6 +1165,8 @@ Demo header::
    % Output
    % ------
    % * a random walk
+
+.. _demo3D40:
 
 demo3D40
 --------
@@ -1085,6 +1185,8 @@ Demo header::
    % Output
    % ------
    % * a valid SLML model file
+
+.. _demo3D41:
 
 demo3D41
 --------
@@ -1105,6 +1207,8 @@ Demo header::
    % Output
    % ------
    % * a valid SLML model file
+
+.. _demo3D42:
 
 demo3D42
 --------
@@ -1136,6 +1240,8 @@ Demo header::
    % cell shape (in demos/LAT_reltime_1.mat)
    % * various intermediate results files (in /param and /tmp)
 
+.. _demo3D43:
+
 demo3D43
 --------
 Demo header::
@@ -1155,6 +1261,8 @@ Demo header::
    % ------
    % * one or more set(s) of synthesized images with cell shape and protein
    % pattern. 
+
+.. _demo3D44:
 
 demo3D44
 --------
@@ -1177,6 +1285,8 @@ Demo output:
    :target: ../_images/demo3D44/image.png
    :align: center
 
+.. _demo3D45:
+
 demo3D45
 --------
 Demo header::
@@ -1194,6 +1304,8 @@ Demo header::
    % Output
    % ------
    % * a valid model
+
+.. _demo3D46:
 
 demo3D46
 --------
@@ -1220,6 +1332,8 @@ Demo output:
 .. figure:: ../images/demo3D46/image.png
    :target: ../_images/demo3D46/image.png
    :align: center
+
+.. _demo3D47:
 
 demo3D47
 --------
