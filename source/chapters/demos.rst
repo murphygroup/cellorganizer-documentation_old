@@ -19,7 +19,7 @@ In Ubuntu
 
 .. raw:: html
 
-  <script src="https://asciinema.org/a/193904.js" id="asciicast-193904" async></script>
+  <a href="https://asciinema.org/a/193904" target="_blank"><img src="https://asciinema.org/a/193904.png" /></a>
 
 Demos Summary Table
 *******************
