@@ -1348,12 +1348,3 @@ Demo header::
    % Output
    % ------
    % * a valid model
-
-.. raw:: html
-
-  <script type="text/javascript" src="https://asciinema.org/a/14.js" id="asciicast-5xwfvcrrk09fy3ml3a8n67hep" async data-autoplay="false" data-loop="false"></script>
-
-
-.. raw:: html
-
-   <a href="https://asciinema.org/a/14?autoplay=1" target="_blank"><img src="https://asciinema.org/a/14.png" width="835"/></a>
