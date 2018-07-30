@@ -31,7 +31,7 @@ This demo will save a folder `param` containing .mat files as well as a `.mat` f
 
 Running the demo in the container should produce results similar to
 
-... raw:: html
+.. raw:: html
 
 	<script src="https://asciinema.org/a/194145.js" id="asciicast-194145" async></script>
 
