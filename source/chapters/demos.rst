@@ -19,7 +19,7 @@ In Ubuntu
 
 .. raw:: html
 
-  <a href="https://asciinema.org/a/193904" target="_blank"><img src="https://asciinema.org/a/193904.png" /></a>
+  <a href="https://asciinema.org/a/193904" target="_blank"><img width="50%" src="https://asciinema.org/a/193904.png" /></a>
 
 Demos Summary Table
 *******************
