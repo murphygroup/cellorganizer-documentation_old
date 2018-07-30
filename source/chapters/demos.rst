@@ -357,38 +357,6 @@ Demo header::
    % ------
    % * three TIFF files (nuclear, cell shape, and nucleolar channels)
 
-Synthesize one 2D image with nuclear, cell shape, and vesicular channels
-from all vesicular object models (nucleoli, lysosomes, endosomes, and
-mitochondria) without convolution. The model was trained from the Murphy
-Lab 2D HeLa dataset.
-
-demo2D01
---------
-Train 2D generative model of the nucleus, cell shape, and lysosome from all
-LAMP2 images in the Murphy Lab 2D HeLa dataset.
-
-demo2D02
---------
-Synthesize one 2D image with nuclear, cell shape, and lysosomal channels
-from LAMP2 model trained in demo2D01 without convolution.
-
-demo2D03
---------
-Train 2D generative model of the nucleus, cell shape, and lysosome from
-all LAMP2 images in the Murphy Lab 2D HeLa dataset.
-
-demo2D04
---------
-Train 2D generative diffeomorphic nuclear and cell shape model and a lysosomal model from all LAMP2 images in the Murphy Lab 2D HeLa dataset.
-
-demo3D00
---------
-Synthesize one 3D image with nuclear, cell shape, and nucleolar channels from nucleolar model with sampling method set to render nucleoli as ellipsoids without convolution. The model was trained from the Murphy Lab 3D HeLa dataset.
-
-.. figure:: ../images/demo3D00/cell1_ch2.jpg
-   :target: ../_images/demo3D00/cell1_ch2.jpg
-   :align: center
-
 demo3D01
 --------
 Demo header::
@@ -423,15 +391,6 @@ Demo header::
    % ------
    % * a surface plot of the synthetic image
 
-Synthesize one 3D image with nuclear, cell shape, and vesicular channels from all vesicular object models (lysosomes, mitochondria, nucleoli, and endosomes) with sampling method set to render vesicular objects as ellipsoids without convolution. The model was trained from the Murphy Lab 3D HeLa dataset.
-
-demo3D02
---------
-Generate surface plot of image synthesized by demo3D00.
-
-.. figure:: ../images/demo3D02/output.png
-   :align: center
-
 demo3D03
 --------
 Demo header::
@@ -450,12 +409,6 @@ Demo header::
    % ------
    % * six TIFF files (nuclear, cell shape, nucleolar, lysosomal, endosomal,
    %   and mitochondrial channels)
-
-Synthesize one 3D image with nuclear, cell shape, and vesicular channels
-from all vesicular object models (nucleoli, lysosomes, endosomes, and
-mitochondria) with sampling method set to sample vesicular objects from
-Gaussians at density 75 without convolution. The model was trained from
-the Murphy Lab 3D HeLa dataset.
 
 .. figure:: ../images/demo3D03/cell1_ch3.jpg
    :align: center
@@ -498,21 +451,6 @@ Demo header::
    % * six TIFF files (nuclear, cell shape, nucleolar, lysosomal, endosomal,
    %   and mitochondrial channels)
 
-Synthesize one 3D image with nuclear, cell shape, and microtubule
-channels from microtubule model without convolution. The model was
-trained from the Murphy Lab 3D HeLa dataset.
-
-demo3D05
---------
-Synthesize one 3D image with nuclear, cell shape, and protein channels
-from all object models (nucleoli, lysosomes, endosomes, mitochondria, and
-microtubules) with sampling method set to sample vesicular objects from
-Gaussians without convolution. The model was trained from the Murphy Lab
-3D HeLa dataset.
-
-.. figure:: ../images/demo3D05/cell1_ch3.jpg
-   :align: center
-
 demo3D06
 --------
 Demo header::
@@ -550,23 +488,6 @@ Demo header::
    % ------
    % * seven TIFF files (nuclear, cell shape, nucleolar, lysosomal, endosomal,
    %   mitochondrial, and microtubule channels)
-
-Synthesize one 3D image with nuclear, cell shape, and protein channels
-from all object models (nucleoli, lysosomes, endosomes, mitochondria, and
-microtubules) with sampling method set to render vesicular objects as
-ellipsoids and convolution with point-spread function. The model was
-trained from the Murphy Lab 3D HeLa dataset.
-
-demo3D07
---------
-Synthesize one 3D image with nuclear, cell shape, and protein channels
-from all object models (nucleoli, lysosomes, endosomes, mitochondria, and
-microtubules) with sampling method set to sample vesicular objects from
-Gaussians at a density of 25 and convolution with point-spread function.
-The model was trained from the Murphy Lab 3D HeLa dataset.
-
-.. figure:: ../images/demo3D07/cell1_ch3.jpg
-   :align: center
 
 demo3D08
 --------
@@ -607,23 +528,6 @@ Demo header::
    % * one projection TIFF file
    % * one projection PNG file
 
-Synthesize one 3D image with nuclear, cell shape, and vesicular channels
-from all vesicular object models (nucleoli, lysosomes, endosomes, and
-mitochondria) with sampling method set to render vesicular objects as
-ellipsoids without convolution. The model was trained from the Murphy Lab
-3D HeLa dataset.
-
-demo3D09
---------
-Synthesize one 3D image with nuclear, cell shape, and lysosomal channels
-from LAMP2 model with sampling method set to render lysosomes as
-ellipsoids without convolution. Also ender 2D mean projections along XY,
-XZ, and YZ axes of image. The model was trained from the Murphy Lab 3D
-HeLa dataset.
-
-.. figure:: ../images/demo3D09/cell1_ch2.jpg
-   :align: center
-
 demo3D10
 ---------
 Demo header::
@@ -641,11 +545,6 @@ Demo header::
    % ------
    % * three TIFF files (nuclear, cell shape, and lysosomal channels)
    % * three Wavefront OBJ files (nuclear, cell shape, and lysosomal channels)
-
-Synthesize one 3D image with nuclear, cell shape, and lysosomal channels
-with object files importable to Blender from LAMP2 model, with sampling
-method set to render lysosomes as ellipsoids without convolution. The
-model was trained from the Murphy Lab 3D HeLa dataset.
 
 .. figure:: ../images/demo3D10/blender.png
    :align: center
@@ -702,24 +601,20 @@ Demo header::
    % ------
    % * Wavefront OBJ files
 
-Train 3D generative model of the cell framework (nucleus and cell shape)
-from the entire Murphy Lab 3D HeLa dataset.
-
-demo3D12
---------
-Train 3D generative model of the nucleus, cell shape, and lysosome from
-all LAMP2 images in the Murphy Lab 3D HeLa dataset.
-
-demo3D13
---------
-Export images synthesized by demo3D01 as object files importable to Blender.
-
 demo3D14
 --------
-Render 2D mean projections along XY, XZ, and YZ axes of images synthesized by demo3D01.
+Demo header::
 
-.. figure:: ../images/demo3D14/lysosome1.jpg
-   :align: center
+   % Render 2D mean projections along XY, XZ, and YZ axes of images
+   % synthesized by demo3D00.
+   %
+   % Input
+   % -----
+   % * a directory of 3D synthetic images
+   %
+   % Output
+   % ------
+   % * projections of synthetic images as TIFF files
 
 demo3D15
 --------
@@ -738,22 +633,26 @@ Demo header::
    % ------
    % * three TIFF files (nuclear, cell shape, and endosomal channels)
 
-Synthesize one multichannel 3D image from an endosomal model and
-diffeomorphic nuclear and cell shape model. The sampling method was set
-to render endosomes as ellipsoids without convolution. The model was
-trained from the Murphy Lab 3D HeLa dataset.
-
 demo3D16
 --------
-This method shows how to preprocess raw images to use as input for
-CellOrganizer. The main idea behind this demo is to show the user they
-can use their own binary images from raw experimental data they can use
-to synthesize protein patterns. The current demo assumes the resolution
-of the images is the same as the images that were used to train the
-protein model
+Demo header::
 
-.. figure:: ../images/demo3D16/cell1_ch2.jpg
-   :align: center
+   % The main idea behind this demo is to show the user they
+   % can use their own binary images from raw experimental data 
+   % to synthesize protein patterns. This demo uses the CellOrganizer
+   %  method for nuclear and cell segmentation.
+   % 
+   % The current demo assumes the resolution of the images is the same as 
+   % the resolution of the images that were used to train the protein model.
+   %
+   % Input 
+   % -----
+   % * raw or synthetic images of the nuclear and cell membrane
+   % * a valid CellOrganizer model file
+   %
+   % Output
+   % ------
+   % * three TIFF files (cell shape, nuclear, and lysosomal channels)
 
 demo3D17
 --------
@@ -995,7 +894,6 @@ Demo header::
 
 demo3D30
 --------
-
 Demo header::
 
    % This demo illustrates how to sample uniformly at random from a
@@ -1026,75 +924,7 @@ Demo header::
    % ------
    % * a valid model
 
-The main idea behind this demo is to show the user they can use their own binary images from raw experimental data
-to synthesize protein patterns.
-
-The current demo assumes the resolution of the images is the same as the images that were used to train the protein model.
-
-demo3D19
---------
-This demo uses slml2report to compare the parameters between
-CellOrganzier models.
-
-demo3D20
---------
-Train 3D generative diffeomorphic nuclear and cell shape model and a
-lysosomal model from all LAMP2 images in the Murphy Lab 3D HeLa dataset.
-
-demo3D22
---------
-Synthesizes a protein pattern instance from the synthetic image produced in demo3DDiffeoSynth.
-
-demo3D23
---------
-Train 3D generative diffeomorphic nuclear and cell shape model and a lysosomal model from all LAMP2 images in the Murphy Lab 3D HeLa dataset.
-
-demo3DSBML
-----------
-This demo converts a sample SBML file to an SBML-spatial instance using
-the "matchSBML" function. This function takes an SBML file, matches the
-compartments in the file with available models and synthesizes the
-appropriate instances.
-
-demo3DMultiresSynth
---------------------
-Synthesize multiple 3D images from a lysosome model at different resolutions. This demos show the user can specify the output resolution of the synthesized images.
-
-demo3DObjectAvoidance
----------------------
-Synthesizes one image using a lysosomal model with sampling mode
-set to 'disc', no convolution using the object avoidance methods
-Results will be three TIFF files, one each for cell boundary,
-nuclear boundary, and lysosomes, in folder "synthesizedImages/cell1"
-It generates OBJ files that can be imported into Blender.
-
-demo3DPrimitives
-----------------
-Synthesizes 1 image using a lysosomal model with sampling mode
-set to 'disc', no convolution and output.SBML set to true
-Results will be three TIFF files, one each for cell boundary,
-nuclear boundary, and lysosomes, in folder "synthesizedImages/cell1"
-Additionally, in the folder "synthesizedImages/" will be a
-SBML-Spatial(v0.82a) formatted .xml file containing constructed solid
-geometry(CSG) primitives for lysosomes and parametric objects for the
-cell and nuclear shapes.
-
-These files can then be read into VCell using the built in importer or
-CellBlender using the helper function provided in this distribution.
-
-demo3D26
---------
-This function displays a shape space of some dimensionality. This demo uses the model trained in Johnson 2015.
-
-demo3D27
---------
-This demo performs a regression between two sets of related shapes (i.e. predicts cell  shape from nuclear shape) and displays the residuals as in  Figure 2 of Johnson et al 2015.
-
-demo3D28
---------
-Synthesize one 3D image with nuclear, cell shape, and nucleolar channels from nucleolar model with sampling method set to render nucleoli as ellipsoids without convolution. The model was trained from the Murphy Lab 3D HeLa dataset.
-
-demo3D29
+demo3D32
 --------
 Demo header::
 
@@ -1250,21 +1080,21 @@ demo3D41
 --------
 Demo header::
 
-% Train 3D generative model of the nucleus, cell shape, and lysosome from
-% all LAMP2 images in the Murphy Lab 3D HeLa dataset that are either in the
-% current directory or in the demo3D11 directory.
-%
-% Input
-% -----
-% * a directory of raw or synthetic nucleus images
-% * a directory of raw or synthetic cell shape images
-% * a directory of raw or synthetic lysosome images
-% * the resolution of the images (all images should have the same
-%   resolution)
-%
-% Output
-% ------
-% * a valid SLML model file
+   % Train 3D generative model of the nucleus, cell shape, and lysosome from
+   % all LAMP2 images in the Murphy Lab 3D HeLa dataset that are either in the
+   % current directory or in the demo3D11 directory.
+   %
+   % Input
+   % -----
+   % * a directory of raw or synthetic nucleus images
+   % * a directory of raw or synthetic cell shape images
+   % * a directory of raw or synthetic lysosome images
+   % * the resolution of the images (all images should have the same
+   %   resolution)
+   %
+   % Output
+   % ------
+   % * a valid SLML model file
 
 demo3D42
 --------
