@@ -53,9 +53,7 @@ To leave the container, enter::
 
 	 exit
 
-You will return to the local directory in which you previously ran::
-
-	docker run -it murphylab/docker-cellorganizer:latest
+You will return to the local directory you were in before you ran Docker.
 
 Export generated data out of the container
 ------------------------------------------
@@ -69,7 +67,7 @@ Then enter the command::
 
 	docker cp <container_id>:<source_filepath> <destination_filepath>
 
-Just after  we have exited a container, We can find its ID by entering::
+Right after we have exited a container, we can find the container's ID by entering::
 
 	docker ps -a
 
