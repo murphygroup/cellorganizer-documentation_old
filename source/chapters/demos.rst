@@ -15,11 +15,11 @@ To display information about the available demos contained in the distribution, 
 
 	>> demoinfo
 
-In Ubuntu
+For example, in Ubuntu
 
 .. raw:: html
 
-  <a href="https://asciinema.org/a/193904" target="_blank"><img width="50%" src="https://asciinema.org/a/193904.png" /></a>
+  <script src="https://asciinema.org/a/193904.js" id="asciicast-193904" async></script>
 
 Demos Summary Table
 *******************
