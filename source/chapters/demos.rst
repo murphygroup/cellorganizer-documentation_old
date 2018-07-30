@@ -28,7 +28,7 @@ This table will let you know if the demo is meant to train a model or synthesize
 +------------------------+---------+------------+-------------+
 | Name                   | 2D/3D   | Training   | Synthesis   |
 +========================+=========+============+=============+
-| [demo2D00](#demo2D00)  | 2D      |            | True        |
+| :ref:`demo2D00`        | 2D      |            | True        |
 +------------------------+---------+------------+-------------+
 | [demo2D01](#demo2D01)  | 2D      | True       |             |
 +------------------------+---------+------------+-------------+
@@ -148,7 +148,8 @@ This table will let you know if the demo is meant to train a model or synthesize
 Brief Descriptions
 ******************
 
-<a name="demo2D00"></a>demo2D00
+.._demo2D00:
+demo2D00
 --------------------------------
 Demo header::
 
