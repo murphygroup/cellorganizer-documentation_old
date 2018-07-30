@@ -36,6 +36,21 @@ Before downloading the image and spinning a container, you need to install Docke
 * To install Docker-for-Mac, click `here <https://docs.docker.com/docker-for-mac/install/>`_.
 * To install Docker-for-Windows, click `here <https://docs.docker.com/docker-for-windows/install/>`_.
 
+**Download the repository and build the image from Dockerfile using Docker**
+
+Open terminal and enter the commands
+
+	```
+	git clone git@github.com:icaoberg/docker-cellorganizer.git
+	cd docker-cellorganizer
+	docker build -t murphylab/cellorganizer .
+	```
+
+For example, in Ubuntu
+
+.. raw:: html
+
+	<a href="https://asciinema.org/a/193939" target="_blank"><img width="50%" src="https://asciinema.org/a/193939.png" /></a>
 
 **Download the most recent image using Docker command line**
 
