@@ -29,6 +29,12 @@ You should find the shell script **demo2D01.sh**. To run the demo, Enter the com
 
 This demo will save a folder `param` containing .mat files as well as a `.mat` file `lamp2.mat` to the same directory (`/home/cellorganizer/demos/2D/demo2D01`). These `.mat` files contain information characterizing the trained generative model.
 
+Running the demo in the container should produce results similar to
+
+... raw:: html
+
+	<script src="https://asciinema.org/a/194145.js" id="asciicast-194145" async></script>
+
 Run a demo that invokes slml2img
 --------------------------------
 An example of a demo that produces simulated images from a trained generative model is `demo2D02`. To run this demo, change your current directory to `/home/cellorganizer/demos/2D/demo2D02` by entering:: 
