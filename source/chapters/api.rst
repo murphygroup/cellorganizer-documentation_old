@@ -197,3 +197,32 @@ Method header::
   % > filename1 = '/path/to/model/model1.mat';
   % > filename2 = '/path/to/model/model2.mat';
   % answer = slml2report( filename1, filename2 );
+
+slml2slml
+*********
+
+Method header::
+
+  function model = slml2slml( varargin )
+  % SLML2SLML Combines multiple SLML files into a single model file.
+  %
+  % List Of Input Arguments     Descriptions
+  % -----------------------     ------------
+  % files                       list of paths of models need be combined
+  % options                     Options structure
+  %
+  % The input argument options holds the valid parameters for these components.
+  % The shape of options is described below
+  %
+  % List Of Parameters        Descriptions
+  % ------------------        ------------
+  % output_filename           (optional)the file name of output model,
+  %                           default is "model.mat"
+  % seletion
+  % name
+  %
+  % Documentation (optional)
+  % ------------------------
+  % This is an optional structure with multiple elements that holds documentation about this model.
+  % If the decumentation isn't input, function will inherit documentation from first
+  % model in list if model is present.
