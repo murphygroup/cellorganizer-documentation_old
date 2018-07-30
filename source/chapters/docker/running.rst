@@ -11,6 +11,12 @@ The `docker run` command creates a container instance from our cellorganizer-doc
 
 The `-it` option enables us to interactively access the container. The Terminal window now reflects the view within the cellorganizer directory inside our container instance. We have access to all files and directories in the container through `Terminal`. 
 
+For example, to interact with the container and find all generative models
+
+.. raw:: html
+
+	<script src="https://asciinema.org/a/ZhXIw9a4aI3Mzw3hH7Qpguzrp.js" id="asciicast-ZhXIw9a4aI3Mzw3hH7Qpguzrp" async></script>
+
 Run a demo that invokes img2slml
 --------------------------------
 An example of a demo that trains a generative model from a series of `.tif` image files is `demo2D01`. To run this demo, change your current directory to `cellorganizer/demos/2D/demo2D01` by entering::

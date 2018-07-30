@@ -60,14 +60,19 @@ Open terminal and enter the command
 
 Running this command will initiate the download and pull the most recent image of cellorganizer-docker from Docker Hub down to your computer.
 
-.. figure:: docker-pull.png
-   :align: center
+.. raw:: html 
+
+	<script src="https://asciinema.org/a/194136.js" id="asciicast-194136" async></script>
 
 Once the download is complete, you can confirm the image was downloaded by entering the command:
 
 	``docker images``
 
 You should see a record of a docker image identified by its repository **murphylabs/cellorganizer** and the tag **latest**.
+
+.. raw:: html
+
+	<script src="https://asciinema.org/a/194138.js" id="asciicast-194138" async></script>
 
 Installing Kitematic
 --------------------
@@ -78,7 +83,6 @@ The easiest way to download an image and run a container is to use `Kitematic <h
 
 .. ATTENTION::
    Kitematic is not necessary, but it is recommended to streamline installation and deployment.
- 
 
 **Download the most recent image using Kitematic**
 
