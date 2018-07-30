@@ -6,7 +6,7 @@ CellOrganizer-for-Galaxy is a set of tools that enables users to train generativ
 Accessing the CellOrganizer-for-Galaxy public server
 ====================================================
 
-The CellOrganizer-for-Galaxy public server can be accessed at `galaxy.compbio.cs.cmu.edu <http://galaxy.compbio.cs.cmu.edu:8080/root/login?redirect=%2F/>`_.
+The CellOrganizer-for-Galaxy public server can be accessed at `galaxy.compbio.cs.cmu.edu <http://galaxy.compbio.cs.cmu.edu:8080/root/login?redirect=%2F/>`_. This webserver is provided to provide access to CellOrganizer tools for users who do not have the resources to run the Matlab or Docker versions.  It is provided at no charge for non-profit organizations.
 
 Getting started
 ===============
@@ -41,34 +41,36 @@ The *Tools* section lists all the tools that are available to the user. For user
 * Useful tools for models
 * File Validators
 
-The History window lists all the jobs that the user has submitted and indicates their respective statuses via color coding. Whenever the user executes a tool, he/she submits a new job that will appear at the top of the History window as a rectangular box with a designed number and a descriptive name. The color of the box indicates the status of the corresponding job.
+The **History** window lists all the jobs that the user has submitted and indicates their respective statuses via color coding. Whenever the user executes a tool, it will submit a new job that will appear at the top of the **History** window as a rectangular box with a designed number and a descriptive name. The color of the box indicates the status of the corresponding job.
 
-* Gray means that the job has been submitted but not yet added to the job queue
-* Yellow means that the job has been submitted to the job queue
-* Red means that the job either exited before completion, or did not produce the expected output
-* Green means that the job ran successfully to completion and is ready to be viewed
+* *Gray* means that the job has been submitted but not yet added to the job queue
+* *Yellow* means that the job has been submitted to the job queue
+* *Red* means that the job either exited before completion, or did not produce the expected output
+* *Green* means that the job ran successfully to completion and is ready to be viewed
 
-The Main Content window is the CellOrganizer-for-Galaxy workspace. Once a tool or workflow (this term will be explained later) has been selected from the Tool Window, the user can specify the input parameters via the Main Content window.  
+The **Main Content** window is the CellOrganizer-for-Galaxy workspace. Once a tool or workflow (this term will be explained later) has been selected from the Tool Window, the user can specify the input parameters via the Main Content window.
+
+Detailed use of Galaxy is beyond the scope of this document. To learn more about Galaxy server, click `here <https://galaxyproject.org/learn/>`_  
 
 Work Histories
 **************
 
-Work Histories are Galaxy's way of enabling users to create multiple isolated workspaces. You can think of your current Work History as your current workspace. At any point in time, your History window displays all the data you have either downloaded or produced in your current workspace.
+**Work Histories** are Galaxy's way of enabling users to create multiple isolated workspaces. You can think of your current **Work History** as your current workspace. At any point in time, your **History** window displays all the data you have either downloaded or produced in your current workspace.
 
-Let's say you download some data into your current Work History. That data is now accessible to tools in your Tools Window. You can apply any tool on that data, provided that it considers the data as valid input. The output of this operation will get saved to your current Work History, and now you can even apply tools to this newly accessible data as well.
+Let's say you download some data into your current **Work History**. That data is now accessible to tools in your **Tools Window**. You can apply any tool on that data, provided that it considers the data as valid input. The output of this operation will get saved to your current **Work History**, and now you can even apply tools to this newly accessible data as well.
 
 If you now want to work on unrelated data, you can simply create a new Work History, switch your workspace to that newly created Work History, and work on that data without having to see the clutter of the previous workspace. Of course, you can always switch between Work Histories whenever you like. 
 
-Work Histories can be shared between Galaxy users, allowing them to see each other's outputs/errors.
+**Work Histories** can be shared between Galaxy users, allowing them to see each other's outputs/errors.
 
-For more information click `here <https://galaxyproject.org/tutorials/histories/>`_. 
+Detailed information about **Histories** is beyond the scope of this document. To learn more about them, click `here <https://galaxyproject.org/tutorials/histories/>`_. 
 
 Jobs
 ****
 
 Whenever you manage to execute a tool, you are essentially submitting a job to the server. And to execute a tool, you need to both provide the minimal set of inputs and to provide valid inputs. Whenever you click on one of the tools in the Tools Window, you should also see accompanying documentation in the Main Content window specifying what sort of inputs you need to provide to the tool. 
 
-For more information click `here <https://galaxyproject.org/support/how-jobs-execute/>`_.
+Detailed information about **Jobs** is beyond the scope of this document. To learn more about them, click `here <https://galaxyproject.org/support/how-jobs-execute/>`_.
 
 Workflows
 *********
@@ -79,7 +81,7 @@ Let's say you keep on repeating a certain procedure. You download data, run a to
 
 Instead, we can streamline the procedure by linking the intermediate stages together via a Workflow (which essentially resembles a longer tool). We get to fill up the necessary parameter settings that the intermediate stages require all at once. Then we can simply click run and wait for the final output.   
 
-For more information click `here <https://galaxyproject.org/learn/advanced-workflow/>`_.
+Detailed information about **Workflows** is beyond the scope of this document. To learn more about them, click `here <https://galaxyproject.org/learn/advanced-workflow/>`_.
 
 In the table below, we have provided links to sample workflows constructed using CellOrganizer-for-Galaxy tools.
 
@@ -103,8 +105,8 @@ In the table below, we have provided links to sample workflows constructed using
 .. _Train-2D-diffeomorphic-framework-generative-model: http://galaxy.compbio.cs.cmu.edu:8080/u/cellorganizer/w/train-2d-diffeo-framework
 .. _Train-2D-diffeomorphic-framework-and-vesicular-pattern-model: http://galaxy.compbio.cs.cmu.edu:8080/u/cellorganizer/w/train-2d-diffeo-vesicle-model
 
-Links to Demo Histories
-***********************
+Links to Public Histories
+*************************
 This table contains information about CellOrganizer demos.
 Click on the demo name to open the demo history in CellOrganizer-for-Galaxy tools.
 
