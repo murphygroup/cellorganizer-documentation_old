@@ -15,6 +15,12 @@ To display information about the available demos contained in the distribution, 
 
 	>> demoinfo
 
+For example, in Ubuntu
+
+.. raw:: html
+
+  <script src="https://asciinema.org/a/193904.js" id="asciicast-193904" async></script>
+
 Demos Summary Table
 *******************
 This table will let you know if the demo is meant to train a model or synthesize an image.
