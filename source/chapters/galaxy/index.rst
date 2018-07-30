@@ -32,13 +32,9 @@ The homepage is divided into four parts
 * History (right side of the page)
 * Main Content window (center of the page)
 
-The Tools window lists all the tools that are available to the user. For user convenience, we have grouped the tools into six categories
+The *Tools* section lists all the tools that are available to the user. For user convenience, we have grouped the tools into six categories
 
 * Get Data (E.g under the Get Data section we have the following three tools)
-    * Upload File from your computer
-    * Imports image from a URL
-    * Imports generative model from a URL
-    * Imports model from the curated model repository
 * Training 
 * Synthesis
 * Useful tools for images
