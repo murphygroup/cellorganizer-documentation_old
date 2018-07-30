@@ -21,7 +21,7 @@ Essential features of Galaxy
 ----------------------------
 
 Homepage
-*********
+********
 
 The homepage is divided into four parts
 
