@@ -1,6 +1,6 @@
 #!/bin/bash
 
-virtualenv -p python3 .
+python3 -m venv .
 
 source ./bin/activate
 pip3 install numpy scipy matplotlib
@@ -12,5 +12,4 @@ pip3 install sphinx_rtd_theme
 pip3 install sphinxcontrib.gist
 pip3 install sphinxcontrib-programoutput
 pip3 install -e git+git://github.com/icaoberg/sphinxcontrib-pyexec.git@master#egg=sphinxcontrib-pyexec
-
 deactivate

@@ -1,12 +1,26 @@
-About CellOrganizer-for-Galaxy
+About CellOrganizer for Galaxy
 ==============================
 
 CellOrganizer-for-Galaxy is a set of tools that enables users to train generative models of the cell from microscopy images, analyze trained models, and synthesize model instances using CellOrganizer.
 
-Accessing the CellOrganizer-for-Galaxy public server
+Using CellOrganizer for Galaxy
+==============================
+
+Currently, you can get started with CellOrganizer for Galaxy by the following ways (more to come)
+
+Cloning repository and setting environment variables
+****************************************************
+
+Clone the repository::
+
+    git clone git@repositories.compbio.cs.cmu.edu:cellorganizer/galaxy-tools.git
+
+and copy the contents of the folder 
+
+Accessing the CellOrganizer for Galaxy public server
 ====================================================
 
-The CellOrganizer-for-Galaxy public server can be accessed at `galaxy.compbio.cs.cmu.edu <http://galaxy.compbio.cs.cmu.edu:8080/root/login?redirect=%2F/>`_. This webserver is provided to provide access to CellOrganizer tools for users who do not have the resources to run the Matlab or Docker versions.  It is provided at no charge for non-profit organizations.
+The CellOrganizer for Galaxy public server can be accessed at `galaxy.compbio.cs.cmu.edu <http://galaxy.compbio.cs.cmu.edu:8080/root/login?redirect=%2F/>`_. This webserver is provided to provide access to CellOrganizer tools for users who do not have the resources to run the Matlab or Docker versions.  It is provided at no charge for non-profit organizations.
 
 Getting started
 ===============
@@ -50,7 +64,7 @@ The **History** window lists all the jobs that the user has submitted and indica
 
 The **Main Content** window is the CellOrganizer-for-Galaxy workspace. Once a tool or workflow (this term will be explained later) has been selected from the Tool Window, the user can specify the input parameters via the Main Content window.
 
-Detailed use of Galaxy is beyond the scope of this document. To learn more about Galaxy server, click `here <https://galaxyproject.org/learn/>`_  
+Detailed use of Galaxy is beyond the scope of this document. To learn more about Galaxy server, click `here <https://galaxyproject.org/learn/>`_.
 
 Work Histories
 **************
@@ -83,7 +97,7 @@ Instead, we can streamline the procedure by linking the intermediate stages toge
 
 Detailed information about **Workflows** is beyond the scope of this document. To learn more about them, click `here <https://galaxyproject.org/learn/advanced-workflow/>`_.
 
-In the table below, we have provided links to sample workflows constructed using CellOrganizer-for-Galaxy tools.
+In the table below, we have provided links to sample workflows constructed using CellOrganizer for Galaxy tools.
 
 +--------------------------------------------------------------------+
 | Workflow Name                                                      |
@@ -108,7 +122,7 @@ In the table below, we have provided links to sample workflows constructed using
 Links to Public Histories
 *************************
 This table contains information about CellOrganizer demos.
-Click on the demo name to open the demo history in CellOrganizer-for-Galaxy tools.
+Click on the demo name to open the demo history in CellOrganizer for Galaxy tools.
 
 +-----------+---------+------------+-------------+
 | Name      | 2D/3D   | Training   | Synthesis   |
@@ -158,19 +172,19 @@ Additional Resources
 Further Exercises 
 =================
 
-We have prepared a series of exercises to demonstrate how you might go about using CellOrganizer-for-Galaxy.
+We have prepared a series of exercises to demonstrate how you might go about using CellOrganizer for Galaxy.
 
 Data Importing Exercises
 ------------------------
 
-Exercise 1. Importing image files that are already in CellOrganizer-for-Galaxy
+Exercise 1. Importing image files that are already in CellOrganizer for Galaxy
 
 1. Go to the navigation bar at the top of the homepage, click on "Shared Data", and then choose "Data Libraries".
 2. Go to Images -> HeLa -> 2D -> 2D HeLa LAMP2
 3. Tick the box next to "2D HeLa LAMP2".
 4. Click on "To History", select the history you would like to send the image dataset to, and then click "Import". 
 
-Exercise 2. Importing a model that is already in CellOrganizer-for-Galaxy
+Exercise 2. Importing a model that is already in CellOrganizer for Galaxy
 
 1. Under the "Get Data" section of the Tools window, select "Downloads model from the curated model repository".
 2. Select the model you would like to import to the current history, and click "Execute". 
