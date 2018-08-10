@@ -9,11 +9,17 @@ CellOrganizer for Docker is an image with compiled binaries from CellOrganizer f
 - **slml2report**, the top-level function to generate a report from comparing generative models.
 - **slml2slml**, the top-level function to combine models into a single model file.
 
+
 Installing CellOrganizer for Docker 
 ***********************************
 
+About Docker
+------------
+
+Docker performs operating-system-level virtualization. To learn about Docker and how to use it, click `here <https://docs.docker.com/get-started/#recap-and-cheat-sheet>`_
+
 Setup
------
+^^^^^
 The following instructions describe
 
 * How to install Docker, the virtualization engine that will run the container
@@ -91,8 +97,20 @@ Start Kitematic. It should open a window similar to the screenshot below
 .. figure:: kitematic.png
    :align: center
 
-Demos included in the Distribution
-----------------------------------
+Searching for CellOrganizer should return a container like the image below
+
+.. figure:: ../images/docker-cellorganizer.png
+   :align: center
+ 
+
+Then click *CREATE* to download the image and start a container
+
+.. figure:: ../images/docker-cellorganizer-downloading-image.png
+   :align: center
+ 
+
+Demos
+-----
 
 There are several demos included within the CellOrganizer software bundle. These demos are intended to illustrate CellOrganizer's functionality, and should be used to familiarize the user with the input/output format of various top-level functions such as **img2slml** and **slml2img**. 
 

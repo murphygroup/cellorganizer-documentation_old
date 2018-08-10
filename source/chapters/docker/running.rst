@@ -57,18 +57,12 @@ You will return to the local directory you were in before you ran Docker.
 
 Export generated data out of the container
 ------------------------------------------
-To export generated data out of the container, we need to know:
+To export generated data out of the container, the following information is needed
 
-* the container ID
-* the source filepath (i.e. the filepath, within the container filesystem, of the data to be exported)
-* the destination filepath (i.e. the filepath, within our local filesystem, to which we want to export the data)
+	* the container ID
+	* the source filepath (i.e. the filepath, within the container filesystem, of the data to be exported)
+	* the destination filepath (i.e. the filepath, within our local filesystem, to which we want to export the data)
 
-Then enter the command::
+The command used to do this is
 
 	docker cp <container_id>:<source_filepath> <destination_filepath>
-
-Right after we have exited a container, we can find the container's ID by entering::
-
-	docker ps -a
-
-and looking at the row of information corresponding to the most recently exited container.
