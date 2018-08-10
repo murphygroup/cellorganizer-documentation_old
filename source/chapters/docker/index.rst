@@ -46,11 +46,10 @@ Before downloading the image and spinning a container, you need to install Docke
 
 Open terminal and enter the commands
 
-	```
-	git clone git@github.com:icaoberg/docker-cellorganizer.git
+	``git clone git@github.com:icaoberg/docker-cellorganizer.git
 	cd docker-cellorganizer
-	docker build -t murphylab/cellorganizer .
-	```
+	docker build -t murphylab/cellorganizer .``
+
 
 Running the commands above will build the image locally and will not pull the existing image from the repository. For example, in Ubuntu
 
