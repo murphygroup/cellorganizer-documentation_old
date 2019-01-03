@@ -21,7 +21,7 @@ To start using CellOrganizer for Galaxy you can either
 Accessing the CellOrganizer for Galaxy public server
 ----------------------------------------------------
 
-The CellOrganizer for Galaxy public server can be accessed at `galaxy.compbio.cs.cmu.edu <http://galaxy.compbio.cs.cmu.edu:8080/root/login?redirect=%2F/>`_. This webserver is provided to provide access to CellOrganizer tools for users who do not have the resources to run the Matlab or Docker versions.  It is provided at no charge for non-profit organizations.
+The CellOrganizer for Galaxy public server can be accessed at `galaxy.compbio.cs.cmu.edu <http://galaxy3.compbio.cs.cmu.edu:9000/root/login?redirect=%2F/>`_. This webserver is provided to provide access to CellOrganizer tools for users who do not have the resources to run the Matlab or Docker versions.  It is provided at no charge for non-profit organizations.
 
 .. figure:: ../images/login.png
 
@@ -59,10 +59,6 @@ The homepage is divided into four parts
 The **Tools** section lists all the tools that are available to the user. For user convenience, we have grouped the tools into six categories
 
 * Get Data (E.g under the Get Data section we have the following three tools)
-    * Upload File from your computer
-    * Imports image from a URL
-    * Imports generative model from a URL
-    * Imports model from the curated model repository
 * Training
 * Synthesis
 * Useful tools for images
@@ -77,6 +73,27 @@ The **History** window lists all the jobs that the user has submitted and indica
 * *Green* means that the job ran successfully to completion and is ready to be viewed
 
 The **Main Content** window is the CellOrganizer for Galaxy workspace. Once a tool or workflow (this term will be explained later) has been selected from the Tool Window, the user can specify the input parameters via the Main Content window.
+
+List of Tools
+"""""""""""""
+
+The tools included in this release are
+
+* **Upload file** from your computer. This tool lets the user upload any file type to the Galaxy instance into the current workspace.
+* **Imports image** from a URL. This tool lets the user upload an OME.TIFF from URL and validate its metadata using BioFormats into the current workspace.
+* **Imports model** from the curated model repository. This tool lets the user to import a model from the CellOrganizer curated model repository into the current workspace.
+* **Trains a generative model** from a collection of OME.TIFFs.
+* **Generates a synthetic image** from a valid SLML model.
+* **Exports a 2D synthetic image** to a format that can be imported in VCell.
+* **Generates a surface plot** from a 3D OME.TIFF image.
+* **Makes an RGB projection** from an OME.TIFF.
+* **Makes a projection** from an OME.TIFF.
+* **Print information** about a generative model file.
+* **Combine multiple generative model files** into a single file.
+* **Display shape space plot** from a diffeomorphic or PCA model.
+* **Validates an OME.TIFF**.
+* **Validates an SBML Level 3 instance**.
+* **Validates a Wavefront OBJ file**.
 
 Work Histories
 """"""""""""""
@@ -121,18 +138,18 @@ We have provided links to sample histories constructed from CellOrganizer demos.
 | demo3D12_ | 3D      | True       |             |
 +-----------+---------+------------+-------------+
 
-.. _demo2D00: http://galaxy.compbio.cs.cmu.edu:8080/u/cellorganizer/h/demo2d00
-.. _demo2D01: http://galaxy.compbio.cs.cmu.edu:8080/u/cellorganizer/h/demo2d01
-.. _demo2D04: http://galaxy.compbio.cs.cmu.edu:8080/u/cellorganizer/h/demo2d04
-.. _demo2D05: http://galaxy.compbio.cs.cmu.edu:8080/u/cellorganizer/h/demo2d05
-.. _demo2D06: http://galaxy.compbio.cs.cmu.edu:8080/u/cellorganizer/h/demo2d06
-.. _demo2D07: http://galaxy.compbio.cs.cmu.edu:8080/u/cellorganizer/h/demo2d07
-.. _demo3D00: http://galaxy.compbio.cs.cmu.edu:8080/u/cellorganizer/h/demo3d00
-.. _demo3D01: http://galaxy.compbio.cs.cmu.edu:8080/u/cellorganizer/h/demo3d01
-.. _demo3D04: http://galaxy.compbio.cs.cmu.edu:8080/u/cellorganizer/h/demo3d04
-.. _demo3D05: http://galaxy.compbio.cs.cmu.edu:8080/u/cellorganizer/h/demo3d05
-.. _demo3D11: http://galaxy.compbio.cs.cmu.edu:8080/u/cellorganizer/h/demo3d11
-.. _demo3D12: http://galaxy.compbio.cs.cmu.edu:8080/u/cellorganizer/h/demo3d12
+.. _demo2D00: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo2d00
+.. _demo2D01: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo2d01
+.. _demo2D04: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo2d04
+.. _demo2D05: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo2d05
+.. _demo2D06: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo2d06
+.. _demo2D07: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo2d07
+.. _demo3D00: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo3d00
+.. _demo3D01: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo3d01
+.. _demo3D04: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo3d04
+.. _demo3D05: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo3d05
+.. _demo3D11: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo3d11
+.. _demo3D12: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo3d12
 
 Detailed information about **Histories** is beyond the scope of this document. To learn more about them, click `here <https://galaxyproject.org/tutorials/histories/>`_.
 
@@ -168,11 +185,11 @@ We have provided links to sample workflows constructed using CellOrganizer for G
 | Train-2D-diffeomorphic-framework-and-vesicular-pattern-model_      |
 +--------------------------------------------------------------------+
 
-.. _Train-2D-PCA-framework-generative-model: http://galaxy.compbio.cs.cmu.edu:8080/u/cellorganizer/w/train-2d-pca-framework
-.. _Train-2D-classic-generative-model: http://galaxy.compbio.cs.cmu.edu:8080/u/cellorganizer/w/train-2d-classic-model
-.. _Train-2D-classic-framework-generative-model: http://galaxy.compbio.cs.cmu.edu:8080/u/cellorganizer/w/train-2d-classic-framework
-.. _Train-2D-diffeomorphic-framework-generative-model: http://galaxy.compbio.cs.cmu.edu:8080/u/cellorganizer/w/train-2d-diffeo-framework
-.. _Train-2D-diffeomorphic-framework-and-vesicular-pattern-model: http://galaxy.compbio.cs.cmu.edu:8080/u/cellorganizer/w/train-2d-diffeo-vesicle-model
+.. _Train-2D-PCA-framework-generative-model: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/w/train-2d-pca-framework
+.. _Train-2D-classic-generative-model: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/w/train-2d-classic-model
+.. _Train-2D-classic-framework-generative-model: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/w/train-2d-classic-framework
+.. _Train-2D-diffeomorphic-framework-generative-model: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/w/train-2d-diffeo-framework
+.. _Train-2D-diffeomorphic-framework-and-vesicular-pattern-model: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/w/train-2d-diffeo-vesicle-model
 
 Detailed information about **Workflows** is beyond the scope of this document. To learn more about them, click `here <https://galaxyproject.org/learn/advanced-workflow/>`_.
 
