@@ -10,7 +10,7 @@ For example, CellOrganizer can take fluorescence microscope images of many cells
 Publications describing the development and use of various software components of CellOrganizer are located `here <http://cellorganizer.org/Publications>`_.
 A recent overview of the principles behind CellOrganizer can be found `here <http://www.sciencedirect.com/science/article/pii/S1046202315301298>`_.  And to download the most recent version of CellOrganizer, please visit our download `page <http://www.cellorganizer.org/cellorganizer-2-7-1/>`_.
 
-CellOrganizer provides tools for 
+CellOrganizer provides tools for
 
 * learning generative models of cell organization directly from images;
 * storing and retrieving those models;
@@ -21,7 +21,7 @@ Model learning captures variation among cells in a collection of images. Images 
 .. figure:: ../images/cellorganizer-overview-diagram.png
   :align: center
 
-   CellOrganizer learns compact and invertible models of subcellular shape and organization. To train a model for a collection of images, CellOrganizer first finds the parameterizations per image, then learns a distribution on these parameterizations and stores it in the trained model. Parameterizations can be sampled from this distribution and then be used to synthesize novel images. Johnson (2015). "Model Selection in Parameterizing Cell Images and Populations."
+  CellOrganizer learns compact and invertible models of subcellular shape and organization. To train a model for a collection of images, CellOrganizer first finds the parameterizations per image, then learns a distribution on these parameterizations and stores it in the trained model. Parameterizations can be sampled from this distribution and then be used to synthesize novel images. Johnson (2015). "Model Selection in Parameterizing Cell Images and Populations."
 
 CellOrganizer can learn models of
 
