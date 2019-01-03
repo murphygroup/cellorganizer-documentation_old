@@ -15,131 +15,143 @@ To display information about the available demos contained in the distribution, 
 
 	>> demoinfo
 
+For example, in Ubuntu
+
+.. raw:: html
+
+  <script src="https://asciinema.org/a/193904.js" id="asciicast-193904" async></script>
+
 Demos Summary Table
 *******************
 This table will let you know if the demo is meant to train a model or synthesize an image.
 
-+-----------+---------+------------+-------------+
-| Name      | 2D/3D   | Training   | Synthesis   |
-+===========+=========+============+=============+
-| demo2D00  | 2D      |            | True        |
-+-----------+---------+------------+-------------+
-| demo2D01  | 2D      | True       |             |
-+-----------+---------+------------+-------------+
-| demo2D02  | 2D      |            | True        |
-+-----------+---------+------------+-------------+
-| demo2D03  | 2D      | True       |             |
-+-----------+---------+------------+-------------+
-| demo2D04  | 2D      | True       |             |
-+-----------+---------+------------+-------------+
-| demo2D05  | 2D      | True       |             |
-+-----------+---------+------------+-------------+
-| demo2D06  | 2D      |            | True        |
-+-----------+---------+------------+-------------+
-| demo2D07  | 2D      |            | True        |
-+-----------+---------+------------+-------------+
-| demo2D08  | 2D      | True       |             |
-+-----------+---------+------------+-------------+
-| demo2D09  | 2D      | True       |             |
-+-----------+---------+------------+-------------+
-| demo3D00  | 3D      |            | True        |
-+-----------+---------+------------+-------------+
-| demo3D01  | 3D      |            | True        |
-+-----------+---------+------------+-------------+
-| demo3D02  | 3D      |            |             |
-+-----------+---------+------------+-------------+
-| demo3D03  | 3D      |            | True        |
-+-----------+---------+------------+-------------+
-| demo3D04  | 3D      |            | True        |
-+-----------+---------+------------+-------------+
-| demo3D05  | 3D      |            | True        |
-+-----------+---------+------------+-------------+
-| demo3D06  | 3D      |            | True        |
-+-----------+---------+------------+-------------+
-| demo3D07  | 3D      |            | True        |
-+-----------+---------+------------+-------------+
-| demo3D08  | 3D      |            | True        |
-+-----------+---------+------------+-------------+
-| demo3D09  | 3D      |            | True        |
-+-----------+---------+------------+-------------+
-| demo3D10  | 3D      |            | True        |
-+-----------+---------+------------+-------------+
-| demo3D11  | 3D      | True       |             |
-+-----------+---------+------------+-------------+
-| demo3D12  | 3D      | True       |             |
-+-----------+---------+------------+-------------+
-| demo3D13  | 3D      |            |             |
-+-----------+---------+------------+-------------+
-| demo3D14  | 3D      |            |             |
-+-----------+---------+------------+-------------+
-| demo3D15  | 3D      |            | True        |
-+-----------+---------+------------+-------------+
-| demo3D16  | 3D      |            |             |
-+-----------+---------+------------+-------------+
-| demo3D18  | 3D      | True       |             |
-+-----------+---------+------------+-------------+
-| demo3D19  | 3D      |            |             |
-+-----------+---------+------------+-------------+
-| demo3D20  | 3D      | True       |             |
-+-----------+---------+------------+-------------+
-| demo3D21  | 3D      | True       |             |
-+-----------+---------+------------+-------------+
-| demo3D22  | 3D      |            | True        |
-+-----------+---------+------------+-------------+
-| demo3D23  | 3D      |            | True        |
-+-----------+---------+------------+-------------+
-| demo3D24  | 3D      |            | True        |
-+-----------+---------+------------+-------------+
-| demo3D25  | 3D      |            | True        |
-+-----------+---------+------------+-------------+
-| demo3D26  | 3D      |            | True        |
-+-----------+---------+------------+-------------+
-| demo3D27  | 3D      |            |             |
-+-----------+---------+------------+-------------+
-| demo3D28  | 3D      |            |             |
-+-----------+---------+------------+-------------+
-| demo3D29  | 3D      | True       |             |
-+-----------+---------+------------+-------------+
-| demo3D30  | 3D      |            | True        |
-+-----------+---------+------------+-------------+
-| demo3D31  | 3D      |            | True        |
-+-----------+---------+------------+-------------+
-| demo3D32  | 3D      |            | True        |
-+-----------+---------+------------+-------------+
-| demo3D33  | 3D      |            | True        |
-+-----------+---------+------------+-------------+
-| demo3D34  | 3D      |            | True        |
-+-----------+---------+------------+-------------+
-| demo3D35  | 3D      |            |             |
-+-----------+---------+------------+-------------+
-| demo3D36  | 3D      |            | True        |
-+-----------+---------+------------+-------------+
-| demo3D37  | 3D      |            | True        |
-+-----------+---------+------------+-------------+
-| demo3D38  | 3D      |            | True        |
-+-----------+---------+------------+-------------+
-| demo3D39  | 3D      |            | True        |
-+-----------+---------+------------+-------------+
-| demo3D40  | 3D      | True       |             |
-+-----------+---------+------------+-------------+
-| demo3D41  | 3D      |            | True        |
-+-----------+---------+------------+-------------+
-| demo3D42  | 3D      | True       |             |
-+-----------+---------+------------+-------------+
-| demo3D43  | 3D      |            | True        |
-+-----------+---------+------------+-------------+
-| demo3D44  | 3D      |            | True        |
-+-----------+---------+------------+-------------+
-| demo3D45  | 3D      | True       |             |
-+-----------+---------+------------+-------------+
-| demo3D46  | 3D      |            | True        |
-+-----------+---------+------------+-------------+
++------------------------+---------+------------+-------------+
+| Name                   | 2D/3D   | Training   | Synthesis   |
++========================+=========+============+=============+
+| demo2D00_              | 2D      |            | True        |
++------------------------+---------+------------+-------------+
+| demo2D01_              | 2D      | True       |             |
++------------------------+---------+------------+-------------+
+| demo2D02_              | 2D      |            | True        |
++------------------------+---------+------------+-------------+
+| demo2D03_              | 2D      | True       |             |
++------------------------+---------+------------+-------------+
+| demo2D04_              | 2D      | True       |             |
++------------------------+---------+------------+-------------+
+| demo2D05_              | 2D      | True       |             |
++------------------------+---------+------------+-------------+
+| demo2D06_              | 2D      |            | True        |
++------------------------+---------+------------+-------------+
+| demo2D07_              | 2D      |            | True        |
++------------------------+---------+------------+-------------+
+| demo2D08_              | 2D      | True       |             |
++------------------------+---------+------------+-------------+
+| demo2D09_              | 2D      | True       |             |
++------------------------+---------+------------+-------------+
+| demo3D00_              | 3D      |            | True        |
++------------------------+---------+------------+-------------+
+| demo3D01_              | 3D      |            | True        |
++------------------------+---------+------------+-------------+
+| demo3D02_              | 3D      |            |             |
++------------------------+---------+------------+-------------+
+| demo3D03_              | 3D      |            | True        |
++------------------------+---------+------------+-------------+
+| demo3D04_              | 3D      |            | True        |
++------------------------+---------+------------+-------------+
+| demo3D05_              | 3D      |            | True        |
++------------------------+---------+------------+-------------+
+| demo3D06_              | 3D      |            | True        |
++------------------------+---------+------------+-------------+
+| demo3D07_              | 3D      |            | True        |
++------------------------+---------+------------+-------------+
+| demo3D08_              | 3D      |            | True        |
++------------------------+---------+------------+-------------+
+| demo3D09_              | 3D      |            | True        |
++------------------------+---------+------------+-------------+
+| demo3D10_              | 3D      |            | True        |
++------------------------+---------+------------+-------------+
+| demo3D11_              | 3D      | True       |             |
++------------------------+---------+------------+-------------+
+| demo3D12_              | 3D      | True       |             |
++------------------------+---------+------------+-------------+
+| demo3D13_              | 3D      |            |             |
++------------------------+---------+------------+-------------+
+| demo3D14_              | 3D      |            |             |
++------------------------+---------+------------+-------------+
+| demo3D15_              | 3D      |            | True        |
++------------------------+---------+------------+-------------+
+| demo3D16_              | 3D      |            |             |
++------------------------+---------+------------+-------------+
+| demo3D17_              | 3D      |            | True        |
++------------------------+---------+------------+-------------+
+| demo3D18_              | 3D      | True       |             |
++------------------------+---------+------------+-------------+
+| demo3D19_              | 3D      |            |             |
++------------------------+---------+------------+-------------+
+| demo3D20_              | 3D      | True       |             |
++------------------------+---------+------------+-------------+
+| demo3D21_              | 3D      | True       |             |
++------------------------+---------+------------+-------------+
+| demo3D22_              | 3D      |            | True        |
++------------------------+---------+------------+-------------+
+| demo3D23_              | 3D      |            | True        |
++------------------------+---------+------------+-------------+
+| demo3D24_              | 3D      |            | True        |
++------------------------+---------+------------+-------------+
+| demo3D25_              | 3D      |            | True        |
++------------------------+---------+------------+-------------+
+| demo3D26_              | 3D      |            | True        |
++------------------------+---------+------------+-------------+
+| demo3D27_              | 3D      |            |             |
++------------------------+---------+------------+-------------+
+| demo3D28_              | 3D      |            |             |
++------------------------+---------+------------+-------------+
+| demo3D29_              | 3D      | True       |             |
++------------------------+---------+------------+-------------+
+| demo3D30_              | 3D      |            | True        |
++------------------------+---------+------------+-------------+
+| demo3D31_              | 3D      |            | True        |
++------------------------+---------+------------+-------------+
+| demo3D32_              | 3D      |            | True        |
++------------------------+---------+------------+-------------+
+| demo3D33_              | 3D      |            | True        |
++------------------------+---------+------------+-------------+
+| demo3D34_              | 3D      |            | True        |
++------------------------+---------+------------+-------------+
+| demo3D35_              | 3D      |            |             |
++------------------------+---------+------------+-------------+
+| demo3D36_              | 3D      |            | True        |
++------------------------+---------+------------+-------------+
+| demo3D37_              | 3D      |            | True        |
++------------------------+---------+------------+-------------+
+| demo3D38_              | 3D      |            | True        |
++------------------------+---------+------------+-------------+
+| demo3D39_              | 3D      |            | True        |
++------------------------+---------+------------+-------------+
+| demo3D40_              | 3D      | True       |             |
++------------------------+---------+------------+-------------+
+| demo3D41_              | 3D      |            | True        |
++------------------------+---------+------------+-------------+
+| demo3D42_              | 3D      | True       |             |
++------------------------+---------+------------+-------------+
+| demo3D43_              | 3D      |            | True        |
++------------------------+---------+------------+-------------+
+| demo3D44_              | 3D      |            | True        |
++------------------------+---------+------------+-------------+
+| demo3D45_              | 3D      | True       |             |
++------------------------+---------+------------+-------------+
+| demo3D46_              | 3D      |            | True        |
++------------------------+---------+------------+-------------+
+| demo3D47_              | 3D      |            |             |
++------------------------+---------+------------+-------------+
 
 Brief Descriptions
 ******************
 
+.. _demo2D00:
+
 demo2D00
---------
+--------------------------------
 Demo header::
 
    % Synthesize one 2D image with nuclear, cell shape, and vesicular channels
@@ -162,6 +174,8 @@ Demo output:
    :target: ../_images/demo2D00/image.png
    :align: center
 
+.. _demo2D01:
+
 demo2D01
 --------
 Demo header::
@@ -180,6 +194,8 @@ Demo header::
    % Output
    % ------
    % * a valid SLML model file
+
+.. _demo2D02:
 
 demo2D02
 --------
@@ -203,6 +219,8 @@ Demo output:
    :target: ../_images/demo2D02/image.png
    :align: center
 
+.. _demo2D03:
+
 demo2D03
 --------
 Demo header::
@@ -221,6 +239,8 @@ Demo header::
    % Output
    % ------
    % * a valid SLML model file
+
+.. _demo2D04:
 
 demo2D04
 --------
@@ -241,6 +261,8 @@ Demo header::
    % ------
    % * a valid SLML model file
 
+.. _demo2D05:
+
 demo2D05
 --------
 Demo header::
@@ -257,6 +279,8 @@ Demo header::
    % Output
    % ------
    % * a valid SLML model file
+
+.. _demo2D06:
 
 demo2D06
 --------
@@ -279,6 +303,8 @@ Demo output:
    :target: ../_images/demo2D06/image.png
    :align: center
 
+.. _demo2D07:
+
 demo2D07
 --------
 Demo header::
@@ -300,6 +326,8 @@ Demo output:
    :target: ../_images/demo2D07/image.png
    :align: center
 
+.. _demo2D08:
+
 demo2D08
 --------
 Demo header::
@@ -318,6 +346,8 @@ Demo header::
    % ------
    % * a valid SLML model file
    % * a shape space plot
+
+.. _demo2D09:
 
 demo2D09
 --------
@@ -338,6 +368,8 @@ Demo header::
    % * a valid SLML model file
    % * a report
 
+.. _demo3D00:
+
 demo3D00
 --------
 Demo header::
@@ -355,37 +387,7 @@ Demo header::
    % ------
    % * three TIFF files (nuclear, cell shape, and nucleolar channels)
 
-Synthesize one 2D image with nuclear, cell shape, and vesicular channels
-from all vesicular object models (nucleoli, lysosomes, endosomes, and
-mitochondria) without convolution. The model was trained from the Murphy
-Lab 2D HeLa dataset.
-
-demo2D01
---------
-Train 2D generative model of the nucleus, cell shape, and lysosome from all
-LAMP2 images in the Murphy Lab 2D HeLa dataset.
-
-demo2D02
---------
-Synthesize one 2D image with nuclear, cell shape, and lysosomal channels
-from LAMP2 model trained in demo2D01 without convolution.
-
-demo2D03
---------
-Train 2D generative model of the nucleus, cell shape, and lysosome from
-all LAMP2 images in the Murphy Lab 2D HeLa dataset.
-
-demo2D04
---------
-Train 2D generative diffeomorphic nuclear and cell shape model and a lysosomal model from all LAMP2 images in the Murphy Lab 2D HeLa dataset.
-
-demo3D00
---------
-Synthesize one 3D image with nuclear, cell shape, and nucleolar channels from nucleolar model with sampling method set to render nucleoli as ellipsoids without convolution. The model was trained from the Murphy Lab 3D HeLa dataset.
-
-.. figure:: ../images/demo3D00/cell1_ch2.jpg
-   :target: ../_images/demo3D00/cell1_ch2.jpg
-   :align: center
+.. _demo3D01:
 
 demo3D01
 --------
@@ -406,6 +408,8 @@ Demo header::
    % * six TIFF files (nuclear, cell shape, lysosomal, mitochondrial,
    %   nucleolar, and endosomal channels)
 
+.. _demo3D02:
+
 demo3D02
 --------
 Demo header::
@@ -421,14 +425,7 @@ Demo header::
    % ------
    % * a surface plot of the synthetic image
 
-Synthesize one 3D image with nuclear, cell shape, and vesicular channels from all vesicular object models (lysosomes, mitochondria, nucleoli, and endosomes) with sampling method set to render vesicular objects as ellipsoids without convolution. The model was trained from the Murphy Lab 3D HeLa dataset.
-
-demo3D02
---------
-Generate surface plot of image synthesized by demo3D00.
-
-.. figure:: ../images/demo3D02/output.png
-   :align: center
+.. _demo3D03:
 
 demo3D03
 --------
@@ -449,14 +446,10 @@ Demo header::
    % * six TIFF files (nuclear, cell shape, nucleolar, lysosomal, endosomal,
    %   and mitochondrial channels)
 
-Synthesize one 3D image with nuclear, cell shape, and vesicular channels
-from all vesicular object models (nucleoli, lysosomes, endosomes, and
-mitochondria) with sampling method set to sample vesicular objects from
-Gaussians at density 75 without convolution. The model was trained from
-the Murphy Lab 3D HeLa dataset.
-
 .. figure:: ../images/demo3D03/cell1_ch3.jpg
    :align: center
+
+.. _demo3D04:
 
 demo3D04
 --------
@@ -477,6 +470,8 @@ Demo header::
    % * six TIFF files (nuclear, cell shape, nucleolar, lysosomal, endosomal,
    %   and mitochondrial channels)
 
+.. _demo3D05:
+
 demo3D05
 --------
 Demo header::
@@ -496,20 +491,7 @@ Demo header::
    % * six TIFF files (nuclear, cell shape, nucleolar, lysosomal, endosomal,
    %   and mitochondrial channels)
 
-Synthesize one 3D image with nuclear, cell shape, and microtubule
-channels from microtubule model without convolution. The model was
-trained from the Murphy Lab 3D HeLa dataset.
-
-demo3D05
---------
-Synthesize one 3D image with nuclear, cell shape, and protein channels
-from all object models (nucleoli, lysosomes, endosomes, mitochondria, and
-microtubules) with sampling method set to sample vesicular objects from
-Gaussians without convolution. The model was trained from the Murphy Lab
-3D HeLa dataset.
-
-.. figure:: ../images/demo3D05/cell1_ch3.jpg
-   :align: center
+.. _demo3D06:
 
 demo3D06
 --------
@@ -530,6 +512,8 @@ Demo header::
    % * seven TIFF files (nuclear, cell shape, nucleolar, lysosomal, endosomal,
    %   mitochondrial, and microtubule channels)
 
+.. _demo3D07:
+
 demo3D07
 --------
 Demo header::
@@ -549,22 +533,7 @@ Demo header::
    % * seven TIFF files (nuclear, cell shape, nucleolar, lysosomal, endosomal,
    %   mitochondrial, and microtubule channels)
 
-Synthesize one 3D image with nuclear, cell shape, and protein channels
-from all object models (nucleoli, lysosomes, endosomes, mitochondria, and
-microtubules) with sampling method set to render vesicular objects as
-ellipsoids and convolution with point-spread function. The model was
-trained from the Murphy Lab 3D HeLa dataset.
-
-demo3D07
---------
-Synthesize one 3D image with nuclear, cell shape, and protein channels
-from all object models (nucleoli, lysosomes, endosomes, mitochondria, and
-microtubules) with sampling method set to sample vesicular objects from
-Gaussians at a density of 25 and convolution with point-spread function.
-The model was trained from the Murphy Lab 3D HeLa dataset.
-
-.. figure:: ../images/demo3D07/cell1_ch3.jpg
-   :align: center
+.. _demo3D08:
 
 demo3D08
 --------
@@ -584,6 +553,8 @@ Demo header::
    % ------
    % * single indexed TIFF file which indexes the six TIFF files (nuclear,
    %   cell shape, nucleolar, lysosomal, endosomal, and mitochondrial channels)
+
+.. _demo3D09:
 
 demo3D09
 --------
@@ -605,22 +576,7 @@ Demo header::
    % * one projection TIFF file
    % * one projection PNG file
 
-Synthesize one 3D image with nuclear, cell shape, and vesicular channels
-from all vesicular object models (nucleoli, lysosomes, endosomes, and
-mitochondria) with sampling method set to render vesicular objects as
-ellipsoids without convolution. The model was trained from the Murphy Lab
-3D HeLa dataset.
-
-demo3D09
---------
-Synthesize one 3D image with nuclear, cell shape, and lysosomal channels
-from LAMP2 model with sampling method set to render lysosomes as
-ellipsoids without convolution. Also ender 2D mean projections along XY,
-XZ, and YZ axes of image. The model was trained from the Murphy Lab 3D
-HeLa dataset.
-
-.. figure:: ../images/demo3D09/cell1_ch2.jpg
-   :align: center
+.. _demo3D10:
 
 demo3D10
 ---------
@@ -640,13 +596,10 @@ Demo header::
    % * three TIFF files (nuclear, cell shape, and lysosomal channels)
    % * three Wavefront OBJ files (nuclear, cell shape, and lysosomal channels)
 
-Synthesize one 3D image with nuclear, cell shape, and lysosomal channels
-with object files importable to Blender from LAMP2 model, with sampling
-method set to render lysosomes as ellipsoids without convolution. The
-model was trained from the Murphy Lab 3D HeLa dataset.
-
 .. figure:: ../images/demo3D10/blender.png
    :align: center
+
+.. _demo3D11:
 
 demo3D11
 --------
@@ -665,6 +618,8 @@ Demo header::
    % Output
    % ------
    % * a valid model
+
+.. _demo3D12:
 
 demo3D12
 --------
@@ -685,6 +640,8 @@ Demo header::
    % ------
    % * a valid SLML model file
 
+.. _demo3D13:
+
 demo3D13
 --------
 Demo header::
@@ -700,24 +657,24 @@ Demo header::
    % ------
    % * Wavefront OBJ files
 
-Train 3D generative model of the cell framework (nucleus and cell shape)
-from the entire Murphy Lab 3D HeLa dataset.
-
-demo3D12
---------
-Train 3D generative model of the nucleus, cell shape, and lysosome from
-all LAMP2 images in the Murphy Lab 3D HeLa dataset.
-
-demo3D13
---------
-Export images synthesized by demo3D01 as object files importable to Blender.
+.. _demo3D14:
 
 demo3D14
 --------
-Render 2D mean projections along XY, XZ, and YZ axes of images synthesized by demo3D01.
+Demo header::
 
-.. figure:: ../images/demo3D14/lysosome1.jpg
-   :align: center
+   % Render 2D mean projections along XY, XZ, and YZ axes of images
+   % synthesized by demo3D00.
+   %
+   % Input
+   % -----
+   % * a directory of 3D synthetic images
+   %
+   % Output
+   % ------
+   % * projections of synthetic images as TIFF files
+
+.. _demo3D15:
 
 demo3D15
 --------
@@ -736,22 +693,30 @@ Demo header::
    % ------
    % * three TIFF files (nuclear, cell shape, and endosomal channels)
 
-Synthesize one multichannel 3D image from an endosomal model and
-diffeomorphic nuclear and cell shape model. The sampling method was set
-to render endosomes as ellipsoids without convolution. The model was
-trained from the Murphy Lab 3D HeLa dataset.
+.. _demo3D16:
 
 demo3D16
 --------
-This method shows how to preprocess raw images to use as input for
-CellOrganizer. The main idea behind this demo is to show the user they
-can use their own binary images from raw experimental data they can use
-to synthesize protein patterns. The current demo assumes the resolution
-of the images is the same as the images that were used to train the
-protein model
+Demo header::
 
-.. figure:: ../images/demo3D16/cell1_ch2.jpg
-   :align: center
+   % The main idea behind this demo is to show the user they
+   % can use their own binary images from raw experimental data 
+   % to synthesize protein patterns. This demo uses the CellOrganizer
+   %  method for nuclear and cell segmentation.
+   % 
+   % The current demo assumes the resolution of the images is the same as 
+   % the resolution of the images that were used to train the protein model.
+   %
+   % Input 
+   % -----
+   % * raw or synthetic images of the nuclear and cell membrane
+   % * a valid CellOrganizer model file
+   %
+   % Output
+   % ------
+   % * three TIFF files (cell shape, nuclear, and lysosomal channels)
+
+.. _demo3D17:
 
 demo3D17
 --------
@@ -776,6 +741,8 @@ Demo header::
    % ------
    % * three TIFF files (cell shape, nuclear, and lysosomal channels)
 
+.. _demo3D18:
+
 demo3D18
 --------
 Demo header::
@@ -795,6 +762,8 @@ Demo header::
    % ------
    % * a valid SLML model
 
+.. _demo3D19:
+
 demo3D19
 --------
 Demo header::
@@ -809,6 +778,8 @@ Demo header::
    % Output
    % ------
    % * a report
+
+.. _demo3D20:
 
 demo3D20
 --------
@@ -830,6 +801,8 @@ Demo header::
    % * a valid SLML model file
    % * a visualization of the shape space
 
+.. _demo3D21:
+
 demo3D21
 --------
 Demo header::
@@ -850,6 +823,8 @@ Demo header::
    % ------
    % * a valid SLML model
 
+.. _demo3D22:
+
 demo3D22
 --------
 Demo header::
@@ -864,6 +839,8 @@ Demo header::
    % Output
    % ------
    % * a synthetic image
+
+.. _demo3D23:
 
 demo3D23
 --------
@@ -884,6 +861,8 @@ Demo header::
    % ------
    % * a valid SLML model file
 
+.. _demo3D24:
+
 demo3D24
 ----------
 Demo header::
@@ -900,6 +879,8 @@ Demo header::
    % Output
    % ------
    % * valid SBML model 
+
+.. _demo3D25:
 
 demo3D25
 ----------
@@ -926,6 +907,8 @@ Demo header::
    % * three TIFF files
    % * XML file with primitives for lysosomes and parametric objects
 
+.. _demo3D26:
+
 demo3D26
 --------
 Demo header::
@@ -940,6 +923,8 @@ Demo header::
    % Output
    % ------
    % * a display of the shape space
+
+.. _demo3D27:
 
 demo3D27
 --------
@@ -956,6 +941,8 @@ Demo header::
    % Output
    % ------
    % * shape space figure
+
+.. _demo3D28:
 
 demo3D28
 --------
@@ -977,6 +964,8 @@ Demo header::
    % ------
    % * three TIFF files (cell shape, nuclear, and nucleolar channels)
 
+.. _demo3D29:
+
 demo3D29
 --------
 Demo header::
@@ -991,9 +980,10 @@ Demo header::
    % ------
    % * details about the models
 
+.. _demo3D30:
+
 demo3D30
 --------
-
 Demo header::
 
    % This demo illustrates how to sample uniformly at random from a
@@ -1006,6 +996,8 @@ Demo header::
    % Output
    % ------
    % * a random walk
+
+.. _demo3D31:
 
 demo3D31
 --------
@@ -1024,75 +1016,9 @@ Demo header::
    % ------
    % * a valid model
 
-The main idea behind this demo is to show the user they can use their own binary images from raw experimental data
-to synthesize protein patterns.
+.. _demo3D32:
 
-The current demo assumes the resolution of the images is the same as the images that were used to train the protein model.
-
-demo3D19
---------
-This demo uses slml2report to compare the parameters between
-CellOrganzier models.
-
-demo3D20
---------
-Train 3D generative diffeomorphic nuclear and cell shape model and a
-lysosomal model from all LAMP2 images in the Murphy Lab 3D HeLa dataset.
-
-demo3D22
---------
-Synthesizes a protein pattern instance from the synthetic image produced in demo3DDiffeoSynth.
-
-demo3D23
---------
-Train 3D generative diffeomorphic nuclear and cell shape model and a lysosomal model from all LAMP2 images in the Murphy Lab 3D HeLa dataset.
-
-demo3DSBML
-----------
-This demo converts a sample SBML file to an SBML-spatial instance using
-the "matchSBML" function. This function takes an SBML file, matches the
-compartments in the file with available models and synthesizes the
-appropriate instances.
-
-demo3DMultiresSynth
---------------------
-Synthesize multiple 3D images from a lysosome model at different resolutions. This demos show the user can specify the output resolution of the synthesized images.
-
-demo3DObjectAvoidance
----------------------
-Synthesizes one image using a lysosomal model with sampling mode
-set to 'disc', no convolution using the object avoidance methods
-Results will be three TIFF files, one each for cell boundary,
-nuclear boundary, and lysosomes, in folder "synthesizedImages/cell1"
-It generates OBJ files that can be imported into Blender.
-
-demo3DPrimitives
-----------------
-Synthesizes 1 image using a lysosomal model with sampling mode
-set to 'disc', no convolution and output.SBML set to true
-Results will be three TIFF files, one each for cell boundary,
-nuclear boundary, and lysosomes, in folder "synthesizedImages/cell1"
-Additionally, in the folder "synthesizedImages/" will be a
-SBML-Spatial(v0.82a) formatted .xml file containing constructed solid
-geometry(CSG) primitives for lysosomes and parametric objects for the
-cell and nuclear shapes.
-
-These files can then be read into VCell using the built in importer or
-CellBlender using the helper function provided in this distribution.
-
-demo3D26
---------
-This function displays a shape space of some dimensionality. This demo uses the model trained in Johnson 2015.
-
-demo3D27
---------
-This demo performs a regression between two sets of related shapes (i.e. predicts cell  shape from nuclear shape) and displays the residuals as in  Figure 2 of Johnson et al 2015.
-
-demo3D28
---------
-Synthesize one 3D image with nuclear, cell shape, and nucleolar channels from nucleolar model with sampling method set to render nucleoli as ellipsoids without convolution. The model was trained from the Murphy Lab 3D HeLa dataset.
-
-demo3D29
+demo3D32
 --------
 Demo header::
 
@@ -1109,6 +1035,8 @@ Demo header::
    % ------
    % * three TIFF files
 
+.. _demo3D33:
+
 demo3D33
 --------
 Demo header::
@@ -1122,6 +1050,8 @@ Demo header::
    % Output
    % -------
    % * multiple instances of the same cell at different resolutions
+
+.. _demo3D34:
 
 demo3D34
 --------
@@ -1140,6 +1070,8 @@ Demo header::
    % * OME.TIFF
    % * SBML instance
    % * single channel TIF files
+
+.. _demo3D35:
 
 demo3D35
 --------
@@ -1161,6 +1093,8 @@ Demo output:
    :target: ../_images/demo3D35/report.png
    :align: center
 
+.. _demo3D36:
+
 demo3D36
 --------
 Demo header::
@@ -1174,6 +1108,8 @@ Demo header::
    % Output
    % ------
    % * multiple 3D images at different resolutions
+
+.. _demo3D37:
 
 demo3D37
 --------
@@ -1194,6 +1130,8 @@ Demo header::
    % -------
    % * a valid SLML model file
 
+.. _demo3D38:
+
 demo3D38
 --------
 Demo header::
@@ -1211,6 +1149,8 @@ Demo header::
    % ------
    % * three TIFF files (nuclear, cell shape, and nucleolar channels)
 
+.. _demo3D39:
+
 demo3D39
 --------
 Demo header::
@@ -1225,6 +1165,8 @@ Demo header::
    % Output
    % ------
    % * a random walk
+
+.. _demo3D40:
 
 demo3D40
 --------
@@ -1244,25 +1186,29 @@ Demo header::
    % ------
    % * a valid SLML model file
 
+.. _demo3D41:
+
 demo3D41
 --------
 Demo header::
 
-% Train 3D generative model of the nucleus, cell shape, and lysosome from
-% all LAMP2 images in the Murphy Lab 3D HeLa dataset that are either in the
-% current directory or in the demo3D11 directory.
-%
-% Input
-% -----
-% * a directory of raw or synthetic nucleus images
-% * a directory of raw or synthetic cell shape images
-% * a directory of raw or synthetic lysosome images
-% * the resolution of the images (all images should have the same
-%   resolution)
-%
-% Output
-% ------
-% * a valid SLML model file
+   % Train 3D generative model of the nucleus, cell shape, and lysosome from
+   % all LAMP2 images in the Murphy Lab 3D HeLa dataset that are either in the
+   % current directory or in the demo3D11 directory.
+   %
+   % Input
+   % -----
+   % * a directory of raw or synthetic nucleus images
+   % * a directory of raw or synthetic cell shape images
+   % * a directory of raw or synthetic lysosome images
+   % * the resolution of the images (all images should have the same
+   %   resolution)
+   %
+   % Output
+   % ------
+   % * a valid SLML model file
+
+.. _demo3D42:
 
 demo3D42
 --------
@@ -1294,6 +1240,8 @@ Demo header::
    % cell shape (in demos/LAT_reltime_1.mat)
    % * various intermediate results files (in /param and /tmp)
 
+.. _demo3D43:
+
 demo3D43
 --------
 Demo header::
@@ -1313,6 +1261,8 @@ Demo header::
    % ------
    % * one or more set(s) of synthesized images with cell shape and protein
    % pattern. 
+
+.. _demo3D44:
 
 demo3D44
 --------
@@ -1335,6 +1285,8 @@ Demo output:
    :target: ../_images/demo3D44/image.png
    :align: center
 
+.. _demo3D45:
+
 demo3D45
 --------
 Demo header::
@@ -1352,6 +1304,8 @@ Demo header::
    % Output
    % ------
    % * a valid model
+
+.. _demo3D46:
 
 demo3D46
 --------
@@ -1379,3 +1333,18 @@ Demo output:
    :target: ../_images/demo3D46/image.png
    :align: center
 
+.. _demo3D47:
+
+demo3D47
+--------
+Demo header::
+
+   % Combine two generative model files into a single file.
+   %
+   % Input 
+   % -----
+   % * a list of valid CellOrganizer model files
+   %
+   % Output
+   % ------
+   % * a valid model
