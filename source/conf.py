@@ -21,7 +21,7 @@ parentDir = os.path.dirname(fileDir)                   # Directory of the Module
 print(parentDir)
 
 newPath = os.path.join(parentDir, 'src/sphinxcontrib-pyexec/pyexec')   # Get the directory for StringFunctions
-sys.path.append(newPath) 
+sys.path.append(newPath)
 
 from pyexec import *
 
@@ -72,9 +72,9 @@ copyright = u'2007-2018, Murphy Lab at Carnegie Mellon University'
 # built documents.
 #
 # The short X.Y version.
-version = '2.7'
+version = '2.8'
 # The full version, including alpha/beta/rc tags.
-release = '2.7.2'
+release = '2.8.0'
 
 #def setup(app):
 #  app.add_directive('exec', ExecDirective)
@@ -134,10 +134,10 @@ html_theme = 'bizstyle'
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
-html_title = 'CellOrganizer v2.7.2 documentation'
+html_title = 'CellOrganizer v2.8.0 documentation'
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
-html_short_title = 'CellOrganizer v2.7.2'
+html_short_title = 'CellOrganizer v2.8.0'
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.

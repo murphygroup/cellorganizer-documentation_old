@@ -21,7 +21,7 @@ To start using CellOrganizer for Galaxy you can either
 Accessing the CellOrganizer for Galaxy public server
 ----------------------------------------------------
 
-The CellOrganizer for Galaxy public server can be accessed at `galaxy.compbio.cs.cmu.edu <http://galaxy3.compbio.cs.cmu.edu:9000/root/login?redirect=%2F/>`_. This webserver is provided to provide access to CellOrganizer tools for users who do not have the resources to run the Matlab or Docker versions.  It is provided at no charge for non-profit organizations.
+The CellOrganizer for Galaxy public server can be accessed at `galaxy.compbio.cs.cmu.edu <http://galaxy3.compbio.cs.cmu.edu:9000/root/login?redirect=%2F/>`_. This webserver is provided to grant access to CellOrganizer tools for users who do not have the resources to run the Matlab or Docker versions.  It is provided at no charge for non-profit organizations.
 
 .. figure:: ../images/login.png
 
