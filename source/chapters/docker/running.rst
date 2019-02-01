@@ -16,14 +16,13 @@ An example of a demo that trains a generative model from a series of `.tif` imag
 
 This demo will save a folder `param` containing .mat files as well as a `.mat` file `lamp2.mat` to the same directory (`/home/cellorganizer/demos/2D/demo2D01`). These `.mat` files contain information characterizing the trained generative model.
 
+Run a demo that invokes slml2img
+--------------------------------
+An example of a demo that produces simulated images from a trained generative model is `demo2D02`. To run this demo, click through to the demo 2D02 directory and open the notebook.
+
+This demo will save a folder `img` containing these simulated images to the same directory.
+
+
 Export generated data out of the container
 ------------------------------------------
-To export generated data out of the container, the following information is needed
-
-	* the container ID
-	* the source filepath (i.e. the filepath, within the container filesystem, of the data to be exported)
-	* the destination filepath (i.e. the filepath, within our local filesystem, to which we want to export the data)
-
-The command used to do this is
-
-	docker cp <container_id>:<source_filepath> <destination_filepath>
+To export generated data out of the container, 
