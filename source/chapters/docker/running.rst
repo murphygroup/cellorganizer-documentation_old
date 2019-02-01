@@ -18,11 +18,13 @@ This demo will save a folder `param` containing .mat files as well as a `.mat` f
 
 Run a demo that invokes slml2img
 --------------------------------
-An example of a demo that produces simulated images from a trained generative model is `demo2D02`. To run this demo, click through to the demo 2D02 directory and open the notebook.
+An example of a demo that produces simulated images from a trained generative model is `demo2D02`. 
 
 This demo will save a folder `img` containing these simulated images to the same directory.
 
-
 Export generated data out of the container
 ------------------------------------------
-To export generated data out of the container, 
+To export generated data out of the container, click the files in the directory that will be exported and click download. 
+
+.. figure:: Download.png
+    :width: 200px
