@@ -1,13 +1,18 @@
 Running CellOrganizer for Docker through Jupyter-Notebook
 ********************************
-After the docker image has been created through Kitematic, click the top right hand button to open the Jupyter server. 
+After the docker image has been created through Kitematic, click the top right button to open the Jupyter server. 
 
 This will open a webpage on your browser that is hosted by your local machine. The environment will intially contain Ipython notebooks with preinstalled demos that will run the CellOrganizer binaries.   
 
+.. image:: home_page.png
+    :width: 50px
 
 Run a demo that invokes img2slml
 --------------------------------
 An example of a demo that trains a generative model from a series of `.tif` image files is `demo2D01`. To run a demo, simply click the run button at the top of the notebook.
+
+.. figure:: Run_Button.png
+    :width: 200px
 
 Access cellorganizer-docker container through Terminal
 ********************************
