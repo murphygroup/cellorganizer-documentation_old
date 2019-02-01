@@ -2,22 +2,18 @@ Running CellOrganizer for Docker through Jupyter-Notebook
 ********************************
 After the docker image has been created through Kitematic, click the top right hand button to open the Jupyter server. 
 
-This will open Ipython notebooks with preinstalled demos that will run the CellOrganizer binaries. To run a demo, simply click the run button at the top of the notebook.  
+This will open Ipython notebooks with preinstalled demos that will run the CellOrganizer binaries.   
 
 
 Run a demo that invokes img2slml
 --------------------------------
-
+An example of a demo that trains a generative model from a series of `.tif` image files is `demo2D01`. To run a demo, simply click the run button at the top of the notebook.
 
 Access cellorganizer-docker container through Terminal
 ********************************
-Make sure Docker is running on your computer. Open Terminal and enter the command::
+To open a command line instance of the docker container, click the bottom right button on the Kitematic page. 
 
-	docker run -it murphylab/docker-cellorganizer:latest
-
-The `docker run` command creates a container instance from our cellorganizer-docker image (`murphylab/docker-cellorganizer:latest`).
-
-The `-it` option enables us to interactively access the container. The Terminal window now reflects the view within the cellorganizer directory inside our container instance. We have access to all files and directories in the container through `Terminal`.
+The Terminal window now reflects the view within the cellorganizer directory inside our container instance. We have access to all files and directories in the container through `Terminal`.
 
 For example, to interact with the container and find all generative models
 
