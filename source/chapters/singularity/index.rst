@@ -140,4 +140,4 @@ Run custom script that invokes img2slml
 ---------------------------------------
 An example running custom function parameters for img2slml stored within a .txt file. Within this directory (i.e. `/path/to/input.txt`), you can run the command::
 
-	singularity run -a img2slml cellorganizer.simg ~/singularity-cellorganizer/cellorganizer.simg input.txt
+	singularity run -a img2slml ~/singularity-cellorganizer/cellorganizer.simg img2slml input.txt
