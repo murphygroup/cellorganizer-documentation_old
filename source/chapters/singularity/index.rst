@@ -47,11 +47,6 @@ Open terminal and enter the commands::
 	cd singularity-cellorganizer
 	bash ./script.sh .
 
-Building the image from the formula should produce output similar to
-
-.. raw:: html
-
-	<script id="asciicast-224044" src="https://asciinema.org/a/224044.js" async></script>
 
 **Download the most recent image using Singularity command line**
 
