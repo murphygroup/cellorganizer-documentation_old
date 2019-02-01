@@ -10,13 +10,18 @@ CellOrganizer for Docker is an image with compiled binaries from CellOrganizer f
 - **slml2slml**, the top-level function to combine models into a single model file.
 
 
-Installing CellOrganizer for Docker 
+Installing Docker with Jupyter 
 ***********************************
 
 About Docker
 ------------
 
 Docker performs operating-system-level virtualization. To learn about Docker and how to use it, click `here <https://docs.docker.com/get-started/#recap-and-cheat-sheet>`_
+
+About Jupyter
+------------
+Jupyter allows for a Python interface wrapped around the CellOrganizer Docker container. Scripts are run via a web browser with the container hosted on your local computer.
+To learn more about Jupyter, click `here <https://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/what_is_jupyter.html>`_
 
 Setup
 ^^^^^
