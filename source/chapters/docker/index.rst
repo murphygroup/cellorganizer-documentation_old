@@ -20,7 +20,7 @@ Docker performs operating-system-level virtualization. To learn about Docker and
 
 About Jupyter
 ------------
-Jupyter allows for a Python interface wrapped around the CellOrganizer Docker container. Scripts are run via a web browser with the container hosted on your local computer.
+Jupyter allows for a Python interface wrapped around the CellOrganizer Docker container.
 To learn more about Jupyter, click `here <https://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/what_is_jupyter.html>`_
 
 Setup
