@@ -47,45 +47,9 @@ Before downloading the image and spinning a container, you need to install Docke
 * To install Docker-for-Mac, click `here <https://docs.docker.com/docker-for-mac/install/>`_.
 * To install Docker-for-Windows, click `here <https://docs.docker.com/docker-for-windows/install/>`_.
 
-**Download the repository and build the image from Dockerfile using Docker**
 
-Open terminal and enter the commands
-
-	``git clone git@github.com:icaoberg/docker-cellorganizer.git
-	cd docker-cellorganizer
-	docker build -t murphylab/cellorganizer .``
-
-
-Running the commands above will build the image locally and will not pull the existing image from the repository. For example, in Ubuntu
-
-.. raw:: html
-
-	<script src="https://asciinema.org/a/193939.js" id="asciicast-193939" async></script>
-
-**Download the most recent image using Docker command line**
-
-Open terminal and enter the command
-
-	``docker pull murphylab/docker-cellorganizer:latest``
-
-Running this command will initiate the download and pull the most recent image of cellorganizer-docker from Docker Hub down to your computer.
-
-.. raw:: html 
-
-	<script src="https://asciinema.org/a/194136.js" id="asciicast-194136" async></script>
-
-Once the download is complete, you can confirm the image was downloaded by entering the command:
-
-	``docker images``
-
-You should see a record of a docker image identified by its repository **murphylabs/cellorganizer** and the tag **latest**.
-
-.. raw:: html
-
-	<script src="https://asciinema.org/a/194138.js" id="asciicast-194138" async></script>
-
-Installing Kitematic
---------------------
+Installing Kitematic and Downloading the CellOrganizer Image
+------------------------------------------------------------
 
 The easiest way to download an image and run a container is to use `Kitematic <https://kitematic.com/>`_. Kitematic is a tool for downloading images and running containers.
 
