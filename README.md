@@ -18,4 +18,7 @@ Remember the commands
 ```
 python3 make_tabulate_from_excel.py model_class_and_types.xlsx v2.7.1 | pbcopy
 python3 make_tabulate_from_excel.py paper_demo.xlsx "v2.5"  | pbcopy
-```
+`
+
+
+Please see [LICENSE](/LICENSE)
