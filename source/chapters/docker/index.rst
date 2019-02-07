@@ -80,7 +80,7 @@ Then click *CREATE* to download the image and start a container
 Demos
 -----
 
-There are several demos included within the CellOrganizer software bundle. These demos are intended to illustrate CellOrganizer's functionality, and should be used to familiarize the user with the input/output format of various top-level functions such as **img2slml** and **slml2img**. Certains demos have been deprecated and will be removed in future versions of CellOrganizer.
+There are several demos included within the CellOrganizer software bundle. These demos are intended to illustrate CellOrganizer's functionality, and should be used to familiarize the user with the input/output format of various top-level functions such as **img2slml** and **slml2img**. Certain demos have been deprecated and will be removed in future versions of CellOrganizer.
 
 +----------+------------+-------------+------------+
 | Demo     | Training   | Synthesis   | Deprecated |
