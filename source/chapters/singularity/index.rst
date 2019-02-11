@@ -48,11 +48,11 @@ Open terminal and enter the commands::
 	bash ./script.sh .
 
 
-**Download the most recent image using Singularity command line**
+**Download the most recent image using Singularity command line (Recommended)**
 
 Open terminal and enter the command::
 
-	singularity pull shub://icaoberg/singularity-cellorganizer
+	singularity pull shub://murphylab/singularity-cellorganizer
 
 Pulling the image from Singularity Hub should produce output similar to
 
