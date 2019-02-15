@@ -117,6 +117,8 @@ We have provided links to sample histories constructed from CellOrganizer demos.
 +-----------+---------+------------+-------------+
 | demo2D01_ | 2D      | True       |             |
 +-----------+---------+------------+-------------+
+| demo2D02_ | 2D      |            | True        |
++-----------+---------+------------+-------------+
 | demo2D04_ | 2D      | True       |             |
 +-----------+---------+------------+-------------+
 | demo2D05_ | 2D      | True       |             |
@@ -124,6 +126,10 @@ We have provided links to sample histories constructed from CellOrganizer demos.
 | demo2D06_ | 2D      |            | True        |
 +-----------+---------+------------+-------------+
 | demo2D07_ | 2D      |            | True        |
++-----------+---------+------------+-------------+
+| demo2D08_ | 2D      | True       |             |
++-----------+---------+------------+-------------+
+| demo2D09_ | 2D      | True       |             |
 +-----------+---------+------------+-------------+
 | demo3D00_ | 3D      |            | True        |
 +-----------+---------+------------+-------------+
@@ -133,23 +139,50 @@ We have provided links to sample histories constructed from CellOrganizer demos.
 +-----------+---------+------------+-------------+
 | demo3D05_ | 3D      |            | True        |
 +-----------+---------+------------+-------------+
+| demo3D06_ | 3D      |            | True        |
++-----------+---------+------------+-------------+
+| demo3D07_ | 3D      |            | True        |
++-----------+---------+------------+-------------+
+| demo3D08_ | 3D      |            | True        |
++-----------+---------+------------+-------------+
+| demo3D09_ | 3D      |            | True        |
++-----------+---------+------------+-------------+
+| demo3D10_ | 3D      |            | True        |
++-----------+---------+------------+-------------+
 | demo3D11_ | 3D      | True       |             |
 +-----------+---------+------------+-------------+
 | demo3D12_ | 3D      | True       |             |
 +-----------+---------+------------+-------------+
+| demo3D47_ | 3D      |            | True        |
++-----------+---------+------------+-------------+
+| demo3D50_ | 3D      | True       |             |
++-----------+---------+------------+-------------+
+| demo3D52_ | 3D      | True       |             |
++-----------+---------+------------+-------------+
 
 .. _demo2D00: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo2d00
 .. _demo2D01: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo2d01
+.. _demo2D02: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo2d02
 .. _demo2D04: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo2d04
 .. _demo2D05: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo2d05
 .. _demo2D06: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo2d06
 .. _demo2D07: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo2d07
+.. _demo2D08: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo2d08
+.. _demo2D09: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo2d09
 .. _demo3D00: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo3d00
 .. _demo3D01: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo3d01
 .. _demo3D04: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo3d04
 .. _demo3D05: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo3d05
+.. _demo3D06: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo3d06
+.. _demo3D07: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo3d07
+.. _demo3D08: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo3d08
+.. _demo3D09: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo3d09
+.. _demo3D10: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo3d10
 .. _demo3D11: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo3d11
 .. _demo3D12: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo3d12
+.. _demo3D47: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo3d47
+.. _demo3D50: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo3d50
+.. _demo3D52: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo3d52
 
 Detailed information about **Histories** is beyond the scope of this document. To learn more about them, click `here <https://galaxyproject.org/tutorials/histories/>`_.
 
