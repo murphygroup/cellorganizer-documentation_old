@@ -52,7 +52,7 @@ Open terminal and enter the commands::
 
 Open terminal and enter the command::
 
-	singularity pull shub://murphylab/singularity-cellorganizer
+	singularity pull shub://murphygroup/singularity-cellorganizer
 
 Pulling the image from Singularity Hub should produce output similar to
 
