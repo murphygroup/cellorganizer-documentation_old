@@ -113,7 +113,7 @@ An example of a demo that trains a generative model from a series of `.tif` imag
 
 You should find the shell script **demo2D01.sh**. To run the demo enter the command::
 
-	singularity run -a img2slml ../../../cellorganizer.simg demo2D01.sh
+	singularity run -a img2slml ../../../murphygroup-singularity-cellorganizer-master-latest.simg demo2D01.sh
 
 The '-a' flag allows us to specify the function binary that we will use in the script. This demo will save a folder `param` containing .mat files as well as a `.mat` file `lamp2.mat` to the same directory (`~/singularity-cellorganizer/demos/2D/demo2D01`). These `.mat` files contain information characterizing the trained generative model.
 
