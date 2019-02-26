@@ -62,8 +62,7 @@ Pulling the image from Singularity Hub should produce output similar to
 
 Once the download is complete, you can confirm the image was downloaded by listing the singularity images of the repository::
 
-ls -lt *.simg
--rwxr-xr-x 1 icaoberg icaoberg 1693433887 Jan 28 16:59 icaoberg-singularity-cellorganizer-master-latest.simg
+ls murphygroup-singularity-cellorganizer-master-latest.simg 
 
 Demos
 -----
