@@ -127,7 +127,7 @@ An example of a demo that produces simulated images from a trained generative mo
 
 You should find the shell script `demo2D02.sh`. To run the demo, enter the command::
 
-	singularity run -a slml2img ../../../cellorganizer.simg demo2D02.sh
+	singularity run -a slml2img ../../../murphygroup-singularity-cellorganizer-master-latest.simg demo2D02.sh
 
 This demo will save a folder `img` containing these simulated images to the same directory.
 
