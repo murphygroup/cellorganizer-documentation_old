@@ -94,7 +94,8 @@ List all applications in the cellorganizer-singularity image
 ---------------------------------------------------
 To list the CellOrganizer functions included in the image, open Terminal and enter the command::
 
-	singularity apps cellorganizer.simg
+	singularity apps  singularity-cellorganizer/murphygroup-singularity-cellorganizer-master-latest.simg
+
 
 This will display these functions
 
