@@ -21,6 +21,4 @@ python3 make_tabulate_from_excel.py paper_demo.xlsx "v2.5"  | pbcopy
 `
 
 
-This project is covered by the MIT License 
-
-
+This project is covered by MIT License 
