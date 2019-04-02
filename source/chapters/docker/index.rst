@@ -44,7 +44,7 @@ The image also comes with
 About Docker
 ------------
 
-Docker performs operating-system-level virtualization. Docker let us create and deploy a preconfigured image with the CellOrganizer binaries. An image that can be used to spin containers that are ready to use and start testing.
+Docker performs operating-system-level virtualization. Docker lets us create and deploy a preconfigured image with the CellOrganizer binaries. This image can be used to spin containers that are ready to use and start testing.
 
 To learn about Docker and how to use it, click `here <https://docs.docker.com/get-started/>`_
 
