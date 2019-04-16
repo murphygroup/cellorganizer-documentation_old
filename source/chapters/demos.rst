@@ -25,125 +25,92 @@ Demos Summary Table
 *******************
 This table will let you know if the demo is meant to train a model or synthesize an image. Certains demos have been deprecated and will be removed in future versions of CellOrganizer.
 
-+------------------------+---------+------------+------------+------------+
-| Name                   | 2D/3D   | Training   | Synthesis  | Deprecated |
-+========================+=========+============+============+============+
-| demo2D00_              | 2D      |            | True       |            |
-+------------------------+---------+------------+------------+------------+
-| demo2D01_              | 2D      | True       |            |            |
-+------------------------+---------+------------+------------+------------+
-| demo2D02_              | 2D      |            | True       |            |
-+------------------------+---------+------------+------------+------------+
-| demo2D03_              | 2D      | True       |            | X          |
-+------------------------+---------+------------+------------+------------+
-| demo2D04_              | 2D      | True       |            |            |
-+------------------------+---------+------------+------------+------------+
-| demo2D05_              | 2D      | True       |            |            |
-+------------------------+---------+------------+------------+------------+
-| demo2D06_              | 2D      |            | True       |            |
-+------------------------+---------+------------+------------+------------+
-| demo2D07_              | 2D      |            | True       |            |
-+------------------------+---------+------------+------------+------------+
-| demo2D08_              | 2D      | True       |            |            |
-+------------------------+---------+------------+------------+------------+
-| demo2D09_              | 2D      | True       |            |            |
-+------------------------+---------+------------+------------+------------+
-| demo3D00_              | 3D      |            | True       |            |
-+------------------------+---------+------------+------------+------------+
-| demo3D01_              | 3D      |            | True       |            |
-+------------------------+---------+------------+------------+------------+
-| demo3D02_              | 3D      |            |            |            |
-+------------------------+---------+------------+------------+------------+
-| demo3D03_              | 3D      |            | True       | X          |
-+------------------------+---------+------------+------------+------------+
-| demo3D04_              | 3D      |            | True       |            |
-+------------------------+---------+------------+------------+------------+
-| demo3D05_              | 3D      |            | True       |            |
-+------------------------+---------+------------+------------+------------+
-| demo3D06_              | 3D      |            | True       | X          |
-+------------------------+---------+------------+------------+------------+
-| demo3D07_              | 3D      |            | True       |            |
-+------------------------+---------+------------+------------+------------+
-| demo3D08_              | 3D      |            | True       |            |
-+------------------------+---------+------------+------------+------------+
-| demo3D09_              | 3D      |            | True       |            |
-+------------------------+---------+------------+------------+------------+
-| demo3D10_              | 3D      |            | True       |            |
-+------------------------+---------+------------+------------+------------+
-| demo3D11_              | 3D      | True       |            |            |
-+------------------------+---------+------------+------------+------------+
-| demo3D12_              | 3D      | True       |            |            |
-+------------------------+---------+------------+------------+------------+
-| demo3D13_              | 3D      |            |            |            |
-+------------------------+---------+------------+------------+------------+
-| demo3D14_              | 3D      |            |            |            |
-+------------------------+---------+------------+------------+------------+
-| demo3D15_              | 3D      |            | True       |            |
-+------------------------+---------+------------+------------+------------+
-| demo3D16_              | 3D      |            |            |            |
-+------------------------+---------+------------+------------+------------+
-| demo3D17_              | 3D      |            | True       |            |
-+------------------------+---------+------------+------------+------------+
-| demo3D18_              | 3D      | True       |            | X          |
-+------------------------+---------+------------+------------+------------+
-| demo3D19_              | 3D      |            |            |            |
-+------------------------+---------+------------+------------+------------+
-| demo3D20_              | 3D      | True       |            |            |
-+------------------------+---------+------------+------------+------------+
-| demo3D21_              | 3D      | True       |            | X          |
-+------------------------+---------+------------+------------+------------+
-| demo3D22_              | 3D      |            | True       |            |
-+------------------------+---------+------------+------------+------------+
-| demo3D23_              | 3D      |            | True       | X          |
-+------------------------+---------+------------+------------+------------+
-| demo3D24_              | 3D      |            | True       | X          |
-+------------------------+---------+------------+------------+------------+
-| demo3D25_              | 3D      |            | True       |            |
-+------------------------+---------+------------+------------+------------+
-| demo3D26_              | 3D      |            | True       |            |
-+------------------------+---------+------------+------------+------------+
-| demo3D27_              | 3D      |            |            | X          |
-+------------------------+---------+------------+------------+------------+
-| demo3D28_              | 3D      |            |            |            |
-+------------------------+---------+------------+------------+------------+
-| demo3D29_              | 3D      | True       |            |            |
-+------------------------+---------+------------+------------+------------+
-| demo3D30_              | 3D      |            | True       | X          |
-+------------------------+---------+------------+------------+------------+
-| demo3D31_              | 3D      |            | True       |            |
-+------------------------+---------+------------+------------+------------+
-| demo3D32_              | 3D      |            | True       |            |
-+------------------------+---------+------------+------------+------------+
-| demo3D33_              | 3D      |            | True       |            |
-+------------------------+---------+------------+------------+------------+
-| demo3D34_              | 3D      |            | True       |            |
-+------------------------+---------+------------+------------+------------+
-| demo3D35_              | 3D      |            |            |            |
-+------------------------+---------+------------+------------+------------+
-| demo3D36_              | 3D      |            | True       |            |
-+------------------------+---------+------------+------------+------------+
-| demo3D37_              | 3D      |            | True       |            |
-+------------------------+---------+------------+------------+------------+
-| demo3D38_              | 3D      |            | True       |            |
-+------------------------+---------+------------+------------+------------+
-| demo3D39_              | 3D      |            | True       |            |
-+------------------------+---------+------------+------------+------------+
-| demo3D40_              | 3D      | True       |            |            |
-+------------------------+---------+------------+------------+------------+
-| demo3D41_              | 3D      |            | True       |            |
-+------------------------+---------+------------+------------+------------+
-| demo3D42_              | 3D      | True       |            |            |
-+------------------------+---------+------------+------------+------------+
-| demo3D43_              | 3D      |            | True       |            |
-+------------------------+---------+------------+------------+------------+
-| demo3D44_              | 3D      |            | True       |            |
-+------------------------+---------+------------+------------+------------+
-| demo3D45_              | 3D      | True       |            |            |
-+------------------------+---------+------------+------------+------------+
-| demo3D46_              | 3D      |            | True       |            |
-+------------------------+---------+------------+------------+------------+
-| demo3D47_              | 3D      |            |            |            |
-+------------------------+---------+------------+------------+------------+
++----------+------------+-------------+-----------+-------------+
+|Demo      | Training   | Synthesis   | Other     | Deprecated  |
++==========+============+=============+===========+=============+
+|demo2D00_ |            | True        |           |             | 
++----------+------------+-------------+-----------+-------------+
+|demo2D01_ | True       |             |           |             |
++----------+------------+-------------+-----------+-------------+
+|demo2D02_ |            | True        |           |             |
++----------+------------+-------------+-----------+-------------+
+|demo2D03_ | True       |             |           |     X       |
++----------+------------+-------------+-----------+-------------+
+|demo2D04_ | True       |             |           |             |
++----------+------------+-------------+-----------+-------------+
+|demo2D05_ | True       |             |           |             |
++----------+------------+-------------+-----------+-------------+
+|demo2D06_ |            |  True       |           |             |
++----------+------------+-------------+-----------+-------------+
+|demo2D07_ |            |  True       |           |             |
++----------+------------+-------------+-----------+-------------+
+|demo2D08_ |  True      |             |           |             | 
++----------+------------+-------------+-----------+-------------+
+|demo2D09_ |  True      |             |           |             |
++----------+------------+-------------+-----------+-------------+
+|demo3D00_ |            | True        |           |             |
++----------+------------+-------------+-----------+-------------+
+|demo3D01_ |            | True        |           |             |
++----------+------------+-------------+-----------+-------------+
+|demo3D04_ |            | True        |           |             |
++----------+------------+-------------+-----------+-------------+
+|demo3D05_ |            | True        |           |             |
++----------+------------+-------------+-----------+-------------+
+|demo3D06_ |            | True        |           |    X        |
++----------+------------+-------------+-----------+-------------+
+|demo3D07_ |            | True        |           |             |
++----------+------------+-------------+-----------+-------------+
+|demo3D08_ |            | True        |           |             |
++----------+------------+-------------+-----------+-------------+
+|demo3D09_ |            | True        |           |             |
++----------+------------+-------------+-----------+-------------+
+|demo3D10_ |            | True        |           |             |
++----------+------------+-------------+-----------+-------------+
+|demo3D11_ | True       |             |           |             |
++----------+------------+-------------+-----------+-------------+
+|demo3D12_ | True       |             |           |             |
++----------+------------+-------------+-----------+-------------+
+|demo3D15_ |            | True        |           |             |
++----------+------------+-------------+-----------+-------------+
+|demo3D17_ |            | True        |           |             |
++----------+------------+-------------+-----------+-------------+
+|demo3D19_ | (True)     |             |   Report  |             | 
++----------+------------+-------------+-----------+-------------+
+|demo3D20_ | (True)     |             |   Plot    |             | 
++----------+------------+-------------+-----------+-------------+
+|demo3D25_ |            | True        |           |             |
++----------+------------+-------------+-----------+-------------+
+|demo3D29_ | (True)     |             |   Info    |             | 
++----------+------------+-------------+-----------+-------------+
+|demo3D34_ |            | True        |           |             |   
++----------+------------+-------------+-----------+-------------+
+|demo3D35_ | (True)     |             |  Info     |             | 
++----------+------------+-------------+-----------+-------------+
+|demo3D42_ | True       |             |           |             |
++----------+------------+-------------+-----------+-------------+
+|demo3D44_ |            | True        |           |             |
++----------+------------+-------------+-----------+-------------+
+|demo3D47_ |            |             |  Model    |             |    
++----------+------------+-------------+-----------+-------------+
+|demo3D48_ | True       |             |           |             |
++----------+------------+-------------+-----------+-------------+
+|demo3D49_ | True       |             |           |             |
++----------+------------+-------------+-----------+-------------+
+|demo3D50_ | True       |             |           |             |
++----------+------------+-------------+-----------+-------------+
+|demo3D51_ | (True)     |             |  Plot     |             | 
++----------+------------+-------------+-----------+-------------+
+|demo3D52_ | True       |             |           |             |
++----------+------------+-------------+-----------+-------------+
+|demo3D53_ |            | True        |           |             |
++----------+------------+-------------+-----------+-------------+
+|demo3D55_ |            | (True)      |  Plot     |             |    
++----------+------------+-------------+-----------+-------------+ 
+|demo3D56_ |            | (True)      |  Model    |             |    
++----------+------------+-------------+-----------+-------------+ 
+|demo3D57_ |            | (True)      |  Plot     |             |    
++----------+------------+-------------+-----------+-------------+ 
+
 
 Brief Descriptions
 ******************
@@ -1375,3 +1342,251 @@ Demo header::
    % Output
    % ------
    % * a valid model
+
+
+.. _demo3D48:
+
+demo3D48
+--------
+Demo header::
+
+% This demo illustrates using CellOrganizer to train an updated version of
+% protein distribution model following the approach described in
+%
+% K. T. Roybal, T. E. Buck, X. Ruan, B. H. Cho, D. J. Clark, R. Ambler,
+% H. M. Tunbridge, J. Zhang, P. Verkade, C. Wülfing, and R. F. Murphy (2016)
+% Computational spatiotemporal analysis identifies WAVE2 and Cofilin as 
+% joint regulators of costimulation-mediated T cell actin dynamics.  
+% Science Signaling 9:rs3. doi: 10.1126/scisignal.aad4149.
+%
+% The updates include: 
+%    1. one point synapse annotation is allowed as valid input; 
+%    2. a method is implemented for synapse detection with only providing 
+%       the first time point.
+%    3. the method for aligmentment adjustment is implemented. 
+% 
+% The slowest step, which typically takes about 1 min per cell per frame,
+% is to align each cell at each time to the standardized template.
+% This demo uses 46 cells so it will take about 1 hour on a single core.
+%
+% Input 
+% -----
+% * image and annotation files for one or more proteins for the first 
+% time point (the default is to use images from the paper of LAT at time 0 
+% - downloading the needed images requires about 4 GB of free disk space)
+%
+% Output
+% ------
+% * a model for the average concentration in each voxel of a standardized
+% cell shape (in demos/LAT_reltime_1.mat)
+% * various intermediate results files (in /param and /tmp)
+
+
+
+.. _demo3D49:
+
+demo3D49
+--------
+Demo header::
+
+% This demo illustrates using CellOrganizer to train a protein distribution
+% model following the approach described in
+%
+% K. T. Roybal, T. E. Buck, X. Ruan, B. H. Cho, D. J. Clark, R. Ambler,
+% H. M. Tunbridge, J. Zhang, P. Verkade, C. Wuelfing, and R. F. Murphy (2016)
+% Computational spatiotemporal analysis identifies WAVE2 and Cofilin as
+% joint regulators of costimulation-mediated T cell actin dynamics.
+% Science Signaling 9:rs3. doi: 10.1126/scisignal.aad4149.
+%
+% The slowest step, which typically takes about 1 min per cell per frame,
+% is to align each cell at each time to the standardized template.
+% This demo uses 46 cells so it will take about 1 hour on a single core.
+%
+% Input
+% -----
+% * OMETIFF images with image and annotation files for one or more proteins for one or more
+% time points (the default is to use images from the paper of LAT at time 0
+% - downloading the needed images requires about 4 GB of free disk space)
+%
+% Output
+% ------
+% * a model for the average concentration in each voxel of a standardized
+% cell shape (in demos/LAT_reltime_1.mat)
+% * various intermediate results files (in /param and /tmp)
+
+
+
+
+.. _demo3D50:
+
+demo3D50
+--------
+Demo header::
+
+
+% Train 3D generative SPHARM-RPDM cell shape model using the Murphy Lab 3D HeLa dataset.
+%
+% Input
+% -----
+% * a directory of raw or synthetic nucleus images
+% * a directory of raw or synthetic cell shape images
+% * the resolution of the images (all images should have the same
+%   resolution)
+%
+% Output
+% ------
+% * a valid SLML model file
+
+
+
+
+.. _demo3D51:
+
+demo3D51
+--------
+Demo header::
+
+% Show shape evolution plot with a trained SPHARM-RPDM model with only cell shape
+%
+% Input
+% -----
+% * a directory of raw or synthetic nucleus images
+% * a directory of raw or synthetic cell shape images
+% * the resolution of the images (all images should have the same
+%   resolution)
+%
+% Output
+% ------
+% * a valid SLML model file
+% * a shape space plot
+
+
+
+
+.. _demo3D52:
+
+demo3D52
+--------
+Demo header::
+
+% Train 3D generative SPHARM-RPDM nuclear and cell shape model using the 
+% Murphy Lab 3D HeLa dataset.
+%
+% Input
+% -----
+% * a directory of raw or synthetic nucleus images
+% * a directory of raw or synthetic cell shape images
+% * the resolution of the images (all images should have the same
+%   resolution)
+%
+% Output
+% ------
+% * a valid SLML model file
+
+
+
+
+
+.. _demo3D53:
+
+demo3D53
+--------
+Demo header::
+
+% Reconstruct one 3D image with nuclear, cell shape for SPHARM-RPDM model
+%
+% Input 
+% -----
+% * a valid CellOrganizer model file
+%
+% Output
+% ------
+% * one TIFF file with three slices (nuclear, cell shape, and lysosomal
+%   channels)
+
+
+
+.. _demo3D55:
+
+demo3D55
+--------
+Demo header::
+
+% Show shape space plot with a trained SPHARM-RPDM model
+%
+% Input
+% -----
+% * a directory of raw or synthetic nucleus images
+% * a directory of raw or synthetic cell shape images
+% * the resolution of the images (all images should have the same
+%   resolution)
+%
+% Output
+% ------
+% * a valid SLML model file
+% * a shape space plot
+
+
+
+.. _demo3D56:
+
+demo3D56
+--------
+Demo header::
+
+% This demo illustrates using CellOrganizer to train an updated version of
+% protein distribution model following the approach described in
+%
+% K. T. Roybal, T. E. Buck, X. Ruan, B. H. Cho, D. J. Clark, R. Ambler,
+% H. M. Tunbridge, J. Zhang, P. Verkade, C. Wülfing, and R. F. Murphy (2016)
+% Computational spatiotemporal analysis identifies WAVE2 and Cofilin as
+% joint regulators of costimulation-mediated T cell actin dynamics.
+% Science Signaling 9:rs3. doi: 10.1126/scisignal.aad4149.
+%
+% The updates include:
+%    1. one point synapse annotation is allowed as valid input;
+%    2. a method is implemented for synapse detection with only providing
+%       the first time point.
+%    3. the method for aligmentment adjustment is implemented.
+%
+% The slowest step, which typically takes about 1 min per cell per frame,
+% is to align each cell at each time to the standardized template.
+% This demo uses 46 cells so it will take about 1 hour on a single core.
+%
+% Input
+% -----
+% * OMETIFF images with image and annotation files for one or more proteins for the first
+% time point (the default is to use images from the paper of LAT at time 0
+% - downloading the needed images requires about 4 GB of free disk space)
+%
+% Output
+% ------
+% * a model for the average concentration in each voxel of a standardized
+% cell shape (in demos/LAT_reltime_1.mat)
+% * various intermediate results files (in /param and /tmp)
+
+
+
+.. _demo3D57:
+
+demo3D57
+--------
+Demo header::
+
+% This demo illustrates using CellOrganizer to show protein enrichment plot
+% for certain regions of the 3D T cell following the approach described in
+%
+% K. T. Roybal, T. E. Buck, X. Ruan, B. H. Cho, D. J. Clark, R. Ambler,
+% H. M. Tunbridge, J. Zhang, P. Verkade, C. Wülfing, and R. F. Murphy (2016)
+% Computational spatiotemporal analysis identifies WAVE2 and Cofilin as
+% joint regulators of costimulation-mediated T cell actin dynamics.
+% Science Signaling 9:rs3. doi: 10.1126/scisignal.aad4149.
+%
+%ShowTcellEnrichment
+% Input
+% -----
+% * a set of t cell models with different time points
+%
+% Output
+% ------
+% * Plots of enrichment for different purpose
