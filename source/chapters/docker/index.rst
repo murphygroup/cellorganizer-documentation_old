@@ -99,7 +99,7 @@ Searching for CellOrganizer should return a container like the image below
 
 Then click *CREATE* to download the image and start a container
 
-.. figure:: Image_Downloading.png
+.. figure:: image_downloading.png
    :align: center
 
 **Download the most recent image from terminal**
