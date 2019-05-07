@@ -21,11 +21,11 @@ Requirements
 	* Simulink Design Optimization
 	* Statistics and Machine Learning Toolbox
 	* System Identification Toolbox
-	* Wavelet Toolbox 
+	* Wavelet Toolbox
 
 Downloading CellOrganizer
 -------------------------
-To download the latest CellOrganizer for Matlab distribution go to the `download page <http://www.cellorganizer.org/version-2-7-2/>`_. Afterwards, extract the contents of the release into a local directory of your preference. 
+To download the latest CellOrganizer for Matlab distribution go to the `download page <http://www.cellorganizer.org/cellorganizer-2-8-0/>`_. Afterwards, extract the contents of the release into a local directory of your preference. 
 
 For example,
 
@@ -40,7 +40,7 @@ The commands above will download and extract to disk the contents of CellOrganiz
 
 Starting CellOrganizer
 ----------------------
-To start using CellOrganizer, `start a Matlab session <https://www.mathworks.com/help/matlab/matlab_env/start-matlab-on-linux-platforms.html>`_ and `change the directory <https://www.mathworks.com/help/matlab/ref/cd.html>`_ to the location of CellOrganizer folder and run `setup.m`. 
+To start using CellOrganizer, `start a Matlab session <https://www.mathworks.com/help/matlab/matlab_env/start-matlab-on-linux-platforms.html>`_ and `change the directory <https://www.mathworks.com/help/matlab/ref/cd.html>`_ to the location of CellOrganizer folder and run `setup.m`.
 
 In the Matlab, type
 

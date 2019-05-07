@@ -28,7 +28,7 @@ This table will let you know if the demo is meant to train a model or synthesize
 +----------+------------+-------------+-----------+-------------+
 |Demo      | Training   | Synthesis   | Other     | Deprecated  |
 +==========+============+=============+===========+=============+
-|demo2D00_ |            | True        |           |             | 
+|demo2D00_ |            | True        |           |             |
 +----------+------------+-------------+-----------+-------------+
 |demo2D01_ | True       |             |           |             |
 +----------+------------+-------------+-----------+-------------+
@@ -44,7 +44,7 @@ This table will let you know if the demo is meant to train a model or synthesize
 +----------+------------+-------------+-----------+-------------+
 |demo2D07_ |            |  True       |           |             |
 +----------+------------+-------------+-----------+-------------+
-|demo2D08_ |  True      |             |           |             | 
+|demo2D08_ |  True      |             |           |             |
 +----------+------------+-------------+-----------+-------------+
 |demo2D09_ |  True      |             |           |             |
 +----------+------------+-------------+-----------+-------------+
@@ -74,23 +74,23 @@ This table will let you know if the demo is meant to train a model or synthesize
 +----------+------------+-------------+-----------+-------------+
 |demo3D17_ |            | True        |           |             |
 +----------+------------+-------------+-----------+-------------+
-|demo3D19_ | (True)     |             |   Report  |             | 
+|demo3D19_ | (True)     |             |   Report  |             |
 +----------+------------+-------------+-----------+-------------+
-|demo3D20_ | (True)     |             |   Plot    |             | 
+|demo3D20_ | (True)     |             |   Plot    |             |
 +----------+------------+-------------+-----------+-------------+
 |demo3D25_ |            | True        |           |             |
 +----------+------------+-------------+-----------+-------------+
-|demo3D29_ | (True)     |             |   Info    |             | 
+|demo3D29_ | (True)     |             |   Info    |             |
 +----------+------------+-------------+-----------+-------------+
-|demo3D34_ |            | True        |           |             |   
+|demo3D34_ |            | True        |           |             |
 +----------+------------+-------------+-----------+-------------+
-|demo3D35_ | (True)     |             |  Info     |             | 
+|demo3D35_ | (True)     |             |  Info     |             |
 +----------+------------+-------------+-----------+-------------+
 |demo3D42_ | True       |             |           |             |
 +----------+------------+-------------+-----------+-------------+
 |demo3D44_ |            | True        |           |             |
 +----------+------------+-------------+-----------+-------------+
-|demo3D47_ |            |             |  Model    |             |    
+|demo3D47_ |            |             |  Model    |             |
 +----------+------------+-------------+-----------+-------------+
 |demo3D48_ | True       |             |           |             |
 +----------+------------+-------------+-----------+-------------+
@@ -98,19 +98,22 @@ This table will let you know if the demo is meant to train a model or synthesize
 +----------+------------+-------------+-----------+-------------+
 |demo3D50_ | True       |             |           |             |
 +----------+------------+-------------+-----------+-------------+
-|demo3D51_ | (True)     |             |  Plot     |             | 
+|demo3D51_ | (True)     |             |  Plot     |             |
 +----------+------------+-------------+-----------+-------------+
 |demo3D52_ | True       |             |           |             |
 +----------+------------+-------------+-----------+-------------+
 |demo3D53_ |            | True        |           |             |
 +----------+------------+-------------+-----------+-------------+
-|demo3D55_ |            | (True)      |  Plot     |             |    
-+----------+------------+-------------+-----------+-------------+ 
-|demo3D56_ |            | (True)      |  Model    |             |    
-+----------+------------+-------------+-----------+-------------+ 
-|demo3D57_ |            | (True)      |  Plot     |             |    
-+----------+------------+-------------+-----------+-------------+ 
-
+|demo3D55_ |            | (True)      |  Plot     |             |
++----------+------------+-------------+-----------+-------------+
+|demo3D56_ |            | (True)      |  Model    |             |
++----------+------------+-------------+-----------+-------------+
+|demo3D57_ |            | (True)      |  Plot     |             |
++----------+------------+-------------+-----------+-------------+
+|demo3D58_ |            | (True)      |           |             |
++----------+------------+-------------+-----------+-------------+
+|demo3D59_ |            | (True)      |           |             |
++----------+------------+-------------+-----------+-------------+
 
 Brief Descriptions
 ******************
@@ -171,7 +174,7 @@ Demo header::
    % Synthesize one 2D image with nuclear, cell shape, and lysosomal channels
    % from LAMP2 model trained in demo2D01 without convolution.
    %
-   % Input 
+   % Input
    % -----
    % * a valid CellOrganizer model file
    %
@@ -198,7 +201,7 @@ Demo header::
    % Train 2D generative model of the nucleus, cell shape, and lysosome using
    % all LAMP2 images in the Murphy Lab 2D HeLa dataset.
    %
-   % Input 
+   % Input
    % -----
    % * a directory of raw or synthetic nucleus images
    % * a directory of raw or synthetic cell shape images
@@ -258,7 +261,7 @@ Demo header::
 
    % Reconstruct one 2D image with nuclear, cell shape for PCA model
    %
-   % Input 
+   % Input
    % -----
    % * a valid CellOrganizer model file
    %
@@ -281,7 +284,7 @@ Demo header::
 
    % Synthesize one 2D image with nuclear, cell shape with PCA model
    %
-   % Input 
+   % Input
    % -----
    % * a valid CellOrganizer model file
    %
@@ -349,7 +352,7 @@ Demo header::
    % ellipsoids without convolution. The model was trained from the Murphy Lab
    % 3D HeLa dataset.
    %
-   % Input 
+   % Input
    % -----
    % * a valid CellOrganizer model file
    %
@@ -369,7 +372,7 @@ Demo header::
    % ellipsoids without convolution. The model was trained from the Murphy Lab
    % 3D HeLa dataset.
    %
-   % Input 
+   % Input
    % -----
    % * a list of valid CellOrganizer model files
    %
@@ -500,7 +503,7 @@ Demo header::
    % Gaussians at a density of 25 and convolution with point-spread function.
    % The model was trained from the Murphy Lab 3D HeLa dataset.
    %
-   % Input 
+   % Input
    % -----
    % * a list of valid CellOrganizer model files
    %
@@ -521,7 +524,7 @@ Demo header::
    % ellipsoids without convolution. The model was trained from the Murphy Lab
    % 3D HeLa dataset.
    %
-   % Input 
+   % Input
    % -----
    % * a list of valid CellOrganizer model files
    %
@@ -542,7 +545,7 @@ Demo header::
    % XZ, and YZ axes of image. The model was trained from the Murphy Lab 3D
    % HeLa dataset.
    %
-   % Input 
+   % Input
    % -----
    % * a valid CellOrganizer model file
    %
@@ -559,8 +562,8 @@ demo3D10
 Demo header::
 
    % Synthesize one 3D image with nuclear, cell shape, and lysosomal channels
-   % with object files that can be imported to Blender from LAMP2 model, 
-   % with sampling method set to render lysosomes as ellipsoids without 
+   % with object files that can be imported to Blender from LAMP2 model,
+   % with sampling method set to render lysosomes as ellipsoids without
    % convolution. The model was trained from the Murphy Lab 3D HeLa dataset.
    %
    % Input
@@ -584,7 +587,7 @@ Demo header::
    % Train 3D generative model of the cell framework (nucleus and cell shape)
    % using the Murphy Lab 3D HeLa TfR dataset.
    %
-   % Input 
+   % Input
    % -----
    % * a directory of raw or synthetic nucleus images
    % * a directory of raw or synthetic cell shape images
@@ -604,7 +607,7 @@ Demo header::
    % Train 3D generative model of the nucleus, cell shape, and lysosome using
    % 30 LAMP2 images in the Murphy Lab 3D HeLa dataset.
    %
-   % Input 
+   % Input
    % -----
    % * a directory of raw or synthetic nucleus images
    % * a directory of raw or synthetic cell shape images
@@ -625,7 +628,7 @@ Demo header::
    % Export images synthesized by demo3D01 as object files importable to
    % Blender.
    %
-   % Input 
+   % Input
    % -----
    % * a directory of 3D synthetic images
    %
@@ -661,7 +664,7 @@ Demo header::
    % to render endosomes as ellipsoids without convolution. The model was
    % trained from the Murphy Lab 3D HeLa dataset.
    %
-   % Input 
+   % Input
    % -----
    % * a valid CellOrganizer model file with a diffeomorphic framework
    %
@@ -676,14 +679,14 @@ demo3D16
 Demo header::
 
    % The main idea behind this demo is to show the user they
-   % can use their own binary images from raw experimental data 
+   % can use their own binary images from raw experimental data
    % to synthesize protein patterns. This demo uses the CellOrganizer
    %  method for nuclear and cell segmentation.
-   % 
-   % The current demo assumes the resolution of the images is the same as 
+   %
+   % The current demo assumes the resolution of the images is the same as
    % the resolution of the images that were used to train the protein model.
    %
-   % Input 
+   % Input
    % -----
    % * raw or synthetic images of the nuclear and cell membrane
    % * a valid CellOrganizer model file
@@ -699,13 +702,13 @@ demo3D17
 Demo header::
 
    % The main idea behind this demo is to show the user they
-   % can use their own binary images from raw experimental data 
-   % to synthesize protein patterns. 
-   % 
-   % The current demo assumes the resolution of the images is the same 
+   % can use their own binary images from raw experimental data
+   % to synthesize protein patterns.
+   %
+   % The current demo assumes the resolution of the images is the same
    % as the resolution of the images that were used to train the protein model.
    %
-   % Input 
+   % Input
    % -----
    % * an existing raw or synthetic framework, i.e. one binary multi-TIFF
    % file of the nuclear channel and one binary multi-TIFF file of the
@@ -731,7 +734,7 @@ Demo header::
    % protein pattern. The 3D 3T3 dataset was collected in collaboration with
    % Dr. Jonathan Jarvik and Dr. Peter Berget.
    %
-   % Input 
+   % Input
    % -----
    % * a directory of raw or synthetic protein images
    % * the resolution of the images (all images should have the same
@@ -750,7 +753,7 @@ Demo header::
    % This demo uses slml2report to compare the parameters between
    % CellOrganizer models and returns a report.
    %
-   % Input 
+   % Input
    % -----
    % * a set of valid CellOrganizer models
    %
@@ -767,7 +770,7 @@ Demo header::
    % Train 3D generative diffeomorphic model of the cell framework (nucleus
    % and cell shape) using 10 images Murphy Lab 3D HeLa LAMP2 dataset.
    %
-   % Input 
+   % Input
    % -----
    % * a directory of raw or synthetic nucleus images
    % * a directory of raw or synthetic cell shape images
@@ -795,7 +798,7 @@ Demo header::
    % images. The 3D 3T3 dataset was collected in collaboration with Dr.
    % Jonathan Jarvik and Peter Berget.
    %
-   % Input 
+   % Input
    % -----
    % * a directory of raw or synthetic protein images
    % * the resolution of the images (all images should have the same
@@ -814,7 +817,7 @@ Demo header::
    % Synthesizes a protein pattern instance from the synthetic image produced
    % in demo3D00.
    %
-   % Input 
+   % Input
    % -----
    % * a synthetic framework
    %
@@ -866,7 +869,7 @@ Demo header::
    %
    % Output
    % ------
-   % * valid SBML model 
+   % * valid SBML model
 
 .. _demo3D25:
 
@@ -882,14 +885,14 @@ Demo header::
    % SBML-Spatial(v0.82a) formatted .xml file containing constructed solid
    % geometry(CSG) primitives for lysosomes and parametric objects for the
    % cell and nuclear shapes.
-   % 
+   %
    % These files can then be read into VCell using the built in importer or
    % CellBlender using the helper function provided in this distribution.
    %
    % Input
    % -----
    % * valid SBML model
-   % 
+   %
    % Output
    % ------
    % * three TIFF files
@@ -904,7 +907,7 @@ Demo header::
    % This function displays a shape space of some dimensionality. This demo
    % uses the model trained in Johnson 2015.
    %
-   % Input 
+   % Input
    % -----
    % * a CellOrganizer diffeomorphic model
    %
@@ -925,7 +928,7 @@ Demo header::
    % predicts cell  shape from nuclear shape) and displays the residuals as in
    % Figure 2 of Johnson et al 2015.
    %
-   % Input 
+   % Input
    % -----
    % * models hela_cell_10_15_15.mat and hela_nuc_10_15_15.mat
    %
@@ -999,7 +1002,7 @@ Demo header::
 
    % Trains a generative model of microtubules
    %
-   % Input 
+   % Input
    % -----
    % * a directory of raw or synthetic nucleus images
    % * a directory of raw or synthetic cell shape images
@@ -1037,7 +1040,7 @@ Demo header::
 
    % Synthesize multiple 3D images from a lysosome model, at different resolutions.
    %
-   % Input 
+   % Input
    % -----
    % * a valid CellOrganizer model file
    %
@@ -1051,11 +1054,11 @@ demo3D34
 --------
 Demo header::
 
-   % Synthesize one 3D image with nuclear, cell shape and a vesicular channel. 
-   % This demo exports the synthetic image as an OME.TIFF as well as an 
+   % Synthesize one 3D image with nuclear, cell shape and a vesicular channel.
+   % This demo exports the synthetic image as an OME.TIFF as well as an
    % SBML Spatial instance.
    %
-   % Input 
+   % Input
    % -----
    % * a valid CellOrganizer model
    %
@@ -1112,7 +1115,7 @@ Demo header::
    % This demo exists to illustrate how padding size and window size affect the
    % performance of diffeomorphic metric.
    %
-   % Input 
+   % Input
    % -----
    % * a directory of raw or synthetic nucleus images
    % * a directory of raw or synthetic cell shape images
@@ -1135,7 +1138,7 @@ Demo header::
    % Results will be three TIFF files, one each for cell boundary,
    % nuclear boundary, and lysosomes, in folder "synthesizedImages/cell1".
    %
-   % Input 
+   % Input
    % -----
    % * a valid CellOrganizer model file
    %
@@ -1213,15 +1216,15 @@ Demo header::
    %
    % K. T. Roybal, T. E. Buck, X. Ruan, B. H. Cho, D. J. Clark, R. Ambler,
    % H. M. Tunbridge, J. Zhang, P. Verkade, C. Wülfing, and R. F. Murphy (2016)
-   % Computational spatiotemporal analysis identifies WAVE2 and Cofilin as 
-   % joint regulators of costimulation-mediated T cell actin dynamics.  
+   % Computational spatiotemporal analysis identifies WAVE2 and Cofilin as
+   % joint regulators of costimulation-mediated T cell actin dynamics.
    % Science Signaling 9:rs3. doi: 10.1126/scisignal.aad4149.
    %
    % The slowest step, which typically takes about 1 min per cell per frame,
    % is to align each cell at each time to the standardized template.
    % This demo uses 46 cells so it will take about 1 hour on a single core.
    %
-   % Input 
+   % Input
    % -----
    % * image and annotation files for one or more proteins for one or more
    % time points
@@ -1240,21 +1243,21 @@ demo3D43
 --------
 Demo header::
 
-   % This is the synthesis demo for T cell model. 
-   % The demo takes in two models: one model contains both cell and nuclear 
-   % shape models, and the other contains a T cell protein shape model. Same 
-   % as other synthesis framework, it calls slml2img for the synthesis. The 
-   % meanings of the options are commented in the script. 
+   % This is the synthesis demo for T cell model.
+   % The demo takes in two models: one model contains both cell and nuclear
+   % shape models, and the other contains a T cell protein shape model. Same
+   % as other synthesis framework, it calls slml2img for the synthesis. The
+   % meanings of the options are commented in the script.
    %
-   % Input 
+   % Input
    % -----
    % * A protein model with type standardized map halp-elipsoid
-   % * A framework model the provide the shape of the cell. 
+   % * A framework model the provide the shape of the cell.
    %
    % Output
    % ------
    % * one or more set(s) of synthesized images with cell shape and protein
-   % pattern. 
+   % pattern.
 
 .. _demo3D44:
 
@@ -1265,7 +1268,7 @@ Demo header::
    % Synthesize a cell shape image from a given constructive_geometry model,
    % specifically a half-ellipsoid model.
    %
-   % Input 
+   % Input
    % -----
    % * a list of valid CellOrganizer half-ellipsoid model files
    %
@@ -1288,7 +1291,7 @@ Demo header::
    % Train 3D generative model of the cell framework (nucleus and cell shape)
    % using the Murphy Lab 3D HeLa TfR dataset.
    %
-   % Input 
+   % Input
    % -----
    % * a directory of raw or synthetic nucleus images
    % * a directory of raw or synthetic cell shape images
@@ -1305,21 +1308,21 @@ demo3D46
 --------
 Demo header::
 
-   % This is the synthesis demo for T cell model. 
-   % The demo takes in two models: one model contains both cell and nuclear 
-   % shape models, and the other contains a T cell protein shape model. Same 
-   % as other synthesis framework, it calls slml2img for the synthesis. The 
-   % meanings of the options are commented in the script. 
+   % This is the synthesis demo for T cell model.
+   % The demo takes in two models: one model contains both cell and nuclear
+   % shape models, and the other contains a T cell protein shape model. Same
+   % as other synthesis framework, it calls slml2img for the synthesis. The
+   % meanings of the options are commented in the script.
    %
-   % Input 
+   % Input
    % -----
    % * A protein model with type standardized map halp-elipsoid
-   % * A framework model the provide the shape of the cell. 
+   % * A framework model the provide the shape of the cell.
    %
    % Output
    % ------
    % * one or more set(s) of synthesized images with cell shape and protein
-   % pattern. 
+   % pattern.
 
 Demo output:
 
@@ -1335,7 +1338,7 @@ Demo header::
 
    % Combine two generative model files into a single file.
    %
-   % Input 
+   % Input
    % -----
    % * a list of valid CellOrganizer model files
    %
@@ -1355,24 +1358,24 @@ Demo header::
 %
 % K. T. Roybal, T. E. Buck, X. Ruan, B. H. Cho, D. J. Clark, R. Ambler,
 % H. M. Tunbridge, J. Zhang, P. Verkade, C. Wülfing, and R. F. Murphy (2016)
-% Computational spatiotemporal analysis identifies WAVE2 and Cofilin as 
-% joint regulators of costimulation-mediated T cell actin dynamics.  
+% Computational spatiotemporal analysis identifies WAVE2 and Cofilin as
+% joint regulators of costimulation-mediated T cell actin dynamics.
 % Science Signaling 9:rs3. doi: 10.1126/scisignal.aad4149.
 %
-% The updates include: 
-%    1. one point synapse annotation is allowed as valid input; 
-%    2. a method is implemented for synapse detection with only providing 
+% The updates include:
+%    1. one point synapse annotation is allowed as valid input;
+%    2. a method is implemented for synapse detection with only providing
 %       the first time point.
-%    3. the method for aligmentment adjustment is implemented. 
-% 
+%    3. the method for aligmentment adjustment is implemented.
+%
 % The slowest step, which typically takes about 1 min per cell per frame,
 % is to align each cell at each time to the standardized template.
 % This demo uses 46 cells so it will take about 1 hour on a single core.
 %
-% Input 
+% Input
 % -----
-% * image and annotation files for one or more proteins for the first 
-% time point (the default is to use images from the paper of LAT at time 0 
+% * image and annotation files for one or more proteins for the first
+% time point (the default is to use images from the paper of LAT at time 0
 % - downloading the needed images requires about 4 GB of free disk space)
 %
 % Output
@@ -1469,7 +1472,7 @@ demo3D52
 --------
 Demo header::
 
-% Train 3D generative SPHARM-RPDM nuclear and cell shape model using the 
+% Train 3D generative SPHARM-RPDM nuclear and cell shape model using the
 % Murphy Lab 3D HeLa dataset.
 %
 % Input
@@ -1495,7 +1498,7 @@ Demo header::
 
 % Reconstruct one 3D image with nuclear, cell shape for SPHARM-RPDM model
 %
-% Input 
+% Input
 % -----
 % * a valid CellOrganizer model file
 %
@@ -1582,7 +1585,6 @@ Demo header::
 % joint regulators of costimulation-mediated T cell actin dynamics.
 % Science Signaling 9:rs3. doi: 10.1126/scisignal.aad4149.
 %
-%ShowTcellEnrichment
 % Input
 % -----
 % * a set of t cell models with different time points
@@ -1590,3 +1592,19 @@ Demo header::
 % Output
 % ------
 % * Plots of enrichment for different purpose
+
+.. _demo3D58:
+
+demo3D58
+--------
+Demo header::
+
+% Coming soon
+
+.. _demo3D59:
+
+demo3D59
+--------
+Demo header::
+
+% Coming soon.
