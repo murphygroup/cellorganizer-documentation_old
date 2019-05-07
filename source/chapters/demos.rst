@@ -1599,7 +1599,17 @@ demo3D58
 --------
 Demo header::
 
-% Coming soon
+% demo3D58
+%
+% Synthesize one 3D image with nuclear, cell shape and a vesicular channel.
+%
+% Input
+% -----
+% * a valid CellOrganizer model file
+%
+% Output
+% ------
+% * three TIFF files (nuclear, cell shape, and nucleolar channels)
 
 .. _demo3D59:
 
@@ -1607,4 +1617,14 @@ demo3D59
 --------
 Demo header::
 
-% Coming soon.
+% demo3D58
+%
+% Synthesize one 3D image with nuclear, cell shape and a vesicular channel.
+%
+% Input
+% -----
+% * a valid CellOrganizer model file
+%
+% Output
+% ------
+% * three TIFF files (nuclear, cell shape, and nucleolar channels)
