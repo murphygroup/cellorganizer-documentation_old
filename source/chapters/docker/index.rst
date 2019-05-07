@@ -94,12 +94,12 @@ Start Kitematic. It should open a window similar to the screenshot below
 
 Searching for CellOrganizer should return a container like the image below
 
-.. figure:: image_find.png
+.. figure:: docker/image_find.png
    :align: center
 
 Then click *CREATE* to download the image and start a container
 
-.. figure:: image_downloading.png
+.. figure:: docker/image_downloading.png
    :align: center
 
 **Download the most recent image from terminal**
