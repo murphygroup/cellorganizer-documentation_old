@@ -7,7 +7,7 @@ Installing CellOrganizer locally
 
 Requirements
 ------------
-* Matlab 2016b or newer
+* Matlab 2018a or newer
 	* Bioinformatics Toolbox
 	* Computer Vision System Toolbox
 	* Control System Toolbox
@@ -32,11 +32,11 @@ For example,
 .. code-block:: bash
 
 	cd ~/
-	wget -nc http://cellorganizer.org/downloads/v2.7/cellorganizer_v2.7.2_and_image_collection.tgz
-	tar -xvf cellorganizer_v2.7.2_and_image_collection.tgz
-	rm -fv cellorganizer_v2.7.2_and_image_collection.tgz
+	wget -nc http://cellorganizer.org/downloads/v2.7/cellorganizer_v2.8.0_and_image_collection.tgz
+	tar -xvf cellorganizer_v2.8.0_and_image_collection.tgz
+	rm -fv cellorganizer_v2.8.0_and_image_collection.tgz
 
-The commands above will download and extract to disk the contents of CellOrganizer v2.7.2.
+The commands above will download and extract to disk the contents of CellOrganizer v2.8.0.
 
 Starting CellOrganizer
 ----------------------
