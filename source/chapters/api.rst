@@ -14,75 +14,131 @@ img2slml
 
 Method header::
 
-  % IMG2SLML Trains a generative model of protein subcellular location from a
-  % collection of microscope images and saves the model as an SLML instance.
+  function answer = img2slml( varargin )
+  % IMG2SLML Trains a generative model of subcellular location from a
+  % collection of images and saves the model to disk.
   %
-  % An SLML model consists of four components,
+  % A CellOrganizer model consists of four components,
+  %
   % 1) a (optional) documentation component
-  % 2) a nuclear pattern model,
-  % 3) a cell pattern model and,
+  % 2) a nuclear membrane model,
+  % 3) a cell membrane model and,
   % 4) a protein pattern model.
   %
-  % List Of Input Arguments     Descriptions
-  % -----------------------     ------------
+  % ┌────────────────────────┐
+  % │List Of Input Parameters│
+  % └────────────────────────┘
+  % Inputs                      Descriptions
+  % ------                      ------------
   % dimensionality              2D/3D
-  % dnaImagesDirectoryPath      DNA images collection directory
-  % cellImagesDirectoryPath     Cell images collection directory
-  % proteinImagesDirectoryPath  Protein images collection directory
-  % options                     Options structure
+  % dnaImagesDirectoryPath      DNA images collection directory, list of files or pattern
+  % cellImagesDirectoryPath     Cell images collection directory, list of files or pattern
+  % proteinImagesDirectoryPath  Protein images collection directory, list of files or pattern
+  % options                     List of options
   %
-  % The input argument options holds the valid parameters for these components.
-  % The shape of options is described below
+  % The input argument options holds the valid parameters for all of these components.
   %
-  % List Of Options        Descriptions
-  % ---------------        ------------
-  %
-  % Mandatory options
-  % -----------------
+  % ┌───────────────┐
+  % │List Of Options│
+  % └───────────────┘
+  % Mandatory options         Descriptions
+  % -----------------         ------------
   % model.resolutions         Any double 1x2/1x3 double vector.
   %                           (microns/voxel).
   %
-  % generic model options
-  % ---------------------
+  % Generic model options     Descriptions
+  % ---------------------     ------------
   % masks                     (optional) Masks collection directory.
   %
   % train.flag                (optional) Selects what model is going to be trained ('nuclear',
   %                           'framework', or 'all'). Default is 'all'.
   %
   % model.name                (optional) Holds the name of the model. Default is empty.
-  % model.id                  (optional) Holds the id of the model. Default is empty.
+  % model.id                  (optional) Holds the id of the model. Default is a randomly generated string.
   % model.filename            Holds the output filename.
-  % model.resolution          Model resolution (in microns per pixel). This
-  %                           the resolution of the dataset used to train the model
-  % downsampling              Downsampling vector used during preprocessing. Default value is
-  %                           [5 5 1]. Final model resolution will be resolution * downsampling
-  %                           vector and will be saved in the model as well
+  % downsampling              Downsampling vector to be used during preprocessing.
   %
-  % Nuclear shape model options
-  % ---------------------------
-  % nucleus.type              Holds the nuclear model type. Default is
-  %                           "medial axis" for 2D and "cylindrical_surface" for 3D
-  % nucleus.name              (optional) Holds the name of the nuclear model. Default is empty.
-  % nucleus.id                (optional) Holds the id of the nuclear model. Default is empty.
+  % Debugging options
+  % -----------------
+  % debug                     If set to true, then the function will (1) keep temporary results folder, (2) will
+  %                           print information useful for debugging. Default is false.
+  % display                   If set to true, then plots useful for debugging with be open. This functionality is
+  %                           meant for debugging only, setting this to true will considerably slow down
+  %                           computation. Default is false;
+  % save_segmentations        Will save the segmentations to the model file. Setting this option to true will create
+  %                           a considerably large file.
   %
-  % Cell shape model options
-  % ------------------------
-  % cell.type                 Holds the cell model type. Default is "ratio".
+  % Nuclear shape model options  Descriptions
+  % ---------------------------  ------------
+  % nucleus.class                (mandatory) Holds the nuclear membrane model class.
+  % nucleus.type                 (mandatory) Holds the nuclear membrane model type.
+  % nucleus.name                 (optional) Holds the name of the nuclear model. Default is empty.
+  % nucleus.id                   (optional) Holds the id of the nuclear model. Default is a randomly generated string.
+  %
+  % Cell shape model options  Descriptions
+  % ------------------------  ------------
+  % cell.class                (mandatory) Holds the cell membrane model class.
+  % cell.type                 (mandatory) Holds the cell membrane model type.
   % cell.name                 (optional) Holds the name of the cell model. Default is empty.
   % cell.id                   (optional) Holds the id the cell model. Default is empty.
   %
-  % Protein shape model options
-  % ---------------------------
-  % protein.type              (optional) Holds the protein model type. The default is "vesicle".
-  % protein.name              (optional) Holds the name of the protein model. The default is empty.
-  % protein.id                (optional) Holds the id of the protein model. The default is empty.
-  % protein.class             Holds the protein class, e.g. lysosome, endosome.
-  % protein.cytonuclearflag   (optional) Determines whether the protein pattern will be generated in
-  %                           the cytosolic space ('cyto'), nuclear space ('nuc') or everywhere ('all').
-  %                           Default is cyto.
+  % Protein shape model options  Descriptions
+  % ---------------------------  ------------
+  % protein.class                (mandatory) Holds the protein model class.
+  % protein.type                 (mandatory) Holds the protein model type.
+  % protein.name                 (optional) Holds the name of the protein model. The default is empty.
+  % protein.id                   (optional) Holds the id of the protein model. Default is a randomly generated string.
+  % protein.cytonuclearflag      (optional) Determines whether the protein pattern will be generated in
+  %                              the cytosolic space ('cyto'), nuclear space ('nuc') or everywhere ('all').
+  %                              Default is cyto.
   %
-  % Documentation (optional)
-  % ------------------------
+  % ┌────────────────────────────────────┐
+  % │List Of Options per Model class/type│
+  % └────────────────────────────────────┘
+  % 2D PCA model options
+  % --------------------
+  % model.pca.latent_dim      (optional) This specifies how many latent dimensions should be used for modeling
+  %                           the shape space. Valid values arepositive integers. The default is 15.
+  %
+  % 2D diffeomorphic model options
+  % ------------------------------
+  % model.diffeomorphic.distance_computing_method     (optional) ‘faster'
+  % model.diffeomorphic.com_align                     (optional) 'nuc'
+  %
+  % T cell distribution model options
+  % ---------------------------------
+  % model.tcell.synapse_location            (mandatory) File path to annotation of the synapse positions of the T cells as input.
+  % model.tcell.results_location            (mandatory) File path for where the results should be saved.
+  % model.tcell.named_option_set            (mandatory) The running choice for CellOrganizer and one sensor of two-point annotation.
+  % model.tcell.use_two_point_synapses      (optional) Set up the mode of synapse to use, as a default, we use one-point,
+  %                                         if needed you can use two-point by set up the option as true.
+  % model.tcell.sensor                      Set up protein name.
+  % model.tcell.timepoints_to_include       (optional) If creation of models for only a subset of the time points is desired,
+  %                                         edit to specify which time points to include.
+  % model.tcell.model_type_to_include       (mandatory) Set up for model to include.
+  % model.tcell.infer_synapses              (mandatory) true or false.
+  % model.tcell.adjust_one_point_alignment  (optional) Set up alignment adjustment true or false.
+  % model.tcell.ometiff                     (optional) If true, then it assumes images are OME.TIFFs with annotations. Default is false.
+  %
+  % 3D SPHARM-RPDM model options
+  % ----------------------------
+  % model.spharm_rpdm.alignment_method 	(optional) method by which cells willbe aligned when producing shape descriptors
+  %                                       The possible values are 'major_axis' (defaut) or 'foe'.
+  % model.spharm_rpdm.rotation_plane 	(optional)  Dimensions of image that will used for alignment.
+  %                                       The possible values are 'xy' (defaut), 'xz', 'yz' or ‘xyz'. For example,
+  %                                       if ‘xy‘ is specified, each cellwill be rotated in the 	xy plane (around the z axis).
+  % model.spharm_rpdm.postprocess         (optional) This specifies whether alignment and size normalization
+  %                                       should be done after parameterization.  The values are ‘true’ (default) and ‘false’.
+  % model.spharm_rpdm.maxDeg              (optional) This specifies the degree up to which spherical harmonics
+  %                                       should be calculated.  Valid values are positive integers.  The default is 31.
+  % model.spharm_rpdm.components          (mandatory) This specifies which components should be included in the
+  %                                       shape model.  The valid values are {'cell'}, {'nuc'}, or {'cell', 'nuc'}.
+  % model.spharm_rpdm.latent_dim          (optional) This specifies how many latent dimensions should be used for
+  %                                       modeling the shape space.  Valid values are positive integers.  The default is 15.
+  %
+  % ┌─────────────┐
+  % │Documentation│
+  % └─────────────┘
   % This is an optional structure with multiple elements that holds documentation about this model.
   %
   % documentation.<name>      Holds the value of variable <name>. This is meant to be meta information. Default is empty.
@@ -97,16 +153,17 @@ slml2info
 
 Method header::
 
+  function answer = slml2info( varargin )
   % SLML2INFO Generate a report from information extracted from a genearative model file
   %
   % List Of Input Arguments  Descriptions
   % -----------------------  ------------
-  % filename                 Model filename
+  % filenames                List of files
   % options                  Options structure
   %
   % Example
-  % > filename = '/path/to/model/file/model.mat';
-  % > answer = slml2info( filename );
+  % > filenames = {'/path/to/model/file/model.mat'};
+  % > answer = slml2info( filenames );
 
 slml2img
 ********
