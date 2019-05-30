@@ -35,7 +35,7 @@ Galaxy Registration
 
 Before you start using CellOrganizer for Galaxy, you must request access to the public server. To request access, click `here <http://www.cellorganizer.org/public-server-access-request/>`_
 
-.. figure:: ../images/access_request .png
+.. figure:: ../images/access_request.png
 
    CellOrganizer for Galaxy public server request page.
 
