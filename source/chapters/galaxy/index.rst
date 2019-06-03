@@ -189,7 +189,14 @@ We have provided links to sample histories constructed from CellOrganizer demos.
 +----------+------------+-------------+-----------+-------------+
 |demo3D55_ |            | (True)      |  Plot     |             |    
 +----------+------------+-------------+-----------+-------------+ 
-
+|demo3D56_ |            | (True)      |           |             |    
++----------+------------+-------------+-----------+-------------+ 
+|demo3D57_ |            | (True)      |           |             |    
++----------+------------+-------------+-----------+-------------+ 
+|demo3D58_ |            | (True)      |           |             |    
++----------+------------+-------------+-----------+-------------+ 
+|demo3D59_ |            | (True)      |           |             |    
++----------+------------+-------------+-----------+-------------+ 
 
 .. _demo2D00: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo2d00
 .. _demo2D01: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo2d01
@@ -228,7 +235,10 @@ We have provided links to sample histories constructed from CellOrganizer demos.
 .. _demo3D52: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo3d52
 .. _demo3D53: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo3d53
 .. _demo3D55: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo3d55
-
+.. _demo3D56: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo3d56
+.. _demo3D57: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo3d57
+.. _demo3D58: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo3d58
+.. _demo3D59: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo3d59
 
 
 Detailed information about **Histories** is beyond the scope of this document. To learn more about them, click `here <https://galaxyproject.org/tutorials/histories/>`_.
