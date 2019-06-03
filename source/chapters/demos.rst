@@ -1634,6 +1634,7 @@ Demo header::
 demo3D60
 --------
 Demo header::
+
 % demo3D60
 %
 % Synthesize one 3D image with nuclear, cell shape and a vesicular channel. 
