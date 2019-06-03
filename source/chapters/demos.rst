@@ -1617,14 +1617,35 @@ demo3D59
 --------
 Demo header::
 
-% demo3D58
+% demo3D59
 %
 % Synthesize one 3D image with nuclear, cell shape and a vesicular channel.
+% This demo exports portions of the synthetic image as SBML Spatial instances.
 %
 % Input
 % -----
-% * a valid CellOrganizer model file
+% * a valid CellOrganizer model
 %
 % Output
 % ------
-% * three TIFF files (nuclear, cell shape, and nucleolar channels)
+% * SBML instance
+% * single channel TIF files
+
+demo3D60
+--------
+Demo header::
+% demo3D60
+%
+% Synthesize one 3D image with nuclear, cell shape and a vesicular channel. 
+% This demo exports portions of the synthetic image as SBML Spatial instances.This
+% demo also produces a valid VCML file. 
+%
+% Input 
+% -----
+% * a valid CellOrganizer model
+%
+% Output
+% ------
+% * SBML instance
+% * VCML file
+% * single channel TIF files
