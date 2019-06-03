@@ -113,131 +113,53 @@ We have provided links to sample histories constructed from CellOrganizer demos.
 +----------+------------+-------------+-----------+-------------+
 |Demo      | Training   | Synthesis   | Other     | Deprecated  |
 +==========+============+=============+===========+=============+
-|demo2D00_ |            | True        |           |             | 
+|demo2D00_ |            | True        |           |             |   
 +----------+------------+-------------+-----------+-------------+
-|demo2D01_ | True       |             |           |             |
+|demo2D01_ | True       |             |           |             |   
 +----------+------------+-------------+-----------+-------------+
-|demo2D02_ |            | True        |           |             |
+|demo2D05_ | True       |             |           |             |     
 +----------+------------+-------------+-----------+-------------+
-|demo2D03_ | True       |             |           |     X       |
+|demo2D08_ |  True      |             |           |             |    
 +----------+------------+-------------+-----------+-------------+
-|demo2D04_ | True       |             |           |             |
+|demo2D09_ |  True      |             |           |             |    
 +----------+------------+-------------+-----------+-------------+
-|demo2D05_ | True       |             |           |             |
+|demo3D00_ |            | True        |           |             |    
 +----------+------------+-------------+-----------+-------------+
-|demo2D06_ |            |  True       |           |             |
+|demo3D01_ |            | True        |           |             |    
 +----------+------------+-------------+-----------+-------------+
-|demo2D07_ |            |  True       |           |             |
+|demo3D03_ |            | True        |           |             |    
 +----------+------------+-------------+-----------+-------------+
-|demo2D08_ |  True      |             |           |             | 
+|demo3D04_ |            | True        |           |             |    
 +----------+------------+-------------+-----------+-------------+
-|demo2D09_ |  True      |             |           |             |
+|demo3D05_ |            | True        |           |             |     
 +----------+------------+-------------+-----------+-------------+
-|demo3D00_ |            | True        |           |             |
+|demo3D12_ | True       |             |           |             |    
 +----------+------------+-------------+-----------+-------------+
-|demo3D01_ |            | True        |           |             |
+|demo3D52_ | True       |             |           |             |     
 +----------+------------+-------------+-----------+-------------+
-|demo3D04_ |            | True        |           |             |
-+----------+------------+-------------+-----------+-------------+
-|demo3D05_ |            | True        |           |             |
-+----------+------------+-------------+-----------+-------------+
-|demo3D06_ |            | True        |           |    X        |
-+----------+------------+-------------+-----------+-------------+
-|demo3D07_ |            | True        |           |             |
-+----------+------------+-------------+-----------+-------------+
-|demo3D08_ |            | True        |           |             |
-+----------+------------+-------------+-----------+-------------+
-|demo3D09_ |            | True        |           |             |
-+----------+------------+-------------+-----------+-------------+
-|demo3D10_ |            | True        |           |             |
-+----------+------------+-------------+-----------+-------------+
-|demo3D11_ | True       |             |           |             |
-+----------+------------+-------------+-----------+-------------+
-|demo3D12_ | True       |             |           |             |
-+----------+------------+-------------+-----------+-------------+
-|demo3D15_ |            | True        |           |             |
-+----------+------------+-------------+-----------+-------------+
-|demo3D17_ |            | True        |           |             |
-+----------+------------+-------------+-----------+-------------+
-|demo3D19_ | (True)     |             |   Report  |             | 
-+----------+------------+-------------+-----------+-------------+
-|demo3D20_ | (True)     |             |   Plot    |             | 
-+----------+------------+-------------+-----------+-------------+
-|demo3D25_ |            | True        |           |             |
-+----------+------------+-------------+-----------+-------------+
-|demo3D29_ | (True)     |             |   Info    |             | 
-+----------+------------+-------------+-----------+-------------+
-|demo3D34_ |            | True        |           |             |   
-+----------+------------+-------------+-----------+-------------+
-|demo3D35_ | (True)     |             |  Info     |             | 
-+----------+------------+-------------+-----------+-------------+
-|demo3D42_ | True       |             |           |             |
-+----------+------------+-------------+-----------+-------------+
-|demo3D44_ |            | True        |           |             |
-+----------+------------+-------------+-----------+-------------+
-|demo3D47_ |            |             |  Model    |             |    
-+----------+------------+-------------+-----------+-------------+
-|demo3D48_ | True       |             |           |             |
-+----------+------------+-------------+-----------+-------------+
-|demo3D50_ | True       |             |           |             |
-+----------+------------+-------------+-----------+-------------+
-|demo3D51_ | (True)     |             |  Plot     |             | 
-+----------+------------+-------------+-----------+-------------+
-|demo3D52_ | True       |             |           |             |
-+----------+------------+-------------+-----------+-------------+
-|demo3D53_ |            | True        |           |             |
-+----------+------------+-------------+-----------+-------------+
-|demo3D55_ |            | (True)      |  Plot     |             |    
+|demo3D55_ |            | (True)      |  Plot     |             |     
 +----------+------------+-------------+-----------+-------------+ 
-|demo3D56_ | (True)     |             |           |             |    
+|demo3D57_ |            | True        |           |             |     
 +----------+------------+-------------+-----------+-------------+ 
-|demo3D57_ |            |             | Plot      |             |    
+|demo3D59_ |            | True        |           |             |     
 +----------+------------+-------------+-----------+-------------+ 
-|demo3D58_ |            | (True)      |           |             |    
-+----------+------------+-------------+-----------+-------------+ 
-|demo3D59_ |            | (True)      |           |             |    
-+----------+------------+-------------+-----------+-------------+ 
+
+
 
 .. _demo2D00: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo2d00
 .. _demo2D01: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo2d01
-.. _demo2D02: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo2d02
-.. _demo2D03: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo2d03
-.. _demo2D04: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo2d04
 .. _demo2D05: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo2d05
-.. _demo2D06: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo2d06
-.. _demo2D07: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo2d07
 .. _demo2D08: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo2d08
 .. _demo2D09: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo2d09
 .. _demo3D00: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo3d00
 .. _demo3D01: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo3d01
+.. _demo3D03: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo3d03
 .. _demo3D04: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo3d04
 .. _demo3D05: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo3d05
-.. _demo3D06: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo3d06
-.. _demo3D07: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo3d07
-.. _demo3D08: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo3d08
-.. _demo3D09: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo3d09
-.. _demo3D10: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo3d10
-.. _demo3D11: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo3d11
 .. _demo3D12: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo3d12
-.. _demo3D15: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo3d15
-.. _demo3D17: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo3d17
-.. _demo3D19: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo3d19
-.. _demo3D20: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo3d20
-.. _demo3D25: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo3d25
-.. _demo3D29: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo3d29
-.. _demo3D34: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo3d34
-.. _demo3D35: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo3d35
-.. _demo3D42: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo3d42
-.. _demo3D47: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo3d47
-.. _demo3D48: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo3d48
-.. _demo3D50: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo3d50
-.. _demo3D51: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo3d51
 .. _demo3D52: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo3d52
-.. _demo3D53: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo3d53
 .. _demo3D55: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo3d55
-.. _demo3D56: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo3d56
 .. _demo3D57: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo3d57
-.. _demo3D58: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo3d58
 .. _demo3D59: http://galaxy3.compbio.cs.cmu.edu:9000/u/cellorganizer/h/demo3d59
 
 
