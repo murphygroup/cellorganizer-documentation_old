@@ -70,7 +70,7 @@ The instructions below describe
 
 Installing Docker
 -----------------
-Before downloading the image and spinning a container, you need to install Docker. Installing Docker is beyond the scope of this document. To learn about Docker Community Edition (CE), click `here <https://www.docker.com/community-edition>`_.
+Before downloading the image and spinning a container, you need to install Docker. Installing Docker is beyond the scope of this document.
 
 * To install Docker-for-Mac, click `here <https://docs.docker.com/docker-for-mac/install/>`_.
 * To install Docker-for-Windows, click `here <https://docs.docker.com/docker-for-windows/install/>`_.

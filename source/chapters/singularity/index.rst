@@ -37,7 +37,7 @@ Installing Singularity
 ----------------------
 Before downloading the image, you need to install Singularity. Installing Singularity is beyond the scope of this document.
 
-To follow the official instructions to install Singularity, click `here <https://www.sylabs.io/guides/2.6/user-guide/installation.html/>`_.
+To follow the official instructions to install Singularity, click `here <https://sylabs.io/docs//>`_.
 
 **Download the repository and build the image using Singularity**
 
