@@ -53,10 +53,10 @@ Or you can also click on the  icon in the top left corner of the screen  to retu
 ## Importing Generated SBML instance into CellBlender
 1. Download the SBML instance from Galaxy clicking the eye icon
 2. Next, open up Blender with CellBlender pre-installed. Initialize CellBlender.
-3. Import the downloaded SBML instance by going to: File > Import > BioNetGen/SBML Model(.bng, ./xml).  You should now see your imported SBML instance. Use the scroll-pad and mouse to move around and investigate the geometry.
+3. Import the downloaded SBML instance by going to: **File > Import > BioNetGen/SBML Model(.bng, ./xml)**.  You should now see your imported SBML instance. Use the scroll-pad and mouse to move around and investigate the geometry.
 4. Create a Lotka-Volterra Simulation with our realistic geometry
-5. Next step is to then import a .txt file that includes the preset reactions for our. Go to: File >Import >CellBlender Model(text/pickle)
-6. Next, we have to rescale and color our simulated particles. Under the ‘Molecules’ button, set the scale of both ‘prey’ and ‘predator’ to 20.0. Set the color of ‘prey’ to blue and ‘predator’ to red. 
+5. Next step is to then import a .txt file that includes the preset reactions for our. Go to: **File >Import >CellBlender Model(text/pickle)**
+6. Next, we have to rescale and color our simulated particles. Under the **"Molecules"** button, set the scale of both **"prey"** and **"predator"** to 20.0. Set the color of **"prey"** to blue and **"predator"** to red. 
 7. Then, save the file as SPHARM_Model_Sim.blend. Next, you should see the Run button appear under the Run Simulation tab. Click that.
 
 
