@@ -30,12 +30,15 @@ Questions
     ![create_new_history](../source/Spharm_Tutorial/images/create_new_history.png)  
 
 4. Select the **“unnamed history”** rename and annotate history
-5. To rename the history. Double click on “Unnamed history” and rename it to **“SPHARM Model”**. Then click enter.
     
     ![renaming_history](../source/Spharm_Tutorial/images/renaming_history.png)
 
-6. Annotate history. Click on the tag icon to add tags to this history. Add **“train”** and **“vesicle”** as tags. Click enter after each tag. 
-7. Import dataset from shared data. Click on “Shared Data” at the top of the screen then click on “Data Libraries” from the dropdown menu. 
+5. To rename the history. Double click on “Unnamed history” and rename it to **“SPHARM Model”**. Then click enter.
+    
+    ![Taggin_a_history](../source/Spharm_Tutorial/images/Tagging_a_history.png)
+
+6. Annotate history. Click on the tag icon to add tags to this history. Add **“train”** and **“vesicle”** as tags. Click enter after each tag.
+7. Import dataset from shared data. Click on **“Shared Data”** at the top of the screen then click on **“Data Libraries”** from the dropdown menu. 
 8. In the following page, follow the links for:
     * Click **“Data Libraries”** from the drop down menu.
     * Click on **“Generative Models”**
