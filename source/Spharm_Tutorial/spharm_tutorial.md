@@ -26,17 +26,11 @@ Questions
 1. Log in on Galaxy
 2. From the right panel (History panel) click on the “Gear icon”
 3. From the drop down menu click on “Create a new history”
-
-.. figure:: ../source/Spharm_Tutorial/images/create_new_history.png
-
-
-Select the “unnamed history” rename and annotate history
-To rename the history. Double click on “Unnamed history” and rename it to “SPHARM Model”. Then click enter.
-
-
-
-
-Annotate history. Click on the tag icon to add tags to this history. Add “train” and “vesicle” as tags. Click enter after each tag. 
+    .. figure:: ../source/Spharm_Tutorial/images/create_new_history.png
+4. Select the “unnamed history” rename and annotate history
+5. To rename the history. Double click on “Unnamed history” and rename it to “SPHARM Model”. Then click enter.
+    .. figure:: source/Spharm_Tutorial/images/renaming_history.png
+6. Annotate history. Click on the tag icon to add tags to this history. Add “train” and “vesicle” as tags. Click enter after each tag. 
 
 
 
