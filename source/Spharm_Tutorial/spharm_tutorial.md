@@ -47,8 +47,8 @@ Questions
     * Click on **“Generative Models”**
    		* Click on **“HeLa”**
    	        *Click on **“3D”**
-		    * Click on **“3D_HeLa_LAMP2_SPHARM_vesicle_model.mat”**
-9.Then ticking off the box to the left of its name. Then click on **“To History”** and select the history called **“SPHARM Model”**
+		    * Click on **“3D_HeLa_LAMP2_SPHARM_vesicle_model.mat”**. 
+Then ticking off the box to the left of its name, then click on **“To History”** and select the history called **“SPHARM Model”**
     ![to_history](../source/Spharm_Tutorial/images/to_history.png)
 
 10. Then click on **“to history”** button in the top menu. A dialog window with appear with the current history on board pre-selected or you can create a new one as it gives you that option as well.
