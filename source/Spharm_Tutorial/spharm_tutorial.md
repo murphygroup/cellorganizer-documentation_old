@@ -68,7 +68,7 @@ Questions
 
 15. In the **“Advanced Options”**, match the following image:
     
-    ![Advance_options](../source/Spharm_Tutorial/images/Advance_options.png)
+    ![Advance_options](../source/Spharm_Tutorial/images/adv_options.png)
 
 16. Once all the information is complete click on the button that will close the options panel. A green box will be displayed indicating that the demo is being run and a new item in the history will be added with the model ran. 
     * You should see your generated outputs in the right sidebar
