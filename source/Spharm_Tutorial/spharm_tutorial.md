@@ -88,10 +88,20 @@ Questions
     ![initialize_blender](../source/Spharm_Tutorial/images/initialize_blender.png)
 
 3. Import the downloaded SBML instance by going to: **File > Import > BioNetGen/SBML Model(.bng, ./xml)**.  You should now see your imported SBML instance. Use the scroll-pad and mouse to move around and investigate the geometry.
-4. Create a Lotka-Volterra Simulation with our realistic geometry
-5. Next step is to then import a .txt file that includes the preset reactions for our. Go to: **File >Import >CellBlender Model(text/pickle)**
-6. Next, we have to rescale and color our simulated particles. Under the **"Molecules"** button, set the scale of both **"prey"** and **"predator"** to 20.0. Set the color of **"prey"** to blue and **"predator"** to red. 
-7. Then, save the file as SPHARM_Model_Sim.blend. Next, you should see the Run button appear under the Run Simulation tab. Click that.
 
+    ![Import_blender](../source/Spharm_Tutorial/images/Import_blender.png)
+
+## Create a Lotka-Volterra Simulation with our realistic geometry
+1. Next step is to then import a .txt file that includes the preset reactions for our. Go to: **File >Import >CellBlender Model(text/pickle)**
+
+    ![SBML_instance](../source/Spharm_Tutorial/images/SBML_instance.png) 
+
+2. Next, we have to rescale and color our simulated particles. Under the **"Molecules"** button, set the scale of both **"prey"** and **"predator"** to 20.0. Set the color of **"prey"** to blue and **"predator"** to red. 
+
+    ![color_properties_CB1](../source/Spharm_Tutorial/images/color_properties_CB1.png)  ![color_properties_CB2](../source/Spharm_Tutorial/images/color_properties_CB2.png)
+
+3. Then, save the file as SPHARM_Model_Sim.blend. Next, you should see the Run button appear under the Run Simulation tab. Click that.
+
+    ![run_simulation_CB](../source/Spharm_Tutorial/images/run_simulation_CB.png)
 
 This should produce a simulation similar to the one below: (GIF)
