@@ -75,7 +75,8 @@ Then ticking off the box to the left of its name, then click on **â€œTo Historyâ
     
         ![outputs1_right_sidebar](../source/Spharm_Tutorial/images/outputs1_right_sidebar.png)
     
-* You can view the indexed image by clicking the eye icon next to the name
+17. You can view the indexed image by clicking the eye icon next to the name
+    
     ![view_result_right_sidebar](../source/Spharm_Tutorial/images/view_result_right_sidebar.png)
 
 ## Importing Generated SBML instance into CellBlender
@@ -104,7 +105,8 @@ Then ticking off the box to the left of its name, then click on **â€œTo Historyâ
 
     ![run_simulation_CB](../source/Spharm_Tutorial/images/run_simulation_CB.png)
 
-This should produce a simulation similar to the one shown:
-        ![CellBlender_FullScreen](../source/Spharm_Tutorial/images/CellBlender_FullScreen_gif.gif)
+4. This should produce a simulation similar to the one shown:
+    
+    ![CellBlender_FullScreen](../source/Spharm_Tutorial/images/CellBlender_FullScreen_gif.gif)
 
 
