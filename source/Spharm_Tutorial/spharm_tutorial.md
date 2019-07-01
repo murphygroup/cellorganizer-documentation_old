@@ -70,13 +70,23 @@ Questions
     
     ![Advance_options](../source/Spharm_Tutorial/images/adv_options.png)
 
-16. Once all the information is complete click on the button that will close the options panel. A green box will be displayed indicating that the demo is being run and a new item in the history will be added with the model ran. 
+16. Once all the information is complete click on ![execute_button](../source/Spharm_Tutorial/images/execute_button.png) the button that will close the options panel. A green box will be displayed indicating that the demo is being run and a new item in the history will be added with the model ran. 
     * You should see your generated outputs in the right sidebar
-    * You can view the indexed image by clicking the eye icon next to the name
+    
+        ![outputs1_right_sidebar](../source/Spharm_Tutorial/images/outputs1_right_sidebar.png)
+    
+* You can view the indexed image by clicking the eye icon next to the name
+    ![view_result_right_sidebar](../source/Spharm_Tutorial/images/view_result_right_sidebar.png)
 
 ## Importing Generated SBML instance into CellBlender
 1. Download the SBML instance from Galaxy clicking the eye icon
+
+    ![SBML_Galaxy](../source/Spharm_Tutorial/images/SBML_Galaxy.png)
+
 2. Next, open up Blender with CellBlender pre-installed. Initialize CellBlender.
+     
+    ![initialize_blender](../source/Spharm_Tutorial/images/initialize_blender.png)
+
 3. Import the downloaded SBML instance by going to: **File > Import > BioNetGen/SBML Model(.bng, ./xml)**.  You should now see your imported SBML instance. Use the scroll-pad and mouse to move around and investigate the geometry.
 4. Create a Lotka-Volterra Simulation with our realistic geometry
 5. Next step is to then import a .txt file that includes the preset reactions for our. Go to: **File >Import >CellBlender Model(text/pickle)**
