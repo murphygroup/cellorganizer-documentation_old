@@ -59,8 +59,17 @@ Questions
     ![Tools_panel](../source/Spharm_Tutorial/images/Tools_panel.png)
 
 13. Select the model from the list and select **"Synthesize from all models"** as the synthesis option.
+
+    ![Synthesis_from_all_models_option](../source/Spharm_Tutorial/images/Synthesis_from_all_models.png)
+
 14. To save the output as an image and SBML mesh instance, click the YES button under Output Options for: OMETIFF, SBML Spatial 3, and Indexed Image
+
+    ![Ome_tiff_options](../source/Spharm_Tutorial/images/Ome_tiff_options.png)
+
 15. In the **“Advanced Options”**, match the following image:
+    
+    ![Advance_options](../source/Spharm_Tutorial/images/Advance_options.png)
+
 16. Once all the information is complete click on the button that will close the options panel. A green box will be displayed indicating that the demo is being run and a new item in the history will be added with the model ran. 
     * You should see your generated outputs in the right sidebar
     * You can view the indexed image by clicking the eye icon next to the name
