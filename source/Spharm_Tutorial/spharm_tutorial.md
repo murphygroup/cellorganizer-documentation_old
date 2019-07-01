@@ -105,3 +105,7 @@ Then ticking off the box to the left of its name, then click on **â€œTo Historyâ
     ![run_simulation_CB](../source/Spharm_Tutorial/images/run_simulation_CB.png)
 
 This should produce a simulation similar to the one below: (GIF)
+
+    ![CellBlender_FullScreen](../source/Spharm_Tutorial/images/CellBlender_FullScreen_gif.gif)
+
+
