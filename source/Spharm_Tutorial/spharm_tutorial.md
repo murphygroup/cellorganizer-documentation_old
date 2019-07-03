@@ -104,6 +104,14 @@ Then ticking off the box to the left of its name, then click on **â€œTo Historyâ
 3. Then, save the file as SPHARM_Model_Sim.blend. Next, you should see the Run button appear under the Run Simulation tab. Click that.
 
     ![run_simulation_CB](../source/Spharm_Tutorial/images/run_simulation_CB.png)
+    
+    **Note:** It's possible that the Run button doesn't appear. This may caused by the Mcell binary path not being set if it is not already. Go to the Preferences tab under CellBlender and navigate to the option to set Mcell Binary Path. Depending on your device, this path should then be set to:
+    
+    Linux: `/home/[user]/blender-[version]/[version number]/scripts/addons/cellblender/bin/mcell`  
+    Windows: `C:\Users\[user]\AppData\Romaing\Blender Foundation\Blender\[user]\scripts\addons\cellblender\bin\mcell`  
+    or `C:\ProgramData\Blender Foundation\Blender\[user folder]\scripts\addons\cellblender\bin\mcell`
+    
+    with [user] and [version number] depending on your device.
 
 4. This should produce a simulation similar to the one shown:
     
