@@ -339,3 +339,5 @@ Exercise 10. Retrieve and display information about a model
 1. Select or create a history that contains a diffeomorphic model.
 2. Under the "Useful tools for models" section of the Tools window, select "Print information about a generative model file".
 3. Click "Execute".
+
+.. include:: galaxy-spharm_tutorial/index.rst
