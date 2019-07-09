@@ -12,10 +12,10 @@ Prerequisites
 ------
 1. Galaxy ( 2 options)
 
-   a. Locally installed version of Galaxy ( https://github.com/murphygroup/cellorganizer-galaxy-tools) with Matlab R2018b
-   b. Access to the public server (http://galaxy3.compbio.cs.cmu.edu:9000)
+   a. Locally installed version of `Galaxy <https://github.com/murphygroup/cellorganizer-galaxy-tools>`_ with Matlab R2018b
+   b. Access to the public server `here <http://galaxy3.compbio.cs.cmu.edu:9000>`_
 
-2. Installed version of Blender with the CellBlender package (https://mcell.org/download.html)
+2. Installed version of `Blender with the CellBlender package <https://mcell.org/download.html>`_
 
 Generating SBML Instance from Pretrained SPHARM-RPDM Model on Galaxy
 ------
