@@ -211,8 +211,10 @@ CellOrganizer for Galaxy Tutorial
 
 We have prepared a series of exercises to demonstrate how you might go about using CellOrganizer for Galaxy.
 
+.. include:: ../galaxy-spharm_tutorial/index.rst
+
 Data Importing Exercises
-------------------------
+=================================
 
 Exercise 1. Importing image files that are already in CellOrganizer for Galaxy
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -340,4 +342,4 @@ Exercise 10. Retrieve and display information about a model
 2. Under the "Useful tools for models" section of the Tools window, select "Print information about a generative model file".
 3. Click "Execute".
 
-.. include:: galaxy-spharm_tutorial/index.rst
+
