@@ -1,4 +1,4 @@
-Agenda
+Overview
 ------
 
 1. Downloading Pre-Trained Model on Galaxy
@@ -6,7 +6,7 @@ Agenda
 3. Uploading and viewing your realistic geometry on CellBlender
 4. Creating a Lotka-Volterra Simulation with your geometry
 
-Questions
+Insights
 ------
 
 * What do I need to run  CellOrganizer for Galaxy?
@@ -28,7 +28,7 @@ Generating SBML Instance from Pretrained SPHARM-RPDM Model on Galaxy
 ------
 1. Log in on Galaxy
 2. From the right panel (History panel) click on the **“Gear Icon”**
-3. From the drop down menu click on **“Create a new history”**
+3. From the drop down menu click on **“Create New”**
 
     .. figure:: galaxy-spharm_tutorial/images/create_new_history.png  
 
