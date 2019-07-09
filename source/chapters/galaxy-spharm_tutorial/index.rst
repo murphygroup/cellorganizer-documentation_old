@@ -1,5 +1,5 @@
 Agenda
-=======
+------
 
 1. Downloading Pre-Trained Model on Galaxy
 2. Synthesizing synthetic images and SBML Instance from Model
@@ -7,7 +7,7 @@ Agenda
 4. Creating a Lotka-Volterra Simulation with your geometry
 
 Questions
-==========
+------
 
 * What do I need to run  CellOrganizer for Galaxy?
 * How to create a history using CellOrganizer for Galaxy?
@@ -16,7 +16,7 @@ Questions
 * How to create a Lotka-Volterra simulation using our realistic geometry?
  
 Prerequisites
-==========
+------
 1. Galaxy ( 2 options)
 
    a. Locally installed version of Galaxy ( https://github.com/murphygroup/cellorganizer-galaxy-tools) with Matlab R2018b
@@ -25,7 +25,7 @@ Prerequisites
 2. Installed version of Blender with the CellBlender package (https://mcell.org/download.html)
 
 Generating SBML Instance from Pretrained SPHARM-RPDM Model on Galaxy
-==========
+------
 1. Log in on Galaxy
 2. From the right panel (History panel) click on the **“Gear Icon”**
 3. From the drop down menu click on **“Create a new history”**
@@ -92,7 +92,7 @@ Generating SBML Instance from Pretrained SPHARM-RPDM Model on Galaxy
     .. figure:: ../source/chapters/galaxy-spharm_tutorial/images/view_result_right_sidebar.png
 
 Importing Generated SBML instance into CellBlender
-==========
+------
 
 1. Download the SBML instance from Galaxy clicking the eye icon
 
@@ -107,7 +107,7 @@ Importing Generated SBML instance into CellBlender
     .. figure:: ../source/chapters/galaxy-spharm_tutorial/images/Import_blender.png
 
 Create a Lotka-Volterra Simulation with our realistic geometry
-==========
+------
 1. Next step is to then import a .txt file, located at XXXXX, that includes the preset reactions for our simulation. Go to: **File >Import >CellBlender Model(text/pickle)**
 
     .. figure:: ../source/chapters/galaxy-spharm_tutorial/images/SBML_instance.png
