@@ -1,20 +1,13 @@
 Overview
 ------
 
-1. Downloading Pre-Trained Model on Galaxy
-2. Synthesizing synthetic images and SBML Instance from Model
-3. Uploading and viewing your realistic geometry on CellBlender
-4. Creating a Lotka-Volterra Simulation with your geometry
+1. Prerequisites for running CellOrganizer on Galaxy 
+2. Downloading Pre-Trained Model on Galaxy
+3. Synthesizing synthetic images and SBML Instance from Model
+4. Uploading and viewing your realistic geometry on CellBlender
+5. Creating a Lotka-Volterra Simulation with your geometry
 
-Insights
-------
 
-* What do I need to run  CellOrganizer for Galaxy?
-* How to create a history using CellOrganizer for Galaxy?
-* How to import a pre-loaded model from CellOrganizer on my history?
-* How to import my SBML instance into CellBlender?
-* How to create a Lotka-Volterra simulation using our realistic geometry?
- 
 Prerequisites
 ------
 1. Galaxy ( 2 options)
