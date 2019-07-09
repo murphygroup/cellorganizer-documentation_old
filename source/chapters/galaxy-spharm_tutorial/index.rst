@@ -25,20 +25,20 @@ Generating SBML Instance from Pretrained SPHARM-RPDM Model on Galaxy
 
     .. figure:: galaxy-spharm_tutorial/images/create_new_history.png  
 
-4. Select the **“unnamed history”** rename and annotate history
+4. To rename the history. Double click on “Unnamed history” and rename it to **“SPHARM Model”**. Then click enter.
     
     .. figure:: galaxy-spharm_tutorial/images/renaming_history1.png
 
-5. To rename the history. Double click on “Unnamed history” and rename it to **“SPHARM Model”**. Then click enter.
-    
-    .. figure:: galaxy-spharm_tutorial/images/Tagging_a_history.png
 
-6. Annotate history. Click on the tag icon to add tags to this history. Add **“train”** and **“vesicle”** as tags. Click enter after each tag.
-7. Import dataset from shared data. Click on **“Shared Data”** at the top of the screen then click on **“Data Libraries”** from the dropdown menu. 
+5. Annotate history. Click on the tag icon to add tags to this history. Add **“train”** and **“vesicle”** as tags. Click enter after each tag.
+
+   .. figure:: galaxy-spharm_tutorial/images/add_tags.png
+
+6. Import dataset from shared data. Click on **“Shared Data”** at the top of the screen then click on **“Data Libraries”** from the dropdown menu. 
     
     .. figure:: galaxy-spharm_tutorial/images/data_libraries.png
 
-8. In the following page, follow the links for:
+7. In the following page, follow the links for:
 
    a. Click **“Data Libraries”** from the drop down menu.
    b. Click on **“Generative Models”**
@@ -46,41 +46,41 @@ Generating SBML Instance from Pretrained SPHARM-RPDM Model on Galaxy
    d.  Click on **“3D”**
    e.  Click on **“3D_HeLa_LAMP2_SPHARM_vesicle_model.mat”**. 
 
-9.  Then ticking off the box to the left of its name, then click on **“To History”** and select the history called **“SPHARM Model”**
+8.  Then ticking off the box to the left of its name, then click on **“To History”** and select the history called **“SPHARM Model”**
 
     .. figure:: galaxy-spharm_tutorial/images/to_history.png
 
-10. Then click on **“to history”** button in the top menu. A dialog window with appear with the current history on board pre-selected or you can create a new one as it gives you that option as well.
+9. Then click on **“to history”** button in the top menu. A dialog window with appear with the current history on board pre-selected or you can create a new one as it gives you that option as well.
    * Click on the **“import”** button if your history is already pre-selected this will import both datasets into your history. Once the images are imported _a green box in the top right corner_ will appear, click on it so it will take you to the history with the images imported
 
-11. Or you can also click on the |galaxy_button| icon in the top left corner of the screen  to return to the home page. 
+10. Or you can also click on the |galaxy_button| icon in the top left corner of the screen  to return to the home page. 
 
     .. |galaxy_button| image:: galaxy-spharm_tutorial/images/galaxy_button.png  
 
-12. Then, click on **“Synthesis”** under the **“Tools”** menu, and follow the link to **“Synthesize an instance from multiple models trained in CellOrganizer”**
+11. Then, click on **“Synthesis”** under the **“Tools”** menu, and follow the link to **“Synthesize an instance from multiple models trained in CellOrganizer”**
     
     .. figure:: galaxy-spharm_tutorial/images/Tools_panel.png
 
-13. Select the model from the list and select **"Synthesize from all models"** as the synthesis option.
+12. Select the model from the list and select **"Synthesize from all models"** as the synthesis option.
 
     .. figure:: galaxy-spharm_tutorial/images/Synthesis_from_all_models.png
 
-14. To save the output as an image and SBML mesh instance, click the YES button under Output Options for: OMETIFF, SBML Spatial 3, and Indexed Image
+13. To save the output as an image and SBML mesh instance, click the YES button under Output Options for: OMETIFF, SBML Spatial 3, and Indexed Image
 
     .. figure:: galaxy-spharm_tutorial/images/Ome_tiff_options.png
 
-15. In the **“Advanced Options”**, match the following image:
+14. In the **“Advanced Options”**, match the following image:
     
     .. figure:: galaxy-spharm_tutorial/images/adv_options.png
 
-16. Once all the information is complete click on |execute|, the button that will close the options panel. A green box will be displayed indicating that the demo is being run and a new item in the history will be added with the model ran. 
+15. Once all the information is complete click on |execute|, the button that will close the options panel. A green box will be displayed indicating that the demo is being run and a new item in the history will be added with the model ran. 
 
     .. |execute| image:: galaxy-spharm_tutorial/images/execute_button.png
     
     * You should see your generated outputs in the right sidebar
         .. figure:: galaxy-spharm_tutorial/images/outputs1_right_sidebar.png
     
-17. You can view the indexed image by clicking the eye icon next to the name
+16. You can view the indexed image by clicking the eye icon next to the name
     
     .. figure:: galaxy-spharm_tutorial/images/view_result_right_sidebar.png
 
