@@ -73,9 +73,11 @@ Generating SBML Instance from Pretrained SPHARM-RPDM Model on Galaxy
     
     .. figure:: ../source/chapters/galaxy-spharm_tutorial/images/adv_options.png
 
-16. Once all the information is complete click on |execute| the button that will close the options panel. A green box will be displayed indicating that the demo is being run and a new item in the history will be added with the model ran. 
+16. Once all the information is complete click on |execute|, the button that will close the options panel. A green box will be displayed indicating that the demo is being run and a new item in the history will be added with the model ran. 
+
+    .. |execute| image:: ../source/chapters/galaxy-spharm_tutorial/images/execute_button.png
+    
     * You should see your generated outputs in the right sidebar
-    |execute| .. figure:: ../source/chapters/galaxy-spharm_tutorial/images/execute_button.png
         .. figure:: ../source/chapters/galaxy-spharm_tutorial/images/outputs1_right_sidebar.png
     
 17. You can view the indexed image by clicking the eye icon next to the name
@@ -104,10 +106,12 @@ Create a Lotka-Volterra Simulation with our realistic geometry
     .. figure:: ../source/chapters/galaxy-spharm_tutorial/images/SBML_instance.png
 
 2. Next, we have to rescale and color our simulated particles. Under the **"Molecules"** button, set the scale of both **"prey"** and **"predator"** to 20.0. Set the color of **"prey"** to blue and **"predator"** to red. 
-
-    .. figure:: ../source/chapters/galaxy-spharm_tutorial/images/color_properties_CB1.png  
-    .. figure:: ../source/chapters/galaxy-spharm_tutorial/images/color_properties_CB2.png
-
+    
+    .. image:: ../source/chapters/galaxy-spharm_tutorial/images/color_properties_CB1.png
+        :width: 40 %
+        
+    .. image:: ../source/chapters/galaxy-spharm_tutorial/images/color_properties_CB2.png
+        :width: 40 %
 3. Then, save the file as SPHARM_Model_Sim.blend. Next, you should see the Run button appear under the Run Simulation tab. Click that.
 
     .. figure:: ../source/chapters/galaxy-spharm_tutorial/images/run_simulation_CB.png
