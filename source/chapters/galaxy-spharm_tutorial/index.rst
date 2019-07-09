@@ -18,8 +18,9 @@ Questions
 Prerequisites
 ==========
 1. Galaxy ( 2 options)
-    * Locally installed version of Galaxy ( https://github.com/murphygroup/cellorganizer-galaxy-tools) with Matlab R2018b
-    * Access to the public server (http://galaxy3.compbio.cs.cmu.edu:9000)
+
+   a. Locally installed version of Galaxy ( https://github.com/murphygroup/cellorganizer-galaxy-tools) with Matlab R2018b
+   b. Access to the public server (http://galaxy3.compbio.cs.cmu.edu:9000)
 
 2. Installed version of Blender with the CellBlender package (https://mcell.org/download.html)
 
@@ -45,18 +46,24 @@ Generating SBML Instance from Pretrained SPHARM-RPDM Model on Galaxy
     .. figure:: ../source/chapters/galaxy-spharm_tutorial/images/data_libraries.png
 
 8. In the following page, follow the links for:
-    * Click **“Data Libraries”** from the drop down menu.
-    * Click on **“Generative Models”**
-    * Click on **“HeLa”**
-    * Click on **“3D”**
-    * Click on **“3D_HeLa_LAMP2_SPHARM_vesicle_model.mat”**. 
+
+   a. Click **“Data Libraries”** from the drop down menu.
+   b. Click on **“Generative Models”**
+   c. Click on **“HeLa”**
+   d.  Click on **“3D”**
+   e.  Click on **“3D_HeLa_LAMP2_SPHARM_vesicle_model.mat”**. 
 
 9.  Then ticking off the box to the left of its name, then click on **“To History”** and select the history called **“SPHARM Model”**
+
     .. figure:: ../source/chapters/galaxy-spharm_tutorial/images/to_history.png
 
 10. Then click on **“to history”** button in the top menu. A dialog window with appear with the current history on board pre-selected or you can create a new one as it gives you that option as well.
-         Click on the **“import”** button if your history is already pre-selected this will import both datasets into your history. Once the images are imported _a green box in the top right corner_ will appear, click on it so it will take you to the history with the images imported
-11. Or you can also click on the .. figure:: ../source/chapters/galaxy-spharm_tutorial/images/galaxy_button.png   icon in the top left corner of the screen  to return to the home page. 
+   * Click on the **“import”** button if your history is already pre-selected this will import both datasets into your history. Once the images are imported _a green box in the top right corner_ will appear, click on it so it will take you to the history with the images imported
+
+11. Or you can also click on the |galaxy_button| icon in the top left corner of the screen  to return to the home page. 
+
+    .. |galaxy_button| image:: ../source/chapters/galaxy-spharm_tutorial/images/galaxy_button.png  
+
 12. Then, click on **“Synthesis”** under the **“Tools”** menu, and follow the link to **“Synthesize an instance from multiple models trained in CellOrganizer”**
     
     .. figure:: ../source/chapters/galaxy-spharm_tutorial/images/Tools_panel.png
@@ -109,7 +116,7 @@ Create a Lotka-Volterra Simulation with our realistic geometry
     
     .. image:: ../source/chapters/galaxy-spharm_tutorial/images/color_properties_CB1.png
         :width: 40 %
-        
+    |
     .. image:: ../source/chapters/galaxy-spharm_tutorial/images/color_properties_CB2.png
         :width: 40 %
 3. Then, save the file as SPHARM_Model_Sim.blend. Next, you should see the Run button appear under the Run Simulation tab. Click that.
