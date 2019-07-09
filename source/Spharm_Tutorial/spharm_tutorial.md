@@ -93,7 +93,7 @@ Then ticking off the box to the left of its name, then click on **â€œTo Historyâ
     ![Import_blender](../source/Spharm_Tutorial/images/Import_blender.png)
 
 ## Create a Lotka-Volterra Simulation with our realistic geometry
-1. Next step is to then import a .txt file that includes the preset reactions for our. Go to: **File >Import >CellBlender Model(text/pickle)**
+1. Next step is to then import a .txt file, located at XXXXX, that includes the preset reactions for our simulation. Go to: **File >Import >CellBlender Model(text/pickle)**
 
     ![SBML_instance](../source/Spharm_Tutorial/images/SBML_instance.png) 
 
@@ -105,7 +105,7 @@ Then ticking off the box to the left of its name, then click on **â€œTo Historyâ
 
     ![run_simulation_CB](../source/Spharm_Tutorial/images/run_simulation_CB.png)
     
-    **Note:** It's possible that the Run button doesn't appear. This may caused by the Mcell binary path not being set if it is not already. Go to the Preferences tab under CellBlender and navigate to the option to set Mcell Binary Path. Depending on your device, this path should then be set to:
+    **Note:** It's possible that the Run button doesn't appear. This may be caused by the Mcell binary path not being set if not by default. Go to the Preferences tab under CellBlender and navigate to the option to set Mcell Binary Path. Depending on your device, this path should then be set to:
     
     Linux: `/home/[user]/blender-[version]/[version number]/scripts/addons/cellblender/bin/mcell`  
     Windows: `C:\Users\[user]\AppData\Romaing\Blender Foundation\Blender\[user]\scripts\addons\cellblender\bin\mcell`  
