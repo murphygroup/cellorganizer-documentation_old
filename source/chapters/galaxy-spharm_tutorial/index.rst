@@ -15,14 +15,16 @@ Questions
 * How to import my SBML instance into CellBlender?
 * How to create a Lotka-Volterra simulation using our realistic geometry?
  
-### Prerequisites
+Prerequisites
+==========
 1. Galaxy ( 2 options)
-   * Locally installed version of Galaxy ( https://github.com/murphygroup/cellorganizer-galaxy-tools) with Matlab R2018b
-   * Access to the public server (http://galaxy3.compbio.cs.cmu.edu:9000)
+    * Locally installed version of Galaxy ( https://github.com/murphygroup/cellorganizer-galaxy-tools) with Matlab R2018b
+    * Access to the public server (http://galaxy3.compbio.cs.cmu.edu:9000)
+
 2. Installed version of Blender with the CellBlender package (https://mcell.org/download.html)
 
-## Generating SBML Instance from Pretrained SPHARM-RPDM Model on Galaxy
-
+Generating SBML Instance from Pretrained SPHARM-RPDM Model on Galaxy
+==========
 1. Log in on Galaxy
 2. From the right panel (History panel) click on the **“Gear Icon”**
 3. From the drop down menu click on **“Create a new history”**
@@ -46,10 +48,10 @@ Questions
     * Click **“Data Libraries”** from the drop down menu.
     * Click on **“Generative Models”**
     * Click on **“HeLa”**
-    *Click on **“3D”**
+    * Click on **“3D”**
     * Click on **“3D_HeLa_LAMP2_SPHARM_vesicle_model.mat”**. 
 
-Then ticking off the box to the left of its name, then click on **“To History”** and select the history called **“SPHARM Model”**
+9.  Then ticking off the box to the left of its name, then click on **“To History”** and select the history called **“SPHARM Model”**
     ![to_history](../source/chapters/galaxy-spharm_tutorial/images/to_history.png)
 
 10. Then click on **“to history”** button in the top menu. A dialog window with appear with the current history on board pre-selected or you can create a new one as it gives you that option as well.
@@ -80,7 +82,9 @@ Then ticking off the box to the left of its name, then click on **“To History�
     
     ![view_result_right_sidebar](../source/chapters/galaxy-spharm_tutorial/images/view_result_right_sidebar.png)
 
-## Importing Generated SBML instance into CellBlender
+Importing Generated SBML instance into CellBlender
+==========
+
 1. Download the SBML instance from Galaxy clicking the eye icon
 
     ![SBML_Galaxy](../source/chapters/galaxy-spharm_tutorial/images/SBML_Galaxy.png)
@@ -93,7 +97,8 @@ Then ticking off the box to the left of its name, then click on **“To History�
 
     ![Import_blender](../source/chapters/galaxy-spharm_tutorial/images/Import_blender.png)
 
-## Create a Lotka-Volterra Simulation with our realistic geometry
+Create a Lotka-Volterra Simulation with our realistic geometry
+==========
 1. Next step is to then import a .txt file, located at XXXXX, that includes the preset reactions for our simulation. Go to: **File >Import >CellBlender Model(text/pickle)**
 
     ![SBML_instance](../source/chapters/galaxy-spharm_tutorial/images/SBML_instance.png) 
