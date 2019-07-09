@@ -207,14 +207,17 @@ Detailed information about **Workflows** is beyond the scope of this document. T
 
 
 CellOrganizer for Galaxy Tutorial
-=================================
+==============================
 
 We have prepared a series of exercises to demonstrate how you might go about using CellOrganizer for Galaxy.
 
 .. include:: ../galaxy-spharm_tutorial/index.rst
 
+CellOrganizer for Galaxy Exercises
+==============================
+
 Data Importing Exercises
-=================================
+----------------------------------------------------
 
 Exercise 1. Importing image files that are already in CellOrganizer for Galaxy
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
