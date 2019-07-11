@@ -25,7 +25,7 @@ Generating SBML Instance from Pretrained SPHARM-RPDM Model on Galaxy
 
     .. figure:: galaxy-spharm_tutorial/images/create_new_history.png  
 
-4. To rename the history. Double click on “Unnamed history” and rename it to **“SPHARM Model”**. Then click enter.
+4. To rename the history. Double click on **“Unnamed history”** and rename it to **“SPHARM Model”**. Then click enter.
     
     .. figure:: galaxy-spharm_tutorial/images/renaming_history1.png
 
