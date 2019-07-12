@@ -1,5 +1,6 @@
 PCA Model
----------
+----------
+
     General Parameters
     -------------------
             **debug** 		If set to true, then the function will (1) keep temporary results folder, (2) will    
@@ -11,6 +12,7 @@ PCA Model
 
             **save_segmentations**     Will save the segmentations to the model file. Setting this option to true 
                                        will create a considerably large file.
+    
     Img2sml
     -------
 
