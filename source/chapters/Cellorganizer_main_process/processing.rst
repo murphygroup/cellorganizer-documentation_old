@@ -16,7 +16,6 @@ b. **Sml2img** Synthesizes an image from a list of SLML models.Sml2report
 c. **Sml2info** Generate a report from information extracted from a generative model file
 d. **Sml2sml** Combines multiple generative model files into a single model file.Inputs 
 
-.. figure:: source/chapters/Cellorganizer_main_process/images/Cellorganizer_models.png
 
 Option Parameters Based on Model and Tool Used
 ----------------------------------------------
