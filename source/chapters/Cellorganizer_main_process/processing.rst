@@ -19,7 +19,7 @@ d. **Sml2sml** Combines multiple generative model files into a single model file
 
 Option Parameters Based on Model and Tool Used
 ----------------------------------------------
-1. `PCA <http://murphylab.web.cmu.edu/publications/180-peng2011.pdf>`_
+1. `PCA <source/chapters/Cellorganizer_main_process/PCA_options.rst>`_
 2. Diffeomorphic
 3. Classic Generative
 4. SPHARM-RPDM
