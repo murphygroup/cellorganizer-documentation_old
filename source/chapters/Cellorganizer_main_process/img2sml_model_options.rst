@@ -83,14 +83,27 @@ Diffeomorphic Model
 
 **Mandatory**
 ^^^^^^^^^^^^^
-* **model.diffeomorphic.distance_computing_method** [default is ‘faster’]  This option specifies
-* **model.diffeomorphic.com_align** [default is ‘nuc’]  
+**model.diffeomorphic.distance_computing_method**  
+    * This option specifies
+    * default: ‘faster’
+
+**model.diffeomorphic.com_align** 
+    * 
+    * default: ‘nuc’  
 
 **Optional**
 ^^^^^^^^^^^^
-* **model.microtubule.searchparams.n** [50:100:500]
-* **model.microtubule.searchparams.mulen** [10:10:50]
-* **model.microtubule.searchparams.colli_min_number** [0.97, 1 ]
+**model.microtubule.searchparams.n** 
+    *
+    * [50:100:500]
+
+**model.microtubule.searchparams.mulen** 
+    * 
+    * [10:10:50]
+
+**model.microtubule.searchparams.colli_min_number** 
+    * 
+    * [0.97, 1 ]
 
 T-Cell Distribution Model
 -------------------------
