@@ -18,6 +18,39 @@ To start using CellOrganizer for Galaxy you can either
 * install the tools in your own Galaxy instance
 * use our public server
 
+Installing local instance of CellOrganizer for Galaxy
+----------------------------------------------------
+Before you attempt to install the tools make sure to have
+
+* A working Galaxy instance. Installing Galaxy is beyond the scope of this document. Please refer to the [official documentation](https://galaxyproject.org/admin/get-galaxy/) to install an instance.
+* Matlab. Matlab should be installed in the same machine running Galaxy. Installing Matlab is beyond the scope of this document. Please refer to the [official documentation](https://www.mathworks.com/support/install-matlab.html?q=&page=1) to build an instance.
+* The Matlab binary must be in the `$PATH` of the user running Galaxy.
+
+  For example
+  
+  ```
+  ~ export PATH=$(PATH):/opt/matlab/bin  
+  ~ echo $PATH
+  /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/opt/matlab/bin
+
+  ~ which matlab
+  /opt/matlab/bin/matlab
+  ```
+CellOrganizer must be downloaded into the system running Galaxy. 
+
+* Its location should be set in an environment variable called `$CELLORGANIZER`. The environment variable needs to be accessible to the user running your Galaxy instance. Make sure the user running Galaxy has reading permissions on the CellOrganizer location.
+
+  ```
+  ~ chown -R galaxy:galaxy /usr15/galaxy/cellorganizer-galaxy-tools-v2.8.1/cellorganizer3
+  ~ export CELLORGANIZER=/usr15/galaxy/cellorganizer-galaxy-tools-v2.8.1/cellorganizer3
+  ~ echo $CELLORGANIZER 
+    /usr15/galaxy/cellorganizer-galaxy-tools-v2.8.1/cellorganizer3
+  ```
+
+* To download CellOrganizer visit the [official website](http://www.cellorganizer.org). Please make sure the version of CellOrganizer you install matches the version of CellOrganizer for Galaxy. 
+
+* Copy the CellOrganizer tools into the `$GALAXY/tools`. The variable `$GALAXY`, as explained in the official documentation, holds the location of your Galaxy instance.
+
 Accessing the CellOrganizer for Galaxy public server
 ----------------------------------------------------
 
