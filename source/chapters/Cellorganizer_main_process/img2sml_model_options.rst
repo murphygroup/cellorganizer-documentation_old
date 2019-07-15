@@ -5,36 +5,78 @@ Img2slml
 -----
 
 General Parameters
+---------
 
+**Mandatory**
+^^^^^^^^^^^^^
 
-* **debug** 		If set to true, then the function will (1) keep temporary results folder, (2) will print information useful for debugging. Default is false.
+**debug** 		
+    * If set to true, then the function will (1) keep temporary results folder, (2) will print information useful for debugging. 
+    * Default: false.
 
-* **display**      	Default is false] If set to true, then plots useful for debugging with be open. This functionality is meant for debugging only, setting this to true will considerably slow down computation.
+**display**     
+    * If set to true, then plots useful for debugging with be open. This functionality is meant for debugging only, setting this to true will considerably slow down computation.
+    * Default: false
 
-* **save_segmentations**    Will save the segmentations to the model file. Setting this option to true will create a considerably large file.
-                               
-* **Masks** [Optional] 	      Masks collection Directory.
-* **Train.flag** [Optional]   [default is “all”] Selects what model is going to be trained (‘nuclear’, ‘framework’, or ‘all’). 
-* **Model Name** [Optional]   [default is empty] Holds the name of the model. 
-* **Model Id** [Optional]     Holds the id of the model. Default is a randomly generated string.
-* **Model Filename**          Holds the output filename.
-* **Downsampling**            the downsampling vector to be used during preprocessing.
+**save_segmentations**  
+    * Will save the segmentations to the model file. Setting this option to true will create a considerably large file.
+
+**Optional**
+^^^^^^^^^^^^                               
+**Masks**  
+    * Masks collection Directory.
+
+**Train.flag**  
+    * Selects what model is going to be trained (‘nuclear’, ‘framework’, or ‘  all’). 
+    * default: “all”
+
+**Model Name**   
+    * Holds the name of the model. 
+    * default: empty
+
+**Model Id**      
+    * Holds the id of the model. 
+    * Default is a randomly generated string.
+
+**Mode** 
+    * Holds the outp*  ut filename.
+
+**Downsampling** 
+    * The downsampling vector to be used during preprocessing.
 	
 PCA Model
 ---------
 
 **Mandatory**
 ^^^^^^^^^^^^^
-* **Latent_dim** [default is 15] This option specifies how many latent dimensions (principal vectors or principal components) should be used for modeling the shape space.  Valid values are positive integers.   
-* **imagesize** [1024, 1024] refers to the size resolution of the image being output.    
+**Latent_dim**     
+    * This option specifies how many latent dimensions (principal vectors or principal components) should be used for modeling the shape space.  Valid values are positive integers.
+    * Default: 15
+
+**imagesize** 
+    * refers to the size resolution of the image being output.    
+    * Default: [1024, 1024]
 
 **Optional**
 ^^^^^^^^^^^^
-* **Compression**  [default is ‘lzw’] compresses the header of an OME.TIFF image output.     
-* **Random_sampling**  random sampling of images is performed by interpolation between two exiting images.
-* **Pca_synthesis_method** ['reconstruction' or 'random_sampling'] reconstruct images from the model; ‘random_sampling’ random sampling images by interpolation between two exiting images. 
-* **NumberOfSynthesizedImages** [default is 1] the final image produced by the model. 
-* **targetDirectory** [default ‘pwd’] the directory path where the image is going to be saved.
+**Compression**  
+    * compresses the header of an OME.TIFF image output.
+    * default is ‘lzw’
+
+**Random_sampling** 
+    * random sampling of images is performed by interpolation between two exiting images.
+
+**Pca_synthesis_method**
+    *  ['reconstruction' or 'random_sampling'] reconstruct images from the model; ‘random_sampling’ random sampling images by interpolation between two exiting images. 
+
+
+**NumberOfSynthesizedImages**
+    * The final image produced by the model. 
+    *  default: 1
+
+**targetDirectory** 
+    * the directory path where the image is going to be saved.
+    * default: ‘pwd’
 
 Diffeomorphic Model
 -------------------
