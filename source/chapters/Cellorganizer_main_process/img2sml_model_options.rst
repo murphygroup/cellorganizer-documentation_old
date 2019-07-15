@@ -1,7 +1,7 @@
 Option Parameters Based on Functionality and Model Used
 --------------------------------------------------
 
-Img2sml
+Img2slml
 -----
 
 General Parameters
