@@ -74,7 +74,7 @@ copyright = u'2007-2019, Murphy Lab at Carnegie Mellon University'
 # The short X.Y version.
 version = '2.8'
 # The full version, including alpha/beta/rc tags.
-release = '2.8.0'
+release = '2.8.1'
 
 #def setup(app):
 #  app.add_directive('exec', ExecDirective)
