@@ -1,13 +1,8 @@
 slml2slml
 ********
 
-**Mandatory**
-
-*options.selection*
+*options.selection* (mandatory)
   * a matrix used to specify what submodels should be used from each file.
 
-**Optional**
-
-*options.output_filename*
+*options.output_filename* (optional) **["model.mat"]**
   * the file name of output model.
-  * Default is "model.mat".
