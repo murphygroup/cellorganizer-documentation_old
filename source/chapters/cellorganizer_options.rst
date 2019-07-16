@@ -3,4 +3,6 @@
 CellOrganizer Pipeline
 ########################
 
-.. include:: Cellorganizer_main_process/img2sml_model_options.rst
+.. include:: cellorganizer_options/img2slml_options.rst
+
+.. include:: cellorganizer_options/slml2img_options.rst
