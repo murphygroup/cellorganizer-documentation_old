@@ -28,6 +28,7 @@ Contents:
 
    ./chapters/api
 
+   ./chapters/cellorganizer_options
 .. Indices and tables
 .. ##################
 
