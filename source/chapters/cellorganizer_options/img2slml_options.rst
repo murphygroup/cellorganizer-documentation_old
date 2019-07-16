@@ -3,189 +3,147 @@ img2slml
 
 General Options
 ==============
-Mandatory
----------
 
-*options.train.flag*
+
+*options.train.flag* (mandatory)
     * Selects what model is going to be trained (‘nuclear’, 'cell', ‘framework’, or ‘  all’).
+
+*options.debug* (optional) **[false]**
+    * If set to true, then the function will (1) keep temporary results folder, (2) will print information useful for debugging.
+
+*options.masks* (optional) **[empty]**
+    * List holding the mask files for input imageSize
+
+*options.save_segmentations* (optional) **[false]**
+    * Will save the segmentations to the model file. Setting this option to true will create a considerably large file.
+
+*options.display* (optional) **[false]**
+    * If set to true, then plots useful for debugging with be open. This functionality is meant for debugging only, setting this to true will considerably slow down computation.
+
+*options.model.name* (optional) **[empty]**
+    * Holds the name of the model.
+
+*options.model.id* (optional) **['randomly generated string']**
+    * Holds the id of the model.
+
+*options.model.filename* (optional) **['model.mat']**
+    * Holds the output filename.
+
+*options.downsampling* (optional) **[[1,1,1]]**
+    * The downsampling vector to be used during preprocessing.
+
 
 *Nuclear Shape model*
 ^^^^^^^^^^^^^^^^^^^
-        *options.nucleus.class*
-            * Holds the nuclear membrane model class.
-        *options.nucleus.type*
-            * Holds the nuclear membrane model type.
+*options.nucleus.class* (mandatory)
+    * Holds the nuclear membrane model class.
+*options.nucleus.type* (mandatory)
+    * Holds the nuclear membrane model type.
+*options.nucleus.name* (optional) **[empty]**
+    * Holds the name of the nuclear model.
+*options.nucleus.id* (optional) **['randomly generated string']**
+    * Holds the id of the nuclear model.
+
 *Cell Shape model*
 ^^^^^^^^^^^^^^^^^^^
-        *options.cell.class*
-            * Holds the cell membrane model class.
-
-        *options.cell.type*
-            * Holds the cell membrane model type.
+*options.cell.class* (mandatory)
+    * Holds the cell membrane model class.
+*options.cell.type* (mandatory)
+    * Holds the cell membrane model type.
+*options.cell.name* (optional)**[empty]**
+    * Holds the name of the cell model.
+    * Default: empty
+*options.cell.id* (optional)**['randomly generated string']**
+    * Holds the id of the cell model.
+    * Default: randomly generated string.
 
 *Protein Shape model*
 ^^^^^^^^^^^^^^^^^^^
-    *options.protein.class*
-        * Holds the protein membrane model class.
+*options.protein.class* (mandatory)
+    * Holds the protein membrane model class.
 
-    *options.protein.type*
-        * Holds the protein membrane model type.
+*options.protein.type* (mandatory)
+    * Holds the protein membrane model type.
 
-
-Optional
----------
-
-*options.debug*
-    * If set to true, then the function will (1) keep temporary results folder, (2) will print information useful for debugging.
-    * Default: false
-
-*options.masks*
-    * List holding the mask files for input imageSize
+*options.protein.name* (optional)**[empty]**
+    * Holds the name of the protein model.
     * Default: empty
 
-*options.save_segmentations*
-    * Will save the segmentations to the model file. Setting this option to true will create a considerably large file.
-    * Default: false
-
-*options.display*
-    * If set to true, then plots useful for debugging with be open. This functionality is meant for debugging only, setting this to true will considerably slow down computation.
-    * Default: false
-
-*options.model.name*
-    * Holds the name of the model.
-    * Default: empty
-
-*options.model.id*
-    * Holds the id of the model.
+*options.protein.id* (optional) **['randomly generated string']**
+    * Holds the id of the protein model.
     * Default: randomly generated string.
 
-*options.model.filename*
-    * Holds the output filename.
-    * Default: model.mat
 
-*options.downsampling*
-    * The downsampling vector to be used during preprocessing.
-    * Default: [1,1,1]
 
-*Nuclear Shape model*
-^^^^^^^^^^^^^^^^^^^
-    *options.nucleus.name*
-        * Holds the name of the nuclear model.
-        * Default: empty
-    *options.nucleus.id*
-        * Holds the id of the nuclear model.
-        * Default: randomly generated string.
-
-*Cell Shape model*
-^^^^^^^^^^^^^^^^^^^
-    *options.cell.name*
-        * Holds the name of the cell model.
-        * Default: empty
-
-    *options.cell.id*
-        * Holds the id of the cell model.
-        * Default: randomly generated string.
-
-*Protein Shape Model*
-^^^^^^^^^^^^^^^^^^^
-    *options.protein.name*
-        * Holds the name of the protein model.
-        * Default: empty
-
-    *options.protein.id*
-        * Holds the id of the protein model.
-        * Default: randomly generated string.
+Model Specific Parameters
+==============
 
 PCA (learn more `here <https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/bty983/5232995>`_ )
-==============
+^^^^^^^^^^^^^^^^^^^
 
-**Mandatory**
-
-*options.model.pca.latent_dim*
+*options.model.pca.latent_dim* (mandatory) **[15]**
     * This option specifies how many latent dimensions (principal vectors or principal components) should be used for modeling the shape space.  Valid values are positive integers.
-    * Default: 15
 
 Diffeomorphic (learn more `here <http://murphylab.web.cmu.edu/publications/144-rohde2008.pdf>`_ )
-==============
+^^^^^^^^^^^^^^^^^^^
 
-**Mandatory**
-
-*model.diffeomorphic.distance_computing_method*
+*model.diffeomorphic.distance_computing_method* (mandatory)  **['faster']**
     * This option specifies
-    * default: ‘faster’
 
-*model.diffeomorphic.com_align*
+*model.diffeomorphic.com_align* (mandatory)  **['nuc']**
     *
-    * default: ‘nuc’
-
 
 T-Cell Distribution (learn more `here <https://link.springer.com/protocol/10.1007/978-1-4939-6881-7_25>`_ )
-==============
+^^^^^^^^^^^^^^^^^^^
 
-**Mandatory**
 
-*options.model.tcell.synapse_location*
+*options.model.tcell.synapse_location* (mandatory)
     * File path to annotation of the synapse positions of the T cells as input.
 
-*options.model.tcell.results_location*
+*options.model.tcell.results_location* (mandatory)
     * File path for where the results should be saved.
 
-*options.model.tcell.named_option_set*
+*options.model.tcell.named_option_set* (mandatory)
     * The running choice for CellOrganizer and one sensor of two-point annotation.
 
-*options.model.tcell.model_type_to_include*
+*options.model.tcell.model_type_to_include* (mandatory)
     * Set up for model to include.
-    *
 
-*options.model.tcell.infer_synapses*
+*options.model.tcell.infer_synapses* (mandatory)
     *
     *  [default is ] true or false.
 
-**Optional**
+*options.model.tcell.use_two_point_synapses* (optional)**[false]**
+    * Set up the mode of synapse to use, if needed you can use two-point by setting the option as true.
 
-*options.model.tcell.use_two_point_synapses*
-    * Set up the mode of synapse to use, if needed you can use two-point by set up the option as true.
-    * default one-point
-
-*options.model.tcell.timepoints_to_include*
+*options.model.tcell.timepoints_to_include* (optional)  
     * If creation of models for only a subset of the time points is desired, edit to specify which time points to include.
 
-*options.model.tcell.adjust_one_point_alignment*
+*options.model.tcell.adjust_one_point_alignment* (optional)
     * Set up alignment adjustment true or false.
     * default:
 
-*options.model.tcell.ometiff*
-    *  If true, then it assumes images are OME.TIFFs with annotations.
-    * default: ‘false’
-
+*options.model.tcell.ometiff* (optional)**[false]**
+    * If true, then it assumes images are OME.TIFFs with annotations.
 
 3D SPHARM-RPDM (learn more `here <https://link.springer.com/protocol/10.1007%2F978-1-4939-9102-0_11>`_ )
-==============
+^^^^^^^^^^^^^^^^^^^
 
-**Mandatory**
-
-*options.model.spharm_rpdm.components*
+*options.model.spharm_rpdm.components* (mandatory)
     * This specifies which components should be included in the shape model. The valid values are {'cell'}, {'nuc'}, or {'cell', 'nuc'}.
     * default is
 
-**Optional**
-
-*options.model.spharm_rpdm.alignment_method*
+*options.model.spharm_rpdm.alignment_method* (optional) **['major_axis]**
     * method by which cells willbe aligned when producing shape descriptors. The possible values are 'major_axis' or 'foe'.
-    * default: ‘major_axis’
 
-*options.model.spharm_rpdm.rotation_plane*
+*options.model.spharm_rpdm.rotation_plane* (optional) **['xy']**
     * Dimensions of image that will used for alignment. The possible values are 'xy' (defaut), 'xz', 'yz' or ‘xyz'. For example, xy plane (around the z axis). if ‘xy‘ is specified, each cell will be rotated in the
-    * Default: 'xy'
 
-*options.model.spharm_rpdm.postprocess*
+*options.model.spharm_rpdm.postprocess* (optional) **[true]**
     * This specifies whether alignment and size normalization, should be done after parameterization. The values are ‘true’ or ‘false’.
-    * default: ‘true’
 
-*options.model.spharm_rpdm.maxDeg*
+*options.model.spharm_rpdm.maxDeg* (optional) **[31]**
     * This specifies the degree up to which spherical harmonics should be calculated. Valid values are positive integers.
-    * default: 31
 
-*options.model.spharm_rpdm.latent_dim*
+*options.model.spharm_rpdm.latent_dim* (optional) **[15]**
     * This specifies how many latent dimensions should be used for modeling the shape space. Valid values are positive integers.
-    * default is 15
