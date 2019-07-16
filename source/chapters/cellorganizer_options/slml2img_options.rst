@@ -110,11 +110,11 @@ General Options
 
 **Mandatory**
 
-*model.pca.pca_synthesis_method*
+*options.model.pca.pca_synthesis_method*
     * The method in which the generated image is synthesized.
     * ['reconstruction' or 'random sampling']
 
-*model.pca.imageSize*
+*options.model.pca.imageSize*
     * image size of the resulting synthesized image
     * [1024,1024]
 
@@ -126,7 +126,7 @@ General Options
 
 **Mandatory**
 
-*model.spharm_rpdm.synthesis_method*
+*options.model.spharm_rpdm.synthesis_method*
     *
     * ['reconstruction' or 'random sampling']
 
@@ -135,22 +135,22 @@ General Options
 ~~~~~~~~~~~
 **Mandatory**
 
-*model.tcell.results_location*
+*options.model.tcell.results_location*
     * File path for where the results should be saved.
 
-*model.tcell.named_option_set*
+*options.model.tcell.named_option_set*
     * The running choice for CellOrganizer and one sensor of two-point annotation
 
-*model.tcell.sensor*
+*options.model.tcell.sensor*
     * Set up protein name
 
-*model.tcell.model_type_to_include*
+*options.model.tcell.model_type_to_include*
     * Set up for model to include
 
 **Optional**
 
-*model.tcell.use_two_point_synapses*
+*options.model.tcell.use_two_point_synapses*
     * Set up the mode of synapse to use, as a default, we use one-point, if needed you can use two-point by set up the option as true
 
-*model.tcell.timepoints_to_include*
+*options.model.tcell.timepoints_to_include*
     * If creation of models for only a subset of the time points is desired, edit to specify which time points to include
