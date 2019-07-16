@@ -1,5 +1,5 @@
 slml2info
----------
+********
 **Mandatory**
 
 *options.output_directory*

@@ -1,48 +1,103 @@
 img2slml
---------
+********
 
 General Options
-~~~~~~~~~~~~~~~~~~
+==============
+Mandatory
+---------
 
-**Mandatory**
+*options.train.flag*
+    * Selects what model is going to be trained (‘nuclear’, 'cell', ‘framework’, or ‘  all’).
+
+*Nuclear Shape model*
+^^^^^^^^^^^^^^^^^^^
+        *options.nucleus.class*
+            * Holds the nuclear membrane model class.
+        *options.nucleus.type*
+            * Holds the nuclear membrane model type.
+*Cell Shape model*
+^^^^^^^^^^^^^^^^^^^
+        *options.cell.class*
+            * Holds the cell membrane model class.
+
+        *options.cell.type*
+            * Holds the cell membrane model type.
+
+*Protein Shape model*
+^^^^^^^^^^^^^^^^^^^
+    *options.protein.class*
+        * Holds the protein membrane model class.
+
+    *options.protein.type*
+        * Holds the protein membrane model type.
+
+
+Optional
+---------
 
 *options.debug*
     * If set to true, then the function will (1) keep temporary results folder, (2) will print information useful for debugging.
-    * Default: false.
+    * Default: false
+
+*options.masks*
+    * List holding the mask files for input imageSize
+    * Default: empty
+
+*options.save_segmentations*
+    * Will save the segmentations to the model file. Setting this option to true will create a considerably large file.
+    * Default: false
 
 *options.display*
     * If set to true, then plots useful for debugging with be open. This functionality is meant for debugging only, setting this to true will considerably slow down computation.
     * Default: false
 
-*options.save_segmentations*
-    * Will save the segmentations to the model file. Setting this option to true will create a considerably large file.
-
-**Optional**
-
-*options.masks*
-    * Masks collection Directory.
-
-*options.rain.flag*
-    * Selects what model is going to be trained (‘nuclear’, ‘framework’, or ‘  all’).
-    * default: “all”
-
 *options.model.name*
     * Holds the name of the model.
-    * default: empty
+    * Default: empty
 
 *options.model.id*
     * Holds the id of the model.
-    * Default is a randomly generated string.
+    * Default: randomly generated string.
 
 *options.model.filename*
     * Holds the output filename.
+    * Default: model.mat
 
 *options.downsampling*
     * The downsampling vector to be used during preprocessing.
+    * Default: [1,1,1]
 
+*Nuclear Shape model*
+^^^^^^^^^^^^^^^^^^^
+    *options.nucleus.name*
+        * Holds the name of the nuclear model.
+        * Default: empty
+    *options.nucleus.id*
+        * Holds the id of the nuclear model.
+        * Default: randomly generated string.
 
-`PCA <https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/bty983/5232995>`_
-~~~~~~~~~~~~~~~~~~
+*Cell Shape model*
+^^^^^^^^^^^^^^^^^^^
+    *options.cell.name*
+        * Holds the name of the cell model.
+        * Default: empty
+
+    *options.cell.id*
+        * Holds the id of the cell model.
+        * Default: randomly generated string.
+
+*Protein Shape Model*
+^^^^^^^^^^^^^^^^^^^
+    *options.protein.name*
+        * Holds the name of the protein model.
+        * Default: empty
+
+    *options.protein.id*
+        * Holds the id of the protein model.
+        * Default: randomly generated string.
+
+PCA (learn more `here <https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/bty983/5232995>`_ )
+==============
 
 **Mandatory**
 
@@ -50,8 +105,8 @@ General Options
     * This option specifies how many latent dimensions (principal vectors or principal components) should be used for modeling the shape space.  Valid values are positive integers.
     * Default: 15
 
-`Diffeomorphic <http://murphylab.web.cmu.edu/publications/144-rohde2008.pdf>`_
-~~~~~~~~~~~~~~~~~~
+Diffeomorphic (learn more `here <http://murphylab.web.cmu.edu/publications/144-rohde2008.pdf>`_ )
+==============
 
 **Mandatory**
 
@@ -64,8 +119,8 @@ General Options
     * default: ‘nuc’
 
 
-`T-Cell Distribution <https://link.springer.com/protocol/10.1007/978-1-4939-6881-7_25>`_
-~~~~~~~~~~~~~~~~~~
+T-Cell Distribution (learn more `here <https://link.springer.com/protocol/10.1007/978-1-4939-6881-7_25>`_ )
+==============
 
 **Mandatory**
 
@@ -104,8 +159,8 @@ General Options
     * default: ‘false’
 
 
-`3D SPHARM-RPDM <https://link.springer.com/protocol/10.1007%2F978-1-4939-9102-0_11>`_   
-~~~~~~~~~~~~~~~~~~
+3D SPHARM-RPDM (learn more `here <https://link.springer.com/protocol/10.1007%2F978-1-4939-9102-0_11>`_ )
+==============
 
 **Mandatory**
 
@@ -121,6 +176,7 @@ General Options
 
 *options.model.spharm_rpdm.rotation_plane*
     * Dimensions of image that will used for alignment. The possible values are 'xy' (defaut), 'xz', 'yz' or ‘xyz'. For example, xy plane (around the z axis). if ‘xy‘ is specified, each cell will be rotated in the
+    * Default: 'xy'
 
 *options.model.spharm_rpdm.postprocess*
     * This specifies whether alignment and size normalization, should be done after parameterization. The values are ‘true’ or ‘false’.

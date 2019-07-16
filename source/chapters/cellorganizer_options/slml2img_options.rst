@@ -1,12 +1,13 @@
 slml2img
------
+********
 
 General Options
-~~~~~~~~~~~
+==============
 
 **Mandatory**
 
-
+*options.synthesis*
+    * Synthesis parameter that allows to synthesize 'nucleus', 'cell', 'framework' or 'all'.
 
 **Optional**
 
@@ -34,10 +35,6 @@ General Options
 *options.microscope*
     * Microscope model from which we select a point spread function.
     * Default is 'none'
-
-*options.synthesis*
-    * Synthesis parameter that allows to synthesize 'nucleus', 'cell', 'framework' or 'all'.
-    * Default is 'all'
 
 *options.protein.cytonuclearflag*
     * Defines the allowable region for protein placement.
@@ -105,10 +102,8 @@ General Options
 
 
 
-`2D PCA <https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/bty983/5232995>`_
-~~~~~~~~~~~
-
-**Mandatory**
+2D PCA (learn more `here <https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/bty983/5232995>`_ )
+==============
 
 *options.model.pca.pca_synthesis_method*
     * The method in which the generated image is synthesized.
@@ -121,8 +116,8 @@ General Options
 **Optional**
 
 
-`3D SPHARM-RPDM <https://link.springer.com/protocol/10.1007%2F978-1-4939-9102-0_11>`_
-~~~~~~~~~~~
+3D SPHARM-RPDM (learn more `here <https://link.springer.com/protocol/10.1007%2F978-1-4939-9102-0_11>`_ )
+==============
 
 **Mandatory**
 
@@ -131,8 +126,8 @@ General Options
     * ['reconstruction' or 'random sampling']
 
 
-`T-Cell Model  <https://link.springer.com/protocol/10.1007/978-1-4939-6881-7_25>`_   
-~~~~~~~~~~~
+T-Cell Model  (learn more `here <https://link.springer.com/protocol/10.1007/978-1-4939-6881-7_25>`_ )
+==============
 **Mandatory**
 
 *options.model.tcell.results_location*

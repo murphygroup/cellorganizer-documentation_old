@@ -1,7 +1,8 @@
 .. cellorganizer_pipeline:
 
+=====================
 CellOrganizer Options
-########################
+=====================
 
 .. include:: cellorganizer_options/img2slml_options.rst
 
