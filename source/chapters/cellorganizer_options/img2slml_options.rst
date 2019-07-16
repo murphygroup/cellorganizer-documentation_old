@@ -40,7 +40,7 @@ General Options
 *options.downsampling*
     * The downsampling vector to be used during preprocessing.
 
-PCA Model
+PCA
 ~~~~~~~~~~~~~~~~~~
 
 **Mandatory**
@@ -49,7 +49,7 @@ PCA Model
     * This option specifies how many latent dimensions (principal vectors or principal components) should be used for modeling the shape space.  Valid values are positive integers.
     * Default: 15
 
-Diffeomorphic Model
+Diffeomorphic
 ~~~~~~~~~~~~~~~~~~
 
 **Mandatory**
@@ -63,7 +63,7 @@ Diffeomorphic Model
     * default: ‘nuc’
 
 
-T-Cell Distribution Model
+T-Cell Distribution
 ~~~~~~~~~~~~~~~~~~
 
 **Mandatory**
@@ -102,7 +102,7 @@ T-Cell Distribution Model
     *  If true, then it assumes images are OME.TIFFs with annotations.
     * default: ‘false’
 
-3D SPHARM-RPDM model
+3D SPHARM-RPDM
 ~~~~~~~~~~~~~~~~~~
 
 **Mandatory**
