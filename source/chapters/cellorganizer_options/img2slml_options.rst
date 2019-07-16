@@ -26,15 +26,15 @@ General Options
     * Selects what model is going to be trained (‘nuclear’, ‘framework’, or ‘  all’).
     * default: “all”
 
-*Model Name*
+*options.model.name*
     * Holds the name of the model.
     * default: empty
 
-*Model Id*
+*options.model.id*
     * Holds the id of the model.
     * Default is a randomly generated string.
 
-*Mode*
+*options.model.filename*
     * Holds the output filename.
 
 *options.downsampling*
