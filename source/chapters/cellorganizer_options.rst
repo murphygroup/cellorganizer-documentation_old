@@ -1,6 +1,6 @@
 .. cellorganizer_pipeline:
 
-CellOrganizer Pipeline
+CellOrganizer Options
 ########################
 
 .. include:: cellorganizer_options/img2slml_options.rst
@@ -11,4 +11,4 @@ CellOrganizer Pipeline
 
 .. include:: cellorganizer_options/slml2report_options.rst
 
-.. include:: cellorganizer_options/slml2slml_options.rst 
+.. include:: cellorganizer_options/slml2slml_options.rst
