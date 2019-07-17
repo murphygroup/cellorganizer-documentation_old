@@ -1,6 +1,6 @@
 img2slml
 ********
-IMG2SLML Trains a generative model of subcellular location from a
+This function trains a generative model of subcellular location from a
 collection of images and saves the model to disk.
 
 A CellOrganizer model consists of four components,
@@ -59,10 +59,13 @@ Nuclear Shape model
 ^^^^^^^^^^^^^^^^^^^
 *options.nucleus.class* (mandatory)
     * Holds the nuclear membrane model class.
+
 *options.nucleus.type* (mandatory)
     * Holds the nuclear membrane model type.
+
 *options.nucleus.name* (optional) **[empty]**
     * Holds the name of the nuclear model.
+
 *options.nucleus.id* (optional) **['randomly generated string']**
     * Holds the id of the nuclear model.
 
@@ -70,14 +73,16 @@ Cell Shape model
 ^^^^^^^^^^^^^^^^^^^
 *options.cell.class* (mandatory)
     * Holds the cell membrane model class.
+
 *options.cell.type* (mandatory)
     * Holds the cell membrane model type.
+
 *options.cell.name* (optional)**[empty]**
     * Holds the name of the cell model.
-    * Default: empty
-*options.cell.id* (optional)**['randomly generated string']**
+
+*options.cell.id* (optional) **['randomly generated string']**
     * Holds the id of the cell model.
-    * Default: randomly generated string.
+
 
 Protein Shape model
 ^^^^^^^^^^^^^^^^^^^
@@ -87,14 +92,11 @@ Protein Shape model
 *options.protein.type* (mandatory)
     * Holds the protein membrane model type.
 
-*options.protein.name* (optional)**[empty]**
+*options.protein.name* (optional) **[empty]**
     * Holds the name of the protein model.
-    * Default: empty
 
 *options.protein.id* (optional) **['randomly generated string']**
     * Holds the id of the protein model.
-    * Default: randomly generated string.
-
 
 
 Model Specific Options
@@ -111,11 +113,10 @@ Diffeomorphic
 ^^^^^^^^^^^^^^^^^^^
 Learn more `here <http://murphylab.web.cmu.edu/publications/144-rohde2008.pdf>`_
 
-*model.diffeomorphic.distance_computing_method* (mandatory)  **['faster']**
+*model.diffeomorphic.distance_computing_method* (mandatory) **['faster']**
     * This option specifies
 
-*model.diffeomorphic.com_align* (mandatory)  **['nuc']**
-    *
+*model.diffeomorphic.com_align* (mandatory) **['nuc']**
 
 T-Cell Distribution
 ^^^^^^^^^^^^^^^^^^^
@@ -133,30 +134,27 @@ Learn more `here <https://link.springer.com/protocol/10.1007/978-1-4939-6881-7_2
 *options.model.tcell.model_type_to_include* (mandatory)
     * Set up for model to include.
 
-*options.model.tcell.infer_synapses* (mandatory)
-    *
-    *  [default is ] true or false.
+*options.model.tcell.infer_synapses* (mandatory) **[true]**
+    * set up  the synapse inference
 
-*options.model.tcell.use_two_point_synapses* (optional)**[false]**
+*options.model.tcell.use_two_point_synapses* (optional) **[false]**
     * Set up the mode of synapse to use, if needed you can use two-point by setting the option as true.
 
 *options.model.tcell.timepoints_to_include* (optional)
     * If creation of models for only a subset of the time points is desired, edit to specify which time points to include.
 
-*options.model.tcell.adjust_one_point_alignment* (optional)
+*options.model.tcell.adjust_one_point_alignment* (optional) **[true]**
     * Set up alignment adjustment true or false.
-    * default:
 
-*options.model.tcell.ometiff* (optional)**[false]**
+*options.model.tcell.ometiff* (optional) **[false]**
     * If true, then it assumes images are OME.TIFFs with annotations.
 
 3D SPHARM-RPDM
 ^^^^^^^^^^^^^^^^^^^
 Learn more `here <https://link.springer.com/protocol/10.1007%2F978-1-4939-9102-0_11>`_
 
-*options.model.spharm_rpdm.components* (mandatory)
+*options.model.spharm_rpdm.components* (mandatory) **[{'cell', 'nuc'}]** 
     * This specifies which components should be included in the shape model. The valid values are {'cell'}, {'nuc'}, or {'cell', 'nuc'}.
-    * default is
 
 *options.model.spharm_rpdm.alignment_method* (optional) **['major_axis]**
     * method by which cells willbe aligned when producing shape descriptors. The possible values are 'major_axis' or 'foe'.
