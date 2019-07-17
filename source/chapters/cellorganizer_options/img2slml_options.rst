@@ -55,8 +55,8 @@ Generic Options
     * The downsampling vector to be used during preprocessing.
 
 
-Nuclear Shape model
-^^^^^^^^^^^^^^^^^^^
+Nuclear shape submodel
+^^^^^^^^^^^^^^^^^^^^^^
 *options.nucleus.class* (mandatory)
     * Holds the nuclear membrane model class.
 
@@ -69,7 +69,7 @@ Nuclear Shape model
 *options.nucleus.id* (optional) **['randomly generated string']**
     * Holds the id of the nuclear model.
 
-Cell Shape model
+Cell shape submodel
 ^^^^^^^^^^^^^^^^^^^
 *options.cell.class* (mandatory)
     * Holds the cell membrane model class.
@@ -84,8 +84,8 @@ Cell Shape model
     * Holds the id of the cell model.
 
 
-Protein Shape model
-^^^^^^^^^^^^^^^^^^^
+Protein shape submodel
+^^^^^^^^^^^^^^^^^^^^^^
 *options.protein.class* (mandatory)
     * Holds the protein membrane model class.
 
@@ -102,14 +102,14 @@ Protein Shape model
 Model Specific Options
 ======================
 
-PCA
+2D PCA
 ^^^^^^^^^^^^^^^^^^^
 Learn more `here <https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/bty983/5232995>`_
 
 * options.model.pca.latent_dim* (mandatory) **[15]**
     * This option specifies how many latent dimensions (principal vectors or principal components) should be used for modeling the shape space.  Valid values are positive integers.
 
-Diffeomorphic
+2D/3D Diffeomorphic
 ^^^^^^^^^^^^^^^^^^^
 Learn more `here <http://murphylab.web.cmu.edu/publications/144-rohde2008.pdf>`_
 
@@ -118,7 +118,7 @@ Learn more `here <http://murphylab.web.cmu.edu/publications/144-rohde2008.pdf>`_
 
 *model.diffeomorphic.com_align* (mandatory) **['nuc']**
 
-T-Cell Distribution
+3D T-Cell Distribution
 ^^^^^^^^^^^^^^^^^^^
 Learn more `here <https://link.springer.com/protocol/10.1007/978-1-4939-6881-7_25>`_
 
@@ -153,7 +153,7 @@ Learn more `here <https://link.springer.com/protocol/10.1007/978-1-4939-6881-7_2
 ^^^^^^^^^^^^^^^^^^^
 Learn more `here <https://link.springer.com/protocol/10.1007%2F978-1-4939-9102-0_11>`_
 
-*options.model.spharm_rpdm.components* (mandatory) **[{'cell', 'nuc'}]** 
+*options.model.spharm_rpdm.components* (mandatory) **[{'cell', 'nuc'}]**
     * This specifies which components should be included in the shape model. The valid values are {'cell'}, {'nuc'}, or {'cell', 'nuc'}.
 
 *options.model.spharm_rpdm.alignment_method* (optional) **['major_axis]**
