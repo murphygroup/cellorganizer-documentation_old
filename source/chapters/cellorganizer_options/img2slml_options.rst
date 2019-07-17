@@ -1,8 +1,31 @@
 img2slml
 ********
+IMG2SLML Trains a generative model of subcellular location from a
+collection of images and saves the model to disk.
+
+A CellOrganizer model consists of four components,
+
+1) a (optional) documentation component
+2) a nuclear membrane model
+3) a cell membrane model and
+4) a protein pattern model
+
+List of Input Parameters
+=========================
+
+=============================  ===============================================================
+        Inputs                                             Outputs
+=============================  ===============================================================
+  dimensionality                2D/3D
+  dnaImagesDirectoryPath        DNA images collection directory, list of files or pattern
+  cellImagesDirectoryPath       Cell images collection directory, list of files or pattern
+  proteinImagesDirectoryPath    Protein images collection directory, list of files or pattern
+  options                       List of options
+=============================  ===============================================================
+
 
 General Options
-==============
+================
 
 
 *options.train.flag* (mandatory)
@@ -12,7 +35,7 @@ General Options
     * If set to true, then the function will (1) keep temporary results folder, (2) will print information useful for debugging.
 
 *options.masks* (optional) **[empty]**
-    * List holding the mask files for input imageSize
+    * List holding the mask files for input images
 
 *options.save_segmentations* (optional) **[false]**
     * Will save the segmentations to the model file. Setting this option to true will create a considerably large file.
@@ -33,7 +56,7 @@ General Options
     * The downsampling vector to be used during preprocessing.
 
 
-*Nuclear Shape model*
+Nuclear Shape model
 ^^^^^^^^^^^^^^^^^^^
 *options.nucleus.class* (mandatory)
     * Holds the nuclear membrane model class.
@@ -44,7 +67,7 @@ General Options
 *options.nucleus.id* (optional) **['randomly generated string']**
     * Holds the id of the nuclear model.
 
-*Cell Shape model*
+Cell Shape model
 ^^^^^^^^^^^^^^^^^^^
 *options.cell.class* (mandatory)
     * Holds the cell membrane model class.
@@ -57,7 +80,7 @@ General Options
     * Holds the id of the cell model.
     * Default: randomly generated string.
 
-*Protein Shape model*
+Protein Shape model
 ^^^^^^^^^^^^^^^^^^^
 *options.protein.class* (mandatory)
     * Holds the protein membrane model class.
@@ -75,8 +98,8 @@ General Options
 
 
 
-Model Specific Parameters
-==============
+Model Specific Options
+======================
 
 PCA (learn more `here <https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/bty983/5232995>`_ )
 ^^^^^^^^^^^^^^^^^^^
@@ -116,7 +139,7 @@ T-Cell Distribution (learn more `here <https://link.springer.com/protocol/10.100
 *options.model.tcell.use_two_point_synapses* (optional)**[false]**
     * Set up the mode of synapse to use, if needed you can use two-point by setting the option as true.
 
-*options.model.tcell.timepoints_to_include* (optional)  
+*options.model.tcell.timepoints_to_include* (optional)
     * If creation of models for only a subset of the time points is desired, edit to specify which time points to include.
 
 *options.model.tcell.adjust_one_point_alignment* (optional)

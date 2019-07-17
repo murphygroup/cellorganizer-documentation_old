@@ -3,6 +3,7 @@
 =====================
 CellOrganizer Options
 =====================
+Options listed for the 5 main functions of CellOrganizer. Default setting shown in brackets (**[]**).
 
 .. include:: cellorganizer_options/img2slml_options.rst
 
