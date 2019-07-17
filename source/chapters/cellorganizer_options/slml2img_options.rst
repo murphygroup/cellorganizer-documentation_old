@@ -4,11 +4,11 @@ This function synthesizes an image from a list of SLML models.
 Instances may be saved in the following forms:
 
 #. tiff stacks: a 3D tiff image stack for each pattern generated using the input models
-#. OMETIFF
+#. OME.TIFF
 #. indexed images: a single 3D tiff image stack where each pattern is represented by a number 1-n
 #. object mesh: a .obj mesh file for each pattern generated using the input models (blenderfile option)
 #. SBML-Spatial file: a Systems Biology Markup Language (SBML) instance XML file utilizing the Spatial extension in level 3 version 1
-#. VCML
+#. Virtual Cell Markup-Language (VCML)
 
 =======================  ========================================
 List Of Input Arguments  Descriptions
@@ -92,8 +92,10 @@ General Options
 Model Specific Options
 ======================
 
-2D PCA (learn more `here <https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/bty983/5232995>`_ )
-^^^^^^^^^^^^^^^^^^^
+2D PCA 
+^^^^^^^^
+learn more `here <https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/bty983/5232995>`_
+
 *options.model.pca.pca_synthesis_method* (mandatory) **['reconstruction' or 'random sampling']**
     * The method in which the generated image is synthesized.
 
@@ -101,14 +103,16 @@ Model Specific Options
     * image size of the resulting synthesized image
 
 
-3D SPHARM-RPDM (learn more `here <https://link.springer.com/protocol/10.1007%2F978-1-4939-9102-0_11>`_ )
-^^^^^^^^^^^^^^^^^^^
+3D SPHARM-RPDM 
+^^^^^^^^^^^^^^^
+learn more `here <https://link.springer.com/protocol/10.1007%2F978-1-4939-9102-0_11>`_ 
 
 *options.model.spharm_rpdm.synthesis_method* (mandatory) **['reconstruction' or 'random sampling']**
 
 
-T-Cell Model  (learn more `here <https://link.springer.com/protocol/10.1007/978-1-4939-6881-7_25>`_ )
-^^^^^^^^^^^^^^^^^^^
+T-Cell Model  
+^^^^^^^^^^^^
+learn more `here <https://link.springer.com/protocol/10.1007/978-1-4939-6881-7_25>`_ 
 
 *options.model.tcell.results_location* (mandatory)
     * File path for where the results should be saved.
