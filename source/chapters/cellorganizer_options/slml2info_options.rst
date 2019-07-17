@@ -3,7 +3,7 @@ slml2info
 This function generates a report from information extracted from a genearative model file.
 
 =============================  ===============================================================
-        Inputs                                             OArguments
+        Inputs                                             Outputs
 =============================  ===============================================================
   filenames                     List of files
   options                       Options structure
