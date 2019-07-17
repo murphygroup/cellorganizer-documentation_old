@@ -1,7 +1,6 @@
 slml2img
 ********
-SLML2IMG Synthesizes an image from a list of SLML models.
-
+This function synthesizes an image from a list of SLML models.
 Instances may be saved in the following forms:
 
 #. tiff stacks: a 3D tiff image stack for each pattern generated using the input models
@@ -36,7 +35,7 @@ General Options
 *options.numberOfSynthesizedImages* (optional) **[1]**
     * Number of synthesized images.
 
-*options.compression* (optional)
+*options.compression* (optional) **['lzw']**
     * Compression of tiff, i.e. 'none', 'lzw' and 'packbits'
 
 *options.microscope* (optional) **['none']**
