@@ -16,6 +16,8 @@ Contents:
 
    ./chapters/cellorganizer
 
+   ./chapters/cellorganizer_options
+
    ./chapters/cellorganizer_for_docker
 
    ./chapters/cellorganizer_for_singularity
@@ -26,9 +28,6 @@ Contents:
 
    ./chapters/advanced
 
-   ./chapters/api
-
-   ./chapters/cellorganizer_options
 .. Indices and tables
 .. ##################
 
