@@ -1,6 +1,6 @@
 slml2slml
 ********
-This function combines multiple SLML files into a single model file.
+This function combines multiple models into a single model file.
 
 
 =============================  ===============================================================
@@ -8,7 +8,6 @@ This function combines multiple SLML files into a single model file.
 =============================  ===============================================================
   files                         list of paths of models need be combined
   options                       List of options
-  output_filename               (optional)the file name of output model, default is "model.mat"
 =============================  ===============================================================
 
 *options.selection* (mandatory)

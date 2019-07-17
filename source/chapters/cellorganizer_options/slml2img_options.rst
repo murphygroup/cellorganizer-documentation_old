@@ -4,11 +4,11 @@ This function synthesizes an image from a list of SLML models.
 Instances may be saved in the following forms:
 
 #. tiff stacks: a 3D tiff image stack for each pattern generated using the input models
-#. OME.TIFF
+#. OME.TIFF: saves synthetic images as valid `OME.TIFF <https://docs.openmicroscopy.org/ome-model/5.6.3/#ome-tiff>`_
 #. indexed images: a single 3D tiff image stack where each pattern is represented by a number 1-n
 #. object mesh: a .obj mesh file for each pattern generated using the input models (blenderfile option)
 #. SBML-Spatial file: a Systems Biology Markup Language (SBML) instance XML file utilizing the Spatial extension in level 3 version 1
-#. Virtual Cell Markup-Language (VCML)
+#. Virtual Cell Markup-Language (VCML): a   
 
 =======================  ========================================
 List Of Input Arguments  Descriptions
