@@ -1,6 +1,6 @@
 slml2info
 ********
-Generate a report from information extracted from a genearative model file.
+This function generates a report from information extracted from a genearative model file.
 
 =============================  ===============================================================
         Inputs                                             OArguments
