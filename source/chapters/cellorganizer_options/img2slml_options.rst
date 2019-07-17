@@ -24,6 +24,8 @@ A CellOrganizer model consists of four components,
 General Options
 ================
 
+Generic Options
+^^^^^^^^^^^^^^^
 
 *options.train.flag* (mandatory)
     * Selects what model is going to be trained (‘nuclear’, 'cell', ‘framework’, or ‘  all’).

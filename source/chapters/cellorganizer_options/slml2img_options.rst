@@ -128,3 +128,65 @@ T-Cell Model  (learn more `here <https://link.springer.com/protocol/10.1007/978-
 
 *options.model.tcell.timepoints_to_include* (optional)
     * If creation of models for only a subset of the time points is desired, edit to specify which time points to include
+
+Output Options
+==============
+OMETIFF
+^^^^^^^
+*options.output.ometiff* (optional) **[false]**
+    * Boolean flag specifying whether to write out an (.ome.tif) OME TIFF.
+SBML
+^^^^
+*output.SBML* (mandatory)
+    * Boolean flag specifying whether to write out (.xml) files with SBML-Spatial 2 representations of geometries. Default is false.
+*output.SBML.downsampling* (optional)
+    * Downsampling fraction for the creation of SBML Spatial files when output.SBML or output.SBMLSpatial are true (1 means no downsampling, 1/5 means 1/5 the size).
+*output.SBML.spatial* (optional) [false]
+    * Boolean flag specifying whether to write out (.xml) file with SBML-Spatial 3 representations of geometries. Default is false.
+*output.SBML.spatial_image* (optional)
+    * Boolean flag specifying whether SBML-Spatial 3 output represents geometries with image volumes instead of meshes. Meshes are not supported by Virtual Cell. Default is false.
+*output.SBML.spatial_use_compression* (optional) [true]
+    * Boolean flag specifying whether to write SBML Spatial output using compression. Default is true.
+*output.SBML.spatial_use_analytic_meshes* (optional) [false]
+    * Boolean flag specifying whether to use analytic meshes instead of isosurfaces of rasterized shapes. Default is false.
+*output.SBML.spatial_vcell_compatible* (optional) [false]
+    * Boolean flag specifying whether to write SBML Spatial output compatible with Virtual Cell but not the Level 3 Version 1 Release 0.90 draft specifications. Default is false.
+
+
+VCML
+^^^^
+*output.VCML.writeVCML* (mandatory)
+    * Boolean flag specifying whether to write out VCML files for use with Virtual Cell.
+
+*output.VCML.downsampling* (optional) **[1]**
+    * Downsampling fraction for the creation of object files (1 means no downsampling, 1/5 means 1/5 the size).
+
+*output.VCML.addTranslocationIntermediates* (optional) **[true]**
+    * Boolean flag specifying whether to create intermediate species and reactions for reactions involving non-adjacent translocations, which are valid in cBNGL but not Virtual Cell.
+
+*output.VCML.numSimulations*(optional)  ** [1] **
+    * Number of simulations in VCML file.
+
+*output.VCML.translations* (optional) ** {0,2} **
+    * N x 2 cell array of strings (first column) to be replaced by other strings (second column).
+
+*output.VCML.defaultDiffusionCoefficient* (optional) ** [1.0958e-11] **
+    * Double specifying diffusion coefficient in meters squared per second.
+
+*output.VCML.NET.filename* (optional) ** ['' (empty string)] **
+    * String specifying BioNetGen network file to include in VCML files for use with Virtual Cell.
+
+*output.VCML.NET.units.concentration* (optional) ** ['uM'] **
+    * String specifying concentration units in NET file.
+
+*output.VCML.NET.units.length* (optional) **['um']**
+    * String specifying length units in NET file.
+
+*output.VCML.NET.units.time*(optional) **['s']**
+    * String specifying time units in NET file.
+
+*output.VCML.NET.effectiveWidth* (optional) **[3.8775e-9]**
+    * Double specifying surface thickness in meters.
+
+*output.VCML.NET.useImageAdjacency* (optional) **[true]**
+    * Boolean specifying whether to derive compartment adjacency from the synthetic image. Can break Virtual Cell compatibility due to inclusion of BioNetGen representation of translocation between non-adjacent compartments.
