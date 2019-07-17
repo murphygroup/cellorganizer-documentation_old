@@ -92,7 +92,7 @@ General Options
 Model Specific Options
 ======================
 
-2D PCA 
+2D PCA
 ^^^^^^^^
 learn more `here <https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/bty983/5232995>`_
 
@@ -103,16 +103,16 @@ learn more `here <https://academic.oup.com/bioinformatics/advance-article/doi/10
     * image size of the resulting synthesized image
 
 
-3D SPHARM-RPDM 
+3D SPHARM-RPDM
 ^^^^^^^^^^^^^^^
-learn more `here <https://link.springer.com/protocol/10.1007%2F978-1-4939-9102-0_11>`_ 
+learn more `here <https://link.springer.com/protocol/10.1007%2F978-1-4939-9102-0_11>`_
 
 *options.model.spharm_rpdm.synthesis_method* (mandatory) **['reconstruction' or 'random sampling']**
 
 
-T-Cell Model  
+T-Cell Model
 ^^^^^^^^^^^^
-learn more `here <https://link.springer.com/protocol/10.1007/978-1-4939-6881-7_25>`_ 
+learn more `here <https://link.springer.com/protocol/10.1007/978-1-4939-6881-7_25>`_
 
 *options.model.tcell.results_location* (mandatory)
     * File path for where the results should be saved.
@@ -142,17 +142,17 @@ SBML
 ^^^^
 *output.SBML* (mandatory)
     * Boolean flag specifying whether to write out (.xml) files with SBML-Spatial 2 representations of geometries. Default is false.
-*output.SBML.downsampling* (optional)
+*output.SBML.downsampling* (optional) **[1]**
     * Downsampling fraction for the creation of SBML Spatial files when output.SBML or output.SBMLSpatial are true (1 means no downsampling, 1/5 means 1/5 the size).
-*output.SBML.spatial* (optional) [false]
+*output.SBML.spatial* (optional) **[false]**
     * Boolean flag specifying whether to write out (.xml) file with SBML-Spatial 3 representations of geometries. Default is false.
-*output.SBML.spatial_image* (optional)
+*output.SBML.spatial_image* (optional) **[false]**
     * Boolean flag specifying whether SBML-Spatial 3 output represents geometries with image volumes instead of meshes. Meshes are not supported by Virtual Cell. Default is false.
-*output.SBML.spatial_use_compression* (optional) [true]
+*output.SBML.spatial_use_compression* (optional) **[true]**
     * Boolean flag specifying whether to write SBML Spatial output using compression. Default is true.
-*output.SBML.spatial_use_analytic_meshes* (optional) [false]
+*output.SBML.spatial_use_analytic_meshes* (optional) **[false]**
     * Boolean flag specifying whether to use analytic meshes instead of isosurfaces of rasterized shapes. Default is false.
-*output.SBML.spatial_vcell_compatible* (optional) [false]
+*output.SBML.spatial_vcell_compatible* (optional) **[false]**
     * Boolean flag specifying whether to write SBML Spatial output compatible with Virtual Cell but not the Level 3 Version 1 Release 0.90 draft specifications. Default is false.
 
 
@@ -167,25 +167,25 @@ VCML
 *output.VCML.addTranslocationIntermediates* (optional) **[true]**
     * Boolean flag specifying whether to create intermediate species and reactions for reactions involving non-adjacent translocations, which are valid in cBNGL but not Virtual Cell.
 
-*output.VCML.numSimulations*(optional)  ** [1] **
+*output.VCML.numSimulations* (optional)  **[1]**
     * Number of simulations in VCML file.
 
-*output.VCML.translations* (optional) ** {0,2} **
+*output.VCML.translations* (optional) **[{0,2}]**
     * N x 2 cell array of strings (first column) to be replaced by other strings (second column).
 
-*output.VCML.defaultDiffusionCoefficient* (optional) ** [1.0958e-11] **
+*output.VCML.defaultDiffusionCoefficient* (optional) **[1.0958e-11]**
     * Double specifying diffusion coefficient in meters squared per second.
 
-*output.VCML.NET.filename* (optional) ** ['' (empty string)] **
+*output.VCML.NET.filename* (optional) **['' (empty string)]**
     * String specifying BioNetGen network file to include in VCML files for use with Virtual Cell.
 
-*output.VCML.NET.units.concentration* (optional) ** ['uM'] **
+*output.VCML.NET.units.concentration* (optional) **['uM']**
     * String specifying concentration units in NET file.
 
 *output.VCML.NET.units.length* (optional) **['um']**
     * String specifying length units in NET file.
 
-*output.VCML.NET.units.time*(optional) **['s']**
+*output.VCML.NET.units.time* (optional) **['s']**
     * String specifying time units in NET file.
 
 *output.VCML.NET.effectiveWidth* (optional) **[3.8775e-9]**
