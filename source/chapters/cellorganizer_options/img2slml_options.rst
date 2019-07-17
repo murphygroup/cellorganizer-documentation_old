@@ -10,9 +10,6 @@ A CellOrganizer model consists of four components,
 3) a cell membrane model and
 4) a protein pattern model
 
-List of Input Parameters
-=========================
-
 =============================  ===============================================================
         Inputs                                             Outputs
 =============================  ===============================================================
@@ -101,14 +98,16 @@ Protein Shape model
 Model Specific Options
 ======================
 
-PCA (learn more `here <https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/bty983/5232995>`_ )
+PCA
 ^^^^^^^^^^^^^^^^^^^
+Learn more `here <https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/bty983/5232995>`_
 
-*options.model.pca.latent_dim* (mandatory) **[15]**
+* options.model.pca.latent_dim* (mandatory) **[15]**
     * This option specifies how many latent dimensions (principal vectors or principal components) should be used for modeling the shape space.  Valid values are positive integers.
 
-Diffeomorphic (learn more `here <http://murphylab.web.cmu.edu/publications/144-rohde2008.pdf>`_ )
+Diffeomorphic
 ^^^^^^^^^^^^^^^^^^^
+Learn more `here <http://murphylab.web.cmu.edu/publications/144-rohde2008.pdf>`_
 
 *model.diffeomorphic.distance_computing_method* (mandatory)  **['faster']**
     * This option specifies
@@ -116,9 +115,9 @@ Diffeomorphic (learn more `here <http://murphylab.web.cmu.edu/publications/144-r
 *model.diffeomorphic.com_align* (mandatory)  **['nuc']**
     *
 
-T-Cell Distribution (learn more `here <https://link.springer.com/protocol/10.1007/978-1-4939-6881-7_25>`_ )
+T-Cell Distribution
 ^^^^^^^^^^^^^^^^^^^
-
+Learn more `here <https://link.springer.com/protocol/10.1007/978-1-4939-6881-7_25>`_
 
 *options.model.tcell.synapse_location* (mandatory)
     * File path to annotation of the synapse positions of the T cells as input.
@@ -149,8 +148,9 @@ T-Cell Distribution (learn more `here <https://link.springer.com/protocol/10.100
 *options.model.tcell.ometiff* (optional)**[false]**
     * If true, then it assumes images are OME.TIFFs with annotations.
 
-3D SPHARM-RPDM (learn more `here <https://link.springer.com/protocol/10.1007%2F978-1-4939-9102-0_11>`_ )
+3D SPHARM-RPDM
 ^^^^^^^^^^^^^^^^^^^
+Learn more `here <https://link.springer.com/protocol/10.1007%2F978-1-4939-9102-0_11>`_
 
 *options.model.spharm_rpdm.components* (mandatory)
     * This specifies which components should be included in the shape model. The valid values are {'cell'}, {'nuc'}, or {'cell', 'nuc'}.

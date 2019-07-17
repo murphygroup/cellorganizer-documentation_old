@@ -1,5 +1,22 @@
 slml2img
 ********
+SLML2IMG Synthesizes an image from a list of SLML models.
+
+Instances may be saved in the following forms:
+
+#. tiff stacks: a 3D tiff image stack for each pattern generated using the input models
+#. OMETIFF
+#. indexed images: a single 3D tiff image stack where each pattern is represented by a number 1-n
+#. object mesh: a .obj mesh file for each pattern generated using the input models (blenderfile option)
+#. SBML-Spatial file: a Systems Biology Markup Language (SBML) instance XML file utilizing the Spatial extension in level 3 version 1
+#. VCML
+
+=======================  ========================================
+List Of Input Arguments  Descriptions
+=======================  ========================================
+models                   A cell array of filenames
+options                  A structure holding the function options
+=======================  ========================================
 
 General Options
 ==============
@@ -9,7 +26,7 @@ General Options
 
 *options.debug* (optional) **[false]**
     * If set to true, then the function will (1) keep temporary results folder, (2) will print information useful for debugging.
-    
+
 *options.targetDirectory* (optional) **[current]**
     * Directory where the images are going to be saved.
 
@@ -19,7 +36,7 @@ General Options
 *options.numberOfSynthesizedImages* (optional) **[1]**
     * Number of synthesized images.
 
-*options.compression* (optional) 
+*options.compression* (optional)
     * Compression of tiff, i.e. 'none', 'lzw' and 'packbits'
 
 *options.microscope* (optional) **['none']**
@@ -40,7 +57,7 @@ General Options
 *options.overlapsubsize* (optional) **[0.3]**
     * Defines the downsampling fraction to perform during object overlap avoidance.
 
-*options.overlapthresh* (optional) 
+*options.overlapthresh* (optional)
     * Defines the amount of overlap that is allowed between objects.
 
 *options.oobthresh* (optional) **[0]**
@@ -58,10 +75,10 @@ General Options
 *options.protein.cytonuclearflag* (optional) **['all']**
     * Can 'cyto', 'nucleus' or 'all'.
 
-*options.resolution.cell* (optional) 
+*options.resolution.cell* (optional)
     * The resolution of the cell and nucleus that are being passed in
 
-*options.resolution.objects* (optional) 
+*options.resolution.objects* (optional)
     * The resolution of the object model being synthesized
 
 *options.instance.cell* (optional) **[empty]**
@@ -73,11 +90,11 @@ General Options
 *options.image_size* (optional) **[1024 1024]**
     * The image size is [1024 1024] for both 2D and 3D in x and y.
 
-
+Model Specific Options
+======================
 
 2D PCA (learn more `here <https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/bty983/5232995>`_ )
-==============
-
+^^^^^^^^^^^^^^^^^^^
 *options.model.pca.pca_synthesis_method* (mandatory) **['reconstruction' or 'random sampling']**
     * The method in which the generated image is synthesized.
 
@@ -86,13 +103,13 @@ General Options
 
 
 3D SPHARM-RPDM (learn more `here <https://link.springer.com/protocol/10.1007%2F978-1-4939-9102-0_11>`_ )
-==============
+^^^^^^^^^^^^^^^^^^^
 
 *options.model.spharm_rpdm.synthesis_method* (mandatory) **['reconstruction' or 'random sampling']**
- 
+
 
 T-Cell Model  (learn more `here <https://link.springer.com/protocol/10.1007/978-1-4939-6881-7_25>`_ )
-==============
+^^^^^^^^^^^^^^^^^^^
 
 *options.model.tcell.results_location* (mandatory)
     * File path for where the results should be saved.
