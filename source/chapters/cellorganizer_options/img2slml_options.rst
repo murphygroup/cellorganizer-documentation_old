@@ -1,6 +1,6 @@
 img2slml
 ********
-Trains a generative model of subcellular location from a
+This function trains a generative model of subcellular location from a
 collection of images and saves the model to disk.
 
 A CellOrganizer model consists of four components,
