@@ -8,7 +8,7 @@ Instances may be saved in the following forms:
 #. indexed images: a single 3D tiff image stack where each pattern is represented by a number 1-n
 #. object mesh: a .obj mesh file for each pattern generated using the input models (blenderfile option)
 #. SBML-Spatial file: a Systems Biology Markup Language (SBML) instance XML file utilizing the Spatial extension in level 3 version 1
-#. Virtual Cell Markup-Language (VCML): a   
+#. Virtual Cell Markup-Language (VCML): a
 
 =======================  ========================================
 List Of Input Arguments  Descriptions
@@ -110,8 +110,8 @@ learn more `here <https://link.springer.com/protocol/10.1007%2F978-1-4939-9102-0
 *options.model.spharm_rpdm.synthesis_method* (mandatory) **['reconstruction' or 'random sampling']**
 
 
-T-Cell Model
-^^^^^^^^^^^^
+3D T-Cell Distribution
+^^^^^^^^^^^^^^^^^^^^^^
 learn more `here <https://link.springer.com/protocol/10.1007/978-1-4939-6881-7_25>`_
 
 *options.model.tcell.results_location* (mandatory)
