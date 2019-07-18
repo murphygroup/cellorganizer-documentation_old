@@ -6,7 +6,7 @@ This function combines multiple models into a single model file.
 =============================  ===============================================================
         Inputs                                             Outputs
 =============================  ===============================================================
-  files                         list of paths of models need be combined
+  files                         list of paths of models that need to be combined
   options                       List of options
 =============================  ===============================================================
 
