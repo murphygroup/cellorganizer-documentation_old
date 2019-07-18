@@ -92,7 +92,7 @@ Protein shape submodel
 *options.protein.type* (mandatory)
     * Holds the protein membrane model type.
 
-*options.protein.name* (optional)**[empty]**
+*options.protein.name* (optional) **[empty]**
     * Holds the name of the protein model.
 
 *options.protein.id* (optional) **['randomly generated string']**
