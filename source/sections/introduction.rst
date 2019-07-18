@@ -23,15 +23,51 @@ Model learning captures variation among cells in a collection of images. Images 
 
 CellOrganizer learns compact and invertible models of subcellular shape and organization. To train a model for a collection of images, CellOrganizer first finds the parameterizations per image, then learns a distribution on these parameterizations and stores it in the trained model. Parameterizations can be sampled from this distribution and then be used to synthesize novel images. Johnson (2015). "Model Selection in Parameterizing Cell Images and Populations."
 
-CellOrganizer can learn models of
 
-* cell shape;
-* nuclear shape;
-* chromatin texture;
-* vesicular organelle size, shape and position;
-* microtubule distribution.
+Model classes and types supported
+-----------------------
+
+This table lists all supported model classes and types in this version of CellOrganizer
+
++---------+----------------------+---------------------------------+----------------------------------+---------------------------------+
+| 2D/3D   | Model Class          | Model Type                      | Depends on                       | Produces                        |
++=========+======================+=================================+==================================+=================================+
+| 2D      | vesicle              | gmm                             | nuclear_membrane & cell_membrane | vesicle                         |
++---------+----------------------+---------------------------------+----------------------------------+---------------------------------+
+| 2D      | nuclear_membrane     | medial_axis                     | N/A                              | nuclear_membrane                |
++---------+----------------------+---------------------------------+----------------------------------+---------------------------------+
+| 2D      | framework            | pca                             | N/A                              | cell_membrane, nuclear_membrane |
++---------+----------------------+---------------------------------+----------------------------------+---------------------------------+
+| 2D      | cell_membrane        | ratio                           | nuclear_membrane                 | cell_membrane                   |
++---------+----------------------+---------------------------------+----------------------------------+---------------------------------+
+| 3D      | vesicle              | gmm                             | nuclear_membrane & cell_membrane | vesicle                         |
++---------+----------------------+---------------------------------+----------------------------------+---------------------------------+
+| 3D      | nuclear_membrane     | cylindrical_surface             | N/A                              | nuclear_membrane                |
++---------+----------------------+---------------------------------+----------------------------------+---------------------------------+
+| 3D      | cell_membrane        | ratio                           | nuclear_membrane                 | cell_membrane                   |
++---------+----------------------+---------------------------------+----------------------------------+---------------------------------+
+| 2D      | framework            | diffeomorphic                   | N/A                              | cell_membrane, nuclear_membrane |
++---------+----------------------+---------------------------------+----------------------------------+---------------------------------+
+| 3D      | framework            | diffeomorphic                   | N/A                              | cell_membrane, nuclear_membrane |
++---------+----------------------+---------------------------------+----------------------------------+---------------------------------+
+| 3D      | network              | microtubule_growth              | nuclear_membrane & cell_membrane | microtubule                     |
++---------+----------------------+---------------------------------+----------------------------------+---------------------------------+
+| 3D      | protein_distribution | morphing                        | N/A                              | protein spatial distribution    |
++---------+----------------------+---------------------------------+----------------------------------+---------------------------------+
+| 3D      | standardized_voxels  | standardized_map_half-ellipsoid | N/A                              | N/A                             |
++---------+----------------------+---------------------------------+----------------------------------+---------------------------------+
+| 3D      | csgo                 | half-ellipsoid                  | N/A                              | N/A                             |
++---------+----------------------+---------------------------------+----------------------------------+---------------------------------+
+| 3D      | framework            | SPHARM                          | N/A                              | cell membrane, nuclear membrane |
++---------+----------------------+---------------------------------+----------------------------------+---------------------------------+
+
+
+
 
 These models can be conditional upon each other. For example, for a given synthesized cell instance, organelle position is dependent upon the cell and nuclear shape of that instance.
 Cell types for which generative models of at least some type of organelle have been built include human HeLa cells, mouse NIH 3T3 cells, and Arabidopsis protoplasts. Planned projects include mouse T lymphocytes and rat PC12 cells.
 
-Support for CellOrganizer has been provided by grants GM075205, GM090033 and GM103712 from the `National Institute of General Medical Sciences <https://www.nigms.nih.gov/Pages/default.aspx>`_, grants MCB1121919 and MCB1121793 from the U.S. `National Science Foundation <https://www.nsf.gov/>`_, by a Forschungspreis from the `Alexander von Humboldt Foundation <https://www.humboldt-foundation.de/web/home.html>`_, and by the `Freiburg Institute for Advanced Studies <https://www.frias.uni-freiburg.de/en/home>`_.
+
+**Support for CellOrganizer has been provided by grants GM075205, GM090033 and GM103712 from the** `National Institute of General Medical Sciences <https://www.nigms.nih.gov/Pages/default.aspx>`_, **grants MCB1121919 and MCB1121793 from the U.S.** `National Science Foundation <https://www.nsf.gov/>`_, **by a Forschungspreis from the** `Alexander von Humboldt Foundation <https://www.humboldt-foundation.de/web/home.html>`_, **and by the** `Freiburg Institute for Advanced Studies <https://www.frias.uni-freiburg.de/en/home>`_.
+
+
