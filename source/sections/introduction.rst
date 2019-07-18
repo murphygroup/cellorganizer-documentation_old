@@ -8,7 +8,7 @@ Since these models can be used to synthesize new images reflecting what the mode
 For example, CellOrganizer can take fluorescence microscope images of many cells expressing a GFP-tagged lysosomal protein and construct a model of how the cell and nuclear shapes vary among those cells, how many lysosomes are typically found per cell, how they vary in size, and where they are typically located relative to the cell and nuclear boundaries.
 
 Publications describing the development and use of various software components of CellOrganizer are located `here <http://cellorganizer.org/Publications>`_.
-A recent overview of the principles behind CellOrganizer can be found `here <http://www.sciencedirect.com/science/article/pii/S1046202315301298>`_.  And to download the most recent version of CellOrganizer, please visit our download `page <http://www.cellorganizer.org/cellorganizer-2-7-1/>`_.
+A recent overview of the principles behind CellOrganizer can be found `here <http://www.sciencedirect.com/science/article/pii/S1046202315301298>`_.  And to download the most recent version of CellOrganizer, please visit our download `page <http://www.cellorganizer.org/cellorganizer-2-8-2//>`_.
 
 CellOrganizer provides tools for
 
@@ -22,6 +22,14 @@ Model learning captures variation among cells in a collection of images. Images 
   :align: center
 
 CellOrganizer learns compact and invertible models of subcellular shape and organization. To train a model for a collection of images, CellOrganizer first finds the parameterizations per image, then learns a distribution on these parameterizations and stores it in the trained model. Parameterizations can be sampled from this distribution and then be used to synthesize novel images. Johnson (2015). "Model Selection in Parameterizing Cell Images and Populations."
+
+CellOrganizer can learn models of
+
+* cell shape;
+* nuclear shape;
+* chromatin texture;
+* vesicular organelle size, shape and position;
+* microtubule distribution. 
 
 
 Model classes and types supported
