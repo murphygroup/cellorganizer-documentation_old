@@ -77,7 +77,7 @@ Cell shape submodel
 *options.cell.type* (mandatory)
     * Holds the cell membrane model type.
 
-*options.cell.name* (optional)**[empty]**
+*options.cell.name* (optional) **[empty]**
     * Holds the name of the cell model.
 
 *options.cell.id* (optional) **['randomly generated string']**
