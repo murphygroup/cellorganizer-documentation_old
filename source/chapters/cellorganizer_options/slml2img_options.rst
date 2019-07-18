@@ -35,14 +35,14 @@ General Options
 *options.numberOfSynthesizedImages* (optional) **[1]**
     * Number of synthesized images.
 
+*options.image_size* (optional) **[1024 1024]**
+    * The image size is [1024 1024] for both 2D and 3D in x and y.
+
 *options.compression* (optional) **['lzw']**
     * Compression of tiff, i.e. 'none', 'lzw' and 'packbits'
 
 *options.microscope* (optional) **['none']**
     * Microscope model from which we select a point spread function.
-
-*options.protein.cytonuclearflag* (optional) **[cytonuclearflag included in the model]**
-    * Defines the allowable region for protein placement.
 
 *options.sampling.method* (optional) **['trimmed']**
     * Can be 'disc', 'sampled' or 'trimmed'.
@@ -56,8 +56,11 @@ General Options
 *options.overlapsubsize* (optional) **[0.3]**
     * Defines the downsampling fraction to perform during object overlap avoidance.
 
-*options.overlapthresh* (optional)
+*options.overlapthresh* (optional) **[0]**
     * Defines the amount of overlap that is allowed between objects.
+
+*options.protein.cytonuclearflag* (optional) **[cytonuclearflag included in the model]**
+    * Defines the allowable region for protein placement.
 
 *options.oobthresh* (optional) **[0]**
     * The proportion of a synthesized object that is permitted to fall outside the cell before the object is discarded.
@@ -71,9 +74,6 @@ General Options
 *options.sampling.method.density* (optional) **[empty]**
     * An integer.
 
-*options.protein.cytonuclearflag* (optional) **['all']**
-    * Can 'cyto', 'nucleus' or 'all'.
-
 *options.resolution.cell* (optional)
     * The resolution of the cell and nucleus that are being passed in
 
@@ -86,8 +86,6 @@ General Options
 *options.instance.nucleus* (optional) **[empty]**
     * A binary nuclear image to be filled with objects.
 
-*options.image_size* (optional) **[1024 1024]**
-    * The image size is [1024 1024] for both 2D and 3D in x and y.
 
 Model Specific Options
 ======================

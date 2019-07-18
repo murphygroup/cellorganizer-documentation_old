@@ -14,9 +14,9 @@ A CellOrganizer model consists of four components,
         Inputs                                             Outputs
 =============================  ===============================================================
   dimensionality                2D/3D
-  dnaImagesDirectoryPath        DNA images collection directory, list of files or pattern
-  cellImagesDirectoryPath       Cell images collection directory, list of files or pattern
-  proteinImagesDirectoryPath    Protein images collection directory, list of files or pattern
+  dnaImagesDirectoryPath        Image path for training nuclear membrane submodel (Cell array of files or pattern)
+  cellImagesDirectoryPath       Image path for training cell membrane submodel (Cell array of files or pattern)
+  proteinImagesDirectoryPath    Image path for training vesicular submodel (Cell array of files or pattern)
   options                       List of options
 =============================  ===============================================================
 
@@ -30,6 +30,9 @@ Generic Options
 *options.train.flag* (mandatory)
     * Selects what model is going to be trained (‘nuclear’, 'cell', ‘framework’, or ‘  all’).
 
+*options.documentation.description* (optional) **[empty]**
+    * String for documenting the model's description.
+    
 *options.debug* (optional) **[false]**
     * If set to true, then the function will (1) keep temporary results folder, (2) will print information useful for debugging.
 
@@ -45,7 +48,7 @@ Generic Options
 *options.model.name* (optional) **[empty]**
     * Holds the name of the model.
 
-*options.model.id* (optional) **['randomly generated string']**
+*options.model.id* (optional) **[randomly generated string]**
     * Holds the id of the model.
 
 *options.model.filename* (optional) **['model.mat']**
@@ -66,7 +69,7 @@ Nuclear shape submodel
 *options.nucleus.name* (optional) **[empty]**
     * Holds the name of the nuclear model.
 
-*options.nucleus.id* (optional) **['randomly generated string']**
+*options.nucleus.id* (optional) **[randomly generated string]**
     * Holds the id of the nuclear model.
 
 Cell shape submodel
@@ -80,7 +83,7 @@ Cell shape submodel
 *options.cell.name* (optional) **[empty]**
     * Holds the name of the cell model.
 
-*options.cell.id* (optional) **['randomly generated string']**
+*options.cell.id* (optional) **[randomly generated string]**
     * Holds the id of the cell model.
 
 
@@ -95,12 +98,13 @@ Protein shape submodel
 *options.protein.name* (optional) **[empty]**
     * Holds the name of the protein model.
 
-*options.protein.id* (optional) **['randomly generated string']**
+*options.protein.id* (optional) **[randomly generated string]**
     * Holds the id of the protein model.
 
 
 Model Specific Options
 ======================
+More information about our models can be found on our `publications page <http://www.cellorganizer.org/publications/>`_ .
 
 2D PCA
 ^^^^^^^^^^^^^^^^^^^
