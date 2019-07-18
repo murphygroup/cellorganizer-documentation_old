@@ -176,7 +176,7 @@ VCML
 *output.VCML.defaultDiffusionCoefficient* (optional) **[1.0958e-11]**
     * Double specifying diffusion coefficient in meters squared per second.
 
-*output.VCML.NET.filename* (optional) **['' (empty string)]**
+*output.VCML.NET.filename* (optional) **[' ']**
     * String specifying BioNetGen network file to include in VCML files for use with Virtual Cell.
 
 *output.VCML.NET.units.concentration* (optional) **['uM']**
