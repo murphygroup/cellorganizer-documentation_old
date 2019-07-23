@@ -50,6 +50,18 @@ General Options
 *options.savePDF* (optional) **['false']**
     * Saves the probability density function for a given pattern during 2D synthesis.
 
+*options.resolution.cell* (optional)
+    * The resolution of the cell and nucleus that are being passed in
+
+*options.instance.cell* (optional) **[empty]**
+    * A binary cell image to be filled with objects.
+
+*options.instance.nucleus* (optional) **[empty]**
+    * A binary nuclear image to be filled with objects.
+
+
+Protein Submodel Options
+^^^^^^^^^^^^^^^^^^^^^^^^
 *options.spherical_cell* (optional) **['false']**
     * Boolean flag that indicates whether a cell is spherical.
 
@@ -74,17 +86,8 @@ General Options
 *options.sampling.method.density* (optional) **[empty]**
     * An integer.
 
-*options.resolution.cell* (optional)
-    * The resolution of the cell and nucleus that are being passed in
-
 *options.resolution.objects* (optional)
     * The resolution of the object model being synthesized
-
-*options.instance.cell* (optional) **[empty]**
-    * A binary cell image to be filled with objects.
-
-*options.instance.nucleus* (optional) **[empty]**
-    * A binary nuclear image to be filled with objects.
 
 
 Model Specific Options
