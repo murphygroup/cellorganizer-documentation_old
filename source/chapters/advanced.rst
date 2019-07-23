@@ -1,9 +1,10 @@
+
 .. Model types and examples of results:
 
 Additional Information
 ======================
 
-.. include:: ./model_class_and_type.rst
+
 
 .. include:: ./reproducing_figures.rst
 

@@ -32,8 +32,7 @@ CellOrganizer can learn models of
 * microtubule distribution. 
 
 
-Model classes and types supported
------------------------
+**Supported model classes and types**
 
 This table lists all supported model classes and types in this version of CellOrganizer
 
