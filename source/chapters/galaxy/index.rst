@@ -47,7 +47,7 @@ CellOrganizer must be downloaded into the system running Galaxy.
     /usr15/galaxy/cellorganizer-galaxy-tools-v2.8.1/cellorganizer3
   ```
 
-* To download CellOrganizer visit the [official website](http://www.cellorganizer.org). Please make sure the version of CellOrganizer you install matches the version of CellOrganizer for Galaxy. 
+* To download CellOrganizer visit the `official website <http://www.cellorganizer.org>`_. Please make sure the version of CellOrganizer you install matches the version of CellOrganizer for Galaxy. 
 
 * Copy the CellOrganizer tools into the `$GALAXY/tools`. The variable `$GALAXY`, as explained in the official documentation, holds the location of your Galaxy instance.
 
