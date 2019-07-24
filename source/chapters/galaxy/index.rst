@@ -22,8 +22,8 @@ Installing local instance of CellOrganizer for Galaxy
 ----------------------------------------------------
 Before you attempt to install the tools make sure to have
 
-* A working Galaxy instance. Installing Galaxy is beyond the scope of this document. Please refer to the [official documentation](https://galaxyproject.org/admin/get-galaxy/) to install an instance.
-* Matlab. Matlab should be installed in the same machine running Galaxy. Installing Matlab is beyond the scope of this document. Please refer to the [official documentation](https://www.mathworks.com/support/install-matlab.html?q=&page=1) to build an instance.
+* A working Galaxy instance. Installing Galaxy is beyond the scope of this document. Please refer to the `official documentation <https://galaxyproject.org/admin/get-galaxy/>`_ to install an instance.
+* Matlab. Matlab should be installed in the same machine running Galaxy. Installing Matlab is beyond the scope of this document. Please refer to the  `official documentation <https://www.mathworks.com/support/install-matlab.html?q=&page=1>`_ to build an instance.
 * The Matlab binary must be in the `$PATH` of the user running Galaxy.
 
   For example
