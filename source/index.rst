@@ -14,10 +14,10 @@ Contents:
    :maxdepth: 2
 
    ./chapters/getting_started
-
-   ./chapters/cellorganizer
-
+   
    ./chapters/cellorganizer_options
+
+   ./chapters/cellorganizer_for_matlab
 
    ./chapters/cellorganizer_for_docker
 

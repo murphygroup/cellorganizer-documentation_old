@@ -1,3 +1,7 @@
+#############
+Introduction
+#############
+
 .. getting_started:
 
 .. include:: ../sections/introduction.rst

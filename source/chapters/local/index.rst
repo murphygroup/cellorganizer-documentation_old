@@ -1,5 +1,5 @@
-About CellOrganizer
-*******************
+About CellOrganizer for Matlab
+******************************
 CellOrganizer for Matlab is the most flexible and powerful of the CellOrganizer suite, since it interfaces directly with Matlab which facilities customization and pre- and post-processing.
 
 Installing CellOrganizer locally
