@@ -97,7 +97,7 @@ Setup
 
 Download the most recent version of CellOrganizer
 -------------------------------------------------
-The most recent version of the CellOrganizer software (v2.8.2) can be found under the `Downloads <http://www.cellorganizer.org/cellorganizer-2-8-2/>`_ of the CellOrganizer homepage. Make sure to download the `distribution that includes the image collection <http://www.cellorganizer.org/Downloads/v2.8.0/cellorganizer-v2.8.0-images-collection.tgz>`_, since we will use these images soon.  After downloading the CellOrganizer source code, unzip the folder, and copy the resulting folder into the "Documents" → "MATLAB" directory.
+The most recent version of the CellOrganizer software (v2.8.1) can be found under the `Downloads <http://www.cellorganizer.org/cellorganizer-2-8-2/>`_ of the CellOrganizer homepage. Make sure to download the `distribution that includes the image collection <http://www.cellorganizer.org/Downloads/v2.8.0/cellorganizer-v2.8.0-images-collection.tgz>`_, since we will use these images soon.  After downloading the CellOrganizer source code, unzip the folder, and copy the resulting folder into the "Documents" → "MATLAB" directory.
 
 Add the CellOrganizer directory to path
 ---------------------------------------
