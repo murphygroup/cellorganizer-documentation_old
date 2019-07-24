@@ -97,17 +97,17 @@ Setup
 
 Download the most recent version of CellOrganizer
 -------------------------------------------------
-The most recent version of the CellOrganizer software (v2.8.1) can be found under the `Downloads <http://www.cellorganizer.org/cellorganizer-2-8-0/>`_ of the CellOrganizer homepage. Make sure to download the `distribution that includes the image collection <http://www.cellorganizer.org/Downloads/v2.8.0/cellorganizer-v2.8.0-images-collection.tgz>`_, since we will use these images soon.  After downloading the CellOrganizer source code, unzip the folder, and copy the resulting folder into the "Documents" → "MATLAB" directory.
+The most recent version of the CellOrganizer software (v2.8.2) can be found under the `Downloads <http://www.cellorganizer.org/cellorganizer-2-8-2/>`_ of the CellOrganizer homepage. Make sure to download the `distribution that includes the image collection <http://www.cellorganizer.org/Downloads/v2.8.0/cellorganizer-v2.8.0-images-collection.tgz>`_, since we will use these images soon.  After downloading the CellOrganizer source code, unzip the folder, and copy the resulting folder into the "Documents" → "MATLAB" directory.
 
 Add the CellOrganizer directory to path
 ---------------------------------------
 You should see the folder appear in the "Current Folder" in MATLAB on the left side.  If it doesn’t, make sure that your file path is set to "Users" → your user name → "Documents" → "MATLAB".
 
-To ensure that MATLAB can access the images and files contained within the CellOrganizer folder, right click on "cellorganizer-v2.8.1" on the left side of the MATLAB window and select "Add to Path" → "Selected Folders and Subfolders".
+To ensure that MATLAB can access the images and files contained within the CellOrganizer folder, right click on "cellorganizer-v2.8.2" on the left side of the MATLAB window and select "Add to Path" → "Selected Folders and Subfolders".
 
 Adding Images
 -------------
-Images included in the CellOrganizer download can be found in "Documents" → "MATLAB" → "cellorganizer-v2.8.1" → "images".
+Images included in the CellOrganizer download can be found in "Documents" → "MATLAB" → "cellorganizer-v2.8.2" → "images".
 
 If you don't have your own images and did not download the full version of CellOrganizer in Step 0, then you can download some samples `here <http://murphylab.web.cmu.edu/data/Hela/3D/multitiff/3DHela_LAM.tgz>`_. (Note: The whole collection is 2.0 GB.) These are 3D HeLa images with a nuclear stain (channel 0), cell stain (channel 1) and protein stain (channel 2). The tagged protein is `LAMP2 <https://en.wikipedia.org/wiki/LAMP2>`_, a lysosomal protein.
 
