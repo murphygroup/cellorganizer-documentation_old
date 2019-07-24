@@ -31,7 +31,7 @@ Downloading CellOrganizer
 
 CellOrganizer for Matlab is the most flexible and powerful of the CellOrganizer suite, since it interfaces directly with Matlab which facilities customization and pre- and post-processing.
 
-To download the latest CellOrganizer for Matlab distribution go to the `download page <http://www.cellorganizer.org/cellorganizer-2-7-1/>`_ and download the latest release. Afterwards, extract the contents of the release into a local directory of your preference. 
+To download the latest CellOrganizer for Matlab distribution go to the `download page <http://www.cellorganizer.org/cellorganizer-2-8-1/>`_ and download the latest release. Afterwards, extract the contents of the release into a local directory of your preference. 
 
 For example,
 
