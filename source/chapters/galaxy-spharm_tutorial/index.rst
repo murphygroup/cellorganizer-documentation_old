@@ -73,7 +73,7 @@ Generating SBML Instance from Pretrained SPHARM-RPDM Model on Galaxy
     
     .. figure:: galaxy-spharm_tutorial/images/adv_options.png
 
-15. Once all the information is complete click on |execute|, the button that will close the options panel. A green box will be displayed indicating that the demo is being run and a new item in the history will be added with the model ran. 
+15. Once all the information is complete click on the |execute| button, that will close the options panel. A green box will be displayed indicating that the demo is being run and a new item in the history will be added with the model ran. 
 
     .. |execute| image:: galaxy-spharm_tutorial/images/execute_button.png
     
