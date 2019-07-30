@@ -30,6 +30,6 @@ CellOrganizer training demos on MATLAB accept the following image file formats:
  * Import image from a URL - if images are in a repository just add the url for it.
 
 .. IMPORTANT::
-if you need to change the format of your images to OME.TIFF check `here <https://www-legacy.openmicroscopy.org/site/products/ome-tiff>`_ for more on what you will need to do. In most demos, CellOrganizer anticipates that you have a unique image dataset for each of the following three channels: cellular shapes, nucleoli, and proteins.
-You must set each of these variables individually and can choose to remove or add variables to comply with your own dataset. To set a variable, you are expected to either provide a list of the image filenames or a pattern of the image filenames.
-**All images in the dataset are to be binarized and contrast – stretched prior to the main processing step.**
+    if you need to change the format of your images to OME.TIFF check `here <https://www-legacy.openmicroscopy.org/site/products/ome-tiff>`_ for more on what you will need to do. In most demos, CellOrganizer anticipates that you have a unique image dataset for each of the following three channels: cellular shapes, nucleoli, and proteins.
+    You must set each of these variables individually and can choose to remove or add variables to comply with your own dataset. To set a variable, you are expected to either provide a list of the image filenames or a pattern of the image filenames.
+    **All images in the dataset are to be binarized and contrast – stretched prior to the main processing step.**
