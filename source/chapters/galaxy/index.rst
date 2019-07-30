@@ -244,8 +244,12 @@ CellOrganizer for Galaxy Tutorial
 
 .. include:: galaxy-spharm_tutorial/index.rst
 
+
 CellOrganizer for Galaxy Exercises
 ==============================
+
+.. include:: source/chapters/cellorganizer_options/inputs.rst
+
 
 Data Importing Exercises
 ----------------------------------------------------
@@ -254,8 +258,8 @@ Exercise 1. Importing image files that are already in CellOrganizer for Galaxy
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 1. Go to the navigation bar at the top of the homepage, click on **"Shared Data"**, and then choose **"Data Libraries".**
-2. Go to Images -> HeLa -> 2D -> 2D HeLa LAMP2
-3. Tick the box next to **"2D HeLa LAMP2"**.
+2. Go to **Images** -> **HeLa** -> **2D** -> **LAMP2**
+3. Tick the box next to **"LAMP2"**.
 4. Click on **"To History"**, select the history you would like to send the image dataset to, and then click **"Import"**.
 
 Exercise 2. Importing a model that is already in CellOrganizer for Galaxy
