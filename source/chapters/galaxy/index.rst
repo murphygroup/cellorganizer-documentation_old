@@ -248,7 +248,7 @@ CellOrganizer for Galaxy Tutorial
 CellOrganizer for Galaxy Exercises
 ==============================
 
-.. include:: source/chapters/cellorganizer_options/inputs.rst
+.. include:: cellorganizer_options/inputs.rst
 
 
 Data Importing Exercises
