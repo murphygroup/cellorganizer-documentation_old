@@ -267,10 +267,8 @@ Exercise 2. Importing a model that is already in CellOrganizer for Galaxy
 Exercise 3. Uploading image files / generative models from your computer
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1. Under the **"Get Data"** section of the Tools window
-    1.1 Select **"Upload File from your computer"**.
-2. Click on **"Choose local file"**
-    2.1 Then select image/model files that you wish to upload.
+1. Under the **"Get Data"** section of the Tools window and select **"Upload File from your computer"**.
+2. Click on **"Choose local file"** and then select image/model files that you wish to upload.
 3. For every OMETIFF image that you upload, you should change the Type from **"Auto-detect"** to **"tiff"**. Similarly, for every model MAT-file that you upload, you should change the Type to **"mat"**. If all files that you are uploading have the same type, then you can simply use the **"Type (set all)"** option instead of having to make changes one at a time.
 4. Click on **"Start"**.
 
