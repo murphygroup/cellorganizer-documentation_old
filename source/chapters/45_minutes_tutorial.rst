@@ -97,17 +97,17 @@ Setup
 
 Download the most recent version of CellOrganizer
 -------------------------------------------------
-The most recent version of the CellOrganizer software (v2.8.1) can be found under the `Downloads <http://www.cellorganizer.org/cellorganizer-2-8-1/>`_ of the CellOrganizer homepage. Make sure to download the `distribution that includes the image collection <http://www.cellorganizer.org/Downloads/v2.8.0/cellorganizer-v2.8.0-images-collection.tgz>`_, since we will use these images soon.  After downloading the CellOrganizer source code, unzip the folder, and copy the resulting folder into the "Documents" → "MATLAB" directory.
+The most recent version of the CellOrganizer software (v2.9.0) can be found under the `Downloads <http://www.cellorganizer.org/cellorganizer-2-9-0/>`_ of the CellOrganizer homepage. Make sure to download the `distribution that includes the image collection <http://www.cellorganizer.org/Downloads/v2.9/cellorganizer-v2.9.0-images-collection.tgz>`_, since we will use these images soon.  After downloading the CellOrganizer source code, unzip the folder, and copy the resulting folder into the "Documents" → "MATLAB" directory.
 
 Add the CellOrganizer directory to path
 ---------------------------------------
 You should see the folder appear in the "Current Folder" in MATLAB on the left side.  If it doesn’t, make sure that your file path is set to "Users" → your user name → "Documents" → "MATLAB".
 
-To ensure that MATLAB can access the images and files contained within the CellOrganizer folder, right click on "cellorganizer-v2.8.2" on the left side of the MATLAB window and select "Add to Path" → "Selected Folders and Subfolders".
+To ensure that MATLAB can access the images and files contained within the CellOrganizer folder, right click on "cellorganizer-v2.9.0" on the left side of the MATLAB window and select "Add to Path" → "Selected Folders and Subfolders".
 
 Adding Images
 -------------
-Images included in the CellOrganizer download can be found in "Documents" → "MATLAB" → "cellorganizer-v2.8.2" → "images".
+Images included in the CellOrganizer download can be found in "Documents" → "MATLAB" → "cellorganizer-v2.9.0" → "images".
 
 If you don't have your own images and did not download the full version of CellOrganizer in Step 0, then you can download some samples `here <http://murphylab.web.cmu.edu/data/Hela/3D/multitiff/3DHela_LAM.tgz>`_. (Note: The whole collection is 2.0 GB.) These are 3D HeLa images with a nuclear stain (channel 0), cell stain (channel 1) and protein stain (channel 2). The tagged protein is `LAMP2 <https://en.wikipedia.org/wiki/LAMP2>`_, a lysosomal protein.
 
@@ -126,12 +126,12 @@ Training Models
 The training portion of this tutorial covers the very basic setup required to get ``img2slml`` up and running.
 
 **Start a new "scratch" script**
-Click "New" → "New Script", and save your file as ``tutorial_train.m`` (make sure that the file is saved to the "Documents" → "MATLAB" path, but not inside the “cellorganizer-v2.8.1” folder). Instead of typing the commands in the following sections into the Command Window, type (or copy and paste) them into ``tutorial_train.m``. This will keep track of what you have done so far and provide a resource for later use.
+Click "New" → "New Script", and save your file as ``tutorial_train.m`` (make sure that the file is saved to the "Documents" → "MATLAB" path, but not inside the “cellorganizer-v2.9.0” folder). Instead of typing the commands in the following sections into the Command Window, type (or copy and paste) them into ``tutorial_train.m``. This will keep track of what you have done so far and provide a resource for later use.
 
 **Create variables containing your images**
 We next need to tell CellOrganizer which cellular images we would like to use. To make life easier in the future, let's start by defining a variable that contains the path to the directory where our images for the project are going to be stored.  You can find processed (there are cell masks provided that indicate the position of the cell in each image) 3D images for HeLa cells in the path below, which we will rename as ``img__dir``::
 
-	img_dir = './cellorganizer-v2.8.1/images/HeLa/3D/processed';
+	img_dir = './cellorganizer-v2.9.0/images/HeLa/3D/processed';
 
 We would like to select just the "LAM" image files found within this folder in order to train our model.  There are three ways to do this depending on how you have stored your images, each of which has its strengths: a string of wildcards, a cell array of file paths, and a cell array of function handles.
 
@@ -237,7 +237,7 @@ Start by defining two variables: a cell-array containing the path to the model y
 
 Alternatively, you can generate images from one of the models provided in the CellOrganizer distribution, such as the model of the lysosomal protein LAMP2 in HeLa cells::
 
-	model_path = {'./cellorganizer-v2.8.1/models/3D/lamp2.mat'};
+	model_path = {'./cellorganizer-v2.9.0/models/3D/lamp2.mat'};
 
 The options structure for synthesis is set up in a similar way to how we set up the options structure in **Training**. Here we create a new struct called ``synth_options`` and specify where we want the images to be saved, a prefix for the saved files, and the number of images desired::
 
@@ -295,7 +295,7 @@ Now that we have an *indexed image*, we can view it with the function ``img2vol`
 .. figure:: ../images/tutorial/synth_img_3D_lamp2_cell1.png
         :align: center
 
-        Visualization of cell1 synthesized from './cellorganizer-v2.8.1/models/3D/lamp2.mat'
+        Visualization of cell1 synthesized from './cellorganizer-v2.9.0/models/3D/lamp2.mat'
 
 Congratulations! You have created a synthetic cell!
 

@@ -41,10 +41,10 @@ CellOrganizer must be downloaded into the system running Galaxy.
 * Its location should be set in an environment variable called `$CELLORGANIZER`. The environment variable needs to be accessible to the user running your Galaxy instance. Make sure the user running Galaxy has reading permissions on the CellOrganizer location.
 
   ```
-  ~ chown -R galaxy:galaxy /usr15/galaxy/cellorganizer-galaxy-tools-v2.8.1/cellorganizer3
-  ~ export CELLORGANIZER=/usr15/galaxy/cellorganizer-galaxy-tools-v2.8.1/cellorganizer3
+  ~ chown -R galaxy:galaxy /usr15/galaxy/cellorganizer-galaxy-tools-v2.9.0/cellorganizer3
+  ~ export CELLORGANIZER=/usr15/galaxy/cellorganizer-galaxy-tools-v2.9.0/cellorganizer3
   ~ echo $CELLORGANIZER 
-    /usr15/galaxy/cellorganizer-galaxy-tools-v2.8.1/cellorganizer3
+    /usr15/galaxy/cellorganizer-galaxy-tools-v2.9.0/cellorganizer3
   ```
 
 * To download CellOrganizer visit the `official website <http://www.cellorganizer.org>`_. Please make sure the version of CellOrganizer you install matches the version of CellOrganizer for Galaxy. 
