@@ -64,16 +64,16 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'CellOrganizer'
-copyright = u'2007-2019, Murphy Lab at Carnegie Mellon University'
+copyright = u'2007-2020, Murphy Lab at Carnegie Mellon University'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
 # built documents.
 #
 # The short X.Y version.
-version = '2.8'
+version = '2.9'
 # The full version, including alpha/beta/rc tags.
-release = '2.8.1'
+release = '2.9.0'
 
 #def setup(app):
 #  app.add_directive('exec', ExecDirective)
@@ -135,10 +135,10 @@ html_theme_options = {'responsive':True,
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
-html_title = 'CellOrganizer v2.8.2 documentation'
+html_title = 'CellOrganizer v2.9.0 documentation'
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
-html_short_title = 'CellOrganizer v2.8.2'
+html_short_title = 'CellOrganizer v2.9.0'
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
@@ -289,7 +289,7 @@ texinfo_documents = [
 epub_title = u'CellOrganizer'
 epub_author = u'Murphy Group'
 epub_publisher = u'Murphy Group'
-epub_copyright = u'2007-2019, Murphy Group'
+epub_copyright = u'2007-2020, Murphy Group'
 
 # The basename for the epub file. It defaults to the project name.
 #epub_basename = u'CellOrganizer'
@@ -351,4 +351,3 @@ epub_exclude_files = ['search.html']
 
 # If false, no index is generated.
 #epub_use_index = True
-
