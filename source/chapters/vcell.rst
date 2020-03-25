@@ -1,6 +1,6 @@
 Generate Geometry for Simulation with VCell
------------------------------------------
-`VCell, (Virtual Cell), <vcell.org>`_ is a comprehensive platform for modeling cell biological systems that is built on a central database and disseminated as a web application.
+-------------------------------------------
+`VCell <vcell.org>`_ is a comprehensive platform for modeling cell biological systems that is built on a central database and disseminated as a web application.
 
 How to
 ~~~~~~~~

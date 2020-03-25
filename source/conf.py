@@ -65,7 +65,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'CellOrganizer'
-copyright = u'2007-2019, Murphy Lab at Carnegie Mellon University'
+copyright = u'2007-2020, Murphy Lab at Carnegie Mellon University'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -134,10 +134,10 @@ html_theme = 'bizstyle'
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
-html_title = 'CellOrganizer v2.8.0 documentation'
+html_title = 'CellOrganizer v2.8.1 documentation'
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
-html_short_title = 'CellOrganizer v2.8.0'
+html_short_title = 'CellOrganizer v2.8.1'
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
