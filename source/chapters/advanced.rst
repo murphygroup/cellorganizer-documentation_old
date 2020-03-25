@@ -12,3 +12,5 @@ Additional Information
 .. include:: ./sbml_spatial_level3.rst
 
 .. include:: ./tcell.rst
+
+.. include:: ./vcell.rst

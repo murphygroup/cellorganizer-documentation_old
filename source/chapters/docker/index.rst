@@ -42,14 +42,14 @@ The image also comes with
   - xlrd
 
 About Docker
-------------
+============
 
 Docker performs operating-system-level virtualization. Docker lets us create and deploy a preconfigured image with the CellOrganizer binaries. This image can be used to spin containers that are ready to use and start testing.
 
 To learn about Docker and how to use it, click `here <https://docs.docker.com/get-started/>`_
 
 About Jupyter
--------------
+=============
 The `Jupyter Notebook <https://jupyter.org/>`_ is an open-source web application that allows you to create and share documents that contain live code, equations, visualizations and narrative text.
 
 To learn more about Jupyter, click `here <https://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/what_is_jupyter.html>`_
@@ -58,7 +58,7 @@ Installing CellOrganizer for Docker
 ***********************************
 
 Setup
-^^^^^
+=====
 The instructions below describe
 
 * How to install Docker, the virtualization engine that will run the container
@@ -69,7 +69,7 @@ The instructions below describe
 * How to run some of the demos included in the container
 
 Installing Docker
------------------
+=================
 Before downloading the image and spinning a container, you need to install Docker. Installing Docker is beyond the scope of this document.
 
 * To install Docker-for-Mac, click `here <https://docs.docker.com/docker-for-mac/install/>`_.
@@ -85,7 +85,8 @@ The easiest way to download an image and run a container is to use `Kitematic <h
 .. ATTENTION::
    Kitematic is not necessary, but it is recommended to streamline installation and deployment.
 
-**Download the most recent image using Kitematic**
+Download the most recent image using Kitematic
+----------------------------------------------
 
 Start Kitematic. It should open a window similar to the screenshot below
 
@@ -102,12 +103,13 @@ Then click *CREATE* to download the image and start a container
 .. figure:: docker/image_downloading.png
    :align: center
 
-**Download the most recent image from terminal**
+Download the most recent image from terminal
+--------------------------------------------
 
 For convenience, the Docker image can be found in `Docker Hub <https://hub.docker.com/r/murphylab/cellorganizer-jupyter>`_ along with links to the Dockerfile.
 
 Demos
------
+=====
 
 There are several demos included within the CellOrganizer software bundle. These demos are intended to illustrate CellOrganizer's functionality, and should be used to familiarize the user with the input/output format of various top-level functions such as **img2slml** and **slml2img**. Certains demos have been deprecated and will be removed in future versions of CellOrganizer.
 
@@ -120,7 +122,7 @@ There are several demos included within the CellOrganizer software bundle. These
 +----------+------------+-------------+-----------+-------------+
 | demo2D02 |            | True        |           |             |
 +----------+------------+-------------+-----------+-------------+
-| demo2D03 | True       |             |           | v.2.8.0     |
+| demo2D03 | True       |             |           | v2.8.1      |
 +----------+------------+-------------+-----------+-------------+
 | demo2D04 | True       |             |           |             |
 +----------+------------+-------------+-----------+-------------+
@@ -142,7 +144,7 @@ There are several demos included within the CellOrganizer software bundle. These
 +----------+------------+-------------+-----------+-------------+
 | demo3D05 |            | True        |           |             |
 +----------+------------+-------------+-----------+-------------+
-| demo3D06 |            | True        |           | v.2.8.0     |
+| demo3D06 |            | True        |           | v2.8.1      |
 +----------+------------+-------------+-----------+-------------+
 | demo3D07 |            | True        |           |             |
 +----------+------------+-------------+-----------+-------------+
