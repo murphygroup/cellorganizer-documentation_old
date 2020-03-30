@@ -7,4 +7,27 @@ The software supports saving generated geometries as valid VCML(Virtual Cell Mar
 
 	options.output.writeVCML = true;
 
-For an example, investigate and run ``demo3D58``, ``demo3D60``, or  ``demo3D63``.
+For examples, investigate and run ``demo3D58``, ``demo3D60``, or  ``demo3D63``.
+
+Options
+^^^^^^^
+
+The table below describes all VCML-related options. All options are fields within the ``options.output.VCML`` structure.
+
+Options are listed as required or optional in the case that ``options.output.writeVCML = true``; otherwise, they have no effect.
+
+=============================   ========    ===========
+Option                          Required    Description
+=============================   ========    ===========
+writeVCML                       required    boolean flag specifying whether to write out VCML files for use with Virtual Cell. Default is false.
+input_filename                  optional    string specifying Virtual Cell VCML file with biochemistry which will be combined with generated geometry in output file. Default is empty string.
+downsampling                    optional    downsampling fraction for the creation of object files (1 means no downsampling, 1/5 means 1/5 the size). Default is 1.
+addTranslocationIntermediates   optional    boolean flag specifying whether to create intermediate species and reactions for reactions involving non-adjacent translocations, which are valid in cBNGL but not Virtual Cell. Default is true.
+translations                    optional    N x 2 cell array of strings (first column) to be replaced by other strings (second column).
+defaultDiffusionCoefficient     optional    double specifying diffusion coefficient in meters squared per second. Default is 1.0958e-11.
+NET.filename                    optional    string specifying BioNetGen network file to include in VCML files for use with Virtual Cell. Default is empty string.
+NET.units.concentration         optional    string specifying concentration units in NET file. Default is 'uM'.
+NET.units.length                optional    string specifying length units in NET file. Default is 'um'.
+NET.units.time                  optional    string specifying time units in NET file. Default is 's'.
+NET.effectiveWidth              optional    double specifying surface thickness in meters. Default is 3.8775e-9.
+=============================   ========    ===========
