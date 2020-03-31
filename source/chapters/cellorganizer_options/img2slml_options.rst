@@ -54,8 +54,26 @@ Generic Options
 *options.model.filename* (optional) **['model.mat']**
     * Holds the output filename.
 
+*options.resolution* (optional) **[empty]**
+    * Holds the information of the dimensionality of the images
+    
+*options.min_obj_size* (optional) **[empty]**
+    * Threshold value for determining whether the object should be saved
+
+*options.if_skip_cell_nuclear_model* (optional) **[false]**
+    * Boolean condition to skip building a nuclear model 
+
 *options.downsampling* (optional) **[[1,1,1]]**
     * The downsampling vector to be used during preprocessing.
+
+*options.python_path* (optional) **[empty]**
+    * local python path for calling point process model building.
+    
+*options.verbose* (optional) **[false]**
+    * display extended information
+    
+*options.is_demo* (optional) **[true]**
+    * specifies if model is running as a demo which will use inhouse images
 
 
 Nuclear shape submodel
@@ -174,3 +192,37 @@ Learn more `here <https://link.springer.com/protocol/10.1007%2F978-1-4939-9102-0
 
 *options.model.spharm_rpdm.latent_dim* (optional) **[15]**
     * This specifies how many latent dimensions should be used for modeling the shape space. Valid values are positive integers.
+    
+*options.model.spharm_rpdm.segminnucfraction (optional) **[0.17]**
+    * Threshold parameter to clip nuclear/cell volume ratio to avoid underflow
+    
+Point Process Model (PPM)
+^^^^^^^^^^^^^^^^^^^
+Learn more `here <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5308220/pdf/nihms847685.pdf>`_
+
+*options.model.ppm.datetime_str* (optional) **[date-time]**
+    * Date and time of when the model was initated
+
+*options.model.ppm.sigma* (optional) **[5]**
+    * Standard deviation of a gaussian distribution
+   
+*options.model.ppm.thresPerc* (optional) **[0.1]**
+    * Threshold percentage of the max value after filtering the image
+    
+*options.model.ppm.mask_inverted_color_flag* (optional) **[false]**
+    * Boolean value to invert the mask colors if need be
+    
+options.model.ppm.dummy_num* (optional) **[50]**
+    * Number of dummy points to generate per ROI (Regions of Interest)
+
+options.model.ppm.rand_num* (optional) **[70000]**
+    * Number of random numbers to be generated
+
+options.model.ppm.cv_mode* (optional) **[rd_roi]**
+    * Cross validation option to run on either ROIs (Regions of interest) or entire image (rd_img)
+
+options.model.ppm.fold* (optional) **[3]**
+    * Number of folds or divisions of the data to do. Equivalent to k-folds for cross validation
+
+options.model.ppm.cv_round* (optional) **[1]**
+    * Number of cross validation rounds to complete
