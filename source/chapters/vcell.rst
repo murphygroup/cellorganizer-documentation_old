@@ -25,9 +25,4 @@ downsampling                    optional    downsampling fraction for the creati
 addTranslocationIntermediates   optional    boolean flag specifying whether to create intermediate species and reactions for reactions involving non-adjacent translocations, which are valid in cBNGL but not Virtual Cell. Default is true.
 translations                    optional    N x 2 cell array of strings (first column) to be replaced by other strings (second column).
 defaultDiffusionCoefficient     optional    double specifying diffusion coefficient in meters squared per second. Default is 1.0958e-11.
-NET.filename                    optional    string specifying BioNetGen network file to include in VCML files for use with Virtual Cell. Default is empty string.
-NET.units.concentration         optional    string specifying concentration units in NET file. Default is 'uM'.
-NET.units.length                optional    string specifying length units in NET file. Default is 'um'.
-NET.units.time                  optional    string specifying time units in NET file. Default is 's'.
-NET.effectiveWidth              optional    double specifying surface thickness in meters. Default is 3.8775e-9.
 =============================   ========    ===========
