@@ -22,7 +22,5 @@ Option                          Required    Description
 writeVCML                       required    boolean flag specifying whether to write out VCML files for use with Virtual Cell. Default is false.
 input_filename                  optional    string specifying Virtual Cell VCML file with biochemistry which will be combined with generated geometry in output file. Default is empty string.
 downsampling                    optional    downsampling fraction for the creation of object files (1 means no downsampling, 1/5 means 1/5 the size). Default is 1.
-addTranslocationIntermediates   optional    boolean flag specifying whether to create intermediate species and reactions for reactions involving non-adjacent translocations, which are valid in cBNGL but not Virtual Cell. Default is true.
 translations                    optional    N x 2 cell array of strings (first column) to be replaced by other strings (second column).
-defaultDiffusionCoefficient     optional    double specifying diffusion coefficient in meters squared per second. Default is 1.0958e-11.
 =============================   ========    ===========
