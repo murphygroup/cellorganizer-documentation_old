@@ -8,9 +8,10 @@ The software supports saving generated geometries as valid VCML(Virtual Cell Mar
 	options.output.writeVCML = true;
 
 For simple examples, investigate and run:
-  * ``demo3D58``: Generate a single framework and vesicles from a 3D HeLa ratio model and write to VCML.
-  * ``demo3D60``: Generate a single framework and vesicles from a 3D HeLa SPHARM model and write to VCML.
-  * ``demo3D63``: Generate a single framework from a 3D HeLa SPHARM model and write to VCML with a reaction network and spatial and compartmental simulations ready to be run in Virtual Cell.
+
+* ``demo3D58``: Generate a single framework and vesicles from a 3D HeLa ratio model and write to VCML.
+* ``demo3D60``: Generate a single framework and vesicles from a 3D HeLa SPHARM model and write to VCML.
+* ``demo3D63``: Generate a single framework from a 3D HeLa SPHARM model and write to VCML with a reaction network and spatial and compartmental simulations ready to be run in Virtual Cell.
 
 For an example application that generates 100 synthetic geometries with reaction networks (as in ``demo3D63``), writes them to individual VCML files, and combines them into one VCML file for easy import into Virtual Cell, see ``generate_simulation_instances_SarmaGhosh2012``.
 
