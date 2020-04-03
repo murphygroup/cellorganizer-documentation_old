@@ -1,13 +1,18 @@
 VCell
 --------
 
-The software supports saving generated geometries as valid VCML(Virtual Cell Markup Language) files that can be imported into `VCell <https://docs.openmicroscopy.org/ome-model/5.6.3/#ome-tiff>`_, a platform to perform biological system modeling and simulations. To do this, use the output flag
+The software supports saving generated geometries as valid VCML(Virtual Cell Markup Language) files that can be imported into `Virtual Cell <https://vcell.org/>`_, a platform to perform biological system modeling and simulations. To do this, use the output flag
 
 .. code:: matlab
 
 	options.output.writeVCML = true;
 
-For examples, investigate and run ``demo3D58``, ``demo3D60``, or  ``demo3D63``.
+For simple examples, investigate and run:
+  * ``demo3D58``: Generate a single framework and vesicles from a 3D HeLa ratio model and write to VCML.
+  * ``demo3D60``: Generate a single framework and vesicles from a 3D HeLa SPHARM model and write to VCML.
+  * ``demo3D63``: Generate a single framework from a 3D HeLa SPHARM model and write to VCML with a reaction network and spatial and compartmental simulations ready to be run in Virtual Cell.
+
+For an example application that generates 100 synthetic geometries with reaction networks (as in ``demo3D63``), writes them to individual VCML files, and combines them into one VCML file for easy import into Virtual Cell, see ``generate_simulation_instances_SarmaGhosh2012``.
 
 Options
 ^^^^^^^
