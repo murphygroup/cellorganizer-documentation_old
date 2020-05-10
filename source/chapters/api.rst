@@ -282,4 +282,5 @@ Method header::
   % ------------------------
   % This is an optional structure with multiple elements that holds documentation about this model.
   % If the decumentation isn't input, function will inherit documentation from first
-  % model in list if model is present.
+  % model in list if model is present
+

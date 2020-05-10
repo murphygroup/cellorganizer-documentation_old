@@ -51,7 +51,7 @@ Generating SBML Instance from Pretrained SPHARM-RPDM Model on Galaxy
     .. figure:: galaxy-spharm_tutorial/images/to_history.png
 
 9. Then click on **“to history”** button in the top menu. A dialog window with appear with the current history on board pre-selected or you can create a new one as it gives you that option as well.
-   * Click on the **“import”** button if your history is already pre-selected this will import both datasets into your history. Once the images are imported _a green box in the top right corner_ will appear, click on it so it will take you to the history with the images imported
+   * Click on the **“import”** button if your history is already pre-selected this will import both datasets into your history. Once the images are imported **a green box in the top right corner** will appear, click on it so it will take you to the history with the images imported
 
 10. Or you can also click on the |galaxy_button| icon in the top left corner of the screen  to return to the home page. 
 
@@ -73,7 +73,7 @@ Generating SBML Instance from Pretrained SPHARM-RPDM Model on Galaxy
     
     .. figure:: galaxy-spharm_tutorial/images/adv_options.png
 
-15. Once all the information is complete click on |execute|, the button that will close the options panel. A green box will be displayed indicating that the demo is being run and a new item in the history will be added with the model ran. 
+15. Once all the information is complete click on the |execute| button, that will close the options panel. A green box will be displayed indicating that the demo is being run and a new item in the history will be added with the model ran. 
 
     .. |execute| image:: galaxy-spharm_tutorial/images/execute_button.png
     

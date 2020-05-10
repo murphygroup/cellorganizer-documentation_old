@@ -1,8 +1,8 @@
 .. MATLAB:
 
-#############
-CellOrganizer
-#############
+########################
+CellOrganizer for Matlab
+########################
 
 .. include:: local/index.rst
 .. include:: hpc/index.rst
