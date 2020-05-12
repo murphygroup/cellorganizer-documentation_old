@@ -1,7 +1,7 @@
 .. cellorganizer_pipeline:
 
 =====================
-CellOrganizer Options
+CellOrganizer Main Functions and Options
 =====================
 Options listed for the 5 main functions of CellOrganizer. Default setting shown in brackets (**[]**).
 

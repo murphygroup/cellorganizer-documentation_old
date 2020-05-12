@@ -17,12 +17,16 @@ models                   A cell array of filenames
 options                  A structure holding the function options
 =======================  ========================================
 
-Example: 
+**Prototype:** 
 
-slml2img(models, options)
+*slml2img(models, options)*
 
 General Options
 ==============
+
+**Format:** 
+
+options.xxx ([*Optional* or *Mandatory*)] [*Default Parameter*]
 
 *options.synthesis* (mandatory)
     * Synthesis parameter that allows to synthesize 'nucleus', 'cell', 'framework' or 'all'.
@@ -43,7 +47,7 @@ General Options
     * The image size is [1024 1024] for both 2D and 3D in x and y.
 
 *options.compression* (optional) **['lzw']**
-    * Compression of tiff, i.e. 'none', 'lzw' and 'packbits'
+    * Compression of tiff, i.e. 'none', 'lzw' and 'packbits'.
 
 *options.microscope* (optional) **['none']**
     * Microscope model from which we select a point spread function.
@@ -52,7 +56,7 @@ General Options
     * Can be 'disc', 'sampled' or 'trimmed'.
 
 *options.resolution.cell* (optional)
-    * The resolution of the cell and nucleus that are being passed in
+    * The resolution of the cell and nucleus that are being passed in.
 
 *options.instance.cell* (optional) **[empty]**
     * A binary cell image to be filled with objects.
@@ -79,7 +83,7 @@ Protein Submodel Options
     * Defines the number of standard deviations to render Gaussian objects at.
 
 *options.resolution.objects* (optional)
-    * The resolution of the object model being synthesized
+    * The resolution of the object model being synthesized.
 
 
 Model Specific Options
@@ -87,43 +91,43 @@ Model Specific Options
 
 2D PCA
 ^^^^^^^^
-learn more `here <https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/bty983/5232995>`_
+learn more `here <https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/bty983/5232995>`_.
 
 *options.model.pca.pca_synthesis_method* (mandatory) **['reconstruction' or 'random sampling']**
     * The method in which the generated image is synthesized.
 
 *options.model.pca.imageSize* (mandatory) **[1024, 1024]**
-    * image size of the resulting synthesized image
+    * image size of the resulting synthesized image.
 
 
 3D SPHARM-RPDM
 ^^^^^^^^^^^^^^^
-learn more `here <https://link.springer.com/protocol/10.1007%2F978-1-4939-9102-0_11>`_
+learn more `here <https://link.springer.com/protocol/10.1007%2F978-1-4939-9102-0_11>`_.
 
 *options.model.spharm_rpdm.synthesis_method* (mandatory) **['reconstruction' or 'random sampling']**
-
+    * Synthesis method option either reconstruction or random sampling of the image.
 
 3D T-Cell Distribution
 ^^^^^^^^^^^^^^^^^^^^^^
-learn more `here <https://link.springer.com/protocol/10.1007/978-1-4939-6881-7_25>`_
+learn more `here <https://link.springer.com/protocol/10.1007/978-1-4939-6881-7_25>`_.
 
 *options.model.tcell.results_location* (mandatory)
     * File path for where the results should be saved.
 
 *options.model.tcell.named_option_set* (mandatory)
-    * The running choice for CellOrganizer and one sensor of two-point annotation
+    * The running choice for CellOrganizer and one sensor of two-point annotation.
 
 *options.model.tcell.sensor* (mandatory)
-    * Set up protein name
+    * Set up protein name.
 
 *options.model.tcell.model_type_to_include* (mandatory)
-    * Set up for model to include
+    * Set up for model to include.
 
 *options.model.tcell.use_two_point_synapses* (optional)
-    * Set up the mode of synapse to use, as a default, we use one-point, if needed you can use two-point by set up the option as true
+    * Set up the mode of synapse to use, as a default, we use one-point, if needed you can use two-point by set up the option as true.
 
 *options.model.tcell.timepoints_to_include* (optional)
-    * If creation of models for only a subset of the time points is desired, edit to specify which time points to include
+    * If creation of models for only a subset of the time points is desired, edit to specify which time points to include.
 
 Output Options
 ==============

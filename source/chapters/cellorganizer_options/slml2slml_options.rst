@@ -10,6 +10,20 @@ This function combines multiple models into a single model file.
   options                       List of options
 =============================  ===============================================================
 
+**Prototype:** 
+
+*slml2info(files, options)*
+
+General Options
+================
+
+**Format:** 
+
+options.xxx ([*Optional* or *Mandatory*)] [*Default Parameter*]
+
+Generic Options
+^^^^^^^^^^^^^^^
+
 *options.selection* (mandatory)
   * a matrix used to specify what submodels should be used from each file.
 

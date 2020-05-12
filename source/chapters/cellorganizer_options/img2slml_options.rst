@@ -20,12 +20,16 @@ A CellOrganizer model consists of four components,
   options                       List of options
 =============================  ===============================================================
 
-Example: 
+**Prototype:** 
 
-img2slml(dimensionality, dnaImagesDirectoryPath, cellImagesDirectoryPath, proteinImagesDirectoryPath, options)
+*img2slml(dimensionality, dnaImagesDirectoryPath, cellImagesDirectoryPath, proteinImagesDirectoryPath, options)*
 
 General Options
 ================
+
+**Format:** 
+
+options.xxx ([*Optional* or *Mandatory*)] [*Default Parameter*]
 
 Generic Options
 ^^^^^^^^^^^^^^^
@@ -40,7 +44,7 @@ Generic Options
     * If set to true, then the function will (1) keep temporary results folder, (2) will print information useful for debugging.
 
 *options.masks* (optional) **[empty]**
-    * List holding the mask files for input images
+    * List holding the mask files for input images.
 
 *options.save_segmentations* (optional) **[false]**
     * Will save the segmentations to the model file. Setting this option to true will create a considerably large file.
@@ -58,13 +62,13 @@ Generic Options
     * Holds the output filename.
 
 *options.resolution* (optional) **[empty]**
-    * Holds the information of the dimensionality of the images
+    * Holds the information of the dimensionality of the images.
     
 *options.min_obj_size* (optional) **[empty]**
-    * Threshold value for determining whether the object should be saved
+    * Threshold value for determining whether the object should be saved.
 
 *options.if_skip_cell_nuclear_model* (optional) **[false]**
-    * Boolean condition to skip building a nuclear model 
+    * Boolean condition to skip building a nuclear model.
 
 *options.downsampling* (optional) **[[1,1,1]]**
     * The downsampling vector to be used during preprocessing.
@@ -73,13 +77,13 @@ Generic Options
     * local python path for calling point process model building.
     
 *options.verbose* (optional) **[false]**
-    * display extended information
+    * display extended information.
     
 *options.model_prefix* (optional) **[N/A]**
-    * Prefix of model name
+    * Prefix of model name.
  
  *options.sampling.method* (optional) **['trimmed']**
-    * Can be 'disc', 'sampled', 'trimmed'
+    * Can be 'disc', 'sampled', 'trimmed'.
 
 Nuclear shape submodel
 ^^^^^^^^^^^^^^^^^^^^^^
@@ -96,7 +100,7 @@ Nuclear shape submodel
     * Holds the id of the nuclear model.
 
 *options.nucleus.model* (optional) **[N/A]**
-    * model information of shape type
+    * model information of shape type.
 
 Cell shape submodel
 ^^^^^^^^^^^^^^^^^^^
@@ -113,7 +117,7 @@ Cell shape submodel
     * Holds the id of the cell model.
 
 *options.cell.model* (optional) **[N/A]**
-    * model information of shape type
+    * model information of shape type.
     
 Protein shape submodel
 ^^^^^^^^^^^^^^^^^^^^^^
@@ -130,63 +134,63 @@ Protein shape submodel
     * Holds the id of the protein model.
 
 *options.protein.model* (optional) **[N/A]**
-    * model information of shape type
+    * model information of shape type.
    
 *options.protein.cytonuclearflag* (optional) **[N/A]**
-    * flag of either 'cyto' or nuclear' declaration to train
+    * flag of either 'cyto' or nuclear' declaration to train.
    
 
 Model Specific Options
 ======================
-More information about our models can be found on our `publications page <http://www.cellorganizer.org/publications/>`_ .
+More information about our models can be found on our `publications page <http://www.cellorganizer.org/publications/>`_.
 
 Model Options
 ^^^^^^^^^^^^^^^^^^^
 
 *options.model.name* (optional) **[N/A]**
-    * Holds the name of the model
+    * Holds the name of the model.
 
 *options.model.id* (optional) **[N/A]**
-    * Holds id of the model
+    * Holds id of the model.
 
 *options.model.filename* (optional) **[model.mat]**
-    * Holds the filename of the model
+    * Holds the filename of the model.
     
 *options.model.resolution* (optional) **[N/A]**
-    * Resolution of the model
+    * Resolution of the model.
  
 *options.model.microtubule.searchparams.n* (optional) **[N/A]**
-    * number of search parameters for microtubules
+    * number of search parameters for microtubules.
 
 *options.model.microtubule.searchparams.mullen* (optional) **[N/A]**
-    * mullen value 
+    * mullen value. 
    
 *options.model.microtubule.searchparams.colli_min_number* (optional) **[N/A]**
-    * minimum collinear number
+    * minimum collinear number.
    
    
 
 2D PCA
 ^^^^^^^^^^^^^^^^^^^
-Learn more `here <https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/bty983/5232995>`_
+Learn more `here <https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/bty983/5232995>`_.
 
 * options.model.pca.latent_dim* (mandatory) **[15]**
     * This option specifies how many latent dimensions (principal vectors or principal components) should be used for modeling the shape space. Valid values are positive integers.
 
 2D/3D Diffeomorphic
 ^^^^^^^^^^^^^^^^^^^
-Learn more `here <http://murphylab.web.cmu.edu/publications/144-rohde2008.pdf>`_
+Learn more `here <http://murphylab.web.cmu.edu/publications/144-rohde2008.pdf>`_.
 
 *options.model.diffeomorphic.distance_computing_method* (mandatory) **['faster']**
-    * Uses faster distance conputing method 
+    * Uses faster distance conputing method. 
     
 *options.model.diffeomorphic.com_align* (mandatory) **['nuc']**
-    * What type (cell, nucleus etc.) to align the images to
+    * What type (cell, nucleus etc.) to align the images to.
    
 
 3D T-Cell Distribution
 ^^^^^^^^^^^^^^^^^^^
-Learn more `here <https://link.springer.com/protocol/10.1007/978-1-4939-6881-7_25>`_
+Learn more `here <https://link.springer.com/protocol/10.1007/978-1-4939-6881-7_25>`_.
 
 *options.model.tcell.synapse_location* (mandatory)
     * File path to annotation of the synapse positions of the T cells as input.
@@ -201,7 +205,7 @@ Learn more `here <https://link.springer.com/protocol/10.1007/978-1-4939-6881-7_2
     * Set up for model to include.
 
 *options.model.tcell.infer_synapses* (mandatory) **[true]**
-    * set up  the synapse inference
+    * set up  the synapse inference.
 
 *options.model.tcell.use_two_point_synapses* (optional) **[false]**
     * Set up the mode of synapse to use, if needed you can use two-point by setting the option as true.
@@ -216,12 +220,12 @@ Learn more `here <https://link.springer.com/protocol/10.1007/978-1-4939-6881-7_2
     * If true, then it assumes images are OME.TIFFs with annotations.
     
 *options.model.tcell.sensor* (optional) **[N/A]**
-    * Tcell sensor options
+    * Tcell sensor options.
 
-Spharm Objects
+SPHARM Objects
 ^^^^^^^^^^^^^^^^^^^
-Learn more `here <https://link.springer.com/protocol/10.1007%2F978-1-4939-9102-0_11>`_
-Learn more `here <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5308220/pdf/nihms847685.pdf>`_
+Learn more `here <https://link.springer.com/protocol/10.1007%2F978-1-4939-9102-0_11>`_.
+Learn more `here <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5308220/pdf/nihms847685.pdf>`_.
 
 *options.model.spharm-obj.spharm.spharm_rpdm.components* (mandatory) **[{'cell', 'nuc'}]**
     * This specifies which components should be included in the shape model. The valid values are {'cell'}, {'nuc'}, or {'cell', 'nuc'}.
@@ -230,7 +234,7 @@ Learn more `here <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5308220/pdf/nihms
     * method by which cells willbe aligned when producing shape descriptors. The possible values are 'major_axis' or 'foe'.
 
 *options.model.spharm-obj.spharm.rotation_plane* (optional) **['xy']**
-    * Dimensions of image that will used for alignment. The possible values are 'xy' (defaut), 'xz', 'yz' or ‘xyz'. For example, xy plane (around the z axis). if ‘xy‘ is specified, each cell will be rotated in the
+    * Dimensions of image that will used for alignment. The possible values are 'xy' (defaut), 'xz', 'yz' or ‘xyz'. For example, xy plane (around the z axis). if ‘xy‘ is specified, each cell will be rotated in the xy plane.
 
 *options.model.spharm-obj.spharm.postprocess* (optional) **[true]**
     * This specifies whether alignment and size normalization, should be done after parameterization. The values are ‘true’ or ‘false’.
@@ -242,28 +246,28 @@ Learn more `here <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5308220/pdf/nihms
     * This specifies how many latent dimensions should be used for modeling the shape space. Valid values are positive integers.
     
 *options.model.spharm-obj.spharm.segminnucfraction* (optional) **[0.17]**
-    * image size of the model
+    * image size of the model.
 
 *options.model.spharm-obj.ppm.sigma* (optional) **[5]**
-    * Standard deviation of a gaussian distribution
+    * Standard deviation of a gaussian distribution.
    
 *options.model.spharm-obj.ppm.thresPerc* (optional) **[0.1]**
-    * Threshold percentage of the max value after filtering the image
+    * Threshold percentage of the max value after filtering the image.
     
 *options.model.spharm-obj.ppm.mask_inverted_color_flag* (optional) **[false]**
-    * Boolean value to invert the mask colors if need be
+    * Boolean value to invert the mask colors if need be.
     
 *options.model.spharm-obj.ppm.dummy_num* (optional) **[50]**
-    * Number of dummy points to generate per ROI (Regions of Interest)
+    * Number of dummy points to generate per ROI (Regions of Interest).
 
 *options.model.spharm-obj.ppm.rand_num* (optional) **[70000]**
-    * Number of random numbers to be generated
+    * Number of random numbers to be generated.
 
 *options.model.spharm-obj.ppm.cv_mode* (optional) **[rd_roi]**
-    * Cross validation option to run on either ROIs (Regions of interest) or entire image (rd_img)
+    * Cross validation option to run on either ROIs (Regions of interest) or entire image (rd_img).
 
 *options.model.spharm-obj.ppm.fold* (optional) **[3]**
-    * Number of folds or divisions of the data to do. Equivalent to k-folds for cross validation
+    * Number of folds or divisions of the data to do. Equivalent to k-folds for cross validation.
 
 *options.model.spharm-obj.ppm.cv_round* (optional) **[1]**
-    * Number of cross validation rounds to complete
+    * Number of cross validation rounds to complete.

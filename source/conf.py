@@ -128,7 +128,7 @@ html_theme ='sphinx_rtd_theme'
 # documentation.
 html_theme_options = {'responsive':True,
                       'logo_only': True,
-                      'style_nav_header_background':'#efefef',
+                      'style_nav_header_background':'#5D6D7E',
                       'titles_only': False,}
 
 # Add any paths that contain custom themes here, relative to this directory.

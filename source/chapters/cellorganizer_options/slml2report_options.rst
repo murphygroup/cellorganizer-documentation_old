@@ -8,3 +8,7 @@ List Of Input Arguments        Descriptions
 model1                     A generative model filename
 model2                     A generative model filename
 ========================  =============================
+
+**Prototype:** 
+
+*slml2report(model1, model2)*
