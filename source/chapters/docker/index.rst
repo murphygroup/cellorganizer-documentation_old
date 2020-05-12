@@ -15,7 +15,7 @@ The image also comes with
 - `Jupyter <https://jupyter.org/>`_
 - and the Python packages
 
-  - `cellorganizer-python 2.8.1 <https://github.com/murphygroup/cellorganizer-python>`_
+  - `cellorganizer-python 2.9.0 <https://github.com/murphygroup/cellorganizer-python>`_
   - ipywidgets 7.4
   - `pandas 0.24 <https://pandas.pydata.org/>`_
   - `numexpr 2.6 <https://github.com/pydata/numexpr>`_

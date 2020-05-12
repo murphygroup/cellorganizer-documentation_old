@@ -22,8 +22,8 @@ Installing local instance of CellOrganizer for Galaxy
 ----------------------------------------------------
 Before you attempt to install the tools make sure to have
 
-* A working Galaxy instance. Installing Galaxy is beyond the scope of this document. Please refer to the [official documentation](https://galaxyproject.org/admin/get-galaxy/) to install an instance.
-* Matlab. Matlab should be installed in the same machine running Galaxy. Installing Matlab is beyond the scope of this document. Please refer to the [official documentation](https://www.mathworks.com/support/install-matlab.html?q=&page=1) to build an instance.
+* A working Galaxy instance. Installing Galaxy is beyond the scope of this document. Please refer to the `official documentation <https://galaxyproject.org/admin/get-galaxy/>`_ to install an instance.
+* Matlab. Matlab should be installed in the same machine running Galaxy. Installing Matlab is beyond the scope of this document. Please refer to the  `official documentation <https://www.mathworks.com/support/install-matlab.html?q=&page=1>`_ to build an instance.
 * The Matlab binary must be in the `$PATH` of the user running Galaxy.
 
   For example
@@ -41,13 +41,13 @@ CellOrganizer must be downloaded into the system running Galaxy.
 * Its location should be set in an environment variable called `$CELLORGANIZER`. The environment variable needs to be accessible to the user running your Galaxy instance. Make sure the user running Galaxy has reading permissions on the CellOrganizer location.
 
   ```
-  ~ chown -R galaxy:galaxy /usr15/galaxy/cellorganizer-galaxy-tools-v2.8.1/cellorganizer3
-  ~ export CELLORGANIZER=/usr15/galaxy/cellorganizer-galaxy-tools-v2.8.1/cellorganizer3
+  ~ chown -R galaxy:galaxy /usr15/galaxy/cellorganizer-galaxy-tools-v2.9.0/cellorganizer3
+  ~ export CELLORGANIZER=/usr15/galaxy/cellorganizer-galaxy-tools-v2.9.0/cellorganizer3
   ~ echo $CELLORGANIZER 
-    /usr15/galaxy/cellorganizer-galaxy-tools-v2.8.1/cellorganizer3
+    /usr15/galaxy/cellorganizer-galaxy-tools-v2.9.0/cellorganizer3
   ```
 
-* To download CellOrganizer visit the [official website](http://www.cellorganizer.org). Please make sure the version of CellOrganizer you install matches the version of CellOrganizer for Galaxy. 
+* To download CellOrganizer visit the `official website <http://www.cellorganizer.org>`_. Please make sure the version of CellOrganizer you install matches the version of CellOrganizer for Galaxy. 
 
 * Copy the CellOrganizer tools into the `$GALAXY/tools`. The variable `$GALAXY`, as explained in the official documentation, holds the location of your Galaxy instance.
 
@@ -244,8 +244,12 @@ CellOrganizer for Galaxy Tutorial
 
 .. include:: galaxy-spharm_tutorial/index.rst
 
+
 CellOrganizer for Galaxy Exercises
 ==============================
+
+.. include:: cellorganizer_options/inputs.rst
+
 
 Data Importing Exercises
 ----------------------------------------------------
@@ -253,24 +257,24 @@ Data Importing Exercises
 Exercise 1. Importing image files that are already in CellOrganizer for Galaxy
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1. Go to the navigation bar at the top of the homepage, click on "Shared Data", and then choose "Data Libraries".
-2. Go to Images -> HeLa -> 2D -> 2D HeLa LAMP2
-3. Tick the box next to "2D HeLa LAMP2".
-4. Click on "To History", select the history you would like to send the image dataset to, and then click "Import".
+1. Go to the navigation bar at the top of the homepage, click on **"Shared Data"**, and then choose **"Data Libraries".**
+2. Go to **Images** -> **HeLa** -> **2D** -> **LAMP2**
+3. Tick the box next to **"LAMP2"**.
+4. Click on **"To History"**, select the history you would like to send the image dataset to, and then click **"Import"**.
 
 Exercise 2. Importing a model that is already in CellOrganizer for Galaxy
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1. Under the "Get Data" section of the Tools window, select "Downloads model from the curated model repository".
-2. Select the model you would like to import to the current history, and click "Execute".
+1. Under the **"Get Data"** section of the Tools window, select **"Downloads model from the curated model repository"**.
+2. Select the model you would like to import to the current history, and click **"Execute"**.
 
 Exercise 3. Uploading image files / generative models from your computer
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1. Under the "Get Data" section of the Tools window, select "Upload File from your computer".
-2. Click on "Choose local file" and then select image/model files that you wish to upload.
-3. For every OMETIFF image that you upload, you should change the Type from "Auto-detect" to "tiff". Similarly, for every model MAT-file that you upload, you should change the Type to "mat". If all files that you are uploading have the same type, then you can simply use the "Type (set all)" option instead of having to make changes one at a time.
-4. Click on "Start".
+1. Under the **"Get Data"** section of the Tools window and select **"Upload File from your computer"**.
+2. Click on **"Choose local file"** and then select image/model files that you wish to upload.
+3. For every OMETIFF image that you upload, you should change the Type from **"Auto-detect"** to **"tiff"**. Similarly, for every model MAT-file that you upload, you should change the Type to **"mat"**. If all files that you are uploading have the same type, then you can simply use the **"Type (set all)"** option instead of having to make changes one at a time.
+4. Click on **"Start"**.
 
 Model Training Exercises
 ------------------------
@@ -279,9 +283,9 @@ Exercise 4. Train a shape space model for 2D cell and nuclear shape using the PC
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 1. Create a new history if desired.
-2. Import the "2D HeLa LAMP2" image dataset from "Shared Data" (See Exercise 1), and create a dataset collection called "2D HeLa LAMP2" from these image files (See section **Creating a collection from datasets in your history** in `link <https://galaxyproject.org/tutorials/collections/>`_).
-3. Under the "Training" section of the Tools window, select "Trains a generative model".
-4. Directly under "Choose a data set for training a generative model", there should be two icons. If you hover your cursor over them, one says "Multiple datasets" and the other says "Dataset collections". Click on the icon for "Dataset collections" and select the "2D HeLa LAMP2" dataset collection as the input dataset collection.
+2. Import the **"2D HeLa LAMP2"** image dataset from "Shared Data" (See Exercise 1), and create a dataset collection called "2D HeLa LAMP2" from these image files (See section **Creating a collection from datasets in your history** in `link <https://galaxyproject.org/tutorials/collections/>`_).
+3. Under the **"Training"** section of the Tools window, select **"Trains a generative model"**.
+4. Directly under **"Choose a data set for training a generative model"**, there should be two icons. If you hover your cursor over them, one says **"Multiple datasets"** and the other says **"Dataset collections"**. Click on the icon for **"Dataset collections"** and select the **"2D HeLa LAMP2"** dataset collection as the input dataset collection.
 5. Select the following settings
 
     * Select the cellular components desired for modeling: Nuclear and cell shape (framework)
@@ -291,32 +295,32 @@ Exercise 4. Train a shape space model for 2D cell and nuclear shape using the PC
     * Cell shape model class: Framework
     * Cell shape model type: PCA
 
-6. Under the "Advanced options" section, click "Insert Options", and then fill in latent_dim for "Name" and 15 for "Values".
-7. Fill in 2D-HeLa-LAMP2-PCA under "Provide a name for the model".
-8. Do not change any other default settings, and click "Execute".
+6. Under the **"Advanced options"** section, click **"Insert Options"**, and then fill in latent_dim for **"Name"** and 15 for **"Values"**.
+7. Fill in 2D-HeLa-LAMP2-PCA under **"Provide a name for the model"**.
+8. Do not change any other default settings, and click **"Execute"**.
 
 Exercise 5. Train a model for punctate organelles (e.g. vesicles) from a subset of the 3D HeLa LAMP2 collection
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 1. Create a new history if desired.
-2. Import the "3D HeLa LAMP2" dataset collection from "Shared Data" (See Exercise 1).
-3. Under the "Training" section of the Tools window, select "Trains a generative model".
-4. Select the "3D HeLa LAMP2" dataset as the input dataset. And select the following settings
+2. Import the **"3D HeLa LAMP2"** dataset collection from **"Shared Data"** (See Exercise 1).
+3. Under the **"Training"** section of the Tools window, select **"Trains a generative model"**.
+4. Select the **"3D HeLa LAMP2"** dataset as the input dataset. And select the following settings
 
     * Select the cellular components desired for modeling: Nuclear shape, cell shape and protein pattern
     * Dimensionality: 3D
     * Protein model protein location: Nucleus and cytoplasm
 
-5. Fill in 3D-HeLa-LAMP2-classic under "Provide a name for the model".
-6. Do not change any other default settings, and click "Execute".
+5. Fill in 3D-HeLa-LAMP2-classic under **"Provide a name for the model"**.
+6. Do not change any other default settings, and click **"Execute"**.
 
 Exercise 6. Train a diffeomorphic shape space model for cell and nuclear shape from a subset of the 3D HeLa LAMP2 collection
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 1. Create a new history if desired.
-2. Import the "3D HeLa LAMP2" dataset collection from "Shared Data" (See Exercise 1).
-3. Under the "Training" section of the Tools window, select "Trains a generative model".
-4. Select the "3D HeLa LAMP2" dataset as the input dataset. And select the following settings
+2. Import the **"3D HeLa LAMP2"** dataset collection from **"Shared Data"** (See Exercise 1).
+3. Under the **"Training"** section of the Tools window, select **"Trains a generative model"**.
+4. Select the **"3D HeLa LAMP2"** dataset as the input dataset. And select the following settings
 
     * Select the cellular components desired for modeling: Nuclear and cell shape (framework)
     * Dimensionality: 3D
@@ -325,8 +329,8 @@ Exercise 6. Train a diffeomorphic shape space model for cell and nuclear shape f
     * Cell shape model class: Framework
     * Cell shape model type: Diffeomorphic
 
-5. Fill in 3D-HeLa-LAMP2-diffeo under "Provide a name for the model".
-6. Do not change any other default settings, and click "Execute".
+5. Fill in 3D-HeLa-LAMP2-diffeo under **"Provide a name for the model"**.
+6. Do not change any other default settings, and click **"Execute"**.
 
 Model Synthesis Exercises
 -------------------------
@@ -335,11 +339,11 @@ Exercise 7. Synthesize an image from an existing model
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 1. Create a new history if desired.
-2. Import the "3D HeLa vesicle model of mitochondria" and the "2D HeLa vesicle model of nucleoli" from the curated model repository (See Exercise 2).
-3. Under the "Synthesis" section of the Tools window, select "Generates a synthetic image ..."
-4. Select the "3D HeLa vesicle model of mitochondria" as the input model, and select the "Synthesis option" as "Synthesize from all models".
-5. Click "Execute".
-6. Repeat steps 3-5, but this time select the "2D HeLa vesicle model of nucleoli" as the input model, and select the "Synthesis option" as "Synthesize nuclear and cell membrane (framework)".
+2. Import the **"3D HeLa vesicle model of mitochondria"** and the **"2D HeLa vesicle model of nucleoli"** from the curated model repository (See Exercise 2).
+3. Under the **"Synthesis"** section of the Tools window, select **"Generates a synthetic image ..."**
+4. Select the **"3D HeLa vesicle model of mitochondria"** as the input model, and select the **"Synthesis option"** as **"Synthesize from all models"**.
+5. Click **"Execute"**.
+6. Repeat steps 3-5, but this time select the **"2D HeLa vesicle model of nucleoli"** as the input model, and select the **"Synthesis option"** as **"Synthesize nuclear and cell membrane (framework)"**.
 
 Model Combination Exercises
 ---------------------------
@@ -347,24 +351,24 @@ Model Combination Exercises
 Exercise 8. Combine the Nuclear shape component of one model with the Cell shape component of another model into a single model
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1. Select or create a history that contains at least two models. For this exercise, we will use the models "2D HeLa - medial axis and ratio models of the cell and nucleus - vesicle model of endosomes" and "2D HeLa - medial axis and ratio models of the cell and nucleus - vesicle model of lysosomes" from the curated model repository (See Exercise 2).
-2. Under "Useful tools for models" select "Combine multiple generative model files into a single file".
+1. Select or create a history that contains at least two models. For this exercise, we will use the models **"2D HeLa - medial axis and ratio models of the cell and nucleus - vesicle model of endosomes"** and **"2D HeLa - medial axis and ratio models of the cell and nucleus - vesicle model of lysosomes"** from the curated model repository (See Exercise 2).
+2. Under **"Useful tools for models"** select **"Combine multiple generative model files into a single file"**.
 3. Click on "Insert Models" twice to open two model selection sections.
 4. In the first model selection section, select the model whose Nuclear shape component we want to use.
 5. In the second model selection section, select the model whose Cell shape component we want to use.
-6. (Optional) If you want to add additional documentation to the combined model, click "Insert Documentation". Under the "Name" section, fill in (without quotes) the word 'documentation'. Under the "Values" section, fill in any additional information you want to store within the model and enclose that information in quotes (E.g. 'This model was created by combining model A's Nuclear shape component with model B's Cell shape component').
-7. Click "Execute". The tool will now produce a new model with the Nuclear shape component of the first model, and the Cell shape component of the second model.
+6. (Optional) If you want to add additional documentation to the combined model, click **"Insert Documentation"**. Under the **"Name"** section, fill in (without quotes) the word **'documentation'**. Under the **"Values"** section, fill in any additional information you want to store within the model and enclose that information in quotes (E.g. 'This model was created by combining model A's Nuclear shape component with model B's Cell shape component').
+7. Click **"Execute"**. The tool will now produce a new model with the Nuclear shape component of the first model, and the Cell shape component of the second model.
 
 Exercise 9. Combine the Nuclear shape and Cell shape components of one model with the Protein distribution component of another model into a single model
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-1. Select or create a history that contains at least two models. For this exercise, we will use the models "2D HeLa - medial axis and ratio models of the cell and nucleus - vesicle model of endosomes" and "2D HeLa - medial axis and ratio models of the cell and nucleus - vesicle model of lysosomes" from the curated model repository (See Exercise 2).
-2. Under "Useful tools for models" select "Combine multiple generative model files into a single file".
-3. Click on "Insert Models" thrice to open three model selection sections.
+1. Select or create a history that contains at least two models. For this exercise, we will use the models **"2D HeLa - medial axis and ratio models of the cell and nucleus - vesicle model of endosomes"** and **"2D HeLa - medial axis and ratio models of the cell and nucleus - vesicle model of lysosomes"** from the curated model repository (See Exercise 2).
+2. Under **"Useful tools for models"** select **"Combine multiple generative model files into a single file"**.
+3. Click on **"Insert Models"** thrice to open three model selection sections.
 4. In both the first and second model selection sections, select the model whose Nuclear shape and Cell shape components we want to use.
 5. In the third model selection section, select the model whose Protein distribution component we want to use.
-6. (Optional) If you want to add additional documentation to the combined model, click "Insert Documentation". Under the "Name" section, fill in (without quotes) the word 'documentation'. Under the "Values" section, fill in any additional information you want to store within the model and enclose that information in quotes (E.g. 'This model was created by combining model A's Nuclear shape and Cell shape components with model B's Protein distribution component').
-7. Click "Execute". The tool will now produce a new model with the Nuclear shape and Cell shape components of the first model, and the Protein distribution component of the third model.
+6. (Optional) If you want to add additional documentation to the combined model, click **"Insert Documentation"**. Under the **"Name"** section, fill in (without quotes) the word **'documentation'**. Under the **"Values"** section, fill in any additional information you want to store within the model and enclose that information in quotes (E.g. 'This model was created by combining model A's Nuclear shape and Cell shape components with model B's Protein distribution component').
+7. Click **"Execute"**. The tool will now produce a new model with the Nuclear shape and Cell shape components of the first model, and the Protein distribution component of the third model.
 
 Visualization Exercises
 -----------------------
@@ -373,7 +377,7 @@ Exercise 10. Retrieve and display information about a model
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 1. Select or create a history that contains a diffeomorphic model.
-2. Under the "Useful tools for models" section of the Tools window, select "Print information about a generative model file".
-3. Click "Execute".
+2. Under the **"Useful tools for models"** section of the Tools window, select **"Print information about a generative model file"**.
+3. Click **"Execute"**.
 
 
