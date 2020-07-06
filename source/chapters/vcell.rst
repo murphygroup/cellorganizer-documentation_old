@@ -1,7 +1,7 @@
 Virtual Cell
 ------------
 
-The software supports saving generated geometries as valid VCML(Virtual Cell Markup Language) files that can be imported into `Virtual Cell <https://vcell.org/>`_, a platform to perform biological system modeling and simulations. To do this, use the output flag
+The software supports saving generated geometries as valid VCML (Virtual Cell Markup Language) files that can be imported into `Virtual Cell <https://vcell.org/>`_, a platform to perform biological system modeling and simulations. To do this, use the output flag
 
 .. code:: matlab
 
