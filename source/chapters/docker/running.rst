@@ -1,7 +1,7 @@
 Running CellOrganizer for Docker through Jupyter-Notebook
 *********************************************************
 Once you have the Jupyter running, now you can start playing around with the demos. We have a set of sample demos that
-can help you get started. 
+can help you get started.
 
 Your Jupyter folder structure looks like this.
 
@@ -11,8 +11,8 @@ Your Jupyter folder structure looks like this.
 
 Downloading the sample notebooks, images and models
 ----------------------------------------------------
-The run script had created a folder named mmbios2020 on your desktop. Use this shared folder to transfer files (if needed) between 
-your system and the docker conatiner. 
+The run script had created a folder named mmbios2020 on your desktop. Use this shared folder to transfer files (if needed) between
+your system and the docker container.
 
 * Use the Download_files notebook to get the latest images, models and notebooks.
 
@@ -23,7 +23,7 @@ your system and the docker conatiner.
 
 The demos use various image sets and models located inside mmbios2020/images and mmbios2020/models folder.
 
-The demo notebooks are located under mmbios2020/notebooks and are further divided as: 
+The demo notebooks are located under mmbios2020/notebooks and are further divided as:
 
 * demo_notebooks
     2D
@@ -58,9 +58,9 @@ To export generated data out of the container, click the files in the directory 
     :width: 500px
 
 
-Building Docker image 
+Building Docker image
 =====================
-* Clone the repo `<https://github.com/murphygroup/docker-cellorganizer-jupyter-notebook>`_.
+* Clone the repo https://github.com/murphygroup/docker-cellorganizer-jupyter-notebook.
 
 * Use the build script to create the docker image ( you will need the matlab binaries of CellOrganizer or it will download the latest from web)
 
