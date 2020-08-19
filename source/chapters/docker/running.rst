@@ -58,6 +58,21 @@ To export generated data out of the container, click the files in the directory 
     :width: 500px
 
 
+Important Docker Configurations
+=================================
+Some demos are compute heavy and might need more compute resource than which is allowed by default via docker.
+To increase RAM memory allocation and number of CPUs. Do the following steps :
+
+* alter these two flags --memory="8g" --cpus=2 to change the memory and cpu allocations.
+Mac
+===
+ Docker > Preference > Resources and change the default allocations.
+
+Ubuntu
+======
+ ** Update docker configs to increase memory and CPUs allocation
+
+
 Building Docker image
 =====================
 * Clone the repo https://github.com/murphygroup/docker-cellorganizer-jupyter-notebook.
@@ -69,3 +84,5 @@ Building Docker image
 * Use the run script to run the container with this docker image.
 
 * The container starts with the url of accessing Jupyter notebook.
+
+
