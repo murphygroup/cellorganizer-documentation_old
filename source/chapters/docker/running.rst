@@ -68,6 +68,9 @@ Mac
 ===
  Docker > Preference > Resources and change the default allocations.
 
+.. figure:: ../../source/chapters/docker/preferences_docker.png
+    :width: 500px
+
 Ubuntu
 ======
  ** Update docker configs to increase memory and CPUs allocation
