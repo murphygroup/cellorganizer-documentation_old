@@ -62,7 +62,6 @@ Setup
 The instructions below describe
 
 * How to install Docker, the virtualization engine that will run the container
-* How to install Kitematic, a UI for Docker
 * How to download the latest cellorganizer-docker image from Docker Hub, i.e. the docker images repository
 * How to start a container from the Docker image
 * How to connect to the container
@@ -75,38 +74,25 @@ Before downloading the image and spinning a container, you need to install Docke
 * To install Docker-for-Mac, click `here <https://docs.docker.com/docker-for-mac/install/>`_.
 * To install Docker-for-Windows, click `here <https://docs.docker.com/docker-for-windows/install/>`_.
 
-Installing Kitematic and downloading CellOrganizer for Docker
--------------------------------------------------------------
+Getting started
+-------------------------
 
-The easiest way to download an image and run a container is to use `Kitematic <https://kitematic.com/>`_. Kitematic is a tool for downloading images and running containers.
+Its a two simple step process, where we download the image from docker hub and then run a container with that image.
 
-* To install Kitematic, click `here <https://kitematic.com/docs/>`_.
+Run the following command to pull the image from docker hub.
 
-.. ATTENTION::
-   Kitematic is not necessary, but it is recommended to streamline installation and deployment.
+* docker pull murphylab/cellorganizer-jupyter:latest
 
-Download the most recent image using Kitematic
-----------------------------------------------
+.. figure:: ../../source/chapters/docker/pull_command.png
+    :width: 500px
 
-Start Kitematic. It should open a window similar to the screenshot below
+To download the run script click `here <https://github.com/murphygroup/docker-cellorganizer-jupyter-notebook/blob/master/run.sh>`_.
 
-.. figure:: kitematic.png
-   :align: center
+* run the downloaded script (run.sh). This will start a container and the terminal will show the Juypter url. 
 
-Searching for CellOrganizer should return a container like the image below
+.. figure:: ../../source/chapters/docker/run_command.png
+    :width: 500px
 
-.. figure:: docker/image_find.png
-   :align: center
-
-Then click *CREATE* to download the image and start a container
-
-.. figure:: docker/image_downloading.png
-   :align: center
-
-Download the most recent image from terminal
---------------------------------------------
-
-For convenience, the Docker image can be found in `Docker Hub <https://hub.docker.com/r/murphylab/cellorganizer-jupyter>`_ along with links to the Dockerfile.
 
 Demos
 =====

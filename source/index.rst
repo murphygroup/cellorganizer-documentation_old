@@ -23,6 +23,8 @@ CellOrganizer Documentation
 
    ./chapters/cellorganizer_for_galaxy
 
+   ./chapters/model_class_and_type
+
    ./chapters/advanced
 
 .. Indices and tables
