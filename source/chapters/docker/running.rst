@@ -73,7 +73,8 @@ Mac
 
 Ubuntu
 ======
- ** Update docker configs to increase memory and CPUs allocation
+Check the docker documentation to see, how you can use commands to set various parameters.
+https://docs.docker.com/config/containers/resource_constraints/
 
 
 Building Docker image
