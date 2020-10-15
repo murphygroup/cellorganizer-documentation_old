@@ -1638,8 +1638,7 @@ Demo header::
 % demo3D60
 %
 % Synthesize one 3D image with nuclear, cell shape and a vesicular channel. 
-% This demo exports portions of the synthetic image as SBML Spatial instances.This
-% demo also produces a valid VCML file. 
+% This demo exports the synthetic image as Virtual Cell VCML.
 %
 % Input 
 % -----
@@ -1647,6 +1646,5 @@ Demo header::
 %
 % Output
 % ------
-% * SBML instance
 % * VCML file
 % * single channel TIF files
