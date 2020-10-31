@@ -77,6 +77,11 @@ Check the docker documentation to see, how you can use commands to set various p
 https://docs.docker.com/config/containers/resource_constraints/
 
 
+Windows
+=======
+Check the docker documentation to see, how you can use commands to set various parameters.
+https://docs.docker.com/docker-for-windows/
+
 Building Docker image
 =====================
 * Clone the repo https://github.com/murphygroup/docker-cellorganizer-jupyter-notebook.
