@@ -94,4 +94,12 @@ Building Docker image
 
 * The container starts with the url of accessing Jupyter notebook.
 
+Visualizing Results
+=====================
 
+* To visualize a result, one can create a notebook cell (the notebook must reside in same location as index.html)
+
+| from IPython.core.display import HTML
+| HTML(filename="./index.html")
+
+# Same folder location, ensures the embedded images don't break while rendering.
