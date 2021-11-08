@@ -10,6 +10,10 @@ A CellOrganizer model consists of four components,
 3) a cell membrane model and
 4) a protein pattern model
 
+**Example Call:** 
+
+*img2slml(dimensionality, dnaImagesDirectoryPath, cellImagesDirectoryPath, proteinImagesDirectoryPath, options)*
+
 =============================  ===============================================================
         Inputs                                             Outputs
 =============================  ===============================================================
@@ -20,9 +24,6 @@ A CellOrganizer model consists of four components,
   options                       List of options
 =============================  ===============================================================
 
-Example: 
-
-img2slml(dimensionality, dnaImagesDirectoryPath, cellImagesDirectoryPath, proteinImagesDirectoryPath, options)
 
 General Options
 ================
@@ -78,8 +79,11 @@ Generic Options
 *options.model_prefix* (optional) **[N/A]**
     * Prefix of model name
  
- *options.sampling.method* (optional) **['trimmed']**
+*options.sampling.method* (optional) **['trimmed']**
     * Can be 'disc', 'sampled', 'trimmed'
+
+*options.plot_flag_nm* (optional) **[false]**
+    * Boolean condition to turn on visualization of parameterization progress
 
 Nuclear shape submodel
 ^^^^^^^^^^^^^^^^^^^^^^
@@ -244,10 +248,10 @@ Learn more `here <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5308220/pdf/nihms
 *options.model.spharm-obj.spharm.segminnucfraction* (optional) **[0.17]**
     * image size of the model
 
-*options.model.spharm-obj.ppm.sigma* (optional) **[5]**
+*options.local_thresholding_sigma* (optional) **[5]**
     * Standard deviation of a gaussian distribution
    
-*options.model.spharm-obj.ppm.thresPerc* (optional) **[0.1]**
+*options.object_detection_thresPerc* (optional) **[0.1]**
     * Threshold percentage of the max value after filtering the image
     
 *options.model.spharm-obj.ppm.mask_inverted_color_flag* (optional) **[false]**

@@ -13,7 +13,7 @@ CellOrganizer Documentation
 
    ./chapters/getting_started
    
-   ./chapters/cellorganizer_options
+   ./chapters/cellorganizer_functions_&_options
 
    ./chapters/cellorganizer_for_matlab
 

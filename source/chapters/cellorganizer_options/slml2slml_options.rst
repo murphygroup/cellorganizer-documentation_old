@@ -2,6 +2,9 @@ slml2slml
 ********
 This function combines multiple models into a single model file.
 
+**Example:**
+
+*slml2report(files, options)*
 
 =============================  ===============================================================
         Inputs                                             Outputs

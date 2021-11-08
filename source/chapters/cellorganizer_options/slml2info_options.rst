@@ -2,16 +2,16 @@ slml2info
 ********
 This function generates a report from information extracted from a generative model file.
 
+**Example:**
+
+*slml2info(filenames, options)*
+
 =============================  ===============================================================
         Inputs                                             Outputs
 =============================  ===============================================================
   filenames                     List of files
   options                       Options structure
 =============================  ===============================================================
-
-Example: 
-
-slml2info(filenames, options)
 
 General Options
 ================
