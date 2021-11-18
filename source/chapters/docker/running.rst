@@ -18,7 +18,7 @@ your system and the docker container.
 
 * These are fetched from the web and kept under mmbios2021 folder on your desktop.
 
-.. figure:: ../../source/chapters/docker/Download_files.png
+.. figure:: ../../source/chapters/docker/download_files.png
     :width: 500px
 
 The demos use various image sets and models located inside mmbios2021/images and mmbios2021/models folder.
