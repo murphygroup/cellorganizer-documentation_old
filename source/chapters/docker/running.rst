@@ -11,19 +11,19 @@ Your Jupyter folder structure looks like this.
 
 Downloading the sample notebooks, images and models
 ----------------------------------------------------
-The run script had created a folder named mmbios2020 on your desktop. Use this shared folder to transfer files (if needed) between
+The run script had created a folder named mmbios2021 on your desktop. Use this shared folder to transfer files (if needed) between
 your system and the docker container.
 
 * Use the Download_files notebook to get the latest images, models and notebooks.
 
-* These are fetched from the web and kept under mmbios2020 folder on your desktop.
+* These are fetched from the web and kept under mmbios2021 folder on your desktop.
 
 .. figure:: ../../source/chapters/docker/Download_files.png
     :width: 500px
 
-The demos use various image sets and models located inside mmbios2020/images and mmbios2020/models folder.
+The demos use various image sets and models located inside mmbios2021/images and mmbios2021/models folder.
 
-The demo notebooks are located under mmbios2020/notebooks and are further divided as:
+The demo notebooks are located under mmbios2021/notebooks and are further divided as:
 
 * demo_notebooks
     2D
@@ -33,7 +33,7 @@ The demo notebooks are located under mmbios2020/notebooks and are further divide
     A collection of 3D jupyter notebooks demos
 
 * workshop_demos
-    A collection of jupyter notebooks used during mmbios2020 workshop
+    A collection of jupyter notebooks used during mmbios2021 workshop
 
 Run a demo that invokes img2slml
 --------------------------------
