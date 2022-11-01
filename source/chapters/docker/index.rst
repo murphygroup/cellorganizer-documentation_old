@@ -8,6 +8,9 @@ CellOrganizer for Docker is an image with compiled binaries from the CellOrganiz
 - **slml2info**, the top-level function to generate a report from information extracted from a single generative model.
 - **slml2report**, the top-level function to generate a report from comparing generative models.
 - **slml2slml**, the top-level function to combine models into a single model file.
+- **img2SPHARMparameterization**, top-level function to transform image into SPHARM parameters.
+- **SPHARMparameterization2mesh**, top-level function to transform SPHARM parameters into mesh data array.
+- **SPHARMparameterization2image**, top-level function to transform SPHARM parameters into an image array.
 
 The image also comes with
 
@@ -15,7 +18,7 @@ The image also comes with
 - `Jupyter <https://jupyter.org/>`_
 - and the Python packages
 
-  - `cellorganizer-python 2.9.0 <https://github.com/murphygroup/cellorganizer-python>`_
+  - `cellorganizer-python 2.10.0 <https://github.com/murphygroup/cellorganizer-python>`_
   - ipywidgets 7.4
   - `pandas 0.24 <https://pandas.pydata.org/>`_
   - `numexpr 2.6 <https://github.com/pydata/numexpr>`_
